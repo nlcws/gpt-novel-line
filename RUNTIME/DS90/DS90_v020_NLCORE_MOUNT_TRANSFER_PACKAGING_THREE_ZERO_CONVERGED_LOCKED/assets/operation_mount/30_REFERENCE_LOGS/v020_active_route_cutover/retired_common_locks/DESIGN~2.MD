@@ -1,0 +1,12 @@
+# DESIGNER_RUNTIME_NO_RESIDUE_LOCK v019.14a - OBSOLETED ACTIVE STUB
+
+STATUS: OBSOLETED_BY_v01916a
+ACTIVE_AUTHORITY: false
+CURRENT_LOCK: assets/dsgn_infra/04_MODULE/common/DESIGNER_RUNTIME_ACTIVE_ROUTE_NO_RESIDUE_LOCK_v01916a.md
+ORIGINAL_PRESERVED_AT: assets/operation_mount/30_REFERENCE_LOGS/v01916a_active_route_boundary_repair/ORIGINAL_DESIGNER_RUNTIME_NO_RESIDUE_LOCK_v01914.md
+
+このファイルは、v019.14g系の「履歴をZIPに入れない」導線で使われた旧ロックの所在互換スタブである。
+v019.16aでは履歴棚を削除しない。
+現在の正規ロックは `DESIGNER_RUNTIME_ACTIVE_ROUTE_NO_RESIDUE_LOCK_v01916a.md`。
+
+この旧ファイルをactive required read、PACK_CUTOUT required read、通常設計判断、話材補完、本文条件源として使ってはならない。
