@@ -1,0 +1,43 @@
+{
+  "status": "imported_sample_package_note",
+  "not_current_template": true,
+  "current_route": "assets/samples/SAMPLE_REFRESH_INDEX_v019_4.md",
+  "name": "cat_card_template_sample_v2",
+  "created_at": "2026-04-26T15:34:31.233182",
+  "purpose": "テンプレ見本。旧8点セットを外枠、猫カード群を中身の正解見本として梱包。",
+  "included_original_8set": true,
+  "included_cat_ready_samples": [
+    "201_writer_ready_001.md",
+    "202_writer_ready_002.md",
+    "203_writer_ready_003.md"
+  ],
+  "included_completed_text_references": [
+    "0001_w_cat_kazenotooruhi.txt",
+    "0002_w_cat_purinhahitotsu.txt",
+    "0003_w_cat_yuugatayonikuruko.txt"
+  ],
+  "v2_templates": [
+    "single_writer_ready_template_v2",
+    "work_profile_template_v2",
+    "band_profile_template_v2",
+    "connection_card_template_v2",
+    "writing_freeze_card_template_v2",
+    "item_management_table_v2",
+    "zip_structure_v2",
+    "reverse_extraction_checklist_v2"
+  ],
+  "notes": [
+    "執筆へ渡す最小カードは執筆凍結カードとして改名運用。",
+    "本文増殖素材は要約扱いしない。",
+    "8場面は最低骨。",
+    "痩せる場合は説明ではなく具体物・手元・猫の位置・通れる幅・客の一拍で増やす。"
+  ],
+  "imported_into": "DS90_SOURCE_RUNTIME_v019_3_DESIGNER_GATES_SAMPLE_REFRESH",
+  "import_policy": {
+    "original_8set": "not_active_template; retained only in source upload, not promoted as current DS90 sample",
+    "v2_templates": "active sample/reference",
+    "cat_ready_samples": "active ready density examples",
+    "completed_text_references": "reference only, not story canon",
+    "layer_common_definition": "sample reference only; does not replace DS90 v21/v28 layer canon"
+  }
+}

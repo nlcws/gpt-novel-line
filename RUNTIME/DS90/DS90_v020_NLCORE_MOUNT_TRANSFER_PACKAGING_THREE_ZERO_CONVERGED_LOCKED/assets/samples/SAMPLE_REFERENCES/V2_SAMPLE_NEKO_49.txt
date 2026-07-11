@@ -1,0 +1,24 @@
+# V2_SAMPLE_NEKO_49.txt
+STATUS: RETIRED_COMPATIBILITY_ROUTE / DO_NOT_USE_AS_CURRENT_TEMPLATE
+REFRESH_VERSION: v019.4-DESIGNER-CONVERGED-LOCKED
+
+このファイル名は旧「49話・密度比較」サンプルの互換パスである。
+今回アップロードされた最新版サンプル群には、49話に対応する更新版が存在しない。
+そのため、49話サンプルを最新版と偽って差し替えない。
+
+現行で設計さん・梱包さんが使うべきサンプルは以下。
+
+- assets/samples/SAMPLE_REFERENCES/WRITER_READY_CARD_TEMPLATE_V2.md
+- assets/samples/SAMPLE_REFERENCES/WRITING_FREEZE_CARD_TEMPLATE_V2.md
+- assets/samples/SAMPLE_REFERENCES/READY_SAMPLE_NEKO_001_KAZENOTOORUHI.md
+- assets/samples/SAMPLE_REFERENCES/READY_SAMPLE_NEKO_002_PURINHAHITOTSU.md
+- assets/samples/SAMPLE_REFERENCES/READY_SAMPLE_NEKO_003_YUUGATAYONIKURUKO.md
+- assets/samples/SAMPLE_REFRESH_INDEX_v019_4.md
+
+49話密度比較を参照したい場合は、旧資料として `assets/comparison/` を明示実読する。
+旧資料は本文条件源・現行テンプレ・ready見本ではない。
+
+
+
+v019.4 note:
+- 上記 `SAMPLE_REFRESH_INDEX` は `assets/samples/` 直下の実在pathを指す。
