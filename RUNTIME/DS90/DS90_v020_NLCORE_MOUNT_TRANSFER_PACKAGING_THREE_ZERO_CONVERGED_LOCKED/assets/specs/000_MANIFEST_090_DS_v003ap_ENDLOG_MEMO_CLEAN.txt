@@ -1,0 +1,53 @@
+# 000_MANIFEST_090_DS_v003ap_ENDLOG_MEMO_CLEAN
+
+区分: v003aj母体 + v003as差分移植 + END_LOG通常運用 + 再開メモ語クリーン版
+目的: 現行090から既存再開メモ系の旧英語名を除去し、再開メモを任意補助メモとして扱う。
+
+採用母体:
+- 090_DS_v003an_ENDLOG_CLEAN_RESCAN.zip
+
+保持:
+- 089_DS_TAG_SEARCH
+- 091_DS_CHECK
+- 092_DS_CARD
+- 093_DS_CARD_TEST
+- 094_DS_LOG
+- 095_DS_MOUNT_TRANSFER
+- 096_DS_ARCHIVE
+- 098_DS_INDEX
+- END_LOG_OPERATION_RULE
+- END_LOG_TEMPLATE
+- TAG_INDEX_TEMPLATE
+- STOP_TAG_INDEX_TEMPLATE
+- WORK_UNIT_CARD_TEMPLATE
+- RESTART_MEMO_TEMPLATE
+
+変更:
+- 既存再開メモ系の旧英語名を現行090内から除去。
+- 旧テンプレート名を RESTART_MEMO_TEMPLATE.txt に変更。
+- 再開メモは任意補助メモに固定。
+- 通常の現在地共有はEND_LOGに固定。
+- 外部共有面の通常運用前提を現行090から除去。
+- 監査資料を現行検算用に更新。
+
+禁止:
+- 再開メモを正本にしない。
+- 再開メモを作品条件源にしない。
+- 再開メモを読了証明にしない。
+- 再開メモを起動条件にしない。
+- 再開メモを通常の現在地共有面にしない。
+- END_LOGを作品条件源にしない。
+- v003as単独ZIPを現行後継にしない。
+
+検査:
+- ZIP整合性 pass
+- 必須ファイル保持 pass
+- 旧語残骸 none
+- 旧外部共有面語 none
+- 存在しない現行090内部参照 none
+
+
+追補 v003ap:
+- RESTART_MEMO.txt の扱いを「プロジェクト側に既存のRESTART_MEMO.txtがある場合」に限定。
+- RESTART_MEMO_TEMPLATE.txt は既存再開メモではなくテンプレートであることを明記。
+- 再開メモ系の総称を既存再開メモへ統一。
