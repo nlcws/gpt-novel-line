@@ -1,0 +1,12 @@
+{
+  "name": "pw90-21c-second-draft-15k-final",
+  "version": "0.4.21c-final.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/integrity.test.js",
+    "verify": "node src/verify.js",
+    "check": "npm test && npm run verify",
+    "inspect-pack": "node src/inspect-projectlocked-pack.js"
+  }
+}
