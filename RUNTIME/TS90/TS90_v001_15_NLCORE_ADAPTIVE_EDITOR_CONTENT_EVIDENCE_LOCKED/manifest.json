@@ -1,0 +1,344 @@
+{
+  "runtime": "ts90-v001.15-nlcore-adaptive-editor-content-evidence-locked",
+  "package_version": "TS90_v001_15_NLCORE_ADAPTIVE_EDITOR_CONTENT_EVIDENCE_LOCKED",
+  "base": "toshi_shusei_required_set_v1_0",
+  "source_unchanged": true,
+  "phase_a": "diagnosis",
+  "phase_b": "scoped_repair",
+  "receive_text_input": true,
+  "receive_pw90_text_handoff": true,
+  "receive_only_writer_success": false,
+  "writer_success_object_supported": true,
+  "chat_mount_boot": {
+    "mode": "AUTO_BOOT_ON_CHAT_MOUNT",
+    "auto_start": true,
+    "auto_repair": false,
+    "wait_state": "WAIT_FOR_RECEIVABLE_TEXT"
+  },
+  "read_order": {
+    "source_read_order": "original-source-only",
+    "all_line_lock_read_order": [
+      "source/ALL_LINE_END_USER_HEAT_DELIVERY_LOCK_v001.md",
+      "source/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md"
+    ],
+    "novel_line_core_read_order": [
+      "source/NOVEL_LINE_FINAL_CORE_LOCK_v001.md"
+    ],
+    "text_receive_lock_read_order": [
+      "source/TS90_TEXT_RECEIVE_LIGHTWEIGHT_LOCK_v001.md"
+    ],
+    "boot_read_order": "runtime-entry-and-receive-gate-plus-original-source-plus-terminal-locks-plus-text-receive-lock-plus-self-directed-lock-plus-history-lock-plus-full-revision-lock-plus-adaptive-editor-lock",
+    "adaptive_editor_lock_read_order": [
+      "source/TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001.md"
+    ]
+  },
+  "boot_read_order": [
+    "START_HERE.js",
+    "src/program.js",
+    "src/receive-gate.js",
+    "src/verify.js",
+    "src/verify-package.js",
+    "source/GPT_BUILDER_INSTRUCTIONS_TOSHI_SHUSEI_v1_0.txt",
+    "source/README_SET.md",
+    "source/ALL_LINE_END_USER_HEAT_DELIVERY_LOCK_v001.md",
+    "source/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md",
+    "source/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+    "source/TS90_TEXT_RECEIVE_LIGHTWEIGHT_LOCK_v001.md",
+    "source/TS90_PHASE_A_TO_B_SELF_DIRECTED_LOCK_v001.md",
+    "source/TS90_HISTORY_MASTER_REAPPLY_LOCK_v001.md",
+    "source/TS90_FULL_REVISION_READY_LOCK_v001.md",
+    "source/TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001.md"
+  ],
+  "source_manifest": [
+    {
+      "path": "source/GPT_BUILDER_INSTRUCTIONS_TOSHI_SHUSEI_v1_0.txt",
+      "bytes": 6189,
+      "sha256": "12B095EA3D74B8966C6CD3CA7E105CA660ED490D8004AF4E52D84FAF6BAF5222"
+    },
+    {
+      "path": "source/README_SET.md",
+      "bytes": 424,
+      "sha256": "66FC7ECE2936F6CEA697BF936D30A6F9388C0C903B5BE965E1CED6DE98B942AE"
+    }
+  ],
+  "all_line_locks": [
+    {
+      "path": "source/ALL_LINE_END_USER_HEAT_DELIVERY_LOCK_v001.md",
+      "bytes": 2245,
+      "sha256": "B06431771C2DAFC00D7AF1221426CEC1ED39033F6AA807AB2D39135D1D03CD30"
+    },
+    {
+      "path": "source/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md",
+      "bytes": 1924,
+      "sha256": "8EFE254E90E1219578577C028557176C4F77C6CCA885A697FE99EC13048D2F73"
+    }
+  ],
+  "novel_line_core_locks": [
+    {
+      "path": "source/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+      "bytes": 2712,
+      "sha256": "3F4B8F17061E6102F00DABA44444FF884EA96B5FB5089CA4A2C6F36CEBAC30A6"
+    }
+  ],
+  "text_receive_locks": [
+    {
+      "path": "source/TS90_TEXT_RECEIVE_LIGHTWEIGHT_LOCK_v001.md",
+      "bytes": 1315,
+      "sha256": "02637977EA818C442DD87ED926BD7CA85998D19BB1A228C412D6DA07DCD09FC2"
+    }
+  ],
+  "self_guard_added": [
+    "BOOT_READ_ORDER",
+    "strongAllowed gate",
+    "text-only internal log enforcement",
+    "Phase A section completeness check",
+    "writer negative flags rejection for full writer SUCCESS object",
+    "targetRange / storyCount consistency check",
+    "package structure verifier",
+    "natural-language full revision authorization",
+    "explicit full revision denial precedence",
+    "full revision branch-only base protection",
+    "author-unknown direction-not-guarantee lock",
+    "adaptive editor director natural-language routing",
+    "automatic INPUT_SNAPSHOT baseline protection",
+    "diagnosis-first A_TO_B one-line route",
+    "blade strength 0-4 plan validation",
+    "strength 4 design-return stop",
+    "over-edit stop-signal enforcement",
+    "baseline comparison rollback enforcement",
+    "adaptive report traceability and no-overwrite gate",
+    "execution-intent consultation exclusion gate",
+    "baseline name-id-hash evidence binding",
+    "diagnosis-to-plan exact regeneration check",
+    "independent strong-rewrite diagnosis",
+    "active/resolved stop-signal history split",
+    "strict plan-stage execution identity",
+    "concrete non-empty diff evidence for applied edits",
+    "bidirectional rollback-log binding",
+    "actual original/revised character count verification",
+    "inputMode-bound baseline source selection",
+    "edit-contract SHA-256 binding",
+    "body-extraction boundary binding",
+    "actual revised-body SHA-256 verification",
+    "canonical line-diff evidence binding",
+    "actual diff hunk to retained-change coverage",
+    "all-rollback final-body equality gate",
+    "retained clear-improvement promotion gate",
+    "exact short-command and hypothetical-quote separation"
+  ],
+  "strict_convergence_added": [
+    "non-empty string enforcement for required text fields",
+    "revisionStrength enum validation",
+    "instruction conflict and ambiguous scope stops",
+    "storyOrder duplicate/empty detection",
+    "quarantine text rejection for writer SUCCESS object",
+    "visible terminal gate required",
+    "preserved user vision text required",
+    "nextAction text required",
+    "classified WARN enforcement",
+    "manifest source/lock/boot/package verification",
+    "full revision lock manifest verification",
+    "history master lock manifest verification",
+    "current package version and boot order synchronization",
+    "adaptive editor lock manifest verification",
+    "adaptive stage execution completeness",
+    "effect-unknown and degradation rollback requirement",
+    "preference-difference promotion block",
+    "minimum body character constraint check when declared",
+    "branch name must differ from baseline",
+    "change location and reason required",
+    "resolved stop action required",
+    "fictional or surplus execution stages rejected",
+    "stage status must match blade strength",
+    "minimum body characters sourced only from receive contract",
+    "baseline-derived fixed-condition quote evidence",
+    "all final diff hunks must be classified",
+    "rolled-back changes cannot claim final diff hunks",
+    "promotion requires changed body and retained clear improvement"
+  ],
+  "terminal_locks_added": [
+    "end-user heat delivery lock",
+    "full convergence residue sweep lock",
+    "terminal gate required for Phase A / Phase B success",
+    "STOP report requires reason/impact/repair/boundary/preserved heat"
+  ],
+  "quarantine_auto_receive": false,
+  "nested_zips": 0,
+  "novel_line_final_core_lock": true,
+  "text_receive_lightweight_lock": true,
+  "four_runtime_equal_respect": true,
+  "history_in_runtime_zip": true,
+  "current_only_runtime_zip": true,
+  "runtime_zip_policy": "current_route_only; no changelog, repair log, migration notes, or past-version bodies",
+  "package": "TS90_v001_15_NLCORE_ADAPTIVE_EDITOR_CONTENT_EVIDENCE_LOCKED",
+  "source_file_count": 10,
+  "history_master_reapply": true,
+  "history_master": "TS90_v001_9_NLCORE_LOCKED",
+  "reapplied_patches": [
+    "TS90_PHASE_A_TO_B_SELF_DIRECTED_LOCK_v001",
+    "TS90_FULL_REVISION_READY_LOCK_v001",
+    "TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001"
+  ],
+  "phase_self_directed_locks": [
+    {
+      "path": "source/TS90_PHASE_A_TO_B_SELF_DIRECTED_LOCK_v001.md",
+      "bytes": 2165,
+      "sha256": "9FFD75E2031BE03391433057CE2FFC6ED35075F59B3A89A240A7B111AD4A0337"
+    }
+  ],
+  "history_master_reapply_locks": [
+    {
+      "path": "source/TS90_HISTORY_MASTER_REAPPLY_LOCK_v001.md",
+      "bytes": 672,
+      "sha256": "19E33709EAC30E82046AA8EB1246DF7DDA5C1C63FAB8C76C4B7C13C551D820EF"
+    }
+  ],
+  "full_revision_locks": [
+    {
+      "path": "source/TS90_FULL_REVISION_READY_LOCK_v001.md",
+      "bytes": 3950,
+      "sha256": "584D4C8D99DD56FB136087EE8179DBF8B6642A3F9AA419896D85588EF086B699"
+    }
+  ],
+  "full_revision_ready": {
+    "always_ready": true,
+    "auto_execute": false,
+    "explicit_user_activation_required": true,
+    "natural_language_strong_permission": true,
+    "branch_only": true,
+    "overwrite_base": false,
+    "stage_order": [
+      "編成校正",
+      "強改稿",
+      "冷却",
+      "校正",
+      "音読調整",
+      "固定条件照合"
+    ],
+    "author_unknown": "direction_not_guarantee",
+    "default_profile": "ADAPTIVE_DIRECTOR",
+    "fixed_full_stack_requires_explicit_request": true,
+    "adaptive_stage_order": [
+      "設計照合",
+      "構成編集",
+      "シーン編集",
+      "情報開示編集",
+      "視点編集",
+      "キャラクター編集",
+      "感情線編集",
+      "台詞編集",
+      "ペーシング編集",
+      "描写編集",
+      "強改稿",
+      "ラインエディット",
+      "冷却",
+      "連続性・整合性チェック",
+      "世界観・設定校正",
+      "コピーエディット",
+      "音読校正",
+      "固定条件照合"
+    ]
+  },
+  "adaptive_editor_locks": [
+    {
+      "path": "source/TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001.md",
+      "bytes": 14101,
+      "sha256": "30CDCC50B045B8F00B560A9F436BA8197B44EB0727F77ADCD84D4504F8EE1CAA"
+    }
+  ],
+  "adaptive_editor_director": {
+    "always_ready": true,
+    "auto_execute": false,
+    "explicit_user_activation_required": true,
+    "one_line_trigger_supported": true,
+    "one_line_trigger_example": "修正刃さまパックで通して",
+    "baseline_policy": "named baseline or INPUT_SNAPSHOT; never overwrite; branch only",
+    "diagnosis_layers": [
+      "設計",
+      "構成",
+      "シーン",
+      "視点",
+      "人物",
+      "感情線",
+      "台詞",
+      "ペース",
+      "情報開示",
+      "描写",
+      "文体",
+      "冷却",
+      "整合性",
+      "校正",
+      "音読"
+    ],
+    "blade_strength_scale": {
+      "0": "使用しない",
+      "1": "局所確認",
+      "2": "標準修正",
+      "3": "強修正",
+      "4": "全面再設計候補"
+    },
+    "stage_order": [
+      "設計照合",
+      "構成編集",
+      "シーン編集",
+      "情報開示編集",
+      "視点編集",
+      "キャラクター編集",
+      "感情線編集",
+      "台詞編集",
+      "ペーシング編集",
+      "描写編集",
+      "強改稿",
+      "ラインエディット",
+      "冷却",
+      "連続性・整合性チェック",
+      "世界観・設定校正",
+      "コピーエディット",
+      "音読校正",
+      "固定条件照合"
+    ],
+    "finalization_order": [
+      "母艦との差分評価",
+      "劣化箇所のロールバック",
+      "最終冷却",
+      "納品本文と作業報告の分離"
+    ],
+    "change_classifications": [
+      "明確に改善",
+      "好みの差",
+      "効果不明",
+      "劣化",
+      "固定条件上必要"
+    ],
+    "rollback_required": [
+      "効果不明",
+      "劣化"
+    ],
+    "preference_never_auto_promotes_baseline": true,
+    "author_unknown": "direction_not_guarantee",
+    "external_beta_read": "not_claimed_without_real_external_reader",
+    "execution_intent_required": true,
+    "consultation_does_not_execute": true,
+    "baseline_evidence": "name + id + body sha256 + actual chars",
+    "diagnosis_plan_binding": "runtime-regenerated exact plan required",
+    "strong_rewrite_diagnosis": "independent from structure/scene/description/style",
+    "stop_signal_history": "active stops; resolved retained with action",
+    "stage_execution_binding": "same count/order/name and strength-status compatibility",
+    "diff_evidence": "applied edits require non-empty changes with id/location/classification/reason",
+    "rollback_binding": "comparison and rollbackLog bidirectional",
+    "character_count_verification": "computed from received and revised text",
+    "baseline_source_policy": "bound by inputMode; writer handoff ignores stale top-level text",
+    "edit_contract": "target/scope/touch/deny/core/fixed/minimum/body-boundary SHA-256 bound",
+    "body_extraction_modes": [
+      "FULL_TEXT",
+      "MARKERS",
+      "EXPLICIT_BODY"
+    ],
+    "revised_body_hash_verified": true,
+    "canonical_diff_evidence": "runtime-generated line hunks must match report exactly",
+    "rollback_final_body_binding": true,
+    "promotion_requires_retained_clear_improvement": true,
+    "short_exact_commands_execute": true,
+    "quoted_hypothetical_commands_do_not_execute": true
+  }
+}

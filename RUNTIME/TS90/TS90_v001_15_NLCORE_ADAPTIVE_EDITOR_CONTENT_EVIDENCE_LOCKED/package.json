@@ -1,0 +1,11 @@
+{
+  "name": "toshi-shusei-v2-receive-runtime",
+  "version": "1.15.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/runtime.test.js",
+    "verify": "node src/verify.js",
+    "verify:package": "node src/verify-package.js"
+  }
+}
