@@ -1,0 +1,64 @@
+{
+  "artifact": "DS90_v020_NLCORE_MOUNT_TRANSFER_PACKAGING_THREE_ZERO_CONVERGED_LOCKED.zip",
+  "root": "DS90_v020_NLCORE_MOUNT_TRANSFER_PACKAGING_THREE_ZERO_CONVERGED_LOCKED",
+  "source": "previous_repair_line_zip",
+  "files_total": 327,
+  "json_files": 25,
+  "json_errors": [],
+  "active_string_count": 312,
+  "active_required_missing": [],
+  "active_stale_paths": [],
+  "active_stale_content_files": [],
+  "non_archive_stale_mentions_count": 0,
+  "non_archive_stale_mentions_files_sample": [],
+  "manifest_missing": [],
+  "manifest_hash_mismatch": [],
+  "manifest_unlisted": [],
+  "dryruns": [
+    {
+      "run": 1,
+      "error": 0,
+      "intent_mismatch": 0,
+      "route_mismatch": 0,
+      "shelf_mismatch": 0,
+      "reference_missing": 0,
+      "output_shape_mismatch": 0,
+      "user_instruction_violation": 0,
+      "unresolved_stop": 0,
+      "stale_active_path": 0,
+      "duplicate_active_read": 0
+    },
+    {
+      "run": 2,
+      "error": 0,
+      "intent_mismatch": 0,
+      "route_mismatch": 0,
+      "shelf_mismatch": 0,
+      "reference_missing": 0,
+      "output_shape_mismatch": 0,
+      "user_instruction_violation": 0,
+      "unresolved_stop": 0,
+      "stale_active_path": 0,
+      "duplicate_active_read": 0
+    },
+    {
+      "run": 3,
+      "error": 0,
+      "intent_mismatch": 0,
+      "route_mismatch": 0,
+      "shelf_mismatch": 0,
+      "reference_missing": 0,
+      "output_shape_mismatch": 0,
+      "user_instruction_violation": 0,
+      "unresolved_stop": 0,
+      "stale_active_path": 0,
+      "duplicate_active_read": 0
+    }
+  ],
+  "three_zero_converged": true,
+  "npm_test": "not_run_by_GPT_instruction",
+  "notes": [
+    "Old v019-series audit records remain only under reference logs and are not active route inputs.",
+    "Packager v019 file names remain when they are stable module identities, but stale previous repair-line applies-to content was updated to V020."
+  ]
+}
