@@ -1,0 +1,1674 @@
+{
+  "runtime": "DS90_v020_NLCORE_MOUNT_TRANSFER_PACKAGING_THREE_ZERO_CONVERGED_LOCKED",
+  "version": "v020",
+  "status": "FORMAL_CANDIDATE_THREE_ZERO_CONVERGED",
+  "source_cutover_from": "DS90_v019_16l_NLCORE_THREE_ZERO_DRYRUN_CONVERGENCE_GATE_LOCKED",
+  "runtime_neutrality_policy": "runtime_belongs_to_no_project_story_dropbox_folder_chat_thread_destination_or_workspace",
+  "external_context_policy": "project_story_shelves_are_external_context_not_runtime_identity",
+  "active_route_policy": "v01916_patch_chain_removed_from_active_routes; v020_common_locks_are_current_active_authority",
+  "history_in_runtime_zip": true,
+  "active_route_history_read": false,
+  "history_archive_paths": [
+    "assets/operation_mount/30_REFERENCE_LOGS/",
+    "backpacks/MOUNT_TRANSFER_BACKPACK/source/"
+  ],
+  "current_active_locks": [
+    "assets/dsgn_infra/04_MODULE/common/DS90_V020_ACTIVE_ROUTE_CANONICALIZATION_LOCK.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_RUNTIME_NEUTRALITY_AND_EXTERNAL_CONTEXT_BOUNDARY_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DESIGNER_RUNTIME_ACTIVE_ROUTE_NO_RESIDUE_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/EXTERNAL_CONTEXT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/HANDOFF_IS_ARTIFACT_BASED_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/THOUGHT_INVARIANT_IMPLEMENTATION_VARIABLE_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_PW90_ARTIFACT_HANDOFF_JOINT_LOCK_v001.md",
+    "assets/dsgn_infra/04_MODULE/common/ARTIFACT_EQUALS_FULL_CONVERGENCE_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_CODEX_FIXTURE_ACTIVE_ROUTE_BOUNDARY_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_AUTO_DISPATCH_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_HANDOFF_NO_AMBIGUITY_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_TRANSFER_CURRENT_COST_ACCEPTANCE_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_SHELF_NATIVE_USE_GATE_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_SINGLE_DOWNLOAD_MOUNT_BASE_DELIVERY_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_BASE_DISTRIBUTION_MUST_CONTAIN_MOUNTABLE_ZIPS_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_AND_PACKAGING_ROOT_ROUTE_LOCK_v020.md",
+    "assets/dsgn_infra/04_MODULE/common/DS90_THREE_ZERO_DRYRUN_CONVERGENCE_GATE_LOCK_v020.md"
+  ],
+  "retired_common_locks_moved_to": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/",
+  "legacy_current_reports_moved_to": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/",
+  "tests_expected": "Node/Codex may run npm test; GPT must not run npm test",
+  "tests_observed": "GPT-side static ZIP/JSON/manifest/route/dry-run validation only; npm test not run",
+  "convergence_definition": "three consecutive zero dry-runs across error, intent_mismatch, route_mismatch, shelf_mismatch, reference_missing, output_shape_mismatch, user_instruction_violation, unresolved_stop, stale_active_path, duplicate_active_read",
+  "file_count_excluding_updated_manifest": 326,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "e90e3cd6d8bc02498c9c252c298c118121d8993e9d565290115287bb053d7206",
+      "size": 1727
+    },
+    {
+      "path": "START_HERE.js",
+      "sha256": "448c6a2a071f6f34bf45be53d9189e3db5f02c984edcc7eb0a6db6cbcca0d983",
+      "size": 2168
+    },
+    {
+      "path": "assets/comparison/# πÇÉΦ⌐▒πé½πâ╝πâë v2∩╝ÜΦ╡░Φíîπâ¼πâ╝πâ│σ₧ïπÇæτî½∩╝æΦ⌐▒.txt",
+      "sha256": "524c9bfd77b3a022f5292cc7afdac930d53827e93d6d7d46d1dcd691e9c96f97",
+      "size": 12871
+    },
+    {
+      "path": "assets/comparison/# πÇÉΦ⌐▒πé½πâ╝πâë v2∩╝ÜΦ╡░Φíîπâ¼πâ╝πâ│σ₧ïπÇæτî½∩╝ö∩╝ÖΦ⌐▒.txt",
+      "sha256": "be967acc4e8e7709a3f4b870faf70f29b75f0ac0aa6efb5505bd0be3b7b20dca",
+      "size": 14355
+    },
+    {
+      "path": "assets/comparison/ΘçÄΦë»πüíπéâπéôτî½∩╝æΦ⌐▒V2.txt",
+      "sha256": "c9b9633179f94f8763d98f80bbbeaa92fd8b72d47aa211f50624d5c1ef4e8db8",
+      "size": 17841
+    },
+    {
+      "path": "assets/comparison/ΘçÄΦë»πüíπéâπéôτî½∩╝æΦ⌐▒τÅ╛Φíîσƒ╖τ¡åπâæπââπé».txt",
+      "sha256": "f7570796e7043b0c1f599831b503c9dab32dcdcc5d214c11f04883dc4f386a77",
+      "size": 16041
+    },
+    {
+      "path": "assets/comparison/ΘçÄΦë»πüíπéâπéôτî½∩╝ö∩╝ÖΦ⌐▒V2.txt",
+      "sha256": "569d42f9d94a9c565c3622b4264bc0dcb0909e22feae24cf273e6481e258377a",
+      "size": 29191
+    },
+    {
+      "path": "assets/comparison/ΘçÄΦë»πüíπéâπéôτî½∩╝ö∩╝ÖΦ⌐▒τÅ╛Φíîσƒ╖τ¡åπâæπââπé».txt",
+      "sha256": "a9e088eb17527afda9c5077036157cb71e18938d6f7482b320edf12d6a5710fc",
+      "size": 20870
+    },
+    {
+      "path": "assets/comparison/Φ⌐▒πé½πâ╝πâë v2∩╝ÜΦ╡░Φíîπâ¼πâ╝πâ│σ₧ï πé╡πâ│πâùπâ½.txt",
+      "sha256": "9932edb1db77075956ef68ffc117a0a377dc6451c7b36de55d4ca6bf9b3c98eb",
+      "size": 13452
+    },
+    {
+      "path": "assets/comparison/Φ⌐▒πé½πâ╝πâë v2∩╝ÜΦ╡░Φíîπâ¼πâ╝πâ│σ₧ï.txt",
+      "sha256": "bf2d07d19be590cba0caaa54160d4127f581c6596bb3187e957a9ba30156657e",
+      "size": 4406
+    },
+    {
+      "path": "assets/comparison/πÇÉΦ⌐▒πé½πâ╝πâëV2Θüïτö¿µû╣Θç¥πÇæ.txt",
+      "sha256": "61828d7b4b0b5a2a1251564d62339c9e6480f4a78b78a774c662bc5c1d513f6d",
+      "size": 1598
+    },
+    {
+      "path": "assets/comparison/πâæπââπé»NOMπâòπâ½πâ₧πéªπâ│πâêτî½∩╝æΦ⌐▒V2.txt",
+      "sha256": "c68a7135ec683d73bd20012211d5c54f4b458bba8477b2aa384102f413275b0b",
+      "size": 33647
+    },
+    {
+      "path": "assets/comparison/πâæπââπé»NOMπâòπâ½πâ₧πéªπâ│πâêτî½∩╝æΦ⌐▒τÅ╛Φíîσƒ╖τ¡åπâæπââπé».txt",
+      "sha256": "8f18fdd5c6fe187086924ea67a03c3aa57d5edc4a2379ac290dfdb745d2f8a4b",
+      "size": 23157
+    },
+    {
+      "path": "assets/comparison/πâæπââπé»NOMπâòπâ½πâ₧πéªπâ│πâêτî½∩╝ö∩╝ÖΦ⌐▒V2.txt",
+      "sha256": "5b0050c3de29940d34853005286afd0d5509415c46d1360d47903d10c7f8d3f4",
+      "size": 33366
+    },
+    {
+      "path": "assets/comparison/πâæπââπé»NOMπâòπâ½πâ₧πéªπâ│πâêτî½∩╝ö∩╝ÖΦ⌐▒τÅ╛Φíîσƒ╖τ¡åπâæπââπé».txt",
+      "sha256": "67670992cb328c22b11d02356b7173363ea13cd0c6b31a3bebc309899b4db1f2",
+      "size": 28422
+    },
+    {
+      "path": "assets/comparison/πâæπââπé»τî½∩╝æΦ⌐▒V2.txt",
+      "sha256": "d875597dd57b4067208fe39d54753241ebe2a001851d0f110b12cb6cf4230671",
+      "size": 28909
+    },
+    {
+      "path": "assets/comparison/πâæπââπé»τî½∩╝æΦ⌐▒τÅ╛Φíîσƒ╖τ¡åπâæπââπé».txt",
+      "sha256": "6a511ed69a8b3adf359d401227b646418e7c5f7b96f806755c0c2103a5b46997",
+      "size": 32907
+    },
+    {
+      "path": "assets/comparison/πâæπââπé»τî½∩╝ö∩╝ÖΦ⌐▒V2.txt",
+      "sha256": "ad82ef294acf184f9180d7b61bea80b71c5e68607da632ccd0bef5df1f62e3b6",
+      "size": 29854
+    },
+    {
+      "path": "assets/comparison/πâæπââπé»τî½∩╝ö∩╝ÖΦ⌐▒τÅ╛Φíîσƒ╖τ¡åπâæπââπé».txt",
+      "sha256": "bf087b480ba808a2d75be0f107283e7e625c26e97996f0d13d2ca82ce98b9553",
+      "size": 32112
+    },
+    {
+      "path": "assets/comparison/πâ₧πâ½πâüNOMτî½∩╝æΦ⌐▒V2.txt",
+      "sha256": "74e857695134c2823862cf77bffb384dcbede27630012aeac842374cb532ed49",
+      "size": 29182
+    },
+    {
+      "path": "assets/comparison/πâ₧πâ½πâüNOMτî½∩╝ö∩╝ÖΦ⌐▒V2.txt",
+      "sha256": "e0001c88afd3ab08cffac6def1cb2bb708bde93146b3415db8f95911035f5701",
+      "size": 34766
+    },
+    {
+      "path": "assets/comparison/πâ₧πâ½πâüτî½∩╝æΦ⌐▒V2.txt",
+      "sha256": "1671ccceed4657d67dde17821644a86f4e70ce977eb4334e1345a6e0a2a452f5",
+      "size": 25824
+    },
+    {
+      "path": "assets/comparison/πâ₧πâ½πâüτî½∩╝ö∩╝ÖΦ⌐▒V2.txt",
+      "sha256": "9175a4da0f0ad1e8c3de7c4fcf2e8a98d13a0faf9cf0c8a4746045322bdd58ef",
+      "size": 43842
+    },
+    {
+      "path": "assets/comparison/τÅ╛Φíîσƒ╖τ¡åπâæπââπé»Φ⌐▒πé½πâ╝πâëτî½∩╝æΦ⌐▒.md",
+      "sha256": "1bb739bd849fdeb597056a9c3e586c8c49fdab4da6324364e11f80df98694693",
+      "size": 17529
+    },
+    {
+      "path": "assets/comparison/τÅ╛Φíîσƒ╖τ¡åπâæπââπé»Φ⌐▒πé½πâ╝πâëτî½∩╝ö∩╝ÖΦ⌐▒.md",
+      "sha256": "53d17913e712edbfbbafbe2eb9b1515f70986d9668343697236d46dda92ffbbe",
+      "size": 17451
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_CONVERGED_GUARD_v1.md",
+      "sha256": "8ea6c602259d4b10d08b4dd3d975e6f79482f7abd04de5f012834c8c96c4f907",
+      "size": 1050
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_LOAD_ORDER_v1.md",
+      "sha256": "f9bb2b6621154adbbbb8322994aa25223ed5f9ad21836a7a84e6e612314d4198",
+      "size": 2194
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_MANIFEST_v1.json",
+      "sha256": "173d0023f1dada08ce71ad7e9a08f4952a89746453c54d59529dab9c259a8633",
+      "size": 42323
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_MANIFEST_v1.md",
+      "sha256": "c84b6a6ae0d46877d78fee67ba272b214af51e29cc956124ed45b21e7b6b1ec8",
+      "size": 8680
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_TAG_MAP_v1.json",
+      "sha256": "2ab326829c1d20a2e9d1d78f3773c5ed49d5271d4e739522b1edf866935c1e4b",
+      "size": 16116
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/embed/DSGN_LAYER_EMBED_PLACEMENT_TAG_MANIFEST_v1.json",
+      "sha256": "a87ecc1dc9c73b1002a820f5494168826dfca7395f6ee6ab769bb219b4f810bd",
+      "size": 1466
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/embed/DSGN_LAYER_EMBED_POLICY_TAG_MANIFEST_v1.json",
+      "sha256": "4b586092b64cc1f7e338b40325f568f74193eb730b5b02ca9cdecf051ae69100",
+      "size": 1663
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/legacy/runtime_overlay_manifest_v015.md",
+      "sha256": "f34b507d2592a77c81458e03c1cb20c9c3322bcb23f34209780d7cfd2fc29218",
+      "size": 1207
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/zip_tagging/DSGN_ZIP_LOAD_ORDER_v1.md",
+      "sha256": "a6389cf9cb813f10ddf06789794b99ac0a65aac3cbe811142dbea3117001ac93",
+      "size": 1652
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/zip_tagging/DSGN_ZIP_REVERSE_TAG_INDEX_v1.md",
+      "sha256": "c0ed7625937cda9399b08ef27b380dd7126dc53eaabf9a5ab41241c5d00f3d05",
+      "size": 1997
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/zip_tagging/DSGN_ZIP_TAG_MANIFEST_v1.md",
+      "sha256": "27635ed533bcebbc8e532fae0ba3ec1a7035ca35c23398c20a4955dba92a1dc5",
+      "size": 7852
+    },
+    {
+      "path": "assets/dsgn_infra/00_MANIFEST/zip_tagging/DSGN_ZIP_TAG_MAP_v1.json",
+      "sha256": "e748f0ad3f83c69bc61e800df1534ea6d42c429886e2a4978929f2dc18d499c2",
+      "size": 24873
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_DESIGN_LAYER_ANCHOR_SCHEMA_v1.md",
+      "sha256": "25487f6f6fde4cd0a938e091ec0d70d0a95c83cdd0ac95562447625e19e32e58",
+      "size": 3947
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_BACKLOG_FLOW_v1.md",
+      "sha256": "32a828fa7390dc6384ffc75ddfec7e1ea73e1fecd28e3777111ed725bcb9b30c",
+      "size": 1721
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_FIXATION_MATRIX_v1.md",
+      "sha256": "b099f5d491bd4208f07cb384764e030223470c48bd19bde7d1c9d2eb6613558b",
+      "size": 1683
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_PLACEMENT_POLICY_v1.md",
+      "sha256": "faffec5c94ea36a6f4101367b71613ae2591a0983fe9be0ebf17d4993b275748",
+      "size": 11129
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_PURE_DESIGN_VS_LAYER_BOUNDARY_v1.md",
+      "sha256": "a22f5ff7f2fb11032a6bcea428ff58aa15cdbaa40577c20877763bcad9dfe4f8",
+      "size": 2241
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/index/DSGN_INTERNAL_ALL_ITEM_INDEX_v1.md",
+      "sha256": "69d781328440a820620321dd8ac5f59eb1b01eb227aa14cbc96da0ee53d95b80",
+      "size": 12114
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/index/DSGN_ROLE_INDEX_v1.md",
+      "sha256": "b42a7e0081f717c2641c15f88862b8c4507e4fe011fb9e1fd78936df6793a531",
+      "size": 1588
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/index/designer_canonical_tag_registry_v1.md",
+      "sha256": "6a99478457413de6a1c612434aea373f8ac4fcb438f4fac1f2c6f37558afa56a",
+      "size": 15780
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/index/designer_reverse_lookup_index_v1.md",
+      "sha256": "124d04b96a5ce8238dbb5a865ef6efd55a6e7044cb17e13b18ee06113cf31d9c",
+      "size": 3374
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/machine/DSGN_INTERNAL_ALL_ITEM_INDEX_machine_v1.json",
+      "sha256": "5b068a9546099470b5f92cb4d577c56801747a199abea7da3cec8e8178c03fc9",
+      "size": 19115
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/machine/DSGN_LAYER_EMBED_PLACEMENT_machine_v1.json",
+      "sha256": "1027d7a9629d4f75277440636deea5bc2303f9310ae6f63c6fbddb608a8778cf",
+      "size": 1564
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/machine/DSGN_LAYER_EMBED_POLICY_machine_v1.json",
+      "sha256": "2fc13e3ae067e178278d27574a4ee35c9508b78fe437757673458abd4d3a6f95",
+      "size": 2526
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/machine/designer_tag_index_machine_v1.json",
+      "sha256": "6865cd63899bd2e3a549771a0863730feae15fd8a4a36b18d311857190d45ff7",
+      "size": 31392
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/namespace/DSGN_INTERNAL_NAMING_NAMESPACE_v1.md",
+      "sha256": "8abe77432f6e1c5c9bb6160b6bd62b2bf0e95bc1d21b9060479b27825cfeac57",
+      "size": 3142
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/protocol/designer_lookup_protocol_v1.md",
+      "sha256": "3b5792a032bd1a30ae49b497ab64fe91769ba1245e12e2259025f6caf454cc36",
+      "size": 3567
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/runtime/DSGN_OPERATION_CONVERGED_GUARD_v1.md",
+      "sha256": "e0977790b926e12def17433cbd15c521dc14a0f94fb5c31810927c4c90a7638f",
+      "size": 2202
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/runtime/DSGN_RUNTIME_ACTIVATION_MATRIX_v1.md",
+      "sha256": "21ecb66e7fbb1a0371c04ba17a05f506a66f4f750bf8b70cdccde527635f5ee4",
+      "size": 1673
+    },
+    {
+      "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/runtime/DSGN_RUNTIME_OPERATION_CONDITIONS_v1.md",
+      "sha256": "09a4b247d749ca3df07bbea30bc05f2eb43115270e3f71b6679f3a78a1b34ef6",
+      "size": 4933
+    },
+    {
+      "path": "assets/dsgn_infra/02_CANON/embed/DSGN_WORLD_AXIS_LAYER_EMBED_POLICY_v1.md",
+      "sha256": "9a27dc9d3897d75cc3ffdd3ef8430288517f729125c507c78c117fe33cb3796c",
+      "size": 12807
+    },
+    {
+      "path": "assets/dsgn_infra/02_CANON/layer/layer_runtime_v28_ai_native_complete_candidate.md",
+      "sha256": "5472851c24d0a0a7c90c579165ce433e360b222fbc92b9901f69e54735dba2f2",
+      "size": 116137
+    },
+    {
+      "path": "assets/dsgn_infra/03_REFERENCE/embed/DSGN_LAYER_EMBED_SECTION_TEMPLATES_v1.md",
+      "sha256": "a8da15d15b435935c45020e2b424c0b5964184d1a164f584d62e7a0fd8ff485e",
+      "size": 4720
+    },
+    {
+      "path": "assets/dsgn_infra/03_REFERENCE/layer/layer_alias_to_current_keys_v0194.md",
+      "sha256": "86620c12d34c21e94bfd5e76278bf7e656d786fcd99705a498491109089a78fa",
+      "size": 4174
+    },
+    {
+      "path": "assets/dsgn_infra/03_REFERENCE/layer/layer_all_items_meaning_reference_v1.md",
+      "sha256": "caf2e492b0dfe18876a53c7201cba9494af88826cf0aab5a61e215d1391d6c95",
+      "size": 30840
+    },
+    {
+      "path": "assets/dsgn_infra/03_REFERENCE/layer/layer_full_preset_library_v1.md",
+      "sha256": "cf821c5a3adc4b68a3e779aa08ced153ba859dcbbd82219ebc52c4e62eb97063",
+      "size": 21347
+    },
+    {
+      "path": "assets/dsgn_infra/03_REFERENCE/layer/packager_layer_setting_effect_reference_v1.md",
+      "sha256": "69a0bb7c39c0ebe4ad1afdf9afaf0ec72ae69c16b6cf07363dc0d60029075b0b",
+      "size": 24859
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/ALL_LINE_END_USER_HEAT_DELIVERY_LOCK_v001.md",
+      "sha256": "cede8452ae1c0069713a375c299739a02644c0544c41a3ed7233e622d8019b24",
+      "size": 2014
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md",
+      "sha256": "df9abacbb00fa82beed7c7a57ecc1055c25b653b747a1b030c07a6a52b9bae6d",
+      "size": 1931
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/ARTIFACT_EQUALS_FULL_CONVERGENCE_LOCK_v020.md",
+      "sha256": "062526716f58854fd54d2a1dc9e006a14c0e9d292ba8a0365019314f1c908cda",
+      "size": 408
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DESIGNER_RUNTIME_ACTIVE_ROUTE_NO_RESIDUE_LOCK_v020.md",
+      "sha256": "7a8c144dc4bac4ff2b3ee2f9ff88da956ce8914226e1f62c0826861725beb2ad",
+      "size": 537
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_CODEX_FIXTURE_ACTIVE_ROUTE_BOUNDARY_LOCK_v020.md",
+      "sha256": "a29178d8870e2821d9334e5baad1e66d467b063d0093598a2aca025827563a0c",
+      "size": 380
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_HANDOFF_NO_AMBIGUITY_LOCK_v020.md",
+      "sha256": "db847fd07dc36a58f6e82857b062414f528689776539a622fdf444b63e77dd09",
+      "size": 285
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_BASE_DISTRIBUTION_MUST_CONTAIN_MOUNTABLE_ZIPS_LOCK_v020.md",
+      "sha256": "94e4a362b66c573b7e871d08a5059b977d756eca3178dd385ee7b4340ff984d1",
+      "size": 396
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_AND_PACKAGING_ROOT_ROUTE_LOCK_v020.md",
+      "sha256": "78fed63d0f96170e1fe2ae497862630622c28cd1d6d729f926a0c4023e553a85",
+      "size": 594
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_AUTO_DISPATCH_LOCK_v020.md",
+      "sha256": "d84f3a0e477972b72a93c28acd699aac171208ce1cec51f00093e60a2dc88f0d",
+      "size": 415
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_SHELF_NATIVE_USE_GATE_LOCK_v020.md",
+      "sha256": "294f3a6143826821b18537ce51b76d18f9c08a7a69a6415e6425dbd77c4d1cf5",
+      "size": 541
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_PW90_ARTIFACT_HANDOFF_JOINT_LOCK_v001.md",
+      "sha256": "7be9bb1093e637bca558d86922340d70b60ce48a3c7d483699389870fed1bff4",
+      "size": 2942
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_RUNTIME_NEUTRALITY_AND_EXTERNAL_CONTEXT_BOUNDARY_LOCK_v020.md",
+      "sha256": "290a49b6752cb160e10db95903956c76be132246cfa947dd3594223bf30ebf8e",
+      "size": 428
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_SINGLE_DOWNLOAD_MOUNT_BASE_DELIVERY_LOCK_v020.md",
+      "sha256": "78cbbb08300dd86438473cf20cd1cebcd373346a38fb01a6a0c9c464f846dfae",
+      "size": 370
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_THREE_ZERO_DRYRUN_CONVERGENCE_GATE_LOCK_v020.md",
+      "sha256": "85bd821a23d88ead31ac8b2a23ce88e769340ac9686723d74999542b38d76e22",
+      "size": 455
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_TRANSFER_CURRENT_COST_ACCEPTANCE_LOCK_v020.md",
+      "sha256": "1ab14e23b71b7f94b6d50ee2d063d2d82ff711639c16382e298f2cea1b5782b4",
+      "size": 263
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v020.md",
+      "sha256": "336612cf2dc7f68a8ff3139efc13a476cfe32b350bcfb3f8ce917d7337716e17",
+      "size": 499
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/DS90_V020_ACTIVE_ROUTE_CANONICALIZATION_LOCK.md",
+      "sha256": "1d598ea5640b560e2c0122ab1d3857ac5e86d61c05003e7d629ddbc7c0e462ba",
+      "size": 921
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/EXTERNAL_CONTEXT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v020.md",
+      "sha256": "ad50c2c46ba1060a5c2c640830084f721fe9876ab3ea60c79da015495a3a2f8b",
+      "size": 387
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/HANDOFF_IS_ARTIFACT_BASED_LOCK_v020.md",
+      "sha256": "e790bb89adebfde1973e2d93b408cf5f2641f20f43c178da0ecddd4050ea1c79",
+      "size": 302
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+      "sha256": "3f4b8f17061e6102f00daba44444ff884ea96b5fb5089ca4a2c6f36cebac30a6",
+      "size": 2712
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/common/THOUGHT_INVARIANT_IMPLEMENTATION_VARIABLE_LOCK_v020.md",
+      "sha256": "09b3ca2a8d51ff29afcc5f22320f13ba565d3f851f841126b5298e3301fad45c",
+      "size": 374
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/DESIGNER_TO_PACKAGER_MATERIAL_BUNDLE_v1.md",
+      "sha256": "6b6477346510e32d540ce2d5db059a0b6d8447ff153150e31302f4d47518a858",
+      "size": 3074
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/END_USER_HEAT_DELIVERY_LOCK_v0197.md",
+      "sha256": "95deafa98ce5ff352c431ac299a7b9c56ea8f27190b65a9291436639984c73b8",
+      "size": 1911
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/EPISODE_LAYER_ACTIVATION_LOCK_v01912.md",
+      "sha256": "84cc0c0e699e61fb9a61d37372875a46d1c8413d122f9121dfc2628280551a09",
+      "size": 1439
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/EPISODE_LAYER_ACTIVATION_SCHEMA_v1.json",
+      "sha256": "2e21d3c73a950ee5e40d8d39edd008b8527c4a50dac04988a01b7a38149e81b1",
+      "size": 279
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/FULL_CONVERGENCE_SWEEP_LOCK_v0198.md",
+      "sha256": "529457dd4283131c142265169df83db2a2ad1eda875d9251bcbd707b5f06862d",
+      "size": 1304
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/MOUNT_TRANSFER_PROCESS_VISIBILITY_LOCK_v01913.md",
+      "sha256": "793414b8c6b5b476252fff9f3bfc8a768e96e128dfa810755d021be096052c92",
+      "size": 1180
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/MOUNT_TRANSFER_SELF_CONTAINED_LOCK_v01913.md",
+      "sha256": "daef3a95d7b6850ad0fd480582ff3d601a11f388b2f3e91631edd1e5737623a5",
+      "size": 811
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/PACKAGER_ABSOLUTE_PACKAGING_LOCK_v0199.md",
+      "sha256": "97daaf32317609a707979f1ae5a522e5f35453df01c4c96b6350d9e728bb457b",
+      "size": 3431
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/PACKAGER_CURRENT_ROUTE_V2_v0194.md",
+      "sha256": "0983d3c392afc3b53b19f6d126734fe835d3a32c9f630d193cbea417e9d8c789",
+      "size": 6829
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/PACKAGER_PROCESS_VISIBILITY_LOCK_v01913.md",
+      "sha256": "b247d9fd6a9b0338c271a37b78b5668d57cc594a0c828d5cf44739806f5c78e6",
+      "size": 1931
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/PACKAGER_WRITER_CANONICAL_HANDOFF_CONTRACT_v0198.md",
+      "sha256": "6ee86fb81ba12993274d3fb70361be6cd88d5c139d15dc01062179b60ee9a2d5",
+      "size": 7205
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/PACKAGER_WRITER_HANDOFF_SCHEMA_v1.json",
+      "sha256": "60adeabb5b79339f2eb8eb25a4ea66fa0e788e17304ceb70db563adae0319949",
+      "size": 4336
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/PROJECT_TAG_SEARCH_BINDING_LOCK_v01912.md",
+      "sha256": "d64bb5cffd2f33490f8569e7c121b9110f9d3533a300a116089dbd073687a6dd",
+      "size": 1233
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/RECIPROCAL_HANDOFF_RESPECT_LOCK_v0196.md",
+      "sha256": "f396f007975f8146de9dda367c0f207ddc80d6c43bd3b97b2c2a105b17fde9e5",
+      "size": 2018
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/TAG_SEARCH_FULL_CONVERGENCE_LOCK_v01912.md",
+      "sha256": "26023c108b66b156eda229429a7531fbabf95bc8a8a0e8b55e994da80649b42c",
+      "size": 1029
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/WORLD_AXIS_LAYER_BINDING_SCHEMA_v1.json",
+      "sha256": "223f6a08344d9d188472cf5f9b2d14960ef373b82b003870cab7d7037bdc8d07",
+      "size": 579
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/WORLD_AXIS_LAYER_BINDING_SHARED_DEFINITION_v01912.md",
+      "sha256": "c1ec35084750e443e20e280d496d922e94b2699a63c78300245e82b991fb85b3",
+      "size": 2041
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/WRITER_OUTPUT_COMFORT_CHECK_v0195.md",
+      "sha256": "994232592ab64b8c63db4a168fc360f9a8ad4d5bc7e0599ce3cc02238b69bee7",
+      "size": 4718
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/ZIP_SELF_CONTAINED_LOCK_v01913.md",
+      "sha256": "baa7f48ccae5102a14c3ecd7630f51a20e193842f96664643f50854d9bd45374",
+      "size": 1297
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/packager/pack_cutout_module_v1.md",
+      "sha256": "c774a789cc0d94ed2f91c0281465b9129554c8fc53b7022c9c5f9b4034e06760",
+      "size": 9166
+    },
+    {
+      "path": "assets/dsgn_infra/04_MODULE/tag_search/TAG_INDEX_MACHINE_SCHEMA_v1.json",
+      "sha256": "ce2b6b152fa3885b66586315730597e1bd330b88df79ea98b63e69c0b76d5909",
+      "size": 586
+    },
+    {
+      "path": "assets/dsgn_infra/05_INSERT/nom/nom_gate_insert_min_v3.md",
+      "sha256": "f4a61420c7847519b89e508e3b726d496fd3153a35cce4221d30e475dd679acc",
+      "size": 3072
+    },
+    {
+      "path": "assets/dsgn_infra/06_PATCH/designer/designer_runtime_overlay_patch_v015.md",
+      "sha256": "9b20843063b3974e1b4ef0e9cb47724e9f3dad82f552df7b36c0b85b64d745a2",
+      "size": 2799
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/DSGN_CURRENT_PACKAGE_DRY_RUN_REPORT_v1.json",
+      "sha256": "d56d4802f18369d3d39b17d0e76651ae6c404252ed80a4029d2d70e6b67b03f8",
+      "size": 3581
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/DSGN_CURRENT_PACKAGE_DRY_RUN_REPORT_v1.md",
+      "sha256": "8054a9eda49e9101c4150b49a2f4c292d5b08d5c54d8c7dfbe51974268617019",
+      "size": 1394
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/CONVERGENCE_REPORT.md",
+      "sha256": "bb33aa076dcd9d852df5d3359f0ca40c7a17b23beeb5d82fc3fe8d4c2da68d53",
+      "size": 3601
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/DESIGNER_CONVERGENCE_LOCK_v019_4.md",
+      "sha256": "39d49a4a38caa08d43bddf91cbaa8683448740cf8892737acb94ca136892d609",
+      "size": 2029
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/DESIGNER_GATES_v019_REPORT.md",
+      "sha256": "945573d2c79378c38992b0a8b1b18876b855014de0ad074ca2f12d56abb194cc",
+      "size": 905
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/DESIGNER_REMAINING_REFORM_AUDIT.md",
+      "sha256": "a5fd4c9534615650f775e6d53789aa69495616c169601837107751b8f6714ace",
+      "size": 1701
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/FILELIST_v019_4.txt",
+      "sha256": "ca1e427ab41555539b06a28938657e74aa1c7cb7d295c379b95811f9f57e0949",
+      "size": 13683
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/MOUNT_TRANSFER_BACKPACK_INTEGRATION_REPORT.md",
+      "sha256": "1da22ede4f557047f0b5e3bc7e46386f74ca796ccbb8582ea35c59325e4dfddd",
+      "size": 729
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/NON_TRANSFER_INVARIANCE_REPORT.md",
+      "sha256": "60d29cecee3b156578ceedf122bc860f092a365b8f8f4165977b55614fbfb280",
+      "size": 1324
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/SAMPLE_REFRESH_AUDIT_v019_3.md",
+      "sha256": "9cef707c6996e832c7fe27635cc40bd20e3cd58b06c749a29f5ebaa638218b4e",
+      "size": 2287
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/SAMPLE_REFRESH_INDEX_v019_3.md",
+      "sha256": "802d68428f16b4b60eb447916be1bfecd0dac63b1f6b7fc22bd00247d07e393e",
+      "size": 2862
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/TAG_SEARCH_LINKAGE_REPORT.md",
+      "sha256": "07655fcf8cdc7211da5a68ae3dff22b8a1e6e864b8e7d8f48b173d466abf0d6e",
+      "size": 1042
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/integration_report.md",
+      "sha256": "4c6560b1a5b93e504312274a524446437bf3501d763703dafff45efc4c6ec979",
+      "size": 2312
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_4/validation_report.md",
+      "sha256": "2510dc134be403fdad6d89e467226c4b01fed3db73e5e0a4079af5715f4ea3cd",
+      "size": 2842
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_5/DESIGNER_CONVERGENCE_LOCK_v019_5.md",
+      "sha256": "3098d8dcd86977676d7dfdde49f84fb7d9a101bfef103d291492ff62d37c503f",
+      "size": 995
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_7/USER_HEAT_DELIVERY_LOCK_v019_7.md",
+      "sha256": "7ee015da7fde47a9ef9662d713af42d4812b162fe54a855bdf8926428f11b277",
+      "size": 406
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v019_8/PACKAGER_WRITER_SINGLE_ROUTE_LOCK_v019_8.md",
+      "sha256": "3153b6d4e913418a6783f30f2f3bcc0b94247be33243b801933365266fe626ae",
+      "size": 2037
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v020/DS90_V020_FULL_FILE_SWEEP_CONVERGENCE_REPORT.md",
+      "sha256": "0e75219da82dd7e098c583b961b611c5fef1339fbbc428c547690ec6e8345815",
+      "size": 599
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/current_package/root_reports_v020/DS90_V020_FULL_FILE_SWEEP_VALIDATION_SNAPSHOT.json",
+      "sha256": "4dc9322923a45503fa5f1c425fccd6acd3ff88939fa80382cafb69e04056acda",
+      "size": 1916
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/dry_run/DSGN_DRY_RUN_CASES_v1.json",
+      "sha256": "672ad8814c3d1710b4b1d5a5394226e75ce8f27d1907f0b22950ed7fac7ee48e",
+      "size": 3103
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/dry_run/DSGN_DRY_RUN_CONVERGENCE_REPORT_v1.md",
+      "sha256": "92d24506002aaaceab1b17f8c8c470c2ccc2509eb5724692d88a85b5b85f6a4b",
+      "size": 4662
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/dry_run/DSGN_DRY_RUN_MACHINE_REPORT_v1.json",
+      "sha256": "d0ace99a8217d61f14dd6fd722217f82d5f037ad9407ada4d092e071cf300aec",
+      "size": 12386
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/embed/DSGN_LAYER_EMBED_FIXATION_DRY_RUN_v1.md",
+      "sha256": "5e4426c3dfc076c2e0eaff38cee11f8960c5e0527ffbb97b2068ce75f6987e36",
+      "size": 1380
+    },
+    {
+      "path": "assets/dsgn_infra/07_AUDIT/embed/DSGN_LAYER_EMBED_PLACEMENT_DRY_RUN_v1.md",
+      "sha256": "87c3d5e19e3235431f4474605b5d6b300cb59743174f739af702df7ac53a8af9",
+      "size": 1086
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/000_START_HERE.md",
+      "sha256": "bc275fb435604aefde9b84bec3f519068a876abfb7b7f97984ee1110cf484e29",
+      "size": 4226
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/010_REQUIRED_READING.md",
+      "sha256": "4dea309d8620b9dbe5f08c55b6d483f17a709ce85bf59b81897a8abf0a673969",
+      "size": 3819
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/020_REFERENCE_PRIORITY.md",
+      "sha256": "a962f18a14a388f3855c8a903c20c818b34dc1b5542a9a1bb94caece35cee733",
+      "size": 2900
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/030_VERSION_STATUS.md",
+      "sha256": "2a20b2eb8fd3a495de38325b2b52adadcc2123fc1d21eee49dc1512c01bc031f",
+      "size": 1854
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/040_FILE_MAP.md",
+      "sha256": "9c290ebd2a37e473f59a8a9d8639626145015adca52019b9e7b2209c8c2533be",
+      "size": 924
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/050_MANIFEST.md",
+      "sha256": "d29c0fd11552d1938f24f3ab3d206020d27cf6ef9641a8ebcb4e029df5851a61",
+      "size": 2982
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/060_REVISION_POLICY.md",
+      "sha256": "03621c8ad9e4e05651eaf49eaf50e4e135318fc99ff6ef250b37d4415eb621af",
+      "size": 3034
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/070_CHANGELOG_V1.md",
+      "sha256": "ced51c694a9cdec2e849b78c8b32b147c8a6712a43d539d53f4bb76ea5b7e110",
+      "size": 1927
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/070_CHANGELOG_v0002.md",
+      "sha256": "3b1b3b028d1fc874b865f1a39aaf4f8ef43af70399c9d32c39b28723e0e7773c",
+      "size": 2036
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/070_CHANGELOG_v0003.md",
+      "sha256": "84f06a8c784dda67dcebb2abfba2665cec3c1ed559f7bd55a0f25ae683fec190",
+      "size": 545
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/070_CHANGELOG_v0004.md",
+      "sha256": "f1fae95585c2451d585248172825fb3141b5c42c5e3353fb533f8778dda5de27",
+      "size": 718
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/070_CHANGELOG_v0005.md",
+      "sha256": "dec253a544e363db278e3ddc034b34ef051306e510b782f70146f89bc0f7f108",
+      "size": 1994
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/080_WRITING_SIDE_ACCEPTANCE_V1.md",
+      "sha256": "3f3ed06fbf48e5d211fc2e6e04eb5fb3f91748e28c51b1b59d3a26c4be0d2df6",
+      "size": 1426
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/081_DESIGN_SIDE_ACCEPTANCE_V1.md",
+      "sha256": "9dedf3ec2843482696982d658bc4ca0c1c82a330a181fea3840082110ac61ad0",
+      "size": 1289
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/082_JOINT_FINAL_ACCEPTANCE_V1.md",
+      "sha256": "08239e0fb2edcc5a335e6be68a9fa34bd1759f11193f1a75439a43e0fb81020e",
+      "size": 2126
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/999_FILELIST_V1.tsv",
+      "sha256": "60009be5fb636dbc068368bac2b3d2a9b69a4d59148d03ef79607ff6f388a3d8",
+      "size": 5933
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/999_FILELIST_v0003.tsv",
+      "sha256": "e3f786841b0bbbb9f7ecdd48d051bfbd62a1126eeeabc9ed4a97bf87535f4a33",
+      "size": 4679
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/999_FILELIST_v0004.tsv",
+      "sha256": "c6298211b088b4fc9bdcf833bc3b830fe412154b83ca2183d1a1b373e4cf52e3",
+      "size": 5171
+    },
+    {
+      "path": "assets/operation_mount/00_GATE/999_FILELIST_v0005.tsv",
+      "sha256": "b5f19972764e2be9b8347aade97ebe9ac1a7587794a386b0319cb8673b4f754c",
+      "size": 5719
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/100_SHARED_ABSOLUTE_GUIDELINE.md",
+      "sha256": "e082705927a35dc3473ac6fea921bb85258c7dfeeffe84d1059b51174002f6e8",
+      "size": 4195
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/105_USER_DECLARATION.md",
+      "sha256": "2e8aba0f11c520685609cf9b67de04116f542de4ad1b5944ec4f757441ae940d",
+      "size": 222
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/110_JOINT_DECLARATION.md",
+      "sha256": "7a11c444f1a0a407f3c5a49e347aa7ee8f364da19b6f70835e882aec45cd9053",
+      "size": 5731
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/120_SHARED_PROCESS_CONTRACT.md",
+      "sha256": "90aa25db4275f0fe4ee5d1fba07ec462afd3c18fdcd36ad7d06251b0cf19dda9",
+      "size": 3968
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/125_WRITING_SIDE_VERIFICATION_LANE.md",
+      "sha256": "6f92ba946efcfb79caaf3c6ab6e7bcca435c6d4ee98170bb57b7aeadd61394d1",
+      "size": 1334
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/130_DESIGN_AND_WRITING_ROLES.md",
+      "sha256": "80170aed8dc2496c109fa02b0a789c13a6ef52fa9fbecba7f186185de989f8de",
+      "size": 2489
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/140_MOUNT_REQUIREMENTS.md",
+      "sha256": "eef83aed133f2ea74d201b007efc3f41627fbe3745f5ada8933f36fe15ca35c4",
+      "size": 1379
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/150_STANDARD_CARD_SPEC.md",
+      "sha256": "ae08c0d30160660ab46b2ac2cb8048875e4dd702f3215702a18f54f5eb2bce17",
+      "size": 15418
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/151_STANDARD_CARD_TEMPLATE.md",
+      "sha256": "55d547e39ff87bec4d4fb6d2bbe29d5af5302ac5396a460cc2b4105f5f127cea",
+      "size": 5238
+    },
+    {
+      "path": "assets/operation_mount/20_ROLE_APPENDICES/210_WRITER_DECLARATION.md",
+      "sha256": "10b8404104524d3e2262fc6b57ea56b7dd44ae19065a03531df1ca161d6ca47e",
+      "size": 4478
+    },
+    {
+      "path": "assets/operation_mount/20_ROLE_APPENDICES/220_DESIGN_DECLARATION.md",
+      "sha256": "ef873d8c1af435152bde07a3878974a0a3d56ddad8d015e790f7b41158e19768",
+      "size": 7581
+    },
+    {
+      "path": "assets/operation_mount/20_ROLE_APPENDICES/230_DESIGN_NECESSARY_CONDITIONS.md",
+      "sha256": "f0837f41b1c813339e1c5fbefb5b121e3c19732b9e29898f748dca727e6d51c2",
+      "size": 30305
+    },
+    {
+      "path": "assets/operation_mount/20_ROLE_APPENDICES/240_CARD_TEMPLATE_UNIFICATION_REQUEST.md",
+      "sha256": "65b8663d7ec32c369ac67344fa50b051522cf32fdb0ccef5c3d151856675bc4a",
+      "size": 14260
+    },
+    {
+      "path": "assets/operation_mount/20_ROLE_APPENDICES/250_LAYER_REDEFINITION_REFERENCE.md",
+      "sha256": "bb0916f6790725e0114328f182d9fb63fe3f8f5cd59ab2a9fcbf18b872f4ab11",
+      "size": 13704
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/300_README.md",
+      "sha256": "a28883041acab2232898e8548f00f479ba7ba1196e474f07caddb0f776268e7f",
+      "size": 362
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/310_πÇÉτ╡╢σ»╛µîçΘç¥πÇæσÄƒµûç.txt",
+      "sha256": "74c6b3eceec5cff20917d1a8f2db938828c370fab5816b8557343552bdeea491",
+      "size": 2210
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/311_πÇÉτ╡╢σ»╛µîçΘç¥πÇæµêÉτ½ïLOG.txt",
+      "sha256": "82461e74c1949623a436d125c5557942b6cd5192ef475a4aac88f2a824159cda",
+      "size": 30226
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/320_πüíπéçπüúπü¿_µÑ¡σïÖσñûπüáπéê_Σ╗ÿπüìσÉêπüúπüªπü¡.txt",
+      "sha256": "82461e74c1949623a436d125c5557942b6cd5192ef475a4aac88f2a824159cda",
+      "size": 30226
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/321_πâæπââπé»σ░éτö¿πâ╗σƒ╖τ¡åπüòπéô_µ¥íµûçσîûµíêπüºπüÖ.txt",
+      "sha256": "60598baa8d1601a80705072a5a6fd6a39dc385553a95d60187c915ab4d0310ed",
+      "size": 13636
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/322_σƒ╖τ¡åµºÿ_Φ╡╖σïò_σ¢║σ«Ü.txt",
+      "sha256": "33439a51f64d4e1eaac448d614aab7d99c701157d7738d767e91c365f1a946d3",
+      "size": 4274
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v01916a_active_route_boundary_repair/ORIGINAL_DESIGNER_RUNTIME_NO_RESIDUE_LOCK_v01914.md",
+      "sha256": "a72dba5099e8dde648da1ec8b7fbb937aa6bbd4e6cfab50992d603b1f674ff9e",
+      "size": 1070
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v01916a_active_route_boundary_repair/ORIGINAL_PROJECT_HISTORY_SHELF_POLICY_v01915.md",
+      "sha256": "c0adce10ec19ccd9fc239d664046382edc962661ee276768f62cf4a58661211f",
+      "size": 1688
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v01916e_runtime_neutrality_repair/ORIGINAL_DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v01916d.md",
+      "sha256": "821a956656c543a9533b2d993c192a83941e0bd21d01d84294034f184ecb85d7",
+      "size": 4499
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v01916e_runtime_neutrality_repair/ORIGINAL_PROJECT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v01916a.md",
+      "sha256": "7314cdc87749329e6e5637079515cba29b171a4892a772000af0b99b6b11928f",
+      "size": 2171
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v01916g_shelf_native_repair/ORIGINAL_DS90_MOUNT_TRANSFER_OUTPUT_ZIP_SELF_CONTAINMENT_LOCK_v01916f.md",
+      "sha256": "d60006e7737d19832979dc2254a4c68e1dc35c85640f46941e76320e95e29fa9",
+      "size": 3007
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16/LOCAL_VERIFICATION_NO_NPM_v019_16.md",
+      "sha256": "bac662ac8a3a5df2f06e9dda6a021ee2ecf6cb110295f1b09b6b8bbd389586f4",
+      "size": 828
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16/REAPPLY_FROM_13B_AUDIT_v019_16.md",
+      "sha256": "525505b4955ec173887177c08b8df737ce3295001a571402f9c6dd63064864d7",
+      "size": 1398
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16a/HISTORY_RETAINED_ACTIVE_ROUTE_REPAIR_v01916a.md",
+      "sha256": "4e76e5a92b9f3cbaa150f0b681d0c6c968ea308743a0d7100a22ad2d9aacfbf1",
+      "size": 1339
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16a/LOCAL_VERIFICATION_NO_NPM_v01916a.md",
+      "sha256": "6564c2c626884da461c44c1a640a2e7868c06a3a3728fefb845f29dd2e19b944",
+      "size": 767
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16b/CONVERGENCE_REPORT_v01916b.md",
+      "sha256": "5bd6e1f2badb4b44a318d8c9cdf98417e46fb2c93130dcc9646c4903ce7b9e10",
+      "size": 2774
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16c/MOUNT_TRANSFER_SOURCE_FLOOR_REPAIR_v01916c.md",
+      "sha256": "db49c851490550f2408a68ffb0dcf12e31714919948257c28c2718dc08d52606",
+      "size": 2623
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16d/THREE_GATE_HARDENING_AND_CONVERGENCE_REPORT_v01916d.md",
+      "sha256": "5e292d5b65186b3d60fa84fd80c44c3a615a166a1bb6cf4d7c3cb3e9f631a043",
+      "size": 1850
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16e/CONVERGENCE_REPORT_v01916e.md",
+      "sha256": "c1ec7aee8da539e5b61c5c6f8945ab4dc3068516c91394f7e12d0eb07240cf0f",
+      "size": 1291
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16f/MOUNT_TRANSFER_OUTPUT_ZIP_CONVERGENCE_REPORT_v01916f.md",
+      "sha256": "8545a6925a8b9b59eadcc0cb37d5a92c1a08afbae0fad03afae434fea6c21006",
+      "size": 655
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16g/MOUNT_SHELF_NATIVE_GATE_CONVERGENCE_REPORT_v01916g.md",
+      "sha256": "b1fd54b175409c3aa0039aeb41f96930c4e23f5617559b396d203c02ecd916fd",
+      "size": 1226
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16h/CONVERGENCE_REPORT_v01916h.md",
+      "sha256": "57b46e4d9657c9217e681d0e53e6fa228e8af699f14c6261d3ba39db39686f27",
+      "size": 739
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16i/CONVERGENCE_REPORT_v01916i.md",
+      "sha256": "fdf6cc9a0bfaa451555df578ffc955eeabb46934500ba118c74240120af1dbe5",
+      "size": 1030
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16j/CONVERGENCE_REPORT_v01916j.md",
+      "sha256": "e686755d52dceb20a626562331304a1585abed64be572ef006712c586e7186ad",
+      "size": 627
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16k/VERIFICATION_REPAIR_REPORT_v01916k.md",
+      "sha256": "a01ffd402772ec878bda781fc03a7e3aa7439e89a6c9d80ec4a1c9a9f317e4ce",
+      "size": 956
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/ARTIFACT_EQUALS_FULL_CONVERGENCE_LOCK_v01915.md",
+      "sha256": "0bbe9f14b0ec3ddf70a0f74b9b05b4839d039d89bf9284c51071cae8ae4d0437",
+      "size": 2273
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DESIGNER_RUNTIME_ACTIVE_ROUTE_NO_RESIDUE_LOCK_v01916a.md",
+      "sha256": "3b6647dbbb8255194014804028d92ba9e9654f6a14627dc48d4822069c602685",
+      "size": 2735
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DESIGNER_RUNTIME_NO_RESIDUE_LOCK_v01914.md",
+      "sha256": "788c67e70092b732f6f511ef91f31c231caf3e6dd30b1b866e9b972a17bcac23",
+      "size": 822
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_CODEX_FIXTURE_ACTIVE_ROUTE_BOUNDARY_LOCK_v01915.md",
+      "sha256": "bb7f8c67f5c1ac055c351b2b628d7798a191ccc2e87d8991f9a22b35f8334db5",
+      "size": 824
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_HANDOFF_NO_AMBIGUITY_LOCK_v01915.md",
+      "sha256": "a2c0fd9b0d73a8b9144657701b6c6bb73961fdff50d0f1846c35547956965d8a",
+      "size": 876
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_BASE_DISTRIBUTION_MUST_CONTAIN_MOUNTABLE_ZIPS_LOCK_v01916j.md",
+      "sha256": "55711091d335542a443c06610931c55cdd7d7015fad7205e251b065352cc862a",
+      "size": 1946
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_AND_PACKAGING_ROOT_ROUTE_LOCK_v01916i.md",
+      "sha256": "4a5db55cf4c9f5fa89a0f763e32c9866f83e617137154ce230e0de31586dc7df",
+      "size": 3172
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_AND_PACKAGING_ROOT_ROUTE_LOCK_v01916j.md",
+      "sha256": "1e90dac2588109c4ed5c0dc3ad1de3224cd27df2756adb7252ebb08c73585112",
+      "size": 3387
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_AUTO_DISPATCH_LOCK_v01915.md",
+      "sha256": "2a7cd6c6130539ce88449c58a9adb3fd4746e3163a65781a7fac9213acdf8ffe",
+      "size": 1127
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_OUTPUT_ZIP_SELF_CONTAINMENT_LOCK_v01916f.md",
+      "sha256": "a234bb216c11d7fb63c49e1f5db6da37363e572d8bcb45971b5c0ed47c90ccea",
+      "size": 467
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_SHELF_NATIVE_USE_GATE_LOCK_v01916g.md",
+      "sha256": "c71da4b663b89d364cb76e57eb10a30467770f305984097fad7ccacfe42907d6",
+      "size": 4589
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_RUNTIME_NEUTRALITY_AND_EXTERNAL_CONTEXT_BOUNDARY_LOCK_v01916e.md",
+      "sha256": "e70a99d6305ce0512926405dd1d3da413d99e8a5c349a0dd35500299b7bca6c8",
+      "size": 2667
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_SINGLE_DOWNLOAD_MOUNT_BASE_DELIVERY_LOCK_v01916h.md",
+      "sha256": "de2068577b22f5066a5e017b6e3c28cd7df1ea97b69ae5666afb9e456da414c8",
+      "size": 2276
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_SINGLE_DOWNLOAD_MOUNT_BASE_DELIVERY_LOCK_v01916j.md",
+      "sha256": "d5cc9bfb14cc22d74ccd5a8f52931a13f112508d027bdb354ff1da5028de024f",
+      "size": 2513
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_THREE_ZERO_DRYRUN_CONVERGENCE_GATE_LOCK_v01916l.md",
+      "sha256": "179288450205f1d33d569408379c484da98cd271815cf494c442d96d6b7d3688",
+      "size": 1798
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_TRANSFER_CURRENT_COST_ACCEPTANCE_LOCK_v01915.md",
+      "sha256": "94d98fb24aaad36f4da9701b0c3f192d1dd1e2dccd36f6df7de391ac83238d1c",
+      "size": 814
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v01916d.md",
+      "sha256": "426010e8e2ee7e65545f2829e71fdc55e310cf63f5a33c64fee43b7cdac032e6",
+      "size": 598
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v01916e.md",
+      "sha256": "bf93eb5895be874709368c0c791ef686b80a3e99755fffb06ed6393951a3816d",
+      "size": 4927
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/EXTERNAL_CONTEXT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v01916e.md",
+      "sha256": "34b2a048a3d1e992b02a665bcdd2a5d3d652d780157d05320c6ea5746b42c0e2",
+      "size": 1469
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/HANDOFF_IS_ARTIFACT_BASED_LOCK_v01914.md",
+      "sha256": "d94119c09abe27d07a69b574c57b54e60e6c2aeb13dbffa3215843e72d710186",
+      "size": 850
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/PROJECT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v01916a.md",
+      "sha256": "1f132ab0e4e157396848017cc1570ac7cf391a9c3f26edb8e7d5439c6dd5cdfc",
+      "size": 562
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/PROJECT_HISTORY_SHELF_POLICY_v01915.md",
+      "sha256": "6b932ab6f2a22866c1071f0d46e770b2fa6f154888b5bd5b59c3368cba363259",
+      "size": 632
+    },
+    {
+      "path": "assets/operation_mount/30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/THOUGHT_INVARIANT_IMPLEMENTATION_VARIABLE_LOCK_v01914.md",
+      "sha256": "72a2c47f70c285317e3383b254a4868724d50b514d8b81b39d941a7bc3ce7c08",
+      "size": 612
+    },
+    {
+      "path": "assets/operation_mount/99_README.md",
+      "sha256": "1b174efae8ddcf5346704202b9b70e8dc4595898b0e44cec2e4521fc285572c7",
+      "size": 1122
+    },
+    {
+      "path": "assets/operation_mount/COMMON_OPERATION_TEMPLATE_V1.md",
+      "sha256": "d3e63cef281ab805c331cbfa5a32882b9eb68f6c5fe3226e70a677dba1a2f04b",
+      "size": 32565
+    },
+    {
+      "path": "assets/samples/097_DS_SAMPLE.md",
+      "sha256": "7f7fa9400b82eaab445ba7719c3a64f781f351b438fc8da3d71a6e9ff0dbd0e5",
+      "size": 7997
+    },
+    {
+      "path": "assets/samples/NARRATION_LAYER_STANDARD_PROFILE.md",
+      "sha256": "509c81a550cd28de83afb4af16457b450a1509ab122ed65aca9d6ae550cb0c9d",
+      "size": 3101
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/BAND_PROFILE_TEMPLATE_V2.md",
+      "sha256": "928d04c3fff6b5ce8aad1c211785e20f3fd1d3efcb1e3ce1594fed4dfe5bd3eb",
+      "size": 1190
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/CARD_TEMPLATE_SAMPLE_V2_MANIFEST.json",
+      "sha256": "6524daf3ceac5574ccd6e7d7d5b3a6a69f0bfa68e0de1d8d39a9d14da0f84f24",
+      "size": 1774
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/CARD_TEMPLATE_SAMPLE_V2_README.md",
+      "sha256": "e1acf9c3594a00e3e8822c4a6702722131a5b4df07e4bc015f70f19f4d36fbdb",
+      "size": 2532
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/CARD_TEMPLATE_SAMPLE_V2_USAGE_RULES.md",
+      "sha256": "96eec9ac114de703f7fc6228986d387808b3d6e510d37b25352162b75d976b41",
+      "size": 1828
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/COMPLETED_TEXT_REFERENCE_NEKO_001.txt",
+      "sha256": "7d3d06de901b8595c250dd923048f90949b0320a3278e5444054b7d2d98e26ea",
+      "size": 30669
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/COMPLETED_TEXT_REFERENCE_NEKO_002.txt",
+      "sha256": "722ae837f37834d4c02c879df3efc7c9046afad0ab48a90bb66ebcac7c263f23",
+      "size": 27757
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/COMPLETED_TEXT_REFERENCE_NEKO_003.txt",
+      "sha256": "40815af659f1c2f77b6ebc505f9b7ed83cdf85d7b90213cb067a197090fa10ac",
+      "size": 30835
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/CONNECTION_CARD_TEMPLATE_V2.md",
+      "sha256": "50120e7d7b1fd5d802b7290b80dcb7b3520c3d0ddca13e579cb8922f6f6b0a23",
+      "size": 751
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/ITEM_MANAGEMENT_TABLE_V2.md",
+      "sha256": "0363db308f13e986147a504fd0102373363bb3274f02b2151f28b4dca2795d50",
+      "size": 1242
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/NARRATION_LAYER_MULTI_REFERENCE.md",
+      "sha256": "41a176441a1414ddc7e6e817f90076c99e0e304522eaaa242937c4a43665aec4",
+      "size": 61101
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/READY_SAMPLE_NEKO_001_KAZENOTOORUHI.md",
+      "sha256": "1bb739bd849fdeb597056a9c3e586c8c49fdab4da6324364e11f80df98694693",
+      "size": 17529
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/READY_SAMPLE_NEKO_002_PURINHAHITOTSU.md",
+      "sha256": "afb5fada77357b8edf0e9324aa6fb5e1dd3a416a75d37642e9f3d8f0007dd35a",
+      "size": 23350
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/READY_SAMPLE_NEKO_003_YUUGATAYONIKURUKO.md",
+      "sha256": "fb1406d409a6f98a0897e4121b4a1d300511a11349c0f1ec2335cbe0a5710f70",
+      "size": 21939
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/REVERSE_EXTRACTION_CHECKLIST_V2.md",
+      "sha256": "aa8cc0a7c844599bda487fe69c191562050203a5cd7cb234b7f53ceb4e724043",
+      "size": 1347
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/STORY_LAYER_COMMON_DEFINITION_SAMPLE.md",
+      "sha256": "ca2023a39a4fa861941ebbbc804752f1655c9f517b5db703d52bee0d9b26868b",
+      "size": 13587
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/V2_SAMPLE_NEKO_01.txt",
+      "sha256": "47c07f760dd7e205fa8b06ea95ba5e17774e2b1b8eba374082baf87554f67031",
+      "size": 18191
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/V2_SAMPLE_NEKO_49.txt",
+      "sha256": "d20fe82f021e9cc8a6c0e65c739497479a690d327fd38fd6900ff465a356474d",
+      "size": 1216
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/WORK_PROFILE_TEMPLATE_V2.md",
+      "sha256": "cdc88249284def13c560cbefba9199e71a0eec04aaecb2fa1f9c9792539331ef",
+      "size": 1808
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/WRITER_READY_CARD_TEMPLATE_V2.md",
+      "sha256": "504cc6aff8d733bdc83f3e2b407196187ff0599ee56d60331ad1165ff412c575",
+      "size": 7015
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/WRITING_FREEZE_CARD_TEMPLATE_V2.md",
+      "sha256": "90bd6c7dab537bba12e91acf1b6bf13581c18da22d7ba8699cd5548186b0745c",
+      "size": 1477
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFERENCES/ZIP_STRUCTURE_V2.md",
+      "sha256": "6bcf4a255b32472eb18a4b4b62b94560397622bb47354907ef172cb7d98cd44e",
+      "size": 1780
+    },
+    {
+      "path": "assets/samples/SAMPLE_REFRESH_INDEX_v019_4.md",
+      "sha256": "59445440967acfe29051eb8a9a57655b7bb7c8d0464fc367b75c755fa7eb08a7",
+      "size": 1861
+    },
+    {
+      "path": "assets/specs/000_MANIFEST_090_DS_v003ap_ENDLOG_MEMO_CLEAN.txt",
+      "sha256": "d6c07f08a457d31aa9282190d814350458e35b6fc78f14bc272c587ea69f43ed",
+      "size": 1757
+    },
+    {
+      "path": "assets/specs/089_DS_TAG_SEARCH.md",
+      "sha256": "b81f6a61358665095bd1069dedde70d80a62fdc225e46b10f3c633c2a63f9f6a",
+      "size": 22844
+    },
+    {
+      "path": "assets/specs/090_DS_CORE.md",
+      "sha256": "53d8d77425e90ac0d03133b4765b5f6ddbc5baff001b5dd7e1b8ff1eb50e87cb",
+      "size": 18729
+    },
+    {
+      "path": "assets/specs/091_DS_CHECK.md",
+      "sha256": "6d7ece8ac6301591a6e338759b4106b65a0f4e669eaac23707bd215f19ac5129",
+      "size": 28029
+    },
+    {
+      "path": "assets/specs/092_DS_CARD.md",
+      "sha256": "3c9964b9e163d4b177812ef8a1f0c551ef0d06498af64aab4ac43b585bb5ea8a",
+      "size": 24653
+    },
+    {
+      "path": "assets/specs/093_DS_CARD_TEST.md",
+      "sha256": "04da1838b1b9de1e57a1788fab37abb7667f4a43f793e67c37556ad9078bdca4",
+      "size": 9126
+    },
+    {
+      "path": "assets/specs/094_DS_LOG.md",
+      "sha256": "894b8dee323858080cf551865c2b056c5c3a03b53623876dfa44db53d3dd01b9",
+      "size": 14919
+    },
+    {
+      "path": "assets/specs/095_DS_MOUNT_TRANSFER.md",
+      "sha256": "6a20c6c0b10d5d81f1df6441f3ba8c83414b3401878cf9b74b4523b848d95484",
+      "size": 25890
+    },
+    {
+      "path": "assets/specs/096_DS_ARCHIVE.md",
+      "sha256": "8678c73c1ae36f94ddc147fd8a80b0d876ba73cdf09bb0244a428dd7806798c4",
+      "size": 5813
+    },
+    {
+      "path": "assets/specs/098_DS_INDEX.md",
+      "sha256": "c27a38018622db5d1a50af0dd184ba33a7856cc9912803d84b94472fed4f4af0",
+      "size": 4142
+    },
+    {
+      "path": "assets/specs/DESIGNER_COMMON_GATES_v019.md",
+      "sha256": "ee5a2d592f8e9b055efbeee2099a6def5dd80f671b8dfbf35c162fcff01c8a0f",
+      "size": 2863
+    },
+    {
+      "path": "assets/specs/END_LOG_OPERATION_RULE.md",
+      "sha256": "cc62950dc646d76a991c56e04e7b6415666d82ee81c54c4a06111c112604dcc1",
+      "size": 3543
+    },
+    {
+      "path": "assets/specs/PACK_AUDIT_REPORT_090_DS_v003ap_ENDLOG_MEMO_CLEAN.md",
+      "sha256": "10711dadb0c2ef1828ce7ede06831ef051b60ee1635f0368ea32577b2c59bbf4",
+      "size": 1056
+    },
+    {
+      "path": "assets/templates/END_LOG_TEMPLATE.txt",
+      "sha256": "75ee6ed86b64e996f1b9f83534a159769db8f271fc1b95e05f9ec78f35fdfcef",
+      "size": 603
+    },
+    {
+      "path": "assets/templates/INDEX_MAP_TEMPLATE.md",
+      "sha256": "da2bde351f363319e9d0a77cc75a4aae35af20ff9380319b6d869e126649c985",
+      "size": 1184
+    },
+    {
+      "path": "assets/templates/LAYER_PROFILE_TEMPLATE.md",
+      "sha256": "6f9b557abd94ba9837badaeddffcfec0fa22835fbf0b72d7594e6f143d7e9948",
+      "size": 2819
+    },
+    {
+      "path": "assets/templates/RESTART_MEMO_TEMPLATE.txt",
+      "sha256": "2bc28bf9ed282f1ed0ae3d79958c2a7fcc230647895893b03692ddca0246b038",
+      "size": 679
+    },
+    {
+      "path": "assets/templates/SHELF_GUIDE_TEMPLATE.md",
+      "sha256": "716c00b46ece75091ea07f3d0fc4223ae6029077ab68f7eeb2a8a23a4c4cb4f7",
+      "size": 2625
+    },
+    {
+      "path": "assets/templates/STOP_TAG_INDEX_TEMPLATE.md",
+      "sha256": "8dd69db8ad9a28eff3456dfd31694eff7930358084db3cb9c816f67bbca13711",
+      "size": 1666
+    },
+    {
+      "path": "assets/templates/TAG_INDEX_TEMPLATE.txt",
+      "sha256": "4377fb92677b0ffefce07e72502790398eb2303b3f15a1f38432b0e710134003",
+      "size": 9150
+    },
+    {
+      "path": "assets/templates/WORK_UNIT_CARD_TEMPLATE.md",
+      "sha256": "d16db21f86fd6d35c5f85687d4e94d8b1a29df0b26e46be48a5a7baae1c778af",
+      "size": 9792
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/README.md",
+      "sha256": "d92d884a436933f8035792889e4cdaf2ec19dca3bbdbd4e829ede2afa0f701a6",
+      "size": 881
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/START_HERE.js",
+      "sha256": "ad9596caf8129d249903146503f55cf605acb0bfedde92466ad2c683907981bc",
+      "size": 471
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/assets/LIBRARIAN_TRANSFER_CONTRACT.md",
+      "sha256": "58115070cdc442a77d0cf124603ce0688d1f66e1084c7c53611165dc69eacb97",
+      "size": 694
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/manifest.json",
+      "sha256": "bac4c1117397424f4d6c631a6f5b5ef2b07c5988ee7f055c4ddae8c979356b00",
+      "size": 649
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/package.json",
+      "sha256": "76e8cd0543181b79fa1f2902f42ebeaeac638a278eb137378c090bd3c034ce61",
+      "size": 227
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/operation_mount/10_CANON/130_DESIGN_AND_WRITING_ROLES.md",
+      "sha256": "80170aed8dc2496c109fa02b0a789c13a6ef52fa9fbecba7f186185de989f8de",
+      "size": 2489
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/operation_mount/10_CANON/140_MOUNT_REQUIREMENTS.md",
+      "sha256": "eef83aed133f2ea74d201b007efc3f41627fbe3745f5ada8933f36fe15ca35c4",
+      "size": 1379
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/operation_mount/COMMON_OPERATION_TEMPLATE_V1.md",
+      "sha256": "d3e63cef281ab805c331cbfa5a32882b9eb68f6c5fe3226e70a677dba1a2f04b",
+      "size": 32565
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/specs/089_DS_TAG_SEARCH.md",
+      "sha256": "b81f6a61358665095bd1069dedde70d80a62fdc225e46b10f3c633c2a63f9f6a",
+      "size": 22844
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/specs/091_DS_CHECK.md",
+      "sha256": "94161556858457d4868c4bdb7aec89fb3a8cad5fd00ac72c9f6345a87c5b7d73",
+      "size": 27995
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/specs/095_DS_MOUNT_TRANSFER.md",
+      "sha256": "23f08f994269561e8901bc367f242680f2354135806ae83680c88811f345e383",
+      "size": 25902
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/specs/098_DS_INDEX.md",
+      "sha256": "dd930657323ee788db54b68eb65c5dce665eae5c8a59fd2681da363b8149150a",
+      "size": 4142
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/templates/RESTART_MEMO_TEMPLATE.txt",
+      "sha256": "2bc28bf9ed282f1ed0ae3d79958c2a7fcc230647895893b03692ddca0246b038",
+      "size": 679
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/templates/SHELF_GUIDE_TEMPLATE.md",
+      "sha256": "da187b50151708fa562892b36ecc2614cd206675276dd4d4e7512d403bc425f7",
+      "size": 2631
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/indexing/validator.js",
+      "sha256": "a5305fa7ec8892353bf47f20b0add1e872fcbb142c92167fe82ba66bb20902f9",
+      "size": 6320
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/modules/transfer.js",
+      "sha256": "f665d0c8847c8ce1202339e41ebad616e1af182ab99b9d0d84cec3643311551e",
+      "size": 2802
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/runtime/rule.js",
+      "sha256": "e939ef592d384f4c67691d69e1049476a79b898df42ee1b9d93b9ea28a535dd8",
+      "size": 906
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/runtime/types.js",
+      "sha256": "b57a2e3424050b8cb4de62119ea2194953bb17bb2405bdc4c68004dcda6e7b41",
+      "size": 473
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/validation/deterministic.js",
+      "sha256": "0a3d4443922955a8dd87f2ad5a17d193443e00afd46502ffab4cad2e367d11e4",
+      "size": 11031
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/src/invocation.js",
+      "sha256": "2f21c6b07e74a7c18ccc8d82a6189444a650ab140b3f3b454cc5859280a531b2",
+      "size": 1086
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/src/librarian-gate.js",
+      "sha256": "0cfa4e5b1cfea296fc04f65fac4082dfabf1740f921d7739b4f116f60c239301",
+      "size": 13075
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/src/program.js",
+      "sha256": "2309a3da5c7e0d63559337aa6ea37fa9bbc620657fc64a59d2f26e19cc09c6b4",
+      "size": 2576
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/test/librarian.test.js",
+      "sha256": "360fe95d0382cf0f1a549eef80a87a360170be15ce3a58eac0e30c8958dae583",
+      "size": 10271
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/test/literal.test.js",
+      "sha256": "bff24e86a4fe3f4dd859cb1d201516dde3b82d5e5d8fc769e68dcacd83755955",
+      "size": 2907
+    },
+    {
+      "path": "examples/boot.json",
+      "sha256": "dd71a70a9a72c71ff0803f81662663fa3023950e5d31c30b16cc45aa16f11b24",
+      "size": 4503
+    },
+    {
+      "path": "examples/card.json",
+      "sha256": "13d05ecb161e314ade04aabdff946fb0d28b422dee6ea5dd51678714c134415f",
+      "size": 8574
+    },
+    {
+      "path": "load_order.md",
+      "sha256": "0791c731f4af4050ee73135094eb0da49ac79d30308a716949dd0d194337bda2",
+      "size": 1250
+    },
+    {
+      "path": "package.json",
+      "sha256": "8de40954670209188cff1424f5c3ad2e09bef234582e353e9fd38b6cd02a41c0",
+      "size": 356
+    },
+    {
+      "path": "protocol/request.schema.json",
+      "sha256": "ab91ab32b6f64b88535e4a1d128e92670734016773762d78ddcfef18a66b04e2",
+      "size": 3946
+    },
+    {
+      "path": "src/assets.js",
+      "sha256": "58b1e4fc0044324c73ad2e849e5c1dbf614364ab2ca3bd922f417e4cf1d58dda",
+      "size": 4391
+    },
+    {
+      "path": "src/boot/validator.js",
+      "sha256": "91868d4a6b46d75f397412b70873027b1fd70479941cfaf864a0560c3b26edb9",
+      "size": 5561
+    },
+    {
+      "path": "src/catalog.js",
+      "sha256": "64972a23fcb543a25099336860bf3540984147b6e2cb5397a12485965ed18a48",
+      "size": 2652
+    },
+    {
+      "path": "src/cli.js",
+      "sha256": "c4e5c20c1a10a59ea63af300659f10b34ad70faf3bebd25d20875548dd5aa8ae",
+      "size": 647
+    },
+    {
+      "path": "src/dsgn/invocation.js",
+      "sha256": "5147e7e034e409cbe4916e2d1d1cdfa3b8d37a495474dbd975012338052e04f7",
+      "size": 971
+    },
+    {
+      "path": "src/dsgn/lookup.js",
+      "sha256": "be919378f4025e9f537d80b3069462a6a927c38a7149bc9bd5bfca454e156917",
+      "size": 1443
+    },
+    {
+      "path": "src/dsgn/namespace.js",
+      "sha256": "8fe44df5c3728b339ad5bae485f38b2a1b16a417628ab7b7e4f7a116c90a74fd",
+      "size": 1083
+    },
+    {
+      "path": "src/engine.js",
+      "sha256": "12ca2db4236c5547fe61f830dc3d31e006fb681975878b839cd650ee6a76a7a6",
+      "size": 5557
+    },
+    {
+      "path": "src/extensions.js",
+      "sha256": "b2a6ade5e5758daafbbce5af98d9f272bfce66f808ddd8957e88bd73291ba2e4",
+      "size": 2522
+    },
+    {
+      "path": "src/indexing/searchEngine.js",
+      "sha256": "27880865b00d2b2c516decc71a23ac6fc1a9a18f090075aa7a0f98b7ae99c049",
+      "size": 15213
+    },
+    {
+      "path": "src/indexing/validator.js",
+      "sha256": "a5305fa7ec8892353bf47f20b0add1e872fcbb142c92167fe82ba66bb20902f9",
+      "size": 6320
+    },
+    {
+      "path": "src/loading/manifest.js",
+      "sha256": "cb8f6a1be19000be2ab66378173154f3e3b443c0de87652dba8622c898a4d26c",
+      "size": 20752
+    },
+    {
+      "path": "src/modules/archive.js",
+      "sha256": "1545406297ee74153d037cc1178ae6d71367b437106021c96c9d9c570cf018de",
+      "size": 832
+    },
+    {
+      "path": "src/modules/card.js",
+      "sha256": "e1816cb0d65a5dade6cdb61af9fb4426d3f8801cd76a2e5d2d2093d51b1777de",
+      "size": 2831
+    },
+    {
+      "path": "src/modules/cardTest.js",
+      "sha256": "cd3a7c78e3b195d9acd10fa29b6f271a83eb4a6da119c338e2ea42bdecb062b9",
+      "size": 1043
+    },
+    {
+      "path": "src/modules/check.js",
+      "sha256": "3a3cf9b5e9af8334f90a6bc9c8d201f5f9f0985623923e419e90bc751cbf0973",
+      "size": 1129
+    },
+    {
+      "path": "src/modules/core.js",
+      "sha256": "58dd20497a79a74c5c40454d77882642a69a1c589cc729952dece954f1ef4f5c",
+      "size": 1095
+    },
+    {
+      "path": "src/modules/endLog.js",
+      "sha256": "6dd79f8bd1d963ef0c0995e11fe559ce8440b2db2a553ab711a61e59cd428098",
+      "size": 935
+    },
+    {
+      "path": "src/modules/episodePack.js",
+      "sha256": "7657c00bb5c5117ac0bfb7a72f180b4b5cb7dc45a8a2a47f4782dfe2d91ce351",
+      "size": 2714
+    },
+    {
+      "path": "src/modules/log.js",
+      "sha256": "c7573667cf14ed024e3fcc49cb94dda3565f884396d3f1dbf949fdc1886c428c",
+      "size": 1264
+    },
+    {
+      "path": "src/modules/mountTransferBackpackAdapter.js",
+      "sha256": "c5aefe466dca7efd51179d385c79e30bf93b5b2b1c6a81798204cbcbe9177571",
+      "size": 836
+    },
+    {
+      "path": "src/modules/packCutout.js",
+      "sha256": "3d67ac79a0a2ed037db456af83a4abcbfba393ad35c87b8c570dab25052b2da6",
+      "size": 56185
+    },
+    {
+      "path": "src/modules/tagSearch.js",
+      "sha256": "403dc886086b806665b8558702d695f57ddd54a6680711648fcf7f11c4fecb5a",
+      "size": 2999
+    },
+    {
+      "path": "src/modules/transfer.js",
+      "sha256": "4e8b9d0fe0dc6eade62e4de36a5eefde9c835a3012a87ca4e707217bb796c9ed",
+      "size": 5104
+    },
+    {
+      "path": "src/override.js",
+      "sha256": "cec6b4e17504c87b426a7e21a45d0e3e2e45aa51bb9480569e2d830e073a22ed",
+      "size": 890
+    },
+    {
+      "path": "src/profiles/narrationBase.js",
+      "sha256": "06f80148fab1a9cd6fe175195192722c9c76ca7302b7f0c003355c16e7fd6c2f",
+      "size": 1443
+    },
+    {
+      "path": "src/profiles/singleEpisodeProfileGate.js",
+      "sha256": "405305fdd633d40f31ef4f8bfdd78fc7b71abf5d6892b546a1d163223e540c12",
+      "size": 3353
+    },
+    {
+      "path": "src/router.js",
+      "sha256": "7beb38c1035938311bbeb717ecda4030d66bcabffacebe92447775f4e43aae0d",
+      "size": 1508
+    },
+    {
+      "path": "src/runtime/mental-runtime.js",
+      "sha256": "6f732a5f41f4345f120db3248809cd3ef4925570832d22ec8aacf2238855cf0e",
+      "size": 704
+    },
+    {
+      "path": "src/runtime/program.js",
+      "sha256": "ccd32a1750b0b14cd7e5d45b2fa19e00dce7eec8ca857512814778088817c7e6",
+      "size": 3133
+    },
+    {
+      "path": "src/runtime/rule.js",
+      "sha256": "e939ef592d384f4c67691d69e1049476a79b898df42ee1b9d93b9ea28a535dd8",
+      "size": 906
+    },
+    {
+      "path": "src/runtime/types.js",
+      "sha256": "b57a2e3424050b8cb4de62119ea2194953bb17bb2405bdc4c68004dcda6e7b41",
+      "size": 473
+    },
+    {
+      "path": "src/schema.js",
+      "sha256": "b0a5c68f639ce43b843c83a2b49fdd7637b9c9f60121f4dfc48cd6dce4447173",
+      "size": 2704
+    },
+    {
+      "path": "src/v2/activation.js",
+      "sha256": "10c265b727b20358e30741a8acaa6d026f47020fcb2a9642b08b4a6da02e2943",
+      "size": 4703
+    },
+    {
+      "path": "src/v2/material-map.js",
+      "sha256": "37c639cb15c3d52522bf8c3d9027b49a41bdce90c8045b43cd2352e4e6de5ce6",
+      "size": 11563
+    },
+    {
+      "path": "src/validation/designerGates.js",
+      "sha256": "483a8ee46282e57aadbe069c0ae76f6e933919056dceff96ba48df25c42c720f",
+      "size": 5066
+    },
+    {
+      "path": "src/validation/deterministic.js",
+      "sha256": "6c96a8ce9133fabbc748238d955c926e1a47add3e6cbf7f11ad6fb875bea8a1b",
+      "size": 11053
+    },
+    {
+      "path": "test/engine.test.js",
+      "sha256": "7e862a9e66f681037b4ccb91d6a0ac3db7e6ba6427a52895e6ef00bf43d85871",
+      "size": 110826
+    },
+    {
+      "path": "unresolved_backlog.md",
+      "sha256": "0f42cf8ef16c48aa2f12ef91926076bbae09e1f462a3b247d2d9b3fe86a5bfe7",
+      "size": 646
+    }
+  ]
+}

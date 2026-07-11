@@ -1,0 +1,10 @@
+{
+  "name": "ds90-v020-nlcore-mount-transfer-packaging-three-zero-runtime",
+  "version": "0.20.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/engine.test.js && node backpacks/MOUNT_TRANSFER_BACKPACK/test/literal.test.js && node backpacks/MOUNT_TRANSFER_BACKPACK/test/librarian.test.js",
+    "run": "node src/cli.js"
+  }
+}
