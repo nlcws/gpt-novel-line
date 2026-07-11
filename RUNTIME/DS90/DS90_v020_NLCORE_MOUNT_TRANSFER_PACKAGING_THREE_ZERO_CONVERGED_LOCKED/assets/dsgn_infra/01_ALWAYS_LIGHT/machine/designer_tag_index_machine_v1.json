@@ -1,0 +1,1120 @@
+{
+  "status": "complete_candidate",
+  "sources": {
+    "layer.runtime.v28": {
+      "file": "layer_runtime_v28_ai_native_complete_candidate.md",
+      "role": "レイヤー正本候補。v27本体＋全項目意味辞書＋プリセットを内包。",
+      "canonical_level": "full_candidate"
+    },
+    "layer.meaning.v1": {
+      "file": "layer_all_items_meaning_reference_v1.md",
+      "role": "全項目の意味・選ぶ条件・本文効果・事故・設定例の辞書。",
+      "canonical_level": "reference"
+    },
+    "layer.preset.v1": {
+      "file": "layer_full_preset_library_v1.md",
+      "role": "全項目を使うためのプリセット集。",
+      "canonical_level": "reference"
+    },
+    "layer.packager_effect.v1": {
+      "file": "packager_layer_setting_effect_reference_v1.md",
+      "role": "梱包さん用。設定値→本文効果→事故→併用条件の早見表。",
+      "canonical_level": "reference"
+    },
+    "nom.gate.min.v3": {
+      "file": "nom_gate_insert_min_v3.md",
+      "role": "NOM差込ゲート。正本常駐ではなく検査ゲートとして使用。",
+      "canonical_level": "insert"
+    },
+    "pack.cutout.v1": {
+      "file": "pack_cutout_module_v1.md",
+      "role": "話パック切り出しモジュール。ready/V2/layer/crosscheck/frozenを梱包。",
+      "canonical_level": "module"
+    },
+    "overlay.patch.v015": {
+      "file": "designer_runtime_overlay_patch_v015.md",
+      "role": "設計さんへの後置きオーバーレイ接続パッチ。",
+      "canonical_level": "patch"
+    },
+    "overlay.manifest.v015": {
+      "file": "runtime_overlay_manifest_v015.md",
+      "role": "オーバーレイ構成と読み込み順のマニフェスト。",
+      "canonical_level": "manifest"
+    }
+  },
+  "tags": [
+    {
+      "tag": "source.registry",
+      "purpose": "正本・参照・差込・モジュールの所在を確認する",
+      "source_ids": [
+        "layer.runtime.v28",
+        "layer.meaning.v1",
+        "layer.preset.v1",
+        "nom.gate.min.v3",
+        "pack.cutout.v1"
+      ],
+      "use_when": "どの正本を見ればいいか迷った時"
+    },
+    {
+      "tag": "runtime.load.policy",
+      "purpose": "常時読むもの・必要時だけ読むものを分ける",
+      "source_ids": [
+        "overlay.manifest.v015",
+        "overlay.patch.v015"
+      ],
+      "use_when": "スレッド圧迫・常時展開を避けたい時"
+    },
+    {
+      "tag": "runtime.lookup.protocol",
+      "purpose": "梱包さん/設計さん間で該当辞書だけ引く",
+      "source_ids": [
+        "overlay.patch.v015",
+        "pack.cutout.v1"
+      ],
+      "use_when": "全部読まずに一部だけ確認したい時"
+    },
+    {
+      "tag": "layer.axis.surface",
+      "purpose": "本文表面の観測方式。旧『主』。",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.runtime.v28"
+      ],
+      "use_when": "客観視・観測距離・主の扱いが曖昧な時"
+    },
+    {
+      "tag": "layer.axis.pressure",
+      "purpose": "本文の圧源。旧『副』。本来主。",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.runtime.v28"
+      ],
+      "use_when": "誰/何の圧で本文を拾うか決める時"
+    },
+    {
+      "tag": "layer.axis.routing",
+      "purpose": "感情・関係・変化・余韻を何へ変換するか",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.runtime.v28"
+      ],
+      "use_when": "意味整理やAI的着地へ吸われる時"
+    },
+    {
+      "tag": "layer.axis.leak",
+      "purpose": "圧源を本文表面へ漏らす媒体",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.runtime.v28"
+      ],
+      "use_when": "内面説明を避けて身体・物・距離に出したい時"
+    },
+    {
+      "tag": "layer.axis.embed",
+      "purpose": "キャラ設計・世界軸・作品/帯/単話への埋込先",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.runtime.v28"
+      ],
+      "use_when": "単話補完か恒久埋込か迷う時"
+    },
+    {
+      "tag": "layer.prose.lexicon",
+      "purpose": "地の文語彙。何を自然に拾うか",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.runtime.v28"
+      ],
+      "use_when": "地の文が雰囲気語や抽象語へ逃げる時"
+    },
+    {
+      "tag": "layer.prose.temperature",
+      "purpose": "地の文温度。反応の表面化度合い",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "低温が無色になる/高温が感情名になる時"
+    },
+    {
+      "tag": "layer.prose.observation",
+      "purpose": "地の文観測距離",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "客観のまま偏りを出したい時"
+    },
+    {
+      "tag": "layer.prose.inner_output",
+      "purpose": "内面の出し方。感情名ではなく漏れにする",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "不安/安心/寂しい等を直接書きそうな時"
+    },
+    {
+      "tag": "layer.prose.speaker_tag",
+      "purpose": "話者札。会話と動作の接続",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "誰の発話か不明/発話に心理説明が乗る時"
+    },
+    {
+      "tag": "layer.prose.subject_tag",
+      "purpose": "主語札。人物/物/手順のどれを前に置くか",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "主語落ち・物主語・手順主語を調整する時"
+    },
+    {
+      "tag": "layer.prose.speech_verb",
+      "purpose": "発話動詞制限",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "優しく言った等の心理付き発話動詞が出る時"
+    },
+    {
+      "tag": "layer.prose.connector",
+      "purpose": "地の文接続。論理語ではなく物理遷移でつなぐ",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "だから/つまり/そのためが増える時"
+    },
+    {
+      "tag": "layer.prose.metaphor",
+      "purpose": "比喩の許可条件",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "比喩がきれいな意味説明になる時"
+    },
+    {
+      "tag": "layer.prose.explanation",
+      "purpose": "説明量と説明の置換先",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "説明を削ったら薄くなる/説明が多い時"
+    },
+    {
+      "tag": "layer.prose.forbidden",
+      "purpose": "禁止群と変換先",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "禁止語だけでは別表現で復活する時"
+    },
+    {
+      "tag": "layer.flow.direction",
+      "purpose": "旧『向かう方向』。scene/closing/releaseへ分解",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "和解へ向かう等の抽象方向が残る時"
+    },
+    {
+      "tag": "layer.flow.focus_route",
+      "purpose": "焦点移動。triggerとreturn_point必須",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "描写が飾り/焦点が散る時"
+    },
+    {
+      "tag": "layer.flow.sentence_variation",
+      "purpose": "旧『変奏』。文運び制御",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.packager_effect.v1"
+      ],
+      "use_when": "変奏あり/リズムを変える等の曖昧値が出た時"
+    },
+    {
+      "tag": "layer.flow.sentence_length",
+      "purpose": "文の長短配置",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.packager_effect.v1"
+      ],
+      "use_when": "単調・詩化・小動作過多を調整する時"
+    },
+    {
+      "tag": "layer.flow.clause_density",
+      "purpose": "一文の情報密度",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "空間関係が分かりにくい/説明過多の時"
+    },
+    {
+      "tag": "layer.flow.subject_visibility",
+      "purpose": "主語の見せ方",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "誰の動作か不明/物主語を使いたい時"
+    },
+    {
+      "tag": "layer.flow.object_first_rate",
+      "purpose": "物・場所・手順を前に出す割合",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "物理運用で圧を出したい時"
+    },
+    {
+      "tag": "layer.flow.verb_timing",
+      "purpose": "動詞の出るタイミング",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "反応説明を挟まず動かしたい時"
+    },
+    {
+      "tag": "layer.flow.dialogue_ratio",
+      "purpose": "会話と地の文の比率",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "説明会話/沈黙余韻/動作不足を調整する時"
+    },
+    {
+      "tag": "layer.flow.repetition_delta",
+      "purpose": "反復差分",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "変化を説明せず差分で見せたい時"
+    },
+    {
+      "tag": "layer.flow.interruption",
+      "purpose": "割込パターン",
+      "source_ids": [
+        "layer.meaning.v1",
+        "layer.preset.v1"
+      ],
+      "use_when": "清潔な証明・全員協力感を壊したい時"
+    },
+    {
+      "tag": "layer.flow.line_break",
+      "purpose": "改行密度",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "詩的短文化/詰まりを調整する時"
+    },
+    {
+      "tag": "layer.scene.object_position",
+      "purpose": "物の位置・動かなさ・置き直しで圧を出す",
+      "source_ids": [
+        "layer.packager_effect.v1",
+        "layer.meaning.v1"
+      ],
+      "use_when": "鞄/皿/椅子/帳面/通路などで見せる時"
+    },
+    {
+      "tag": "layer.scene.body_action",
+      "purpose": "身体動作で内圧を漏らす",
+      "source_ids": [
+        "layer.packager_effect.v1",
+        "layer.meaning.v1"
+      ],
+      "use_when": "感情名を身体に逃がす時"
+    },
+    {
+      "tag": "layer.scene.distance",
+      "purpose": "距離・席・通路・戸口で関係を出す",
+      "source_ids": [
+        "layer.packager_effect.v1",
+        "layer.meaning.v1"
+      ],
+      "use_when": "関係名を書かず境界を出す時"
+    },
+    {
+      "tag": "layer.scene.procedure",
+      "purpose": "作業手順・生活運用で圧を出す",
+      "source_ids": [
+        "layer.packager_effect.v1",
+        "layer.meaning.v1"
+      ],
+      "use_when": "店/寺/家/仕事の手順が場面を運ぶ時"
+    },
+    {
+      "tag": "layer.scene.residue",
+      "purpose": "残留物・残った音・片付かないもので余韻を出す",
+      "source_ids": [
+        "layer.packager_effect.v1",
+        "layer.meaning.v1"
+      ],
+      "use_when": "十分だった系を避けたい時"
+    },
+    {
+      "tag": "layer.scene.interruption",
+      "purpose": "清潔な証明を崩す小さな割込",
+      "source_ids": [
+        "layer.packager_effect.v1",
+        "layer.preset.v1"
+      ],
+      "use_when": "人間臭・非協力要素が必要な時"
+    },
+    {
+      "tag": "layer.closing.object_position",
+      "purpose": "物の位置で閉じる",
+      "source_ids": [
+        "layer.packager_effect.v1"
+      ],
+      "use_when": "意味ではなく配置に戻す時"
+    },
+    {
+      "tag": "layer.closing.routine_delta",
+      "purpose": "同じ手順の差分で閉じる",
+      "source_ids": [
+        "layer.packager_effect.v1"
+      ],
+      "use_when": "変化を言わず手順差で示す時"
+    },
+    {
+      "tag": "layer.closing.unresolved_residue",
+      "purpose": "未解決の残留で閉じる",
+      "source_ids": [
+        "layer.packager_effect.v1",
+        "layer.preset.v1"
+      ],
+      "use_when": "きれいな納得を避ける時"
+    },
+    {
+      "tag": "layer.closing.nonaction",
+      "purpose": "しなかった動作で閉じる",
+      "source_ids": [
+        "layer.packager_effect.v1"
+      ],
+      "use_when": "境界や拒否を説明せず出す時"
+    },
+    {
+      "tag": "layer.closing.noncooperation",
+      "purpose": "話の意味に協力しない細部を残す",
+      "source_ids": [
+        "layer.packager_effect.v1",
+        "layer.preset.v1"
+      ],
+      "use_when": "AI的な清潔さを壊す時"
+    },
+    {
+      "tag": "layer.expanded.foreground",
+      "purpose": "この話で前に出す対象",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "毎話全部が前景化している時"
+    },
+    {
+      "tag": "layer.expanded.background_downgrade",
+      "purpose": "背景に下げる対象",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "常時重要なものを毎話説明しすぎる時"
+    },
+    {
+      "tag": "layer.expanded.entry_hand",
+      "purpose": "説明ではなく最初の手で入る",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "冒頭説明を避けたい時"
+    },
+    {
+      "tag": "layer.expanded.first_actor",
+      "purpose": "初動担当",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "場面の始まりが同じ人物に偏る時"
+    },
+    {
+      "tag": "layer.expanded.receiver",
+      "purpose": "圧を受ける側",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "反応差が薄い時"
+    },
+    {
+      "tag": "layer.expanded.boundary_setter",
+      "purpose": "境界を作る人/物/手順",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "線引きが説明になる時"
+    },
+    {
+      "tag": "layer.expanded.life_landing",
+      "purpose": "生活動作へ戻すもの",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "抽象化しかけた場面を生活へ戻す時"
+    },
+    {
+      "tag": "layer.expanded.return_point",
+      "purpose": "焦点や締めが戻る点",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "最後が意味に逃げる時"
+    },
+    {
+      "tag": "layer.expanded.residue_point",
+      "purpose": "回収しきらず残す点",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "余韻を物理残留へ置く時"
+    },
+    {
+      "tag": "layer.expanded.thin_reinforcement",
+      "purpose": "薄回補強点",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "説明で水増しせず厚くしたい時"
+    },
+    {
+      "tag": "layer.expanded.internal_pressure_conversion",
+      "purpose": "内圧変換",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "内面を外部出力へ変える時"
+    },
+    {
+      "tag": "layer.expanded.self_awareness_gap",
+      "purpose": "自覚差",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "人物が正しく自己説明しすぎる時"
+    },
+    {
+      "tag": "layer.expanded.speakable_boundary",
+      "purpose": "口外境界",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "何を言える/言えないか決める時"
+    },
+    {
+      "tag": "layer.expanded.substitute_action",
+      "purpose": "代替行動",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "言えない代わりに何をするか"
+    },
+    {
+      "tag": "layer.expanded.normal_disguise",
+      "purpose": "いつも通り偽装",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "変化を通常作業のふりで出す時"
+    },
+    {
+      "tag": "layer.expanded.outside_observation_gap",
+      "purpose": "外側観測差",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "外から見える状態と内圧に差を作る時"
+    },
+    {
+      "tag": "layer.expanded.age_gender_code",
+      "purpose": "年齢・性別コード",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "属性を説明せず身体・距離・語彙に埋める時"
+    },
+    {
+      "tag": "layer.expanded.description_output",
+      "purpose": "描写出力モード",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "描写が飾りになる時"
+    },
+    {
+      "tag": "layer.expanded.immersion_depth",
+      "purpose": "没入深度",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "近さを内面潜りにせず調整する時"
+    },
+    {
+      "tag": "layer.expanded.pleasure_design",
+      "purpose": "快感設計",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "読みの気持ちよさをどこで作るか"
+    },
+    {
+      "tag": "layer.expanded.description_density",
+      "purpose": "描写密度",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "描写が薄い/水増しになる時"
+    },
+    {
+      "tag": "layer.expanded.sensory_entry",
+      "purpose": "感覚入口",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "場面への入り方を感覚で決める時"
+    },
+    {
+      "tag": "layer.expanded.prose_rhythm",
+      "purpose": "文流リズム",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "動作・物・会話の回し方を決める時"
+    },
+    {
+      "tag": "layer.expanded.description_psychology",
+      "purpose": "描写と心理の接続",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "描写を心理説明の代替にする時"
+    },
+    {
+      "tag": "layer.expanded.description_suppression",
+      "purpose": "描写抑制",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "雰囲気描写や象徴化を抑える時"
+    },
+    {
+      "tag": "layer.preset.default_safe",
+      "purpose": "最低安全値",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "迷った時。ただし厚みは出にくい"
+    },
+    {
+      "tag": "layer.preset.cat_cafe_object_operation",
+      "purpose": "猫・店・席・皿・帳面の運用で圧を出す",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "猫カフェ・店運用の話"
+    },
+    {
+      "tag": "layer.preset.body_leak_restraint",
+      "purpose": "内圧を身体・持ち物・返答遅れで漏らす",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "感情名禁止の人物回"
+    },
+    {
+      "tag": "layer.preset.distance_boundary_relation",
+      "purpose": "関係を距離・席・通路・戸口で出す",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "関係名を書きたくない回"
+    },
+    {
+      "tag": "layer.preset.procedure_world_pressure",
+      "purpose": "世界軸の手順に圧を持たせる",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "作業・生活・店・寺の運用回"
+    },
+    {
+      "tag": "layer.preset.conversation_mismatch",
+      "purpose": "会話のズレで圧を出す",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "説明会話を避けたい回"
+    },
+    {
+      "tag": "layer.preset.residue_close",
+      "purpose": "きれいな納得締めを避ける",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "余韻説明を避けたい回"
+    },
+    {
+      "tag": "layer.preset.clean_proof_breaker",
+      "purpose": "清潔な証明を壊す",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "全員が意味に協力しすぎる回"
+    },
+    {
+      "tag": "layer.preset.beginner_heat",
+      "purpose": "初心者/子供の小さな熱を残す",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "入口が薄いが熱語がある時"
+    },
+    {
+      "tag": "layer.preset.high_density_12k",
+      "purpose": "12k不可削を狙う高密度回",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "カード/V2が十分厚い時"
+    },
+    {
+      "tag": "layer.preset.packager_balanced",
+      "purpose": "梱包さん通常初期値",
+      "source_ids": [
+        "layer.preset.v1"
+      ],
+      "use_when": "通常回"
+    },
+    {
+      "tag": "packager.core.light",
+      "purpose": "梱包さん常設の軽量核",
+      "source_ids": [
+        "pack.cutout.v1"
+      ],
+      "use_when": "通常時に全部辞書を読ませないための核"
+    },
+    {
+      "tag": "packager.cutout.50pack",
+      "purpose": "50話パック切り出し",
+      "source_ids": [
+        "pack.cutout.v1"
+      ],
+      "use_when": "本家設計さんから執筆パックを切る時"
+    },
+    {
+      "tag": "packager.folder.episode",
+      "purpose": "1話1フォルダ構成",
+      "source_ids": [
+        "pack.cutout.v1"
+      ],
+      "use_when": "ready/V2/layer/crosscheck/frozenを分冊する時"
+    },
+    {
+      "tag": "packager.ready.role",
+      "purpose": "ready=条件・条約",
+      "source_ids": [
+        "pack.cutout.v1"
+      ],
+      "use_when": "readyを本文に漏らさない時"
+    },
+    {
+      "tag": "packager.v2.role",
+      "purpose": "V2=本文施工図",
+      "source_ids": [
+        "pack.cutout.v1"
+      ],
+      "use_when": "場面・動作・物・会話の主入力"
+    },
+    {
+      "tag": "packager.crosscheck",
+      "purpose": "ready×V2×layer照合",
+      "source_ids": [
+        "pack.cutout.v1",
+        "layer.meaning.v1"
+      ],
+      "use_when": "対応が取れない時STOPするため"
+    },
+    {
+      "tag": "packager.frozen.extract",
+      "purpose": "執筆直前の最小凍結値抽出",
+      "source_ids": [
+        "pack.cutout.v1",
+        "layer.meaning.v1"
+      ],
+      "use_when": "執筆さんへ全正本を渡さない時"
+    },
+    {
+      "tag": "packager.execution_queue",
+      "purpose": "場面ごとの施工キュー",
+      "source_ids": [
+        "pack.cutout.v1",
+        "layer.meaning.v1"
+      ],
+      "use_when": "執筆さんが拾い切れない時"
+    },
+    {
+      "tag": "packager.lookup.layer",
+      "purpose": "レイヤー辞書の引き出し呼び出し",
+      "source_ids": [
+        "pack.cutout.v1",
+        "layer.meaning.v1",
+        "layer.preset.v1"
+      ],
+      "use_when": "梱包さんが曖昧/変更したい時"
+    },
+    {
+      "tag": "packager.stop",
+      "purpose": "梱包段階STOP",
+      "source_ids": [
+        "pack.cutout.v1"
+      ],
+      "use_when": "ready/V2/layer未対応や権限外の時"
+    },
+    {
+      "tag": "nom.gate.validation",
+      "purpose": "NOMはvalidation_gate",
+      "source_ids": [
+        "nom.gate.min.v3"
+      ],
+      "use_when": "NOMを本文条件源にしないため"
+    },
+    {
+      "tag": "nom.reading.actual",
+      "purpose": "実読確認。filename/summary/memoryは読了扱いしない",
+      "source_ids": [
+        "nom.gate.min.v3"
+      ],
+      "use_when": "読んだふり対策"
+    },
+    {
+      "tag": "nom.fixed_layer",
+      "purpose": "fixed_layer確認",
+      "source_ids": [
+        "nom.gate.min.v3"
+      ],
+      "use_when": "レイヤー条件が未確定の時"
+    },
+    {
+      "tag": "nom.heat_layer",
+      "purpose": "heat_layer確認",
+      "source_ids": [
+        "nom.gate.min.v3"
+      ],
+      "use_when": "熱源が本文から消える時"
+    },
+    {
+      "tag": "nom.forbidden_lines",
+      "purpose": "禁止線確認",
+      "source_ids": [
+        "nom.gate.min.v3"
+      ],
+      "use_when": "禁止線違反を止める時"
+    },
+    {
+      "tag": "nom.frozen_table",
+      "purpose": "frozen_condition_table作成",
+      "source_ids": [
+        "nom.gate.min.v3"
+      ],
+      "use_when": "本文前に条件を凍結する時"
+    },
+    {
+      "tag": "nom.stop.no_draft",
+      "purpose": "STOP時に暫定本文を出さない",
+      "source_ids": [
+        "nom.gate.min.v3"
+      ],
+      "use_when": "不足があるのに書き始めそうな時"
+    },
+    {
+      "tag": "embed.character",
+      "purpose": "キャラクター設計へ恒久埋込",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "人物由来の安定した癖を見つけた時"
+    },
+    {
+      "tag": "embed.world_axis",
+      "purpose": "世界軸へ恒久埋込",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "場所・物・手順・生活運用の恒久法則を見つけた時"
+    },
+    {
+      "tag": "embed.work_profile",
+      "purpose": "作品プロファイルへ埋込",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "作品全体の地の文初期値/禁止群"
+    },
+    {
+      "tag": "embed.band_profile",
+      "purpose": "帯プロファイルへ埋込",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "帯ごとの温度/締め/偏り"
+    },
+    {
+      "tag": "embed.episode_layer",
+      "purpose": "単話適用値",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "今回だけの値"
+    },
+    {
+      "tag": "backlog.layer",
+      "purpose": "レイヤー変更バックログ",
+      "source_ids": [
+        "layer.meaning.v1",
+        "pack.cutout.v1"
+      ],
+      "use_when": "恒久変更が必要そうだが梱包さん権限外の時"
+    },
+    {
+      "tag": "backlog.character",
+      "purpose": "キャラ設計戻し",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "単話補完が人物癖として反復する時"
+    },
+    {
+      "tag": "backlog.world_axis",
+      "purpose": "世界軸戻し",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "単話補完が世界運用として反復する時"
+    },
+    {
+      "tag": "backlog.band",
+      "purpose": "帯戻し",
+      "source_ids": [
+        "layer.meaning.v1"
+      ],
+      "use_when": "同じ帯で締め方/圧源が偏る時"
+    }
+  ],
+  "symptom_to_tag": [
+    {
+      "symptom": "客観視が無色になる",
+      "tags": [
+        "layer.axis.pressure",
+        "layer.axis.leak",
+        "layer.prose.observation"
+      ]
+    },
+    {
+      "symptom": "副/本来主が補助役扱いされる",
+      "tags": [
+        "layer.axis.pressure",
+        "layer.axis.embed"
+      ]
+    },
+    {
+      "symptom": "感情名が直接出る",
+      "tags": [
+        "layer.prose.inner_output",
+        "layer.axis.routing",
+        "layer.axis.leak",
+        "layer.preset.body_leak_restraint"
+      ]
+    },
+    {
+      "symptom": "関係が『距離が縮まる』で説明される",
+      "tags": [
+        "layer.scene.distance",
+        "layer.axis.routing",
+        "layer.preset.distance_boundary_relation"
+      ]
+    },
+    {
+      "symptom": "締めが『十分だった』『分かった』になる",
+      "tags": [
+        "layer.closing.unresolved_residue",
+        "layer.scene.residue",
+        "layer.preset.residue_close"
+      ]
+    },
+    {
+      "symptom": "猫や物が象徴化される",
+      "tags": [
+        "layer.scene.object_position",
+        "layer.expanded.description_suppression",
+        "layer.preset.cat_cafe_object_operation"
+      ]
+    },
+    {
+      "symptom": "店や世界の普通を説明し始める",
+      "tags": [
+        "layer.scene.procedure",
+        "layer.prose.explanation",
+        "layer.preset.procedure_world_pressure"
+      ]
+    },
+    {
+      "symptom": "文章が清潔すぎる/全員が意味に協力する",
+      "tags": [
+        "layer.flow.interruption",
+        "layer.scene.interruption",
+        "layer.preset.clean_proof_breaker"
+      ]
+    },
+    {
+      "symptom": "変奏が曖昧",
+      "tags": [
+        "layer.flow.sentence_variation",
+        "layer.flow.sentence_length",
+        "layer.flow.object_first_rate",
+        "layer.flow.verb_timing"
+      ]
+    },
+    {
+      "symptom": "会話がテーマ説明になる",
+      "tags": [
+        "layer.flow.dialogue_ratio",
+        "layer.preset.conversation_mismatch",
+        "layer.prose.speech_verb"
+      ]
+    },
+    {
+      "symptom": "沈黙がAI的余韻になる",
+      "tags": [
+        "layer.flow.dialogue_ratio",
+        "layer.axis.leak",
+        "layer.scene.residue"
+      ]
+    },
+    {
+      "symptom": "描写が飾りになる",
+      "tags": [
+        "layer.expanded.description_output",
+        "layer.flow.focus_route",
+        "layer.expanded.description_psychology"
+      ]
+    },
+    {
+      "symptom": "比喩がきれいな説明になる",
+      "tags": [
+        "layer.prose.metaphor",
+        "layer.expanded.description_suppression"
+      ]
+    },
+    {
+      "symptom": "薄い回を説明で水増しする",
+      "tags": [
+        "layer.expanded.thin_reinforcement",
+        "layer.preset.high_density_12k",
+        "packager.execution_queue"
+      ]
+    },
+    {
+      "symptom": "ready抽象文が本文に漏れる",
+      "tags": [
+        "packager.ready.role",
+        "packager.crosscheck",
+        "packager.frozen.extract"
+      ]
+    },
+    {
+      "symptom": "V2動作を拾い切れない",
+      "tags": [
+        "packager.v2.role",
+        "packager.execution_queue",
+        "packager.crosscheck"
+      ]
+    },
+    {
+      "symptom": "梱包さんが設定値で迷う",
+      "tags": [
+        "packager.lookup.layer",
+        "layer.preset.packager_balanced",
+        "layer.meaning.v1"
+      ]
+    },
+    {
+      "symptom": "NOMを本文素材に読んでしまう",
+      "tags": [
+        "nom.gate.validation",
+        "nom.fixed_layer",
+        "nom.frozen_table"
+      ]
+    },
+    {
+      "symptom": "読んだふりが起きる",
+      "tags": [
+        "nom.reading.actual",
+        "nom.stop.no_draft"
+      ]
+    },
+    {
+      "symptom": "単話補完が恒久化しそう",
+      "tags": [
+        "backlog.layer",
+        "embed.character",
+        "embed.world_axis"
+      ]
+    }
+  ],
+  "role_to_tag": [
+    {
+      "role": "設計さん",
+      "tags": [
+        "source.registry",
+        "runtime.load.policy",
+        "layer.axis.embed",
+        "embed.character",
+        "embed.world_axis",
+        "backlog.layer",
+        "nom.gate.validation"
+      ]
+    },
+    {
+      "role": "梱包さん",
+      "tags": [
+        "packager.core.light",
+        "packager.cutout.50pack",
+        "packager.folder.episode",
+        "packager.lookup.layer",
+        "packager.crosscheck",
+        "packager.frozen.extract",
+        "packager.stop"
+      ]
+    },
+    {
+      "role": "執筆さん",
+      "tags": [
+        "packager.frozen.extract",
+        "nom.gate.validation",
+        "nom.stop.no_draft"
+      ]
+    },
+    {
+      "role": "通し番/検査",
+      "tags": [
+        "nom.frozen_table",
+        "packager.crosscheck",
+        "layer.prose.forbidden",
+        "layer.closing.unresolved_residue"
+      ]
+    },
+    {
+      "role": "初心者公開ライン",
+      "tags": [
+        "layer.preset.beginner_heat",
+        "runtime.load.policy",
+        "packager.core.light"
+      ]
+    }
+  ]
+}

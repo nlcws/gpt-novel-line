@@ -1,0 +1,83 @@
+{
+  "status": "complete_candidate",
+  "policy": {
+    "hard_conclusion": "world_axis_fixed_layer_is_physical_procedural_operational_not_style_or_theme",
+    "namespace": "DSGN_ / dsgn.*",
+    "writer_visibility": "frozen_extract_only"
+  },
+  "fixation_levels": [
+    "HARD_FIXED",
+    "SOFT_DEFAULT",
+    "CONDITIONAL_FIXED",
+    "EPISODE_ONLY",
+    "BACKLOG_CANDIDATE",
+    "PROHIBITED"
+  ],
+  "destinations": [
+    "WORLD_AXIS",
+    "CHARACTER_DESIGN",
+    "WORK_PROFILE",
+    "BAND_PROFILE",
+    "EPISODE_LAYER",
+    "BACKLOG",
+    "PROHIBITED"
+  ],
+  "dry_run_cases": [
+    {
+      "id": "EMBED001",
+      "input": "猫はどかさず、人間側が皿をずらす。作品コンセプトにも合う。",
+      "expected_destination": "WORLD_AXIS",
+      "expected_fixation": "SOFT_DEFAULT",
+      "tags": [
+        "dsgn.embed.world_axis",
+        "dsgn.layer.scene.procedure",
+        "dsgn.layer.scene.object_position"
+      ],
+      "pass_reason": "世界の物理運用であり、本文効果が皿/席/通路に出る。"
+    },
+    {
+      "id": "EMBED002",
+      "input": "男客が返答前に鞄を持ち替える。今回だけ。",
+      "expected_destination": "EPISODE_LAYER",
+      "expected_fixation": "EPISODE_ONLY",
+      "tags": [
+        "dsgn.embed.episode_layer",
+        "dsgn.layer.axis.leak"
+      ],
+      "pass_reason": "人物固有か世界由来か未確定。単話漏れ口として扱う。"
+    },
+    {
+      "id": "EMBED003",
+      "input": "すずは顔より手元を見る癖が複数話で出た。",
+      "expected_destination": "CHARACTER_DESIGN",
+      "expected_fixation": "SOFT_DEFAULT",
+      "tags": [
+        "dsgn.embed.character",
+        "dsgn.layer.prose.observation"
+      ],
+      "pass_reason": "人物のnotice_biasであり世界軸ではない。"
+    },
+    {
+      "id": "EMBED004",
+      "input": "白い毛は優しさの象徴として使う。",
+      "expected_destination": "PROHIBITED",
+      "expected_fixation": "PROHIBITED",
+      "tags": [
+        "dsgn.layer.prose.forbidden",
+        "dsgn.layer.scene.residue"
+      ],
+      "pass_reason": "symbolic_cat_or_object に触れる。"
+    },
+    {
+      "id": "EMBED005",
+      "input": "閉店前だけ、作業音が返答を割る。",
+      "expected_destination": "WORLD_AXIS",
+      "expected_fixation": "CONDITIONAL_FIXED",
+      "tags": [
+        "dsgn.embed.world_axis",
+        "dsgn.layer.flow.interruption"
+      ],
+      "pass_reason": "時間条件つきの世界運用。"
+    }
+  ]
+}

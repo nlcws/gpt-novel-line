@@ -1,0 +1,64 @@
+{
+  "status": "complete_candidate",
+  "namespace": "DSGN_ / dsgn.*",
+  "placement_sections": {
+    "WORLD_AXIS": [
+      "WORLD_PURE_DESIGN",
+      "WORLD_OPERATION_DESIGN",
+      "DSGN_LAYER_EMBED_WORLD_AXIS",
+      "DSGN_LAYER_ANCHOR_REFS",
+      "WORLD_LAYER_BACKLOG"
+    ],
+    "CHARACTER_DESIGN": [
+      "CHARACTER_PURE_DESIGN",
+      "CHARACTER_BEHAVIOR_DESIGN",
+      "DSGN_LAYER_EMBED_CHARACTER",
+      "DSGN_LAYER_ANCHOR_REFS",
+      "CHARACTER_LAYER_BACKLOG"
+    ],
+    "WORK_PROFILE": [
+      "WORK_PURE_DESIGN",
+      "WORK_TEXT_POLICY",
+      "DSGN_LAYER_EMBED_WORK_PROFILE",
+      "DSGN_LAYER_ANCHOR_REFS"
+    ],
+    "BAND_PROFILE": [
+      "BAND_PURE_DESIGN",
+      "BAND_OPERATION_DESIGN",
+      "DSGN_LAYER_EMBED_BAND_PROFILE",
+      "DSGN_LAYER_ANCHOR_REFS"
+    ],
+    "EPISODE_FOLDER": [
+      "01_ready.md",
+      "02_v2.md",
+      "03_layer.md",
+      "04_crosscheck.md",
+      "05_frozen.md",
+      "06_backlog.md"
+    ]
+  },
+  "required_layer_embed_fields": [
+    "anchor_id",
+    "anchor_type",
+    "linked_pure_design_ref",
+    "fixation_level",
+    "source_basis",
+    "layer_use",
+    "expected_text_effect",
+    "writer_visibility",
+    "validation",
+    "tags"
+  ],
+  "stop_if": [
+    "pure_design_contains_scene_vector_or_routing_axis_or_leak_axis",
+    "layer_embed_contains_new_world_fact",
+    "missing_fixation_level",
+    "missing_anchor_id",
+    "missing_linked_pure_design_ref",
+    "missing_expected_text_effect",
+    "missing_writer_visibility",
+    "missing_tags",
+    "project_tag_mixed",
+    "prose_ambiguous_embed"
+  ]
+}

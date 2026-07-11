@@ -1,0 +1,558 @@
+{
+  "status": "complete_candidate",
+  "namespace": {
+    "designer_file_prefix": "DSGN_",
+    "designer_tag_prefix": "dsgn.",
+    "designer_source_prefix": "DSGN.SRC.",
+    "project_reserved_file_prefix": "PRJ_",
+    "project_reserved_tag_prefix": "project.",
+    "do_not_merge": [
+      "PRJ_PROJECT_INDEX",
+      "project.*",
+      "episode local index"
+    ]
+  },
+  "sources": {
+    "DSGN.SRC.layer.runtime.v28": {
+      "file": "layer_runtime_v28_ai_native_complete_candidate.md",
+      "type": "canonical_candidate",
+      "owner": "designer",
+      "summary": "レイヤーv28正本候補。全項目意味辞書とプリセットを内包。",
+      "load_mode": "designer_full / packager_lookup_only"
+    },
+    "DSGN.SRC.layer.meaning.v1": {
+      "file": "layer_all_items_meaning_reference_v1.md",
+      "type": "reference",
+      "owner": "designer",
+      "summary": "レイヤー全項目の意味・選ぶ条件・本文効果・事故・設定例。",
+      "load_mode": "lookup_reference"
+    },
+    "DSGN.SRC.layer.preset.v1": {
+      "file": "layer_full_preset_library_v1.md",
+      "type": "reference",
+      "owner": "designer",
+      "summary": "梱包さんが仮設定に使うレイヤープリセット集。",
+      "load_mode": "lookup_reference"
+    },
+    "DSGN.SRC.layer.packager_effect.v1": {
+      "file": "packager_layer_setting_effect_reference_v1.md",
+      "type": "reference",
+      "owner": "packager_support",
+      "summary": "設定値→本文効果→事故→併用条件の早見表。",
+      "load_mode": "packager_lookup_reference"
+    },
+    "DSGN.SRC.nom.gate.min.v3": {
+      "file": "nom_gate_insert_min_v3.md",
+      "type": "insert_gate",
+      "owner": "designer_runtime",
+      "summary": "NOM最小差込ゲート。本文条件源ではなくvalidation_gate。",
+      "load_mode": "insert_light"
+    },
+    "DSGN.SRC.pack.cutout.v1": {
+      "file": "pack_cutout_module_v1.md",
+      "type": "module",
+      "owner": "packager",
+      "summary": "話パック切り出し工程。1話1フォルダ、ready/V2/layer/crosscheck/frozen。",
+      "load_mode": "mode_activation"
+    },
+    "DSGN.SRC.tag.registry.v1": {
+      "file": "designer_canonical_tag_registry_v1.md",
+      "type": "index",
+      "owner": "designer",
+      "summary": "タグ→正本→使う場面の登録表。",
+      "load_mode": "always_light"
+    },
+    "DSGN.SRC.reverse.lookup.v1": {
+      "file": "designer_reverse_lookup_index_v1.md",
+      "type": "index",
+      "owner": "designer",
+      "summary": "症状・疑問・役割からタグへ逆引きする表。",
+      "load_mode": "always_light"
+    },
+    "DSGN.SRC.lookup.protocol.v1": {
+      "file": "designer_lookup_protocol_v1.md",
+      "type": "protocol",
+      "owner": "designer_packager_bridge",
+      "summary": "梱包さんが設計さんへ該当項目だけ問い合わせるプロトコル。",
+      "load_mode": "always_light"
+    }
+  },
+  "items": [
+    {
+      "dsgn_tag": "dsgn.source.registry",
+      "meaning": "正本・参照・差込・モジュールの所在",
+      "source_id": "DSGN.SRC.*",
+      "designer_use": "設計さんがどの正本を引くか決める",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.source.load_policy",
+      "meaning": "常時読む/必要時に読む/執筆へ渡すを分ける",
+      "source_id": "DSGN.SRC.tag.registry.v1",
+      "designer_use": "正本の常時展開を避ける",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.mode.layer_lookup",
+      "meaning": "レイヤー項目の辞書引き",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "梱包さんや設計さんが迷った時に起動",
+      "load_mode": "on_demand"
+    },
+    {
+      "dsgn_tag": "dsgn.mode.pack_cutout",
+      "meaning": "話パック切り出しモード",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "designer_use": "50話パックや1話1フォルダを作る時",
+      "load_mode": "mode_activation"
+    },
+    {
+      "dsgn_tag": "dsgn.mode.embed_review",
+      "meaning": "キャラ/世界軸/作品/帯への埋込判断",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "単話補完が恒久化しそうな時",
+      "load_mode": "on_demand"
+    },
+    {
+      "dsgn_tag": "dsgn.mode.nom_gate",
+      "meaning": "NOM差込ゲート",
+      "source_id": "DSGN.SRC.nom.gate.min.v3",
+      "designer_use": "本文前や梱包前の検査",
+      "load_mode": "insert_light"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.axis.surface",
+      "meaning": "表面観測。旧主。本文表面の観測距離",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "客観視/客観近接/半歩内側を選ぶ",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.axis.pressure",
+      "meaning": "圧源。旧副。本来主",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "本文が何を多く拾うか決める",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.axis.routing",
+      "meaning": "感情/関係/変化/余韻の変換先",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "意味の整理へ吸われる時",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.axis.leak",
+      "meaning": "内圧の漏れ口",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "感情名を身体/物/距離へ出す",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.axis.embed",
+      "meaning": "埋込先",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "キャラ/世界軸/作品/帯/単話の持ち分を決める",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.lexicon",
+      "meaning": "地の文語彙",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "雰囲気語を避け、拾う対象を決める",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.temperature",
+      "meaning": "地の文温度",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "低温/高温の出し方を調整",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.observation",
+      "meaning": "地の文観測",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "客観のまま偏りを出す",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.inner_output",
+      "meaning": "内面出力",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "感情名を外部出力に変換",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.speaker_tag",
+      "meaning": "話者札",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "会話の誰が話すかを示す",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.subject_tag",
+      "meaning": "主語札",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "人物/物/手順の前面化を調整",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.speech_verb",
+      "meaning": "発話動詞制限",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "心理付き発話動詞を避ける",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.connector",
+      "meaning": "地の文接続",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "論理語ではなく物理遷移でつなぐ",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.metaphor",
+      "meaning": "比喩制御",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "比喩の象徴化を避ける",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.explanation",
+      "meaning": "説明量",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "説明を動作/物へ置換",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.prose.forbidden",
+      "meaning": "禁止群",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "禁止語と変換先をセットで扱う",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.direction",
+      "meaning": "旧向かう方向。scene/closing/releaseへ分解",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "抽象方向を物理終着へ変える",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.sentence_variation",
+      "meaning": "旧変奏。文運び制御",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "文体差ではなく操作値へ分解",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.sentence_length",
+      "meaning": "文長配置",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "pressure_build等を選ぶ",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.clause_density",
+      "meaning": "節密度",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "一文の情報密度",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.subject_visibility",
+      "meaning": "主語可視性",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "省略/明示/物主語を制御",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.object_first_rate",
+      "meaning": "物・場所・手順の前置率",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "物理運用で圧を出す",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.verb_timing",
+      "meaning": "動詞タイミング",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "反応説明を挟むかすぐ動かすか",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.dialogue_ratio",
+      "meaning": "会話/地の文比率",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "action_heavy/exchange/silence",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.repetition_delta",
+      "meaning": "反復差分",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "変化を説明せず反復差で見せる",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.interruption",
+      "meaning": "割込パターン",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "清潔な証明を壊す",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.line_break",
+      "meaning": "改行密度",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "詩化/詰まりを制御",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.flow.focus_route",
+      "meaning": "焦点経路",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "triggerとreturn_point必須",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.default_safe",
+      "meaning": "最低安全値",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "迷った時の初期値",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.cat_cafe_object_operation",
+      "meaning": "猫・店・席・皿・帳面運用",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "猫/店/物理運用回",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.body_leak_restraint",
+      "meaning": "身体漏れ拘束",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "感情名禁止の人物回",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.distance_boundary_relation",
+      "meaning": "距離境界関係",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "関係名を出さない回",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.procedure_world_pressure",
+      "meaning": "手順世界圧",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "世界軸の手順で運ぶ回",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.conversation_mismatch",
+      "meaning": "会話ズレ",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "説明会話を避ける回",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.residue_close",
+      "meaning": "残留締め",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "十分だった系回避",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.clean_proof_breaker",
+      "meaning": "清潔な証明崩し",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "全員協力感を壊す",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.beginner_heat",
+      "meaning": "初心者熱保持",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "薄い入力の熱を残す",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.high_density_12k",
+      "meaning": "12k高密度",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "不可削長文狙い",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.layer.preset.packager_balanced",
+      "meaning": "梱包標準",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "designer_use": "通常初期値",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.packager.ready.role",
+      "meaning": "ready=条件・条約",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "designer_use": "readyを本文語にしない",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.packager.v2.role",
+      "meaning": "V2=本文施工図",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "designer_use": "場面/動作/物/会話の主入力",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.packager.layer.apply",
+      "meaning": "layer=拾い方/漏らし方/閉じ方",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "designer_use": "readyとV2を本文化する足場",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.packager.crosscheck",
+      "meaning": "ready×V2×layer照合",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "designer_use": "未対応ならSTOP",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.packager.frozen.extract",
+      "meaning": "frozen最小抽出",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "designer_use": "執筆さんへ渡す最小値",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.packager.execution_queue",
+      "meaning": "場面別施工キュー",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "designer_use": "拾い切れない時に起動",
+      "load_mode": "on_demand"
+    },
+    {
+      "dsgn_tag": "dsgn.packager.lookup",
+      "meaning": "梱包さんlookup",
+      "source_id": "DSGN.SRC.lookup.protocol.v1",
+      "designer_use": "該当正本だけ引く",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.packager.stop",
+      "meaning": "梱包STOP",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "designer_use": "権限外/矛盾/未対応で止める",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.nom.validation_gate",
+      "meaning": "NOMはvalidation_gate",
+      "source_id": "DSGN.SRC.nom.gate.min.v3",
+      "designer_use": "本文条件源にしない",
+      "load_mode": "insert_light"
+    },
+    {
+      "dsgn_tag": "dsgn.nom.actual_reading",
+      "meaning": "実読確認",
+      "source_id": "DSGN.SRC.nom.gate.min.v3",
+      "designer_use": "filename/summary/memory禁止",
+      "load_mode": "insert_light"
+    },
+    {
+      "dsgn_tag": "dsgn.nom.fixed_layer",
+      "meaning": "fixed_layer確認",
+      "source_id": "DSGN.SRC.nom.gate.min.v3",
+      "designer_use": "レイヤー未確定で止める",
+      "load_mode": "insert_light"
+    },
+    {
+      "dsgn_tag": "dsgn.nom.heat_layer",
+      "meaning": "heat_layer確認",
+      "source_id": "DSGN.SRC.nom.gate.min.v3",
+      "designer_use": "熱源消失を止める",
+      "load_mode": "insert_light"
+    },
+    {
+      "dsgn_tag": "dsgn.nom.forbidden_lines",
+      "meaning": "禁止線確認",
+      "source_id": "DSGN.SRC.nom.gate.min.v3",
+      "designer_use": "禁止線違反を止める",
+      "load_mode": "insert_light"
+    },
+    {
+      "dsgn_tag": "dsgn.nom.frozen_table",
+      "meaning": "凍結条件表",
+      "source_id": "DSGN.SRC.nom.gate.min.v3",
+      "designer_use": "本文前の固定",
+      "load_mode": "insert_light"
+    },
+    {
+      "dsgn_tag": "dsgn.embed.character",
+      "meaning": "キャラ設計へ埋込",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "人物癖/語彙/漏れ口",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.embed.world_axis",
+      "meaning": "世界軸へ埋込",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "場所/物/手順/生活運用",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.embed.work_profile",
+      "meaning": "作品プロファイルへ埋込",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "作品全体の初期値",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.embed.band_profile",
+      "meaning": "帯プロファイルへ埋込",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "帯ごとの温度/偏り",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.embed.episode_layer",
+      "meaning": "単話適用値",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "今回だけの値",
+      "load_mode": "lookup"
+    },
+    {
+      "dsgn_tag": "dsgn.backlog.layer",
+      "meaning": "レイヤーバックログ",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "恒久変更候補",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.backlog.character",
+      "meaning": "キャラ戻し",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "人物癖に戻す",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.backlog.world_axis",
+      "meaning": "世界軸戻し",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "世界運用に戻す",
+      "load_mode": "always_light"
+    },
+    {
+      "dsgn_tag": "dsgn.backlog.band",
+      "meaning": "帯戻し",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "designer_use": "帯傾向へ戻す",
+      "load_mode": "always_light"
+    }
+  ]
+}
