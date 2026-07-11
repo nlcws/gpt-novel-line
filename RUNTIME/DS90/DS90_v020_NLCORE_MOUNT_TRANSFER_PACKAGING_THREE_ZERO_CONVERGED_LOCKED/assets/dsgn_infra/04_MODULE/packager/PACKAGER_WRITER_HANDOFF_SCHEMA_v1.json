@@ -1,0 +1,137 @@
+{
+  "schema_id": "PACKAGER_WRITER_HANDOFF_SCHEMA_v1",
+  "status": "canonical_single_source",
+  "applies_to_designer_runtime": "DS90-v020-NLCORE-MOUNT-TRANSFER-PACKAGING-THREE-ZERO-LOCKED",
+  "target_writer_runtime": "PW90_WRITABLE_ZIP_PACK_CURRENT",
+  "canonicalRoute": "PACKAGER_TO_PACK_WRITER_CANONICAL_ROUTE",
+  "singleRouteLocked": true,
+  "absolutePackagerPackagingLocked": true,
+  "packagerOutputOnly": true,
+  "designerPackagingAllowed": false,
+  "writerConsumesOnlyPackagerOutput": true,
+  "generatedBy": "PACKAGER_PROCESS",
+  "designerDirectPack": false,
+  "writerGate": "V2_FOLDER_PROJECTLOCKED_REAL_PACK_GATE",
+  "inputMode": "V2_EPISODE_FOLDER_PROJECTLOCKED_REAL_PACK",
+  "materialMapRequired": false,
+  "requiredRootFiles": [
+    "00_README.md",
+    "00_packGateIndex.json",
+    "00_sourceMountIndex.json",
+    "01_pack_profile.md",
+    "02_world_axis_used.md",
+    "03_character_used.md",
+    "04_layer_common.md",
+    "04_world_axis_layer_binding.json",
+    "08_terms.md",
+    "09_writer_boot.md",
+    "10_stop_rules.md",
+    "11_layer_backlog.md"
+  ],
+  "requiredRootShelves": [
+    "05_band_profiles",
+    "06_continuity",
+    "07_episodes",
+    "12_pack_cutout_log"
+  ],
+  "requiredPackCutoutLogFiles": [
+    "00_packager_generation_proof.json",
+    "01_packager_inspection_result.json",
+    "02_writer_handoff_check.json",
+    "03_writer_output_comfort_check.json",
+    "04_full_convergence_sweep.json",
+    "05_cutout_log.md"
+  ],
+  "requiredEpisodeFiles": [
+    "00_episode_index.md",
+    "01_ready.md",
+    "02_v2.md",
+    "03_layer.md",
+    "03_layer_binding_manifest.json",
+    "04_crosscheck.md",
+    "05_frozen.md",
+    "06_execution_queue.md",
+    "07_sources.md"
+  ],
+  "bodySourceRoles": {
+    "RESTORE_SOURCE": [
+      "01_ready.md",
+      "02_v2.md"
+    ],
+    "RESTORE_CONSTRAINT": [
+      "03_layer.md",
+      "05_frozen.md"
+    ],
+    "PROCESS_ONLY": [
+      "04_crosscheck.md",
+      "06_execution_queue.md"
+    ],
+    "REFERENCE_ONLY": [
+      "07_sources.md"
+    ],
+    "DENY_AS_BODY_SOURCE": [
+      "00_episode_index.md",
+      "03_layer_binding_manifest.json",
+      "00_packGateIndex.json",
+      "00_sourceMountIndex.json",
+      "README",
+      "manifest",
+      "log"
+    ]
+  },
+  "requiredStopReasons": [
+    "PACKAGER_GENERATION_PROOF_MISSING",
+    "PACKAGER_INSPECTION_PASS_REQUIRED",
+    "DESIGNER_DIRECT_PACK_DENIED",
+    "WRITER_INPUT_CONTRACT_MISMATCH",
+    "INTERNAL_PACK_REFERENCE_MISSING",
+    "PACK_EPISODE_CANONICAL_FILES_MISSING",
+    "PACK_CUTOUT_LOG_MUST_BE_SHELF",
+    "WORLD_AXIS_LAYER_BINDING_MISSING",
+    "EPISODE_LAYER_ACTIVATION_MISSING",
+    "PROJECT_TAG_SEARCH_BINDING_MISSING",
+    "TAG_SEARCH_FULL_CONVERGENCE_MISSING"
+  ],
+  "writerV0048Alignment": {
+    "coverageIdPolicyLocked": true,
+    "coverageTablePolicyDeclared": true,
+    "returnTicketPolicyDeclared": true,
+    "warnClassificationLocked": true,
+    "conflictResolutionOrderLocked": true,
+    "pretextDeliveryIntentRequired": true,
+    "fullConvergenceSweepPlanned": true,
+    "fullConvergenceSweepComplete": true,
+    "warnClasses": [
+      "CRAFT_WARN",
+      "SPEC_WARN",
+      "STOP"
+    ],
+    "quarantineReturnTicketFields": [
+      "reason",
+      "impact",
+      "requiredFix",
+      "boundary",
+      "resumeCondition"
+    ]
+  },
+  "worldAxisLayerBindingRequired": true,
+  "episodeLayerActivationRequired": true,
+  "projectTagSearchBindingRequired": true,
+  "tagIndexMachineSchema": "TAG_INDEX_MACHINE_SCHEMA_v1",
+  "worldAxisLayerBindingSchema": "WORLD_AXIS_LAYER_BINDING_SCHEMA_v1",
+  "episodeLayerActivationSchema": "EPISODE_LAYER_ACTIVATION_SCHEMA_v1",
+  "schema_sha256_scope": "canonical_json_without_schema_sha256_field",
+  "packagerProcessActive": true,
+  "generatedByDesigner": false,
+  "manualPack": false,
+  "storyPackSelfContained": true,
+  "preclearedStopHackUsed": false,
+  "sourceMountIndexRole": "internal_source_record_index",
+  "handoffBasis": "ARTIFACT_BASED_NOT_CODE_BASED",
+  "schema_sha256": "843c570dccf699004d6451227d8f84f692390d65265099f811f5621b806801c0",
+  "target_writer_runtime_family": "PW90",
+  "writerAcceptanceBasis": "WRITABLE_ZIP_STORY_PACK_ARTIFACT_NOT_VERSION",
+  "canonicalFormatStatus": "best_for_audit_and_reproducibility_not_minimum_acceptance",
+  "minimumStoryPackDefinition": "zip_pack_with_writable_novel_material",
+  "rejectByDesignerVersion": false
+}

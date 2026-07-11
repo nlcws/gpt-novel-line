@@ -1,0 +1,9 @@
+{
+  "schema_id": "WORLD_AXIS_LAYER_BINDING_SCHEMA_v1",
+  "status": "CURRENT_SCHEMA",
+  "root_file": "04_world_axis_layer_binding.json",
+  "writer_read_role": "CONSTRAINT_ONLY_DENY_BODY_SOURCE",
+  "required_fields": ["binding_id", "world_axis_target", "layer_key", "allowed_effect", "forbidden_effect", "scope", "source_refs", "writer_role"],
+  "writer_roles": ["CONSTRAINT_ONLY", "STYLE_GUIDE", "EMPHASIS_GUIDE", "DENY_AS_BODY_SOURCE"],
+  "stop_policy": ["WORLD_FACT_MODIFICATION_BY_LAYER", "UNVERIFIED_SOURCE_PROMOTION", "MISSING_WORLD_AXIS_TARGET", "MISSING_BINDING_SOURCE"]
+}

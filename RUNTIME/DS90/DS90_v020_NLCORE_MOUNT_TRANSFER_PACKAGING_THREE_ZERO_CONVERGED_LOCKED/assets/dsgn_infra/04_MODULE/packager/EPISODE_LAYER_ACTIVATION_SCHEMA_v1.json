@@ -1,0 +1,8 @@
+{
+  "schema_id": "EPISODE_LAYER_ACTIVATION_SCHEMA_v1",
+  "status": "CURRENT_SCHEMA",
+  "activation_modes": ["OFF", "PRESET", "SELECT", "FULL"],
+  "writer_rule": "enabled_layers_only",
+  "full_requires_reason": true,
+  "unused_layer_policy": "unused_layers_to_11_layer_backlog"
+}
