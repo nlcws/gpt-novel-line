@@ -1,0 +1,14 @@
+{
+  "schema_id": "TAG_INDEX_MACHINE_SCHEMA_v1",
+  "status": "CURRENT_MACHINE_SCHEMA",
+  "domains": ["WORLD_AXIS", "CHARACTER", "PLACE", "ITEM", "RELATION", "LAYER_BINDING", "EPISODE_LAYER_ACTIVATION"],
+  "address_policy": {
+    "tag_search_address": "source_file/source_lines",
+    "pack_cutout_address": "source_file_current/source_lines_current",
+    "mix_policy": "MIXING_FORBIDDEN"
+  },
+  "repair_policy": "PROPOSAL_ONLY",
+  "required_definitions": ["ITEM", "ENTITY", "RELATION", "STOP_TAG"],
+  "world_axis_layer_binding_indexed": true,
+  "episode_layer_activation_indexed": true
+}
