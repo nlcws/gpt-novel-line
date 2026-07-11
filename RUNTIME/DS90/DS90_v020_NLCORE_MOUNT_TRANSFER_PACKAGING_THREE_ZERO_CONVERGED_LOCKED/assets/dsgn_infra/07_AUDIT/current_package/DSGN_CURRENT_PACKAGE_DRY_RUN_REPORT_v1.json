@@ -1,0 +1,127 @@
+{
+  "status": "converged",
+  "reports": [
+    {
+      "iteration": 1,
+      "status": "FAIL",
+      "passes": [
+        "required_sources",
+        "namespace_separation",
+        "package_path_prefix",
+        "writer_isolation_guard",
+        "old_alias_conversion",
+        "embed_placement_fields"
+      ],
+      "failures": [
+        {
+          "check": "required_exact_tags",
+          "detail": [
+            "dsgn.layer.axis.surface",
+            "dsgn.layer.axis.pressure",
+            "dsgn.layer.flow.sentence_variation",
+            "dsgn.layer.flow.direction",
+            "dsgn.layer.preset.residue_close",
+            "dsgn.layer.preset.clean_proof_breaker",
+            "dsgn.packager.crosscheck",
+            "dsgn.packager.frozen.extract"
+          ]
+        },
+        {
+          "check": "always_light_not_under_canon",
+          "detail": [
+            [
+              "DSGN.SRC.embed.placement_policy.v1",
+              "02_CANON/embed/DSGN_LAYER_EMBED_PLACEMENT_POLICY_v1.md"
+            ]
+          ]
+        },
+        {
+          "check": "current_package_load_order",
+          "detail": "missing current load order"
+        },
+        {
+          "check": "manifest_status_converged",
+          "detail": "draft_before_convergence"
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "status": "FAIL",
+      "passes": [
+        "required_sources",
+        "required_exact_tags",
+        "namespace_separation",
+        "package_path_prefix",
+        "always_light_not_under_canon",
+        "writer_isolation_guard",
+        "old_alias_conversion",
+        "embed_placement_fields",
+        "current_package_load_order"
+      ],
+      "failures": [
+        {
+          "check": "manifest_status_converged",
+          "detail": "draft_before_convergence"
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "status": "PASS",
+      "passes": [
+        "required_sources",
+        "required_exact_tags",
+        "namespace_separation",
+        "package_path_prefix",
+        "always_light_not_under_canon",
+        "writer_isolation_guard",
+        "old_alias_conversion",
+        "embed_placement_fields",
+        "current_package_load_order",
+        "manifest_status_converged"
+      ],
+      "failures": []
+    }
+  ],
+  "final_pass": true,
+  "required_sources": [
+    "DSGN.SRC.namespace.v1",
+    "DSGN.SRC.internal.all_item_index.v1",
+    "DSGN.SRC.role.index.v1",
+    "DSGN.SRC.lookup.protocol.v1",
+    "DSGN.SRC.runtime.operation_conditions.v1",
+    "DSGN.SRC.runtime.activation_matrix.v1",
+    "DSGN.SRC.runtime.converged_guard.v1",
+    "DSGN.SRC.layer.runtime.v28",
+    "DSGN.SRC.layer.meaning.v1",
+    "DSGN.SRC.layer.preset.v1",
+    "DSGN.SRC.pack.cutout.v1",
+    "DSGN.SRC.nom.gate.min.v3",
+    "DSGN.SRC.embed.world_axis_layer_policy.v1",
+    "DSGN.SRC.embed.fixation_matrix.v1",
+    "DSGN.SRC.embed.anchor_schema.v1",
+    "DSGN.SRC.embed.placement_policy.v1",
+    "DSGN.SRC.embed.pure_vs_layer_boundary.v1",
+    "DSGN.SRC.zip.load_order.v1"
+  ],
+  "required_exact_tags": [
+    "dsgn.layer.axis.surface",
+    "dsgn.layer.axis.pressure",
+    "dsgn.layer.flow.sentence_variation",
+    "dsgn.layer.flow.direction",
+    "dsgn.layer.preset.residue_close",
+    "dsgn.layer.preset.clean_proof_breaker",
+    "dsgn.packager.crosscheck",
+    "dsgn.packager.frozen.extract",
+    "dsgn.nom.validation_gate",
+    "dsgn.embed.world_axis",
+    "dsgn.embed.character",
+    "dsgn.guard.pure_vs_layer",
+    "dsgn.layer.fixation.matrix",
+    "dsgn.design.anchor",
+    "dsgn.backlog.layer",
+    "dsgn.zip.load_order",
+    "dsgn.runtime.guard"
+  ]
+}
