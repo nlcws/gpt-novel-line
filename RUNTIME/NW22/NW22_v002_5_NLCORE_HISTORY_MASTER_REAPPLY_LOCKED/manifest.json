@@ -1,0 +1,42 @@
+{
+  "runtime": "nw22-v002.5-nlcore-history-master-reapply-locked",
+  "base": "NW22_v002_3_history_master_reapply",
+  "mode": "read_run_heat_sweep_chatvoice_optional_story_layer_locked_source_mount",
+  "source_file_count": 13,
+  "semantic_reimplementation": false,
+  "line": "outside_regular_workflow",
+  "read_and_run": true,
+  "source_as_fuel": true,
+  "user_heat_delivery_locked": true,
+  "full_convergence_sweep_for_nora": true,
+  "chat_voice_runtimeized": true,
+  "optional_story_layer_v21": true,
+  "story_layer_use_if_improves": true,
+  "story_layer_force_every_time": false,
+  "trial_text_allowed": true,
+  "regular_manuscript_allowed": false,
+  "canon_allowed": false,
+  "verified_v2_allowed": false,
+  "nora_return_v2_allowed_when_triggered": true,
+  "gpt_entry": "START_HERE.js",
+  "chat_mount_boot": {
+    "mode": "AUTO_BOOT_ON_CHAT_MOUNT",
+    "auto_start": true,
+    "auto_write": false,
+    "wait_state": "WAIT_FOR_NORA_INPUT"
+  },
+  "node_validation": "node test/runtime.test.js; node src/verify.js",
+  "nested_zips": 0,
+  "novel_line_final_core_lock": true,
+  "four_runtime_equal_respect": true,
+  "history_in_runtime_zip": true,
+  "current_only_runtime_zip": false,
+  "runtime_zip_policy": "current_route_only; no changelog, repair log, migration notes, or past-version bodies",
+  "history_master_reapply": true,
+  "history_master": "NW22_v002_3_NLCORE_LOCKED",
+  "reapplied_patches": [
+    "NORA_SEPARATE_FIRELINE_OUTPUT_LOCK_v001"
+  ],
+  "current_instruction_only": false,
+  "old_instruction_versions_bundled": true
+}

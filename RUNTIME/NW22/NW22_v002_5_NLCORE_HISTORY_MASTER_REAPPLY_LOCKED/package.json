@@ -1,0 +1,11 @@
+{
+  "name": "nora-writer-runtime",
+  "version": "2.5.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/runtime.test.js",
+    "verify": "node src/verify.js",
+    "check": "npm test && npm run verify"
+  }
+}
