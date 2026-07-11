@@ -1,0 +1,53 @@
+{
+  "status": "placement_policy_tagged_candidate",
+  "bundle": "DSGN_layer_embed_placement_policy_bundle_v1.zip",
+  "files": [
+    {
+      "file": "DSGN_LAYER_EMBED_PLACEMENT_POLICY_v1.md",
+      "source_id": "DSGN.SRC.embed.placement_policy.v1",
+      "tags": [
+        "dsgn.embed.placement",
+        "dsgn.embed.world_axis",
+        "dsgn.embed.character",
+        "dsgn.guard.pure_vs_layer"
+      ],
+      "load_mode": "always_light"
+    },
+    {
+      "file": "DSGN_LAYER_EMBED_SECTION_TEMPLATES_v1.md",
+      "source_id": "DSGN.SRC.embed.section_templates.v1",
+      "tags": [
+        "dsgn.embed.templates",
+        "dsgn.design.anchor"
+      ],
+      "load_mode": "lookup_reference"
+    },
+    {
+      "file": "DSGN_PURE_DESIGN_VS_LAYER_BOUNDARY_v1.md",
+      "source_id": "DSGN.SRC.embed.pure_vs_layer_boundary.v1",
+      "tags": [
+        "dsgn.guard.pure_vs_layer",
+        "dsgn.embed.destination"
+      ],
+      "load_mode": "always_light"
+    },
+    {
+      "file": "DSGN_LAYER_EMBED_PLACEMENT_DRY_RUN_v1.md",
+      "source_id": "DSGN.SRC.embed.placement_dry_run.v1",
+      "tags": [
+        "dsgn.dry_run.embed",
+        "dsgn.convergence"
+      ],
+      "load_mode": "audit_reference"
+    },
+    {
+      "file": "DSGN_LAYER_EMBED_PLACEMENT_machine_v1.json",
+      "source_id": "DSGN.SRC.embed.placement_machine.v1",
+      "tags": [
+        "dsgn.embed.machine",
+        "dsgn.embed.placement"
+      ],
+      "load_mode": "runtime_machine"
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "status": "converged",
+  "tag_to_sources": {
+    "dsgn.layer.runtime": [
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "dsgn.layer.*": [
+      "DSGN.SRC.embed.fixation_matrix.v1",
+      "DSGN.SRC.embed.world_axis_layer_policy.v1",
+      "DSGN.SRC.layer.alias_bridge.v0194",
+      "DSGN.SRC.layer.meaning.v1",
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.layer.preset.v1",
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "dsgn.source.canon": [
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "dsgn.source.*": [
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.layer.runtime.v28",
+      "DSGN.SRC.tag.registry.v1",
+      "DSGN.SRC.zip.tag_manifest.v1"
+    ],
+    "dsgn.layer.meaning": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.axis.*": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.flow.*": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.prose.*": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.embed.*": [
+      "DSGN.SRC.embed.anchor_schema.v1",
+      "DSGN.SRC.embed.backlog_flow.v1",
+      "DSGN.SRC.embed.fixation_matrix.v1",
+      "DSGN.SRC.embed.placement_machine.v1",
+      "DSGN.SRC.embed.placement_policy.v1",
+      "DSGN.SRC.embed.placement_tag_manifest.v1",
+      "DSGN.SRC.embed.policy_machine.v1",
+      "DSGN.SRC.embed.policy_tag_manifest.v1",
+      "DSGN.SRC.embed.pure_vs_layer_boundary.v1",
+      "DSGN.SRC.embed.section_templates.v1",
+      "DSGN.SRC.embed.world_axis_layer_policy.v1",
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.axis.surface": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.axis.pressure": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.flow.sentence_variation": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.flow.direction": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.preset.*": [
+      "DSGN.SRC.layer.preset.v1"
+    ],
+    "dsgn.layer.preset.residue_close": [
+      "DSGN.SRC.layer.preset.v1"
+    ],
+    "dsgn.layer.preset.clean_proof_breaker": [
+      "DSGN.SRC.layer.preset.v1"
+    ],
+    "dsgn.layer.effect_reference": [
+      "DSGN.SRC.layer.packager_effect.v1"
+    ],
+    "dsgn.packager.lookup": [
+      "DSGN.SRC.layer.alias_bridge.v0194",
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.lookup.protocol.v1"
+    ],
+    "dsgn.packager.*": [
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.lookup.protocol.v1",
+      "DSGN.SRC.pack.current_route.v0194",
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "dsgn.packager.cutout": [
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "dsgn.packager.crosscheck": [
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "dsgn.packager.frozen.extract": [
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "dsgn.packager.frozen.*": [
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "dsgn.nom.*": [
+      "DSGN.SRC.nom.gate.min.v3"
+    ],
+    "dsgn.nom.validation_gate": [
+      "DSGN.SRC.nom.gate.min.v3"
+    ],
+    "dsgn.runtime.overlay": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "dsgn.runtime.*": [
+      "DSGN.SRC.embed.world_axis_layer_policy.v1",
+      "DSGN.SRC.overlay.manifest.v015",
+      "DSGN.SRC.overlay.patch.v015",
+      "DSGN.SRC.runtime.activation_matrix.v1",
+      "DSGN.SRC.runtime.converged_guard.v1",
+      "DSGN.SRC.runtime.operation_conditions.v1"
+    ],
+    "dsgn.integration.patch": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "dsgn.integration.*": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "dsgn.runtime.manifest": [
+      "DSGN.SRC.overlay.manifest.v015"
+    ],
+    "dsgn.load_order": [
+      "DSGN.SRC.overlay.manifest.v015",
+      "DSGN.SRC.zip.load_order.v1"
+    ],
+    "dsgn.index.tags": [
+      "DSGN.SRC.tag.registry.v1"
+    ],
+    "dsgn.index.*": [
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.internal.all_item_machine.v1",
+      "DSGN.SRC.reverse.lookup.v1",
+      "DSGN.SRC.role.index.v1",
+      "DSGN.SRC.tag.machine.v1",
+      "DSGN.SRC.tag.registry.v1",
+      "DSGN.SRC.zip.tag_map.v1"
+    ],
+    "dsgn.source.registry": [
+      "DSGN.SRC.tag.registry.v1",
+      "DSGN.SRC.zip.tag_manifest.v1"
+    ],
+    "dsgn.index.reverse": [
+      "DSGN.SRC.reverse.lookup.v1"
+    ],
+    "dsgn.lookup.reverse": [
+      "DSGN.SRC.reverse.lookup.v1",
+      "DSGN.SRC.zip.reverse_tag.v1"
+    ],
+    "dsgn.lookup.*": [
+      "DSGN.SRC.lookup.protocol.v1",
+      "DSGN.SRC.reverse.lookup.v1",
+      "DSGN.SRC.zip.reverse_tag.v1"
+    ],
+    "dsgn.lookup.protocol": [
+      "DSGN.SRC.lookup.protocol.v1"
+    ],
+    "dsgn.index.machine": [
+      "DSGN.SRC.internal.all_item_machine.v1",
+      "DSGN.SRC.tag.machine.v1",
+      "DSGN.SRC.zip.tag_map.v1"
+    ],
+    "dsgn.namespace": [
+      "DSGN.SRC.namespace.v1"
+    ],
+    "dsgn.guard.namespace": [
+      "DSGN.SRC.namespace.v1"
+    ],
+    "dsgn.guard.*": [
+      "DSGN.SRC.embed.placement_policy.v1",
+      "DSGN.SRC.embed.pure_vs_layer_boundary.v1",
+      "DSGN.SRC.namespace.v1"
+    ],
+    "dsgn.index.all_items": [
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.internal.all_item_machine.v1"
+    ],
+    "dsgn.source.map": [
+      "DSGN.SRC.internal.all_item_index.v1"
+    ],
+    "dsgn.index.roles": [
+      "DSGN.SRC.role.index.v1"
+    ],
+    "dsgn.role.*": [
+      "DSGN.SRC.role.index.v1"
+    ],
+    "dsgn.runtime.conditions": [
+      "DSGN.SRC.runtime.operation_conditions.v1"
+    ],
+    "dsgn.activation": [
+      "DSGN.SRC.runtime.operation_conditions.v1"
+    ],
+    "dsgn.runtime.activation_matrix": [
+      "DSGN.SRC.runtime.activation_matrix.v1"
+    ],
+    "dsgn.mode.*": [
+      "DSGN.SRC.runtime.activation_matrix.v1"
+    ],
+    "dsgn.runtime.guard": [
+      "DSGN.SRC.embed.world_axis_layer_policy.v1",
+      "DSGN.SRC.runtime.converged_guard.v1"
+    ],
+    "dsgn.stop.*": [
+      "DSGN.SRC.runtime.converged_guard.v1"
+    ],
+    "dsgn.dry_run.report": [
+      "DSGN.SRC.dry_run.report.v1"
+    ],
+    "dsgn.dry_run.*": [
+      "DSGN.SRC.dry_run.cases.v1",
+      "DSGN.SRC.dry_run.machine_report.v1",
+      "DSGN.SRC.dry_run.report.v1",
+      "DSGN.SRC.embed.fixation_dry_run.v1",
+      "DSGN.SRC.embed.placement_dry_run.v1"
+    ],
+    "dsgn.convergence": [
+      "DSGN.SRC.dry_run.machine_report.v1",
+      "DSGN.SRC.dry_run.report.v1",
+      "DSGN.SRC.embed.fixation_dry_run.v1",
+      "DSGN.SRC.embed.placement_dry_run.v1"
+    ],
+    "dsgn.dry_run.cases": [
+      "DSGN.SRC.dry_run.cases.v1"
+    ],
+    "dsgn.dry_run.machine": [
+      "DSGN.SRC.dry_run.machine_report.v1"
+    ],
+    "dsgn.zip.tag_manifest": [
+      "DSGN.SRC.zip.tag_manifest.v1"
+    ],
+    "dsgn.zip.*": [
+      "DSGN.SRC.zip.load_order.v1",
+      "DSGN.SRC.zip.reverse_tag.v1",
+      "DSGN.SRC.zip.tag_manifest.v1",
+      "DSGN.SRC.zip.tag_map.v1"
+    ],
+    "dsgn.zip.reverse_tag": [
+      "DSGN.SRC.zip.reverse_tag.v1"
+    ],
+    "dsgn.zip.load_order": [
+      "DSGN.SRC.zip.load_order.v1"
+    ],
+    "dsgn.zip.tag_map": [
+      "DSGN.SRC.zip.tag_map.v1"
+    ],
+    "dsgn.embed.world_axis": [
+      "DSGN.SRC.embed.placement_policy.v1",
+      "DSGN.SRC.embed.world_axis_layer_policy.v1"
+    ],
+    "dsgn.layer.fixation": [
+      "DSGN.SRC.embed.world_axis_layer_policy.v1"
+    ],
+    "dsgn.layer.fixation.matrix": [
+      "DSGN.SRC.embed.fixation_matrix.v1"
+    ],
+    "dsgn.layer.fixation.*": [
+      "DSGN.SRC.embed.fixation_matrix.v1"
+    ],
+    "dsgn.embed.destination": [
+      "DSGN.SRC.embed.fixation_matrix.v1",
+      "DSGN.SRC.embed.pure_vs_layer_boundary.v1"
+    ],
+    "dsgn.design.anchor": [
+      "DSGN.SRC.embed.anchor_schema.v1",
+      "DSGN.SRC.embed.section_templates.v1"
+    ],
+    "dsgn.design.*": [
+      "DSGN.SRC.embed.anchor_schema.v1",
+      "DSGN.SRC.embed.section_templates.v1"
+    ],
+    "dsgn.embed.schema": [
+      "DSGN.SRC.embed.anchor_schema.v1"
+    ],
+    "dsgn.backlog.layer": [
+      "DSGN.SRC.embed.backlog_flow.v1"
+    ],
+    "dsgn.backlog.*": [
+      "DSGN.SRC.embed.backlog_flow.v1"
+    ],
+    "dsgn.embed.adoption": [
+      "DSGN.SRC.embed.backlog_flow.v1"
+    ],
+    "dsgn.dry_run.embed": [
+      "DSGN.SRC.embed.fixation_dry_run.v1",
+      "DSGN.SRC.embed.placement_dry_run.v1"
+    ],
+    "dsgn.embed.machine": [
+      "DSGN.SRC.embed.placement_machine.v1",
+      "DSGN.SRC.embed.policy_machine.v1"
+    ],
+    "dsgn.embed.tag_manifest": [
+      "DSGN.SRC.embed.placement_tag_manifest.v1",
+      "DSGN.SRC.embed.policy_tag_manifest.v1"
+    ],
+    "dsgn.embed.placement": [
+      "DSGN.SRC.embed.placement_machine.v1",
+      "DSGN.SRC.embed.placement_policy.v1",
+      "DSGN.SRC.embed.placement_tag_manifest.v1"
+    ],
+    "dsgn.guard.pure_vs_layer": [
+      "DSGN.SRC.embed.placement_policy.v1",
+      "DSGN.SRC.embed.pure_vs_layer_boundary.v1"
+    ],
+    "dsgn.embed.character": [
+      "DSGN.SRC.embed.placement_policy.v1"
+    ],
+    "dsgn.embed.templates": [
+      "DSGN.SRC.embed.section_templates.v1"
+    ],
+    "dsgn.packager.current_route": [
+      "DSGN.SRC.pack.current_route.v0194"
+    ],
+    "dsgn.packager.v2": [
+      "DSGN.SRC.pack.current_route.v0194"
+    ],
+    "dsgn.layer.alias_bridge": [
+      "DSGN.SRC.layer.alias_bridge.v0194"
+    ]
+  },
+  "source_to_path": {
+    "DSGN.SRC.layer.runtime.v28": "02_CANON/layer/layer_runtime_v28_ai_native_complete_candidate.md",
+    "DSGN.SRC.layer.meaning.v1": "03_REFERENCE/layer/layer_all_items_meaning_reference_v1.md",
+    "DSGN.SRC.layer.preset.v1": "03_REFERENCE/layer/layer_full_preset_library_v1.md",
+    "DSGN.SRC.layer.packager_effect.v1": "03_REFERENCE/layer/packager_layer_setting_effect_reference_v1.md",
+    "DSGN.SRC.pack.cutout.v1": "04_MODULE/packager/pack_cutout_module_v1.md",
+    "DSGN.SRC.nom.gate.min.v3": "05_INSERT/nom/nom_gate_insert_min_v3.md",
+    "DSGN.SRC.overlay.patch.v015": "06_PATCH/designer/designer_runtime_overlay_patch_v015.md",
+    "DSGN.SRC.overlay.manifest.v015": "00_MANIFEST/legacy/runtime_overlay_manifest_v015.md",
+    "DSGN.SRC.tag.registry.v1": "01_ALWAYS_LIGHT/index/designer_canonical_tag_registry_v1.md",
+    "DSGN.SRC.reverse.lookup.v1": "01_ALWAYS_LIGHT/index/designer_reverse_lookup_index_v1.md",
+    "DSGN.SRC.lookup.protocol.v1": "01_ALWAYS_LIGHT/protocol/designer_lookup_protocol_v1.md",
+    "DSGN.SRC.tag.machine.v1": "01_ALWAYS_LIGHT/machine/designer_tag_index_machine_v1.json",
+    "DSGN.SRC.namespace.v1": "01_ALWAYS_LIGHT/namespace/DSGN_INTERNAL_NAMING_NAMESPACE_v1.md",
+    "DSGN.SRC.internal.all_item_index.v1": "01_ALWAYS_LIGHT/index/DSGN_INTERNAL_ALL_ITEM_INDEX_v1.md",
+    "DSGN.SRC.role.index.v1": "01_ALWAYS_LIGHT/index/DSGN_ROLE_INDEX_v1.md",
+    "DSGN.SRC.internal.all_item_machine.v1": "01_ALWAYS_LIGHT/machine/DSGN_INTERNAL_ALL_ITEM_INDEX_machine_v1.json",
+    "DSGN.SRC.runtime.operation_conditions.v1": "01_ALWAYS_LIGHT/runtime/DSGN_RUNTIME_OPERATION_CONDITIONS_v1.md",
+    "DSGN.SRC.runtime.activation_matrix.v1": "01_ALWAYS_LIGHT/runtime/DSGN_RUNTIME_ACTIVATION_MATRIX_v1.md",
+    "DSGN.SRC.runtime.converged_guard.v1": "01_ALWAYS_LIGHT/runtime/DSGN_OPERATION_CONVERGED_GUARD_v1.md",
+    "DSGN.SRC.dry_run.report.v1": "07_AUDIT/dry_run/DSGN_DRY_RUN_CONVERGENCE_REPORT_v1.md",
+    "DSGN.SRC.dry_run.cases.v1": "07_AUDIT/dry_run/DSGN_DRY_RUN_CASES_v1.json",
+    "DSGN.SRC.dry_run.machine_report.v1": "07_AUDIT/dry_run/DSGN_DRY_RUN_MACHINE_REPORT_v1.json",
+    "DSGN.SRC.zip.tag_manifest.v1": "00_MANIFEST/zip_tagging/DSGN_ZIP_TAG_MANIFEST_v1.md",
+    "DSGN.SRC.zip.reverse_tag.v1": "00_MANIFEST/zip_tagging/DSGN_ZIP_REVERSE_TAG_INDEX_v1.md",
+    "DSGN.SRC.zip.load_order.v1": "00_MANIFEST/zip_tagging/DSGN_ZIP_LOAD_ORDER_v1.md",
+    "DSGN.SRC.zip.tag_map.v1": "00_MANIFEST/zip_tagging/DSGN_ZIP_TAG_MAP_v1.json",
+    "DSGN.SRC.embed.world_axis_layer_policy.v1": "02_CANON/embed/DSGN_WORLD_AXIS_LAYER_EMBED_POLICY_v1.md",
+    "DSGN.SRC.embed.fixation_matrix.v1": "01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_FIXATION_MATRIX_v1.md",
+    "DSGN.SRC.embed.anchor_schema.v1": "01_ALWAYS_LIGHT/embed/DSGN_DESIGN_LAYER_ANCHOR_SCHEMA_v1.md",
+    "DSGN.SRC.embed.backlog_flow.v1": "01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_BACKLOG_FLOW_v1.md",
+    "DSGN.SRC.embed.fixation_dry_run.v1": "07_AUDIT/embed/DSGN_LAYER_EMBED_FIXATION_DRY_RUN_v1.md",
+    "DSGN.SRC.embed.policy_machine.v1": "01_ALWAYS_LIGHT/machine/DSGN_LAYER_EMBED_POLICY_machine_v1.json",
+    "DSGN.SRC.embed.policy_tag_manifest.v1": "00_MANIFEST/embed/DSGN_LAYER_EMBED_POLICY_TAG_MANIFEST_v1.json",
+    "DSGN.SRC.embed.placement_policy.v1": "01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_PLACEMENT_POLICY_v1.md",
+    "DSGN.SRC.embed.section_templates.v1": "03_REFERENCE/embed/DSGN_LAYER_EMBED_SECTION_TEMPLATES_v1.md",
+    "DSGN.SRC.embed.pure_vs_layer_boundary.v1": "01_ALWAYS_LIGHT/embed/DSGN_PURE_DESIGN_VS_LAYER_BOUNDARY_v1.md",
+    "DSGN.SRC.embed.placement_dry_run.v1": "07_AUDIT/embed/DSGN_LAYER_EMBED_PLACEMENT_DRY_RUN_v1.md",
+    "DSGN.SRC.embed.placement_machine.v1": "01_ALWAYS_LIGHT/machine/DSGN_LAYER_EMBED_PLACEMENT_machine_v1.json",
+    "DSGN.SRC.embed.placement_tag_manifest.v1": "00_MANIFEST/embed/DSGN_LAYER_EMBED_PLACEMENT_TAG_MANIFEST_v1.json",
+    "DSGN.SRC.component_zip.DSGN_runtime_source_tagged_bundle_v1": "08_COMPONENT_ZIPS/DSGN_runtime_source_tagged_bundle_v1.zip",
+    "DSGN.SRC.component_zip.DSGN_runtime_activation_converged_bundle_v1": "08_COMPONENT_ZIPS/DSGN_runtime_activation_converged_bundle_v1.zip",
+    "DSGN.SRC.component_zip.DSGN_internal_all_item_index_bundle_v1": "08_COMPONENT_ZIPS/DSGN_internal_all_item_index_bundle_v1.zip",
+    "DSGN.SRC.component_zip.DSGN_layer_embed_fixation_policy_bundle_v1": "08_COMPONENT_ZIPS/DSGN_layer_embed_fixation_policy_bundle_v1.zip",
+    "DSGN.SRC.component_zip.DSGN_layer_embed_placement_policy_bundle_v1": "08_COMPONENT_ZIPS/DSGN_layer_embed_placement_policy_bundle_v1.zip",
+    "DSGN.SRC.component_zip.layer_runtime_v28_all_items_and_presets": "08_COMPONENT_ZIPS/layer_runtime_v28_all_items_and_presets.zip"
+  },
+  "load_mode_to_sources": {
+    "on_demand_full": [
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "lookup_reference": [
+      "DSGN.SRC.embed.section_templates.v1",
+      "DSGN.SRC.layer.meaning.v1",
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.layer.preset.v1"
+    ],
+    "mode_activation": [
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "insert_light": [
+      "DSGN.SRC.nom.gate.min.v3"
+    ],
+    "integration_patch": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "always_light": [
+      "DSGN.SRC.embed.anchor_schema.v1",
+      "DSGN.SRC.embed.backlog_flow.v1",
+      "DSGN.SRC.embed.fixation_matrix.v1",
+      "DSGN.SRC.embed.placement_policy.v1",
+      "DSGN.SRC.embed.pure_vs_layer_boundary.v1",
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.lookup.protocol.v1",
+      "DSGN.SRC.namespace.v1",
+      "DSGN.SRC.overlay.manifest.v015",
+      "DSGN.SRC.reverse.lookup.v1",
+      "DSGN.SRC.role.index.v1",
+      "DSGN.SRC.runtime.activation_matrix.v1",
+      "DSGN.SRC.runtime.converged_guard.v1",
+      "DSGN.SRC.runtime.operation_conditions.v1",
+      "DSGN.SRC.tag.registry.v1",
+      "DSGN.SRC.zip.load_order.v1",
+      "DSGN.SRC.zip.reverse_tag.v1",
+      "DSGN.SRC.zip.tag_manifest.v1"
+    ],
+    "runtime_machine": [
+      "DSGN.SRC.embed.placement_machine.v1",
+      "DSGN.SRC.embed.placement_tag_manifest.v1",
+      "DSGN.SRC.embed.policy_machine.v1",
+      "DSGN.SRC.embed.policy_tag_manifest.v1",
+      "DSGN.SRC.internal.all_item_machine.v1",
+      "DSGN.SRC.tag.machine.v1",
+      "DSGN.SRC.zip.tag_map.v1"
+    ],
+    "audit_reference": [
+      "DSGN.SRC.dry_run.report.v1",
+      "DSGN.SRC.embed.fixation_dry_run.v1",
+      "DSGN.SRC.embed.placement_dry_run.v1"
+    ],
+    "audit_machine": [
+      "DSGN.SRC.dry_run.cases.v1",
+      "DSGN.SRC.dry_run.machine_report.v1"
+    ],
+    "designer_full__packager_lookup_only": [
+      "DSGN.SRC.embed.world_axis_layer_policy.v1"
+    ],
+    "archive_only": [
+      "DSGN.SRC.component_zip.DSGN_internal_all_item_index_bundle_v1",
+      "DSGN.SRC.component_zip.DSGN_layer_embed_fixation_policy_bundle_v1",
+      "DSGN.SRC.component_zip.DSGN_layer_embed_placement_policy_bundle_v1",
+      "DSGN.SRC.component_zip.DSGN_runtime_activation_converged_bundle_v1",
+      "DSGN.SRC.component_zip.DSGN_runtime_source_tagged_bundle_v1",
+      "DSGN.SRC.component_zip.layer_runtime_v28_all_items_and_presets"
+    ]
+  }
+}

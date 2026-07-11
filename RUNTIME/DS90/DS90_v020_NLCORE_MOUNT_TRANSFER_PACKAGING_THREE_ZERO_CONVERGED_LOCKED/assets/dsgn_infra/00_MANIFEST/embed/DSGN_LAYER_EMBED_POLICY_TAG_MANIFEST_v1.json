@@ -1,0 +1,61 @@
+{
+  "status": "embed_policy_tagged_candidate",
+  "bundle": "DSGN_layer_embed_fixation_policy_bundle_v1.zip",
+  "namespace": "DSGN_ / dsgn.*",
+  "files": [
+    {
+      "file": "DSGN_WORLD_AXIS_LAYER_EMBED_POLICY_v1.md",
+      "source_id": "DSGN.SRC.embed.world_axis_layer_policy.v1",
+      "tags": [
+        "dsgn.embed.world_axis",
+        "dsgn.layer.fixation",
+        "dsgn.runtime.guard"
+      ],
+      "load_mode": "designer_full__packager_lookup_only"
+    },
+    {
+      "file": "DSGN_LAYER_EMBED_FIXATION_MATRIX_v1.md",
+      "source_id": "DSGN.SRC.embed.fixation_matrix.v1",
+      "tags": [
+        "dsgn.layer.fixation.matrix",
+        "dsgn.embed.destination"
+      ],
+      "load_mode": "always_light"
+    },
+    {
+      "file": "DSGN_DESIGN_LAYER_ANCHOR_SCHEMA_v1.md",
+      "source_id": "DSGN.SRC.embed.anchor_schema.v1",
+      "tags": [
+        "dsgn.design.anchor",
+        "dsgn.embed.schema"
+      ],
+      "load_mode": "always_light"
+    },
+    {
+      "file": "DSGN_LAYER_EMBED_BACKLOG_FLOW_v1.md",
+      "source_id": "DSGN.SRC.embed.backlog_flow.v1",
+      "tags": [
+        "dsgn.backlog.layer",
+        "dsgn.embed.adoption"
+      ],
+      "load_mode": "always_light"
+    },
+    {
+      "file": "DSGN_LAYER_EMBED_FIXATION_DRY_RUN_v1.md",
+      "source_id": "DSGN.SRC.embed.fixation_dry_run.v1",
+      "tags": [
+        "dsgn.dry_run.embed",
+        "dsgn.convergence"
+      ],
+      "load_mode": "audit_reference"
+    },
+    {
+      "file": "DSGN_LAYER_EMBED_POLICY_machine_v1.json",
+      "source_id": "DSGN.SRC.embed.policy_machine.v1",
+      "tags": [
+        "dsgn.embed.machine"
+      ],
+      "load_mode": "runtime_machine"
+    }
+  ]
+}

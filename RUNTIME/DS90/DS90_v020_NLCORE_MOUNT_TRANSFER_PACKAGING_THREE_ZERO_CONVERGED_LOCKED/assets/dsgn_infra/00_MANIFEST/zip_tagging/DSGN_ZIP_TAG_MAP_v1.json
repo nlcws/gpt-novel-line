@@ -1,0 +1,815 @@
+{
+  "status": "zip_tagged_complete_candidate",
+  "namespace": {
+    "designer": [
+      "DSGN_",
+      "dsgn.",
+      "DSGN.SRC."
+    ],
+    "project_reserved": [
+      "PRJ_",
+      "project.",
+      "PRJ.SRC."
+    ]
+  },
+  "rules": [
+    "ZIP内の正本系は source_id と dsgn.* tag で引く。",
+    "常時読むのは DSGN_INDEX / DSGN_RUNTIME の軽量条件のみ。",
+    "DSGN_CANON / DSGN_REF は lookup 時だけ該当箇所を読む。",
+    "執筆さんへDSGN_CANON/DSGN_REF全文を渡さない。",
+    "project側indexとは名称を混ぜない。"
+  ],
+  "files": [
+    {
+      "source_file": "layer_runtime_v28_ai_native_complete_candidate.md",
+      "zip_path": "DSGN_CANON/layer/layer_runtime_v28_ai_native_complete_candidate.md",
+      "source_id": "DSGN.SRC.layer.runtime.v28",
+      "file_type": "canonical_candidate",
+      "load_mode": "designer_full__packager_lookup_only",
+      "owner": "designer",
+      "role": "レイヤーv28正本候補。全項目意味辞書とプリセットを内包。",
+      "tags": [
+        "dsgn.layer.*",
+        "dsgn.layer.runtime",
+        "dsgn.source.canon"
+      ],
+      "activation": [
+        "DSGN.MODE.layer_lookup",
+        "DSGN.MODE.embed_review"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "4a33ff7fbc5bdbd2461197c316ae221c13ca797bc3214a947d8e27985e734a13",
+      "bytes": 116123
+    },
+    {
+      "source_file": "layer_all_items_meaning_reference_v1.md",
+      "zip_path": "DSGN_REF/layer/layer_all_items_meaning_reference_v1.md",
+      "source_id": "DSGN.SRC.layer.meaning.v1",
+      "file_type": "reference",
+      "load_mode": "lookup_reference",
+      "owner": "designer",
+      "role": "レイヤー全項目の意味・選ぶ条件・本文効果・事故・設定例。",
+      "tags": [
+        "dsgn.layer.meaning",
+        "dsgn.layer.axis.*",
+        "dsgn.layer.prose.*",
+        "dsgn.layer.flow.*",
+        "dsgn.embed.*"
+      ],
+      "activation": [
+        "DSGN.MODE.layer_lookup",
+        "DSGN.MODE.embed_review"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "ab3eae58654a4b2ed5912aa1722c8bed9fa70d885ddefc302673b541f8e2ab42",
+      "bytes": 30826
+    },
+    {
+      "source_file": "layer_full_preset_library_v1.md",
+      "zip_path": "DSGN_REF/layer/layer_full_preset_library_v1.md",
+      "source_id": "DSGN.SRC.layer.preset.v1",
+      "file_type": "reference",
+      "load_mode": "lookup_reference",
+      "owner": "designer",
+      "role": "全項目を使うためのプリセット集。",
+      "tags": [
+        "dsgn.layer.preset.*"
+      ],
+      "activation": [
+        "DSGN.MODE.layer_lookup"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "cf821c5a3adc4b68a3e779aa08ced153ba859dcbbd82219ebc52c4e62eb97063",
+      "bytes": 21347
+    },
+    {
+      "source_file": "packager_layer_setting_effect_reference_v1.md",
+      "zip_path": "DSGN_REF/layer/packager_layer_setting_effect_reference_v1.md",
+      "source_id": "DSGN.SRC.layer.packager_effect.v1",
+      "file_type": "reference",
+      "load_mode": "packager_lookup_reference",
+      "owner": "packager_support",
+      "role": "梱包さん用。設定値→本文効果→事故→併用条件の早見表。",
+      "tags": [
+        "dsgn.packager.lookup",
+        "dsgn.layer.effect_reference"
+      ],
+      "activation": [
+        "DSGN.MODE.pack_cutout",
+        "DSGN.MODE.layer_lookup"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "69a0bb7c39c0ebe4ad1afdf9afaf0ec72ae69c16b6cf07363dc0d60029075b0b",
+      "bytes": 24859
+    },
+    {
+      "source_file": "nom_gate_insert_min_v3.md",
+      "zip_path": "DSGN_INSERT/nom/nom_gate_insert_min_v3.md",
+      "source_id": "DSGN.SRC.nom.gate.min.v3",
+      "file_type": "insert_gate",
+      "load_mode": "insert_light",
+      "owner": "designer_runtime",
+      "role": "NOM最小差込ゲート。本文条件源ではなくvalidation_gate。",
+      "tags": [
+        "dsgn.nom.*",
+        "dsgn.nom.validation_gate"
+      ],
+      "activation": [
+        "DSGN.MODE.nom_gate"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "f4a61420c7847519b89e508e3b726d496fd3153a35cce4221d30e475dd679acc",
+      "bytes": 3072
+    },
+    {
+      "source_file": "pack_cutout_module_v1.md",
+      "zip_path": "DSGN_MODULE/packager/pack_cutout_module_v1.md",
+      "source_id": "DSGN.SRC.pack.cutout.v1",
+      "file_type": "module",
+      "load_mode": "mode_activation",
+      "owner": "packager",
+      "role": "話パック切り出し工程。1話1フォルダ、ready/V2/layer/crosscheck/frozen。",
+      "tags": [
+        "dsgn.packager.*",
+        "dsgn.packager.cutout"
+      ],
+      "activation": [
+        "DSGN.MODE.pack_cutout"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "591b307d2b87d1421843e8107704ec9fd2abb3d81abc34b165b778434a684f9d",
+      "bytes": 5451
+    },
+    {
+      "source_file": "designer_runtime_overlay_patch_v015.md",
+      "zip_path": "DSGN_PATCH/designer_runtime_overlay_patch_v015.md",
+      "source_id": "DSGN.SRC.overlay.patch.v015",
+      "file_type": "patch",
+      "load_mode": "designer_integration",
+      "owner": "designer",
+      "role": "設計さんへの後置きオーバーレイ接続パッチ。",
+      "tags": [
+        "dsgn.runtime.overlay",
+        "dsgn.integration.patch"
+      ],
+      "activation": [
+        "DSGN.MODE.index_maintenance"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "9b20843063b3974e1b4ef0e9cb47724e9f3dad82f552df7b36c0b85b64d745a2",
+      "bytes": 2799
+    },
+    {
+      "source_file": "runtime_overlay_manifest_v015.md",
+      "zip_path": "DSGN_MANIFEST/runtime_overlay_manifest_v015.md",
+      "source_id": "DSGN.SRC.overlay.manifest.v015",
+      "file_type": "manifest",
+      "load_mode": "always_light",
+      "owner": "designer",
+      "role": "オーバーレイ構成と読み込み順のマニフェスト。",
+      "tags": [
+        "dsgn.runtime.manifest",
+        "dsgn.load_order"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "f34b507d2592a77c81458e03c1cb20c9c3322bcb23f34209780d7cfd2fc29218",
+      "bytes": 1207
+    },
+    {
+      "source_file": "designer_canonical_tag_registry_v1.md",
+      "zip_path": "DSGN_INDEX/tag/designer_canonical_tag_registry_v1.md",
+      "source_id": "DSGN.SRC.tag.registry.v1",
+      "file_type": "index",
+      "load_mode": "always_light",
+      "owner": "designer",
+      "role": "タグ→正本→使う場面の登録表。",
+      "tags": [
+        "dsgn.index.tags",
+        "dsgn.source.registry"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "6a99478457413de6a1c612434aea373f8ac4fcb438f4fac1f2c6f37558afa56a",
+      "bytes": 15780
+    },
+    {
+      "source_file": "designer_reverse_lookup_index_v1.md",
+      "zip_path": "DSGN_INDEX/tag/designer_reverse_lookup_index_v1.md",
+      "source_id": "DSGN.SRC.reverse.lookup.v1",
+      "file_type": "index",
+      "load_mode": "always_light",
+      "owner": "designer",
+      "role": "症状・疑問・役割からタグへ逆引きする表。",
+      "tags": [
+        "dsgn.index.reverse",
+        "dsgn.lookup.reverse"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "124d04b96a5ce8238dbb5a865ef6efd55a6e7044cb17e13b18ee06113cf31d9c",
+      "bytes": 3374
+    },
+    {
+      "source_file": "designer_lookup_protocol_v1.md",
+      "zip_path": "DSGN_INDEX/protocol/designer_lookup_protocol_v1.md",
+      "source_id": "DSGN.SRC.lookup.protocol.v1",
+      "file_type": "protocol",
+      "load_mode": "always_light",
+      "owner": "designer_packager_bridge",
+      "role": "梱包さんが設計さんへ該当項目だけ問い合わせるプロトコル。",
+      "tags": [
+        "dsgn.lookup.protocol",
+        "dsgn.packager.lookup"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "3b5792a032bd1a30ae49b497ab64fe91769ba1245e12e2259025f6caf454cc36",
+      "bytes": 3567
+    },
+    {
+      "source_file": "designer_tag_index_machine_v1.json",
+      "zip_path": "DSGN_INDEX/machine/designer_tag_index_machine_v1.json",
+      "source_id": "DSGN.SRC.tag.machine.v1",
+      "file_type": "machine_index",
+      "load_mode": "runtime_machine",
+      "owner": "designer",
+      "role": "機械用タグ索引。",
+      "tags": [
+        "dsgn.index.machine"
+      ],
+      "activation": [
+        "runtime"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "6865cd63899bd2e3a549771a0863730feae15fd8a4a36b18d311857190d45ff7",
+      "bytes": 31392
+    },
+    {
+      "source_file": "DSGN_INTERNAL_NAMING_NAMESPACE_v1.md",
+      "zip_path": "DSGN_INDEX/namespace/DSGN_INTERNAL_NAMING_NAMESPACE_v1.md",
+      "source_id": "DSGN.SRC.namespace.v1",
+      "file_type": "namespace_rule",
+      "load_mode": "always_light",
+      "owner": "designer",
+      "role": "DSGN_ / dsgn.* と PRJ_ / project.* を分離する命名規約。",
+      "tags": [
+        "dsgn.namespace",
+        "dsgn.guard.namespace"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "8abe77432f6e1c5c9bb6160b6bd62b2bf0e95bc1d21b9060479b27825cfeac57",
+      "bytes": 3142
+    },
+    {
+      "source_file": "DSGN_INTERNAL_ALL_ITEM_INDEX_v1.md",
+      "zip_path": "DSGN_INDEX/designer/DSGN_INTERNAL_ALL_ITEM_INDEX_v1.md",
+      "source_id": "DSGN.SRC.internal.all_item_index.v1",
+      "file_type": "designer_index",
+      "load_mode": "always_light",
+      "owner": "designer",
+      "role": "設計さん本体用の全項目インデックス。",
+      "tags": [
+        "dsgn.index.all_items",
+        "dsgn.source.map"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "69d781328440a820620321dd8ac5f59eb1b01eb227aa14cbc96da0ee53d95b80",
+      "bytes": 12114
+    },
+    {
+      "source_file": "DSGN_ROLE_INDEX_v1.md",
+      "zip_path": "DSGN_INDEX/designer/DSGN_ROLE_INDEX_v1.md",
+      "source_id": "DSGN.SRC.role.index.v1",
+      "file_type": "role_index",
+      "load_mode": "always_light",
+      "owner": "designer",
+      "role": "設計さん/梱包さん/執筆さん接続の役割別タグ分離。",
+      "tags": [
+        "dsgn.index.roles",
+        "dsgn.role.*"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "b42a7e0081f717c2641c15f88862b8c4507e4fe011fb9e1fd78936df6793a531",
+      "bytes": 1588
+    },
+    {
+      "source_file": "DSGN_INTERNAL_ALL_ITEM_INDEX_machine_v1.json",
+      "zip_path": "DSGN_INDEX/machine/DSGN_INTERNAL_ALL_ITEM_INDEX_machine_v1.json",
+      "source_id": "DSGN.SRC.internal.all_item_machine.v1",
+      "file_type": "machine_index",
+      "load_mode": "runtime_machine",
+      "owner": "designer",
+      "role": "設計さん全項目インデックスの機械用JSON。",
+      "tags": [
+        "dsgn.index.machine",
+        "dsgn.index.all_items"
+      ],
+      "activation": [
+        "runtime"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "5b068a9546099470b5f92cb4d577c56801747a199abea7da3cec8e8178c03fc9",
+      "bytes": 19115
+    },
+    {
+      "source_file": "DSGN_RUNTIME_OPERATION_CONDITIONS_v1.md",
+      "zip_path": "DSGN_RUNTIME/activation/DSGN_RUNTIME_OPERATION_CONDITIONS_v1.md",
+      "source_id": "DSGN.SRC.runtime.operation_conditions.v1",
+      "file_type": "runtime_condition",
+      "load_mode": "always_light",
+      "owner": "designer_runtime",
+      "role": "DSGN系の正本・辞書・タグを稼働条件として扱う運用規約。",
+      "tags": [
+        "dsgn.runtime.conditions",
+        "dsgn.activation"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "09a4b247d749ca3df07bbea30bc05f2eb43115270e3f71b6679f3a78a1b34ef6",
+      "bytes": 4933
+    },
+    {
+      "source_file": "DSGN_RUNTIME_ACTIVATION_MATRIX_v1.md",
+      "zip_path": "DSGN_RUNTIME/activation/DSGN_RUNTIME_ACTIVATION_MATRIX_v1.md",
+      "source_id": "DSGN.SRC.runtime.activation_matrix.v1",
+      "file_type": "runtime_matrix",
+      "load_mode": "always_light",
+      "owner": "designer_runtime",
+      "role": "状況→MODE→タグ→source policy→outputの起動表。",
+      "tags": [
+        "dsgn.runtime.activation_matrix",
+        "dsgn.mode.*"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "21ecb66e7fbb1a0371c04ba17a05f506a66f4f750bf8b70cdccde527635f5ee4",
+      "bytes": 1673
+    },
+    {
+      "source_file": "DSGN_DRY_RUN_CONVERGENCE_REPORT_v1.md",
+      "zip_path": "DSGN_RUNTIME/dry_run/DSGN_DRY_RUN_CONVERGENCE_REPORT_v1.md",
+      "source_id": "DSGN.SRC.dry_run.report.v1",
+      "file_type": "dry_run_report",
+      "load_mode": "audit_reference",
+      "owner": "designer_runtime",
+      "role": "稼働条件の空回し3巡収束レポート。",
+      "tags": [
+        "dsgn.dry_run.report",
+        "dsgn.convergence"
+      ],
+      "activation": [
+        "audit"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "92d24506002aaaceab1b17f8c8c470c2ccc2509eb5724692d88a85b5b85f6a4b",
+      "bytes": 4662
+    },
+    {
+      "source_file": "DSGN_OPERATION_CONVERGED_GUARD_v1.md",
+      "zip_path": "DSGN_RUNTIME/guard/DSGN_OPERATION_CONVERGED_GUARD_v1.md",
+      "source_id": "DSGN.SRC.runtime.converged_guard.v1",
+      "file_type": "runtime_guard",
+      "load_mode": "always_light",
+      "owner": "designer_runtime",
+      "role": "空回し後に確定した稼働ガード。",
+      "tags": [
+        "dsgn.runtime.guard",
+        "dsgn.stop.*"
+      ],
+      "activation": [
+        "always"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "e0977790b926e12def17433cbd15c521dc14a0f94fb5c31810927c4c90a7638f",
+      "bytes": 2202
+    },
+    {
+      "source_file": "DSGN_DRY_RUN_CASES_v1.json",
+      "zip_path": "DSGN_RUNTIME/dry_run/DSGN_DRY_RUN_CASES_v1.json",
+      "source_id": "DSGN.SRC.dry_run.cases.v1",
+      "file_type": "dry_run_cases",
+      "load_mode": "audit_machine",
+      "owner": "designer_runtime",
+      "role": "空回しケース定義。",
+      "tags": [
+        "dsgn.dry_run.cases"
+      ],
+      "activation": [
+        "audit"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "672ad8814c3d1710b4b1d5a5394226e75ce8f27d1907f0b22950ed7fac7ee48e",
+      "bytes": 3103
+    },
+    {
+      "source_file": "DSGN_DRY_RUN_MACHINE_REPORT_v1.json",
+      "zip_path": "DSGN_RUNTIME/dry_run/DSGN_DRY_RUN_MACHINE_REPORT_v1.json",
+      "source_id": "DSGN.SRC.dry_run.machine_report.v1",
+      "file_type": "dry_run_machine_report",
+      "load_mode": "audit_machine",
+      "owner": "designer_runtime",
+      "role": "空回し結果の機械用レポート。",
+      "tags": [
+        "dsgn.dry_run.machine",
+        "dsgn.convergence"
+      ],
+      "activation": [
+        "audit"
+      ],
+      "writer_visible": false,
+      "project_visible": false,
+      "sha256": "d0ace99a8217d61f14dd6fd722217f82d5f037ad9407ada4d092e071cf300aec",
+      "bytes": 12386
+    }
+  ],
+  "tag_to_sources": {
+    "dsgn.layer.*": [
+      "DSGN.SRC.layer.meaning.v1",
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.layer.preset.v1",
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "dsgn.layer.runtime": [
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "dsgn.source.canon": [
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "dsgn.source.*": [
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.layer.runtime.v28",
+      "DSGN.SRC.tag.registry.v1"
+    ],
+    "dsgn.layer.meaning": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.axis.*": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.prose.*": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.flow.*": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.embed.*": [
+      "DSGN.SRC.layer.meaning.v1"
+    ],
+    "dsgn.layer.preset.*": [
+      "DSGN.SRC.layer.preset.v1"
+    ],
+    "dsgn.packager.lookup": [
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.lookup.protocol.v1"
+    ],
+    "dsgn.packager.*": [
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.lookup.protocol.v1",
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "dsgn.layer.effect_reference": [
+      "DSGN.SRC.layer.packager_effect.v1"
+    ],
+    "dsgn.nom.*": [
+      "DSGN.SRC.nom.gate.min.v3"
+    ],
+    "dsgn.nom.validation_gate": [
+      "DSGN.SRC.nom.gate.min.v3"
+    ],
+    "dsgn.packager.cutout": [
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "dsgn.runtime.overlay": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "dsgn.runtime.*": [
+      "DSGN.SRC.overlay.manifest.v015",
+      "DSGN.SRC.overlay.patch.v015",
+      "DSGN.SRC.runtime.activation_matrix.v1",
+      "DSGN.SRC.runtime.converged_guard.v1",
+      "DSGN.SRC.runtime.operation_conditions.v1"
+    ],
+    "dsgn.integration.patch": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "dsgn.integration.*": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "dsgn.runtime.manifest": [
+      "DSGN.SRC.overlay.manifest.v015"
+    ],
+    "dsgn.load_order": [
+      "DSGN.SRC.overlay.manifest.v015"
+    ],
+    "dsgn.index.tags": [
+      "DSGN.SRC.tag.registry.v1"
+    ],
+    "dsgn.index.*": [
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.internal.all_item_machine.v1",
+      "DSGN.SRC.reverse.lookup.v1",
+      "DSGN.SRC.role.index.v1",
+      "DSGN.SRC.tag.machine.v1",
+      "DSGN.SRC.tag.registry.v1"
+    ],
+    "dsgn.source.registry": [
+      "DSGN.SRC.tag.registry.v1"
+    ],
+    "dsgn.index.reverse": [
+      "DSGN.SRC.reverse.lookup.v1"
+    ],
+    "dsgn.lookup.reverse": [
+      "DSGN.SRC.reverse.lookup.v1"
+    ],
+    "dsgn.lookup.*": [
+      "DSGN.SRC.lookup.protocol.v1",
+      "DSGN.SRC.reverse.lookup.v1"
+    ],
+    "dsgn.lookup.protocol": [
+      "DSGN.SRC.lookup.protocol.v1"
+    ],
+    "dsgn.index.machine": [
+      "DSGN.SRC.internal.all_item_machine.v1",
+      "DSGN.SRC.tag.machine.v1"
+    ],
+    "dsgn.namespace": [
+      "DSGN.SRC.namespace.v1"
+    ],
+    "dsgn.guard.namespace": [
+      "DSGN.SRC.namespace.v1"
+    ],
+    "dsgn.guard.*": [
+      "DSGN.SRC.namespace.v1"
+    ],
+    "dsgn.index.all_items": [
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.internal.all_item_machine.v1"
+    ],
+    "dsgn.source.map": [
+      "DSGN.SRC.internal.all_item_index.v1"
+    ],
+    "dsgn.index.roles": [
+      "DSGN.SRC.role.index.v1"
+    ],
+    "dsgn.role.*": [
+      "DSGN.SRC.role.index.v1"
+    ],
+    "dsgn.runtime.conditions": [
+      "DSGN.SRC.runtime.operation_conditions.v1"
+    ],
+    "dsgn.activation": [
+      "DSGN.SRC.runtime.operation_conditions.v1"
+    ],
+    "dsgn.runtime.activation_matrix": [
+      "DSGN.SRC.runtime.activation_matrix.v1"
+    ],
+    "dsgn.mode.*": [
+      "DSGN.SRC.runtime.activation_matrix.v1"
+    ],
+    "dsgn.dry_run.report": [
+      "DSGN.SRC.dry_run.report.v1"
+    ],
+    "dsgn.dry_run.*": [
+      "DSGN.SRC.dry_run.cases.v1",
+      "DSGN.SRC.dry_run.machine_report.v1",
+      "DSGN.SRC.dry_run.report.v1"
+    ],
+    "dsgn.convergence": [
+      "DSGN.SRC.dry_run.machine_report.v1",
+      "DSGN.SRC.dry_run.report.v1"
+    ],
+    "dsgn.runtime.guard": [
+      "DSGN.SRC.runtime.converged_guard.v1"
+    ],
+    "dsgn.stop.*": [
+      "DSGN.SRC.runtime.converged_guard.v1"
+    ],
+    "dsgn.dry_run.cases": [
+      "DSGN.SRC.dry_run.cases.v1"
+    ],
+    "dsgn.dry_run.machine": [
+      "DSGN.SRC.dry_run.machine_report.v1"
+    ]
+  },
+  "source_to_tags": {
+    "DSGN.SRC.layer.runtime.v28": [
+      "dsgn.layer.*",
+      "dsgn.layer.runtime",
+      "dsgn.source.canon"
+    ],
+    "DSGN.SRC.layer.meaning.v1": [
+      "dsgn.layer.meaning",
+      "dsgn.layer.axis.*",
+      "dsgn.layer.prose.*",
+      "dsgn.layer.flow.*",
+      "dsgn.embed.*"
+    ],
+    "DSGN.SRC.layer.preset.v1": [
+      "dsgn.layer.preset.*"
+    ],
+    "DSGN.SRC.layer.packager_effect.v1": [
+      "dsgn.packager.lookup",
+      "dsgn.layer.effect_reference"
+    ],
+    "DSGN.SRC.nom.gate.min.v3": [
+      "dsgn.nom.*",
+      "dsgn.nom.validation_gate"
+    ],
+    "DSGN.SRC.pack.cutout.v1": [
+      "dsgn.packager.*",
+      "dsgn.packager.cutout"
+    ],
+    "DSGN.SRC.overlay.patch.v015": [
+      "dsgn.runtime.overlay",
+      "dsgn.integration.patch"
+    ],
+    "DSGN.SRC.overlay.manifest.v015": [
+      "dsgn.runtime.manifest",
+      "dsgn.load_order"
+    ],
+    "DSGN.SRC.tag.registry.v1": [
+      "dsgn.index.tags",
+      "dsgn.source.registry"
+    ],
+    "DSGN.SRC.reverse.lookup.v1": [
+      "dsgn.index.reverse",
+      "dsgn.lookup.reverse"
+    ],
+    "DSGN.SRC.lookup.protocol.v1": [
+      "dsgn.lookup.protocol",
+      "dsgn.packager.lookup"
+    ],
+    "DSGN.SRC.tag.machine.v1": [
+      "dsgn.index.machine"
+    ],
+    "DSGN.SRC.namespace.v1": [
+      "dsgn.namespace",
+      "dsgn.guard.namespace"
+    ],
+    "DSGN.SRC.internal.all_item_index.v1": [
+      "dsgn.index.all_items",
+      "dsgn.source.map"
+    ],
+    "DSGN.SRC.role.index.v1": [
+      "dsgn.index.roles",
+      "dsgn.role.*"
+    ],
+    "DSGN.SRC.internal.all_item_machine.v1": [
+      "dsgn.index.machine",
+      "dsgn.index.all_items"
+    ],
+    "DSGN.SRC.runtime.operation_conditions.v1": [
+      "dsgn.runtime.conditions",
+      "dsgn.activation"
+    ],
+    "DSGN.SRC.runtime.activation_matrix.v1": [
+      "dsgn.runtime.activation_matrix",
+      "dsgn.mode.*"
+    ],
+    "DSGN.SRC.dry_run.report.v1": [
+      "dsgn.dry_run.report",
+      "dsgn.convergence"
+    ],
+    "DSGN.SRC.runtime.converged_guard.v1": [
+      "dsgn.runtime.guard",
+      "dsgn.stop.*"
+    ],
+    "DSGN.SRC.dry_run.cases.v1": [
+      "dsgn.dry_run.cases"
+    ],
+    "DSGN.SRC.dry_run.machine_report.v1": [
+      "dsgn.dry_run.machine",
+      "dsgn.convergence"
+    ]
+  },
+  "mode_to_sources": {
+    "DSGN.MODE.layer_lookup": [
+      "DSGN.SRC.layer.meaning.v1",
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.layer.preset.v1",
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "DSGN.MODE.embed_review": [
+      "DSGN.SRC.layer.meaning.v1",
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "DSGN.MODE.pack_cutout": [
+      "DSGN.SRC.layer.packager_effect.v1",
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "DSGN.MODE.nom_gate": [
+      "DSGN.SRC.nom.gate.min.v3"
+    ],
+    "DSGN.MODE.index_maintenance": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "always": [
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.lookup.protocol.v1",
+      "DSGN.SRC.namespace.v1",
+      "DSGN.SRC.overlay.manifest.v015",
+      "DSGN.SRC.reverse.lookup.v1",
+      "DSGN.SRC.role.index.v1",
+      "DSGN.SRC.runtime.activation_matrix.v1",
+      "DSGN.SRC.runtime.converged_guard.v1",
+      "DSGN.SRC.runtime.operation_conditions.v1",
+      "DSGN.SRC.tag.registry.v1"
+    ],
+    "runtime": [
+      "DSGN.SRC.internal.all_item_machine.v1",
+      "DSGN.SRC.tag.machine.v1"
+    ],
+    "audit": [
+      "DSGN.SRC.dry_run.cases.v1",
+      "DSGN.SRC.dry_run.machine_report.v1",
+      "DSGN.SRC.dry_run.report.v1"
+    ]
+  },
+  "load_mode_to_sources": {
+    "designer_full__packager_lookup_only": [
+      "DSGN.SRC.layer.runtime.v28"
+    ],
+    "lookup_reference": [
+      "DSGN.SRC.layer.meaning.v1",
+      "DSGN.SRC.layer.preset.v1"
+    ],
+    "packager_lookup_reference": [
+      "DSGN.SRC.layer.packager_effect.v1"
+    ],
+    "insert_light": [
+      "DSGN.SRC.nom.gate.min.v3"
+    ],
+    "mode_activation": [
+      "DSGN.SRC.pack.cutout.v1"
+    ],
+    "designer_integration": [
+      "DSGN.SRC.overlay.patch.v015"
+    ],
+    "always_light": [
+      "DSGN.SRC.internal.all_item_index.v1",
+      "DSGN.SRC.lookup.protocol.v1",
+      "DSGN.SRC.namespace.v1",
+      "DSGN.SRC.overlay.manifest.v015",
+      "DSGN.SRC.reverse.lookup.v1",
+      "DSGN.SRC.role.index.v1",
+      "DSGN.SRC.runtime.activation_matrix.v1",
+      "DSGN.SRC.runtime.converged_guard.v1",
+      "DSGN.SRC.runtime.operation_conditions.v1",
+      "DSGN.SRC.tag.registry.v1"
+    ],
+    "runtime_machine": [
+      "DSGN.SRC.internal.all_item_machine.v1",
+      "DSGN.SRC.tag.machine.v1"
+    ],
+    "audit_reference": [
+      "DSGN.SRC.dry_run.report.v1"
+    ],
+    "audit_machine": [
+      "DSGN.SRC.dry_run.cases.v1",
+      "DSGN.SRC.dry_run.machine_report.v1"
+    ]
+  }
+}
