@@ -1,0 +1,414 @@
+{
+  "status": "converged",
+  "iterations": [
+    {
+      "iteration": 1,
+      "results": [
+        {
+          "id": "DRY001",
+          "name": "締めが『十分だった』へ行きそう",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.layer.flow.focus_route",
+            "dsgn.layer.preset.residue_close"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY002",
+          "name": "旧語『変奏あり』検出",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "FAIL",
+          "failures": [
+            "旧語『変奏』を単一設定として許しそう"
+          ],
+          "lookup_tags": [
+            "dsgn.layer.flow.dialogue_ratio",
+            "dsgn.layer.flow.interruption",
+            "dsgn.layer.flow.sentence_variation"
+          ],
+          "action": "patch_required"
+        },
+        {
+          "id": "DRY003",
+          "name": "旧語『主/副』検出",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.layer.axis.leak",
+            "dsgn.layer.axis.pressure",
+            "dsgn.layer.axis.surface"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY004",
+          "name": "project側タグをDSGN内部へ混入",
+          "mode": "DSGN.MODE.index_maintenance",
+          "status": "FAIL",
+          "failures": [
+            "namespace混線STOPが弱い"
+          ],
+          "lookup_tags": [
+            "dsgn.source.load_policy"
+          ],
+          "action": "patch_required"
+        },
+        {
+          "id": "DRY005",
+          "name": "梱包さんが世界軸を勝手に恒久変更しそう",
+          "mode": "DSGN.MODE.embed_review",
+          "status": "FAIL",
+          "failures": [
+            "単話補完と恒久埋込の境界が弱い"
+          ],
+          "lookup_tags": [
+            "dsgn.backlog.world_axis",
+            "dsgn.embed.world_axis"
+          ],
+          "action": "patch_required"
+        },
+        {
+          "id": "DRY006",
+          "name": "執筆さんへ全項目辞書を渡そうとする",
+          "mode": "DSGN.MODE.pack_cutout",
+          "status": "FAIL",
+          "failures": [
+            "writer isolationがsource policyではなく注意書き扱い"
+          ],
+          "lookup_tags": [
+            "dsgn.packager.frozen.extract"
+          ],
+          "action": "patch_required"
+        },
+        {
+          "id": "DRY007",
+          "name": "ready抽象文が本文に漏れそう",
+          "mode": "DSGN.MODE.pack_cutout",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.packager.crosscheck",
+            "dsgn.packager.frozen.extract"
+          ],
+          "action": "continue"
+        }
+      ],
+      "patches_after_iteration": [
+        "旧語『変奏』を STOP_IF variation_single_word へ昇格",
+        "namespace_mixed を HARD STOP に昇格",
+        "writer_isolation_violation を HARD STOP に昇格",
+        "単話補完/恒久埋込の境界を backlog必須へ昇格"
+      ],
+      "pass_count": 3,
+      "fail_count": 4
+    },
+    {
+      "iteration": 2,
+      "results": [
+        {
+          "id": "DRY001",
+          "name": "締めが『十分だった』へ行きそう",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.layer.flow.focus_route",
+            "dsgn.layer.preset.residue_close"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY002",
+          "name": "旧語『変奏あり』検出",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.layer.flow.dialogue_ratio",
+            "dsgn.layer.flow.interruption",
+            "dsgn.layer.flow.sentence_variation"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY003",
+          "name": "旧語『主/副』検出",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.layer.axis.leak",
+            "dsgn.layer.axis.pressure",
+            "dsgn.layer.axis.surface"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY004",
+          "name": "project側タグをDSGN内部へ混入",
+          "mode": "DSGN.MODE.index_maintenance",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.source.load_policy"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY005",
+          "name": "梱包さんが世界軸を勝手に恒久変更しそう",
+          "mode": "DSGN.MODE.embed_review",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.backlog.world_axis",
+            "dsgn.embed.world_axis"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY006",
+          "name": "執筆さんへ全項目辞書を渡そうとする",
+          "mode": "DSGN.MODE.pack_cutout",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.packager.frozen.extract"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY007",
+          "name": "ready抽象文が本文に漏れそう",
+          "mode": "DSGN.MODE.pack_cutout",
+          "status": "FAIL",
+          "failures": [
+            "ready抽象文の本文漏れ防止がfrozenでまだ弱い"
+          ],
+          "lookup_tags": [
+            "dsgn.packager.crosscheck",
+            "dsgn.packager.frozen.extract"
+          ],
+          "action": "patch_required"
+        }
+      ],
+      "patches_after_iteration": [
+        "ready抽象文の本文漏れを forbidden_summary + frozen_minimum で明示",
+        "ready文は本文語ではなく、V2動作に置換済みのものだけfrozenへ入れる条件を追加"
+      ],
+      "pass_count": 6,
+      "fail_count": 1
+    },
+    {
+      "iteration": 3,
+      "results": [
+        {
+          "id": "DRY001",
+          "name": "締めが『十分だった』へ行きそう",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.layer.flow.focus_route",
+            "dsgn.layer.preset.residue_close"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY002",
+          "name": "旧語『変奏あり』検出",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.layer.flow.dialogue_ratio",
+            "dsgn.layer.flow.interruption",
+            "dsgn.layer.flow.sentence_variation"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY003",
+          "name": "旧語『主/副』検出",
+          "mode": "DSGN.MODE.layer_lookup",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.layer.axis.leak",
+            "dsgn.layer.axis.pressure",
+            "dsgn.layer.axis.surface"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY004",
+          "name": "project側タグをDSGN内部へ混入",
+          "mode": "DSGN.MODE.index_maintenance",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.source.load_policy"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY005",
+          "name": "梱包さんが世界軸を勝手に恒久変更しそう",
+          "mode": "DSGN.MODE.embed_review",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.backlog.world_axis",
+            "dsgn.embed.world_axis"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY006",
+          "name": "執筆さんへ全項目辞書を渡そうとする",
+          "mode": "DSGN.MODE.pack_cutout",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.packager.frozen.extract"
+          ],
+          "action": "continue"
+        },
+        {
+          "id": "DRY007",
+          "name": "ready抽象文が本文に漏れそう",
+          "mode": "DSGN.MODE.pack_cutout",
+          "status": "PASS",
+          "failures": [],
+          "lookup_tags": [
+            "dsgn.packager.crosscheck",
+            "dsgn.packager.frozen.extract"
+          ],
+          "action": "continue"
+        }
+      ],
+      "patches_after_iteration": [
+        "全ケースPASS。収束条件到達。"
+      ],
+      "pass_count": 7,
+      "fail_count": 0
+    }
+  ],
+  "final_pass": true,
+  "cases": [
+    {
+      "id": "DRY001",
+      "name": "締めが『十分だった』へ行きそう",
+      "mode": "DSGN.MODE.layer_lookup",
+      "input": {
+        "symptom": "締めが「十分だった」へ行きそう",
+        "ready": "帳面に白い毛が残る",
+        "v2": "閉店後、帳面を閉じる前に白い毛が見える"
+      },
+      "expected_tags": [
+        "dsgn.layer.preset.residue_close",
+        "dsgn.layer.flow.focus_route"
+      ],
+      "must_not": [
+        "meaning_summary_close",
+        "writer_full_reference"
+      ]
+    },
+    {
+      "id": "DRY002",
+      "name": "旧語『変奏あり』検出",
+      "mode": "DSGN.MODE.layer_lookup",
+      "input": {
+        "symptom": "変奏あり",
+        "ready": "会話が説明になりそう",
+        "v2": "客が問いに正面から答えず皿を直す"
+      },
+      "expected_tags": [
+        "dsgn.layer.flow.sentence_variation",
+        "dsgn.layer.flow.dialogue_ratio",
+        "dsgn.layer.flow.interruption"
+      ],
+      "must_not": [
+        "variation_single_word"
+      ]
+    },
+    {
+      "id": "DRY003",
+      "name": "旧語『主/副』検出",
+      "mode": "DSGN.MODE.layer_lookup",
+      "input": {
+        "symptom": "主=客観視、副=男客",
+        "ready": "男客の置き場が安定しない",
+        "v2": "鞄が床につかない"
+      },
+      "expected_tags": [
+        "dsgn.layer.axis.surface",
+        "dsgn.layer.axis.pressure",
+        "dsgn.layer.axis.leak"
+      ],
+      "must_not": [
+        "副=補助",
+        "副なし"
+      ]
+    },
+    {
+      "id": "DRY004",
+      "name": "project側タグをDSGN内部へ混入",
+      "mode": "DSGN.MODE.index_maintenance",
+      "input": {
+        "attempt": "dsgn registryに project.cat.episode.049 を登録"
+      },
+      "expected_stop": "namespace_mixed",
+      "expected_tags": [
+        "dsgn.source.load_policy"
+      ]
+    },
+    {
+      "id": "DRY005",
+      "name": "梱包さんが世界軸を勝手に恒久変更しそう",
+      "mode": "DSGN.MODE.embed_review",
+      "input": {
+        "attempt": "猫はどかさず人間が皿を動かす、を世界軸へ直接追加",
+        "evidence": "単話で1回出た"
+      },
+      "expected_tags": [
+        "dsgn.embed.world_axis",
+        "dsgn.backlog.world_axis"
+      ],
+      "expected_output": "backlog_not_direct_update"
+    },
+    {
+      "id": "DRY006",
+      "name": "執筆さんへ全項目辞書を渡そうとする",
+      "mode": "DSGN.MODE.pack_cutout",
+      "input": {
+        "attempt": "writer input includes layer_all_items_meaning_reference_v1 full"
+      },
+      "expected_stop": "writer_isolation_violation",
+      "expected_tags": [
+        "dsgn.packager.frozen.extract"
+      ]
+    },
+    {
+      "id": "DRY007",
+      "name": "ready抽象文が本文に漏れそう",
+      "mode": "DSGN.MODE.pack_cutout",
+      "input": {
+        "ready": "客の置き場が安定しない",
+        "v2": "鞄を左手から右手へ持ち替える。会計時も床につかない。",
+        "risk": "本文に『置き場が安定しなかった』と書く"
+      },
+      "expected_tags": [
+        "dsgn.packager.crosscheck",
+        "dsgn.packager.frozen.extract"
+      ],
+      "must_not": [
+        "ready_abstract_to_body"
+      ]
+    }
+  ]
+}

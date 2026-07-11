@@ -1,0 +1,112 @@
+[
+  {
+    "id": "DRY001",
+    "name": "締めが『十分だった』へ行きそう",
+    "mode": "DSGN.MODE.layer_lookup",
+    "input": {
+      "symptom": "締めが「十分だった」へ行きそう",
+      "ready": "帳面に白い毛が残る",
+      "v2": "閉店後、帳面を閉じる前に白い毛が見える"
+    },
+    "expected_tags": [
+      "dsgn.layer.preset.residue_close",
+      "dsgn.layer.flow.focus_route"
+    ],
+    "must_not": [
+      "meaning_summary_close",
+      "writer_full_reference"
+    ]
+  },
+  {
+    "id": "DRY002",
+    "name": "旧語『変奏あり』検出",
+    "mode": "DSGN.MODE.layer_lookup",
+    "input": {
+      "symptom": "変奏あり",
+      "ready": "会話が説明になりそう",
+      "v2": "客が問いに正面から答えず皿を直す"
+    },
+    "expected_tags": [
+      "dsgn.layer.flow.sentence_variation",
+      "dsgn.layer.flow.dialogue_ratio",
+      "dsgn.layer.flow.interruption"
+    ],
+    "must_not": [
+      "variation_single_word"
+    ]
+  },
+  {
+    "id": "DRY003",
+    "name": "旧語『主/副』検出",
+    "mode": "DSGN.MODE.layer_lookup",
+    "input": {
+      "symptom": "主=客観視、副=男客",
+      "ready": "男客の置き場が安定しない",
+      "v2": "鞄が床につかない"
+    },
+    "expected_tags": [
+      "dsgn.layer.axis.surface",
+      "dsgn.layer.axis.pressure",
+      "dsgn.layer.axis.leak"
+    ],
+    "must_not": [
+      "副=補助",
+      "副なし"
+    ]
+  },
+  {
+    "id": "DRY004",
+    "name": "project側タグをDSGN内部へ混入",
+    "mode": "DSGN.MODE.index_maintenance",
+    "input": {
+      "attempt": "dsgn registryに project.cat.episode.049 を登録"
+    },
+    "expected_stop": "namespace_mixed",
+    "expected_tags": [
+      "dsgn.source.load_policy"
+    ]
+  },
+  {
+    "id": "DRY005",
+    "name": "梱包さんが世界軸を勝手に恒久変更しそう",
+    "mode": "DSGN.MODE.embed_review",
+    "input": {
+      "attempt": "猫はどかさず人間が皿を動かす、を世界軸へ直接追加",
+      "evidence": "単話で1回出た"
+    },
+    "expected_tags": [
+      "dsgn.embed.world_axis",
+      "dsgn.backlog.world_axis"
+    ],
+    "expected_output": "backlog_not_direct_update"
+  },
+  {
+    "id": "DRY006",
+    "name": "執筆さんへ全項目辞書を渡そうとする",
+    "mode": "DSGN.MODE.pack_cutout",
+    "input": {
+      "attempt": "writer input includes layer_all_items_meaning_reference_v1 full"
+    },
+    "expected_stop": "writer_isolation_violation",
+    "expected_tags": [
+      "dsgn.packager.frozen.extract"
+    ]
+  },
+  {
+    "id": "DRY007",
+    "name": "ready抽象文が本文に漏れそう",
+    "mode": "DSGN.MODE.pack_cutout",
+    "input": {
+      "ready": "客の置き場が安定しない",
+      "v2": "鞄を左手から右手へ持ち替える。会計時も床につかない。",
+      "risk": "本文に『置き場が安定しなかった』と書く"
+    },
+    "expected_tags": [
+      "dsgn.packager.crosscheck",
+      "dsgn.packager.frozen.extract"
+    ],
+    "must_not": [
+      "ready_abstract_to_body"
+    ]
+  }
+]
