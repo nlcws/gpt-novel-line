@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DS90 Request",
+  "type": "object",
+  "anyOf": [
+    { "required": ["operation"] },
+    { "required": ["command"] }
+  ],
+  "properties": {
+    "command": { "type": "string", "minLength": 1 },
+    "operation": {
+      "type": "string",
+      "enum": ["BOOT", "CHECK", "TAG_SEARCH", "CARD", "CARD_TEST", "LOG", "MOUNT_TRANSFER", "ARCHIVE", "SINGLE_EPISODE_PROFILE_GATE", "EPISODE_PACK", "PACK_CUTOUT"]
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "core": { "type": "object" },
+    "boot": { "type": "object" },
+    "externalContext": { "type": ["object", "null"] },
+    "project": { "type": ["object", "null"], "description": "legacy alias for externalContext" },
+    "evidence": { "type": "object" },
+    "work": { "type": "object" },
+    "query": { "type": "object" },
+    "search": { "type": "object" },
+    "designerDiscipline": { "type": "object" },
+    "designerChangeSet": { "type": "object" },
+    "index": { "type": "object" },
+    "card": { "type": "object" },
+    "test": { "type": "object" },
+    "log": { "type": "object" },
+    "transfer": { "type": "object" },
+    "mountTransferInvocation": {
+      "type": "object",
+      "properties": {
+        "mode": { "const": "MOUNT_TRANSFER_BACKPACK" },
+        "operation": { "const": "MOUNT_TRANSFER" },
+        "origin": { "enum": ["DESIGNER_AUTO", "USER_EXPLICIT"] },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "required": ["mode", "operation", "origin", "reason"],
+      "additionalProperties": false
+    },
+    "archive": { "type": "object" },
+    "episodeProfile": { "type": "object" },
+    "episodePack": { "type": "object" },
+    "packCutout": { "type": "object" },
+    "dsgn": { "type": "object" },
+    "currentMount": {
+      "type": "object",
+      "properties": { "present": { "type": "boolean" } },
+      "required": ["present"]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "read", "required", "canonical"],
+        "properties": {
+          "type": { "type": "string" },
+          "read": { "type": "boolean" },
+          "required": { "type": "boolean" },
+          "canonical": { "type": "boolean" }
+        }
+      }
+    },
+    "endLogInput": {
+      "type": "object",
+      "properties": {
+        "usedAsCanonical": { "type": "boolean" },
+        "usedAsSource": { "type": "boolean" },
+        "usedAsReadProof": { "type": "boolean" },
+        "usedAsTransferProof": { "type": "boolean" },
+        "containsLongText": { "type": "boolean" },
+        "containsManuscript": { "type": "boolean" },
+        "treatedAsLatestWithoutCheck": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "verification": { "type": "object" },
+    "userOverrides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ruleId", "operation", "scope", "decision", "persistence", "userDecisionRef"],
+        "properties": {
+          "ruleId": { "type": "string", "minLength": 1 },
+          "operation": { "type": "string", "minLength": 1 },
+          "scope": { "type": "string", "minLength": 1 },
+          "decision": { "const": "ALLOW" },
+          "persistence": { "enum": ["ONCE", "PERSISTENT"] },
+          "userDecisionRef": {
+            "type": "object",
+            "required": ["sourcePath", "section"],
+            "properties": {
+              "sourcePath": { "type": "string", "minLength": 1 },
+              "section": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "coreChange": { "type": "boolean" },
+    "humanApproval": { "type": "boolean" }
+  },
+  "additionalProperties": false
+}
