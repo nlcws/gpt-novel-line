@@ -1,0 +1,25 @@
+# RESTART_MEMO_TEMPLATE.txt
+
+区分: テンプレート
+用途: 必要時のみ作成する軽量再開メモの雛形
+扱い: 正本ではない / 作品条件源ではない / 読了証明ではない / 起動条件ではない
+
+RESTART_MEMO_TEMPLATE.txt はテンプレートである。
+RESTART_MEMO_TEMPLATE.txt は既存再開メモではない。
+RESTART_MEMO_TEMPLATE.txt を作品棚へ保存しない。
+
+# RESTART_MEMO
+
+現在:
+未反映:
+読む順:
+最重要STOP:
+次作業:
+棚リンク:
+
+禁止:
+- 長文本文を入れない。
+- 正本本文を入れない。
+- 作品条件を確定しない。
+- END_LOGの代わりにしない。
+- 起動条件にしない。

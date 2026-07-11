@@ -1,0 +1,9 @@
+{
+  "name": "mount-transfer-backpack-librarian-locked",
+  "version": "0.3.1-no-source-floor.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/literal.test.js && node test/librarian.test.js"
+  }
+}

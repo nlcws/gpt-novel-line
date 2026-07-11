@@ -1,0 +1,14 @@
+{
+  "runtime": "MOUNT_TRANSFER_BACKPACK_v020_ROUTED_BY_DS90_V020",
+  "base": "DS90_v020/MOUNT_TRANSFER",
+  "activation": "selective_only",
+  "literal_source_floor": "unchanged",
+  "literal_equivalence_cases": 5,
+  "standalone_tests": 19,
+  "return_on_designer_auto": true,
+  "stay_on_user_explicit": true,
+  "output_format": "ZIP",
+  "nested_zips": 0,
+  "source_floor_policy": "included_as_frozen_source_floor; not active in normal designer route; active only inside MOUNT_TRANSFER_BACKPACK and transfer audit",
+  "v020_policy": "read as root route during MOUNT_TRANSFER; source floor retained as archive/reference; not active during normal boot"
+}

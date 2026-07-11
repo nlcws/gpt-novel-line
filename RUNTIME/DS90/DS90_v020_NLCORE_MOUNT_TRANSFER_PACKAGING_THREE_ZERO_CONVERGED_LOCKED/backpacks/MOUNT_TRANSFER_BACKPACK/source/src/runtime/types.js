@@ -1,0 +1,20 @@
+export const Decision = Object.freeze({
+  PASS: "PASS",
+  STOP: "STOP",
+  USER_OVERRIDDEN: "USER_OVERRIDDEN"
+});
+
+export const Evidence = Object.freeze({
+  CONFIRMED: "CONFIRMED",
+  CANONICAL_CONFIRMED: "CANONICAL_CONFIRMED",
+  USER_FIXED: "USER_FIXED",
+  OPERATION_FIXED: "OPERATION_FIXED",
+  UNCONFIRMED: "UNCONFIRMED",
+  INFERRED: "INFERRED",
+  PROVISIONAL: "PROVISIONAL"
+});
+
+export const RuleKind = Object.freeze({
+  REQUIRED: "REQUIRED",
+  FORBIDDEN: "FORBIDDEN"
+});
