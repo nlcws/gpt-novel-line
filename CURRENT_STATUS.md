@@ -5,12 +5,33 @@ GPT小説執筆ライン公開棚の現在状況です。
 ## 現在の公開状態
 
 - 公開棚：作成済み
-- 公開棚5本：v003 実読済み
+- ランタイムZIP：DS90 v0300基準へ更新
+- DS90：v020からv0300へ差し替え
+- MT00_BOOTSTRAP_EA：新規追加
+- MT00 v002：追加
+- SP00 v002：追加
+- TS90：実読済みZIPへ差し替え
+- PW90 / NW22：既存GitHub配布ZIPと今回添付ZIPのsha一致を確認済み
+- 公開棚5本：v003 実読済み / 補足扱い
 - 制御棚 `000_C`：PASS
 - `unresolvedStopCount`：0
 - `nextAgentRestartReady`：true
 - 公開サイト：active / public
 - GitHub Pages：未設定
+
+## 現行ランタイムZIP
+
+| ZIP | sha256 | CRC | unsafe path | JSON | 文字コード | 状態 |
+| --- | --- | --- | --- | --- | --- | --- |
+| `DS90_v0300_CLEAN_BASELINE_FINALIZED_v002.zip` | `b0aba518496e3d3f20f599cfab3cbd4e8ce432493e82fa743ede290f30c19281` | OK | なし | OK | UTF-8 OK | v020から差し替え |
+| `PW90_v004_21c_NLCORE_STABLE_LOCKED.zip` | `c75da89a98870edbea9c843db039c2f8ffa94488c9f92448fbe9dbe4734f4e7c` | OK | なし | OK | UTF-8 OK | 既存配布継続 |
+| `TS90_v001_15_NLCORE_STABLE_LOCKED.zip` | `272f8265320ed1c1406a78e47b6267d8d7208453ee75841b25a59ae31172ca63` | OK | なし | OK | UTF-8不可1本あり | 差し替え |
+| `NW22_v002_5_NLCORE_STABLE_LOCKED.zip` | `8a0845840aa6bfcb60107fc9ca415c30005c542b9ef4a7568895c66527dd2996` | OK | なし | OK | UTF-8 OK | 既存配布継続 |
+| `MT00_BOOTSTRAP_EA_v001_GPT_PROJECT_FIRST_TRANSFER_BASELINE_FINALIZED_v001.zip` | `f45e41113f27b65e5a24465b351f0a79370f2aea593c8da6e393808889a5e537` | OK | なし | OK | UTF-8不可4本あり | 新規追加 |
+| `MT00_v002_CLEAN_BASELINE_TRANSFER_FINALIZED_v002.zip` | `05f35e613f0e0451c649a3a5ed7984f6a0dd6bf7901ec7b4b40b1efa8f273d80` | OK | なし | OK | UTF-8 OK | 追加 |
+| `SP00_v002_CLEAN_BASELINE_STORY_PACK_FINALIZED_v001.zip` | `95081b42cf95a48e679d7e7648d74b83a2b2e8d5c539753e6336f68c8462eecf` | OK | なし | OK | UTF-8 OK | 追加 |
+
+TS90は2root構成です。これは今回添付されたZIP現物の状態として記録します。
 
 ## 実読済み公開棚セット
 
@@ -77,6 +98,6 @@ version 44では、`/public-release-policy`、TOP公開方針一文、sitemap、
 
 ## 未反映境界
 
-この状態更新は、実読済み5本の公開棚状態を説明文書へ反映するものです。
+この状態更新は、ランタイムZIP本体の更新を主作業とします。
 
-ランタイムZIP本体の差し替え、GitHub上への棚ZIPバイナリ配置、Sites version 44 のソース実体取得は、この更新では完了済みとして扱いません。
+公開棚5本は補足根拠であり、GitHub上へ棚ZIP本体を配置済みとは扱いません。Sites version 44 のソース実体取得も、この更新では完了済みとして扱いません。
