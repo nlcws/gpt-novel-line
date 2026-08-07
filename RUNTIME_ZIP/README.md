@@ -1,5 +1,23 @@
 # RUNTIME_ZIP
 
+## 2026-08-07時点の注意
+
+このREADME更新は、実読済み公開棚移管セット v003 の状態を反映するための説明文書更新です。
+
+今回確認した5本は、公開棚・移管棚のセットです。
+
+- `000_C.zip`
+- `021_G_v002.zip`
+- `022_B_v002.zip`
+- `024_V_v003.zip`
+- `028_H_v002.zip`
+
+この5本は `000_C` の制御棚で `MOUNT_TRANSFER_CONTAINER` として扱われています。`VALIDATION_REPORT` は `PASS`、`unresolvedStopCount` は `0`、`nextAgentRestartReady` は `true` です。
+
+この更新では、ランタイムZIP本体の差し替え、GitHub上への棚ZIPバイナリ配置、Sites version 44 のソース実体取得を完了済みとは扱いません。
+
+---
+
 DS90_v020_NLCORE_STABLE_LOCKED.zip
 NW22_v002_5_NLCORE_STABLE_LOCKED.zip
 PW90_v004_21c_NLCORE_STABLE_LOCKED.zip
