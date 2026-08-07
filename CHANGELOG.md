@@ -2,7 +2,7 @@
 
 ## 2026-08-07
 
-- 実読済み公開棚移管セット v003 の状態を説明文書へ反映。
+- 実読済み公開棚5本 v003 の状態を説明文書へ反映。
 - `README.md` / `INDEX.md` / `CURRENT_STATUS.md` / `RUNTIME_ZIP/README.md` を更新。
 - `000_C` 制御棚の `VALIDATION_REPORT` が `PASS` であることを記録。
 - `000_C` の `READ_ORDER` を公開棚の再起動順として反映。
