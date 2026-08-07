@@ -10,17 +10,31 @@ GPT小説執筆ライン公開棚の索引です。
   このリポジトリ全体の説明。
 
 - [CURRENT_STATUS.md](CURRENT_STATUS.md)  
-  現在の公開状態、検査済み公開棚、読む順番。
+  現在のランタイム配布状態、検査済み公開棚、読む順番。
 
 - [CHANGELOG.md](CHANGELOG.md)  
   公開棚の更新履歴。
 
 - [RUNTIME_ZIP/README.md](RUNTIME_ZIP/README.md)  
-  ランタイムZIP置き場の説明と、今回の公開棚同期との境界。
+  現行ランタイムZIP置き場の説明。
+
+## 現行ランタイムZIP
+
+2026-08-07時点の現行配布ZIPです。
+
+| ZIP | 担当 | 状態 |
+| --- | --- | --- |
+| `DS90_v0300_CLEAN_BASELINE_FINALIZED_v002.zip` | 設計さん | v020から差し替え |
+| `PW90_v004_21c_NLCORE_STABLE_LOCKED.zip` | 執筆さん | 既存配布継続 |
+| `TS90_v001_15_NLCORE_STABLE_LOCKED.zip` | 修正刃さま | 実読済みZIPへ差し替え |
+| `NW22_v002_5_NLCORE_STABLE_LOCKED.zip` | 野良ちゃん | 既存配布継続 |
+| `MT00_BOOTSTRAP_EA_v001_GPT_PROJECT_FIRST_TRANSFER_BASELINE_FINALIZED_v001.zip` | ヌル | 新規追加 |
+| `MT00_v002_CLEAN_BASELINE_TRANSFER_FINALIZED_v002.zip` | ヌル | v002追加 |
+| `SP00_v002_CLEAN_BASELINE_STORY_PACK_FINALIZED_v001.zip` | ナル | v002追加 |
 
 ## 実読済み公開棚セット
 
-2026-08-07時点の文書更新根拠は、以下の5本です。
+公開棚 / サイト状態の補足根拠は、以下の5本です。ランタイム本体の代替ではありません。
 
 | 棚 | ZIP | 役割 | 状態 |
 | --- | --- | --- | --- |
@@ -54,8 +68,6 @@ GPT小説執筆ライン公開棚の索引です。
 ランタイムZIP本体は以下に置きます。
 
 - [RUNTIME_ZIP/](RUNTIME_ZIP/)
-
-今回の更新は、実読済み5本の公開棚状態を説明文書へ反映するものです。ランタイムZIP本体の差し替え完了とは扱いません。
 
 ## 分解棚
 

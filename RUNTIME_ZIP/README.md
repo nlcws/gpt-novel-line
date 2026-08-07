@@ -1,27 +1,20 @@
 # RUNTIME_ZIP
 
-## 2026-08-07時点の注意
+## 2026-08-07 現行配布ZIP
 
-このREADME更新は、実読済み公開棚5本 v003 の状態を反映するための説明文書更新です。
+`RUNTIME_ZIP/` は、公開用ランタイムZIP本体の置き場です。
 
-今回確認した5本は、公開棚確認用のZIPです。
+| ZIP | 担当 | sha256 |
+| --- | --- | --- |
+| `DS90_v0300_CLEAN_BASELINE_FINALIZED_v002.zip` | 設計さん | `b0aba518496e3d3f20f599cfab3cbd4e8ce432493e82fa743ede290f30c19281` |
+| `PW90_v004_21c_NLCORE_STABLE_LOCKED.zip` | 執筆さん | `c75da89a98870edbea9c843db039c2f8ffa94488c9f92448fbe9dbe4734f4e7c` |
+| `TS90_v001_15_NLCORE_STABLE_LOCKED.zip` | 修正刃さま | `272f8265320ed1c1406a78e47b6267d8d7208453ee75841b25a59ae31172ca63` |
+| `NW22_v002_5_NLCORE_STABLE_LOCKED.zip` | 野良ちゃん | `8a0845840aa6bfcb60107fc9ca415c30005c542b9ef4a7568895c66527dd2996` |
+| `MT00_BOOTSTRAP_EA_v001_GPT_PROJECT_FIRST_TRANSFER_BASELINE_FINALIZED_v001.zip` | ヌル / 初回移管 | `f45e41113f27b65e5a24465b351f0a79370f2aea593c8da6e393808889a5e537` |
+| `MT00_v002_CLEAN_BASELINE_TRANSFER_FINALIZED_v002.zip` | ヌル / 通常移管 | `05f35e613f0e0451c649a3a5ed7984f6a0dd6bf7901ec7b4b40b1efa8f273d80` |
+| `SP00_v002_CLEAN_BASELINE_STORY_PACK_FINALIZED_v001.zip` | ナル / 話パック | `95081b42cf95a48e679d7e7648d74b83a2b2e8d5c539753e6336f68c8462eecf` |
 
-- `000_C.zip`
-- `021_G_v002.zip`
-- `022_B_v002.zip`
-- `024_V_v003.zip`
-- `028_H_v002.zip`
-
-`000_C` の `VALIDATION_REPORT` は `PASS`、`unresolvedStopCount` は `0`、`nextAgentRestartReady` は `true` です。GitHub上に棚ZIP本体を配置済みとは扱いません。
-
-この更新では、ランタイムZIP本体の差し替え、GitHub上への棚ZIPバイナリ配置、Sites version 44 のソース実体取得を完了済みとは扱いません。
-
----
-
-DS90_v020_NLCORE_STABLE_LOCKED.zip
-NW22_v002_5_NLCORE_STABLE_LOCKED.zip
-PW90_v004_21c_NLCORE_STABLE_LOCKED.zip
-TS90_v001_15_NLCORE_STABLE_LOCKED.zip
+`DS90_v020_NLCORE_STABLE_LOCKED.zip` は現行配布から外し、DS90 v0300へ差し替えています。PW90とNW22は今回添付ZIPと既存配布ZIPのsha256一致を確認したため、既存配布を継続しています。
 
 ---
 
@@ -35,7 +28,7 @@ TS90_v001_15_NLCORE_STABLE_LOCKED.zip
 
 ---
 
-## DS90 v020 NLCORE STABLE LOCKED｜設計さん
+## DS90 v0300 CLEAN BASELINE FINALIZED｜設計さん
 
 DS90は、素材、設定、人物条件、話の核、禁止線、小道具、伏線、場面順、前後話との接続を整理し、執筆さんが迷わず書ける話パックへ梱包する設計担当である。
 
@@ -112,6 +105,22 @@ Phase Bでは、診断結果と許可範囲に基づいて修正する。軽微�
 TS90が持つ重要な機能は、直す能力だけではない。直さない判断、元へ戻す判断、現行本文の方が優れていると認める判断を持つ。修正前より悪くなった場合に、作業した量を守るため修正版へ固執しない。
 
 修正刃さまは削る機械ではない。作品ごとに刃の種類と強度を変え、必要な時だけ切り、不要なら鞘へ戻し、切った結果が悪ければ元へ戻す適応型編集主任である。
+
+---
+
+## MT00 BOOTSTRAP EA / MT00 v002｜ヌル
+
+MT00は、DS90から切り出されたマウント移管担当である。設計、執筆、修正の本体工程を代行せず、棚構造、入口、正本、履歴、保留、検査結果、再開条件を次のチャットやGPTプロジェクトへ渡せる形に梱包する。
+
+`MT00_BOOTSTRAP_EA` はGPTプロジェクト初回移管用であり、初期棚構成と初回受け渡しを扱う。`MT00_v002` は通常のマウント移管用であり、既存ラインの移管、棚整理、再起動条件の保持を担当する。
+
+---
+
+## SP00 v002｜ナル
+
+SP00は、DS90から切り出された話パック専用担当である。作品全体の母艦やランタイム本体を背負わせず、対象話に必要な条件、固定骨、禁止線、施工キュー、確認事項を話パックとして扱う。
+
+SP00は本文を書かず、ランタイム本体を更新しない。話パック単位で必要なものを揃え、後続の執筆工程が無関係な棚へ埋もれないようにする補助担当である。
 
 ---
 
