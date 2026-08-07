@@ -5,7 +5,7 @@ GPT小説執筆ライン公開棚の現在状況です。
 ## 現在の公開状態
 
 - 公開棚：作成済み
-- 公開棚移管セット：v003 実読済み
+- 公開棚5本：v003 実読済み
 - 制御棚 `000_C`：PASS
 - `unresolvedStopCount`：0
 - `nextAgentRestartReady`：true
@@ -22,7 +22,7 @@ GPT小説執筆ライン公開棚の現在状況です。
 | `024_V_v003.zip` | `efa895a6982f23b74ddec4446c327bb0ea9b872b4510f404dab4a2cdb6113980` | OK | なし | OK | CP932テキスト2本あり |
 | `028_H_v002.zip` | `40615e571d4723905e6145d87e6fc600c0184e06bcb7e5cf80d89f72821b1e4e` | OK | なし | OK | UTF-8 OK |
 
-## 移管コンテナ検査
+## `000_C` 検査
 
 `000_C/01_VALIDATION/VALIDATION_REPORT.json` の検査結果です。
 
@@ -67,7 +67,7 @@ version 44では、`/public-release-policy`、TOP公開方針一文、sitemap、
 
 ## 残作業
 
-以下は移管失敗ではなく、次工程の作業として扱います。
+以下はエラーではなく、次工程の作業として扱います。
 
 - 検証素材を `SOURCE_BODY` / `GPT_COMMENT` / `GPT_INSTRUCTION` / `CODEX_COMMENT` / `ACTION` に分解する。
 - 分解後、GPTに再判定させる。
@@ -77,6 +77,6 @@ version 44では、`/public-release-policy`、TOP公開方針一文、sitemap、
 
 ## 未反映境界
 
-この状態更新は、実読済み5本の公開棚移管状態を説明文書へ反映するものです。
+この状態更新は、実読済み5本の公開棚状態を説明文書へ反映するものです。
 
 ランタイムZIP本体の差し替え、GitHub上への棚ZIPバイナリ配置、Sites version 44 のソース実体取得は、この更新では完了済みとして扱いません。
