@@ -2,95 +2,81 @@
 
 GPT小説執筆ライン公開棚の索引です。
 
-このリポジトリは、チャットAIマウント型ランタイムの公開可能資料、公開棚の入口、現行状態、更新履歴を置くための公開棚です。
+この公開棚は、小説制作を実験場として運用している **AIエージェント / マルチエージェント / AI Runtime Overlay** の公開資料置き場です。
 
-## 入口
+## 初めて来た方
 
 - [README.md](README.md)  
-  このリポジトリ全体の説明。
+  人間向けの玄関。何を作っているのか、何に使えるのかを最初に説明します。
+
+- [GPT小説執筆ライン ポータル](https://gpt-novel-line-portal.harmoniets.chatgpt.site/)  
+  作品、記事、公開方針、各棚への総合入口。
+
+- [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/)  
+  現行Runtimeを使うための公開棚。`START_HERE_ONLINE_RUNTIME.txt` から開始します。
+
+- [Public Release Policy](https://gpt-novel-line-portal.harmoniets.chatgpt.site/public-release-policy)  
+  利用・改変・再配布・商用利用・作者表記などの公開方針。
+
+- [note](https://note.com/gpt_novel_line)  
+  開発・運用・検証の記事。
+
+## 外部の言葉から来た方へ
+
+この棚では、次のようなテーマを実運用ベースで扱っています。
+
+- AIエージェント運用
+- マルチエージェント
+- agentic workflow
+- AI Runtime / Runtime Overlay
+- AIガバナンス
+- handoff / 引き継ぎ
+- 権限分離
+- source of truth / 正本管理
+- validation / STOP / PASS
+- audit / 監査
+- lifecycle / 更新・移管・退役
+- 長期コンテキスト管理
+
+用語を標準化すること自体が目的ではありません。人間が長期運用しやすいように、役割・資料・判断境界・受け渡し・検査を分けた結果として、この構造になっています。
+
+## Runtimeの役割
+
+| Runtime | 主担当 |
+| --- | --- |
+| DS90 / 設計さん | 設計、条件整理、判断境界、受け渡し |
+| PW90 / 執筆さん | 確定条件から本文生成 |
+| TS90 / 修正刃さま | 修正、検査、整合 |
+| NW22 / 野良ちゃん | 外部入力、自由度の高い作業 |
+| MT00 / ヌル | マウント移管、状態引き継ぎ |
+| SP00 / ナル | 話パック切り出し・梱包 |
+| MT00_BOOTSTRAP_EA / エーア | 新規Project初期配置 |
+
+現行正本は [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) を優先してください。
+
+## GitHub上の記録
 
 - [CURRENT_STATUS.md](CURRENT_STATUS.md)  
-  現在のランタイム配布状態、検査済み公開棚、読む順番。
+  GitHub配布状態・過去の公開棚状態。
 
 - [CHANGELOG.md](CHANGELOG.md)  
-  公開棚の更新履歴。
+  GitHub公開棚の更新履歴。
 
 - [RUNTIME_ZIP/README.md](RUNTIME_ZIP/README.md)  
-  現行ランタイムZIP置き場の説明。
+  GitHubに置かれたRuntime ZIPの説明。
 
-## 現行ランタイムZIP
+- [RUNTIME/](RUNTIME/)  
+  分解済み・参照用のRuntime資料。
 
-2026-08-07時点の現行配布ZIPです。
+## GitHub上の旧配布記録
 
-| ZIP | 担当 | 状態 |
-| --- | --- | --- |
-| `DS90_v0300_CLEAN_BASELINE_FINALIZED_v002.zip` | 設計さん | v020から差し替え |
-| `PW90_v004_21c_NLCORE_STABLE_LOCKED.zip` | 執筆さん | 既存配布継続 |
-| `TS90_v001_15_NLCORE_STABLE_LOCKED.zip` | 修正刃さま | 実読済みZIPへ差し替え |
-| `NW22_v002_5_NLCORE_STABLE_LOCKED.zip` | 野良ちゃん | 既存配布継続 |
-| `MT00_BOOTSTRAP_EA_v001_GPT_PROJECT_FIRST_TRANSFER_BASELINE_FINALIZED_v001.zip` | ヌル | 新規追加 |
-| `MT00_v002_CLEAN_BASELINE_TRANSFER_FINALIZED_v002.zip` | ヌル | v002追加 |
-| `SP00_v002_CLEAN_BASELINE_STORY_PACK_FINALIZED_v001.zip` | ナル | v002追加 |
+このGitHubリポジトリには過去時点の配布状態も残っています。最新版を探す場合、GitHub上の旧ZIP名を現在の正本と誤認せず、Runtime Public Shelfを確認してください。
 
-## 実読済み公開棚セット
+## 公開方針
 
-公開棚 / サイト状態の補足根拠は、以下の5本です。ランタイム本体の代替ではありません。
+**Free Runtime. Free Use. No Attribution Required. Use at Your Own Responsibility.**
 
-| 棚 | ZIP | 役割 | 状態 |
-| --- | --- | --- | --- |
-| `000_C` | `000_C.zip` | 制御棚 / manifest / validation / restart handoff | PASS |
-| `021_G` | `021_G_v002.zip` | 初回入口 / TAG_INDEX | REFLECTED |
-| `022_B` | `022_B_v002.zip` | 固定骨 | REFLECTED |
-| `024_V` | `024_V_v003.zip` | 可変運用 / サイト状態 / 作品本文索引 / 検証素材 | REFLECTED |
-| `028_H` | `028_H_v002.zip` | 却下済み・判定待ち | HELD |
-
-`000_C/01_VALIDATION/VALIDATION_REPORT.json` の結果は `PASS` です。
-
-## `000_C` READ_ORDER
-
-初見または再起動時は、以下の順で確認します。
-
-1. `021_G_v002/00_START/00_疑似GPTs設計さんへ_最初に読む.md`
-2. `021_G_v002/TAG_INDEX.txt`
-3. `022_B_v002/10_BONE/GPT_NOVEL_LINE_PUBLIC_SHELF_BONE.md`
-4. `024_V_v003/10_VARIABLE/CURRENT_OPERATION.md`
-5. `024_V_v003/10_VARIABLE/SITE_PUBLICATION_STATUS_v003.md`
-6. `024_V_v003/20_TRANSFER_REPORT/MOUNT_TRANSFER_COMPLETION_REPORT.md`
-7. `024_V_v003/31_WORK_TEXTS/WORKS_STATUS_INDEX.md`
-8. `024_V_v003/31_WORK_TEXTS/WORK_TEXTS_INVENTORY.tsv`
-9. `024_V_v003/32_VERIFICATION_MATERIALS/VERIFICATION_MATERIALS_INVENTORY.tsv`
-10. `024_V_v003/33_LINK_AUDIT/LINK_PLACEMENT_AUDIT.md`
-11. `024_V_v003/34_ENCODING_AUDIT/UTF8_TEXT_AUDIT.md`
-12. `028_H_v002/10_HOLD/REJECTED_AND_PENDING_DECISIONS.md`
-
-## ランタイム本体
-
-ランタイムZIP本体は以下に置きます。
-
-- [RUNTIME_ZIP/](RUNTIME_ZIP/)
-
-## 分解棚
-
-分解済みまたは参照用の棚は以下に置きます。
-
-- [RUNTIME/](RUNTIME/)
-
-既存の参照用フォルダは以下です。
-
-- [RUNTIME/DS90/](RUNTIME/DS90/)
-- [RUNTIME/PW90/](RUNTIME/PW90/)
-- [RUNTIME/TS90/](RUNTIME/TS90/)
-- [RUNTIME/NW22/](RUNTIME/NW22/)
-
-## 公開サイト
-
-`024_V_v003/10_VARIABLE/SITE_PUBLICATION_STATUS_v003.md` による公開状態です。
-
-- title: `GPT小説執筆ライン ポータル`
-- live_url: `https://gpt-novel-line-portal.harmoniets.chatgpt.site`
-- latest_version_number: `44`
-- status: `active`
-- access_mode: `public`
+公開方針の詳細は [Public Release Policy](https://gpt-novel-line-portal.harmoniets.chatgpt.site/public-release-policy) を参照してください。
 
 ## 注意
 
