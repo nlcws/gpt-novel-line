@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-09-01 / Runtime Public Shelf v19導線整理
+
+- GitHub公開棚のREADME / INDEX / CURRENT_STATUS / RUNTIME_ZIP READMEを、現在のオンラインRuntime Public Shelf優先へ整理。
+- Runtime Public Shelfで確認できる `ACTIVE_LAYER_DEFAULT: 400番台` と `RUNTIME_LAYERS: 400番台 / 300番台` をGitHub側にも反映。
+- GitHub上の `RUNTIME_ZIP/` を、現行正本ではなく過去配布記録として明示。
+- Portal / Runtime Public Shelf / Public Release Policy / note / GitHub公開棚の主要導線をREADMEとINDEXで再整理。
+- 旧Sites version 44や旧GitHub配布ZIPを、CURRENTの顔として誤読しないよう `CURRENT_STATUS.md` を更新。
+- この更新ではSites本体の編集・deployは行っていない。GitHub公開棚の文書整理のみ。
+
 ## 2026-09-01
 
 - GitHub公開棚の玄関を、既存利用者向けの内部索引中心から、初見の人間がAIエージェント運用・マルチエージェント・AI Runtimeとして発見できる構成へ改修。
