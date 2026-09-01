@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 2026-09-01
+
+- GitHub公開棚の玄関を、既存利用者向けの内部索引中心から、初見の人間がAIエージェント運用・マルチエージェント・AI Runtimeとして発見できる構成へ改修。
+- `README.md` を全面更新。
+  - AIエージェント運用 / マルチエージェント / AI Runtime Overlay を冒頭で明示。
+  - 役割分離、handoff、正本、STOP / PASS、監査、Runtime lifecycleの説明を追加。
+  - Portal / Runtime Public Shelf / Public Release Policy / noteへの入口を上部へ移動。
+  - GitHub上の旧配布記録と現行Runtime棚を分離して案内。
+- `INDEX.md` を全面更新。
+  - 外部検索語から来た人向けの入口を追加。
+  - 内部棚コードを初見向け導線から後退。
+- `PUBLIC_FRONTDOOR_REDESIGN_v001.md` を追加。
+  - GPT小説執筆ライン ポータル本体の全面改修仕様。
+  - TOP構成、Runtime案内、公開方針、SEO、JSON-LD、sitemap、新設推奨 `/ai-agent-runtime` ページを定義。
+- `NOTE_PUBLIC_FRONTDOOR_DRAFT_v001.md` を追加。
+  - note玄関記事「AIエージェント、そろそろ『一人に全部やらせる』のをやめませんか」の公開用原稿。
+- `harmoniets.chatgpt.site` の公開Sites本体は、この更新では未変更。現在利用可能な接続にSites編集・公開操作が無いため、更新済みとは扱わない。
+- note本体も、この更新では未投稿。公開原稿のみ作成。
+
 ## 2026-08-07
 
 - ランタイムZIP本体をDS90 v0300基準へ更新。
