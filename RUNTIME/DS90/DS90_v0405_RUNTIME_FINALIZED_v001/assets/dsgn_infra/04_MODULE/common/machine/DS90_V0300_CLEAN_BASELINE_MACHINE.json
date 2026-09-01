@@ -1,0 +1,159 @@
+{
+  "id": "DS90_V0300_CLEAN_BASELINE_MACHINE",
+  "status": "ACTIVE_ALWAYS_READ",
+  "version": "v0300",
+  "supersedes_patch_chain": "v0201-v0210",
+  "git_required": false,
+  "codex_required": false,
+  "dropbox_required": false,
+  "execution_surface": "ChatGPT Project + current mount 000_C.zip direct runtime lanes + returned specialist artifacts; public portal/archive only as external distribution fallback",
+  "owner_direct_runtime_shelf": {
+    "control_shelf": "000_C",
+    "dispatch_manifest": "000_C/00_READ_FIRST/RUNTIME_DIRECT_DISPATCH.json",
+    "skill_wrappers_for_external_public_use": true,
+    "owner_operation_prefers_direct_runtime_zip": true
+  },
+  "public_runtime_sources": {
+    "portal": "https://gpt-novel-line-portal.harmoniets.chatgpt.site/",
+    "mt00_archive_direct_link": "https://runtime-public-archive.harmoniets.chatgpt.site/#file-28c7b48c1498749d"
+  },
+  "canonical_roles": {
+    "DS90": {
+      "names": [
+        "DS90",
+        "設計さん"
+      ],
+      "purpose": "design_runtime_route_detection_boundary_protection_minimum_fallback"
+    },
+    "MT00": {
+      "names": [
+        "MT00",
+        "Nul",
+        "ヌル"
+      ],
+      "purpose": "mount_transfer_and_chat_crossing",
+      "flow_mode": "OWNER_DIRECT_RUNTIME_000C",
+      "dispatch_manifest": "000_C/00_READ_FIRST/RUNTIME_DIRECT_DISPATCH.json",
+      "dispatch_route": "routes.MOUNT_TRANSFER",
+      "ownership_question": null,
+      "missing_runtime_route": [
+        "stop_missing_direct_runtime_zip"
+      ],
+      "mandatory_handoff_seed": false,
+      "ds90_minimum_route": "exception_only_with_limitation_notice"
+    },
+    "SP00": {
+      "names": [
+        "SP00",
+        "Nal",
+        "ナル"
+      ],
+      "purpose": "story_pack_cutout",
+      "flow_mode": "OWNER_DIRECT_RUNTIME_000C",
+      "dispatch_manifest": "000_C/00_READ_FIRST/RUNTIME_DIRECT_DISPATCH.json",
+      "dispatch_route": "routes.PACK_CUTOUT",
+      "ownership_question": null,
+      "missing_runtime_route": [
+        "stop_missing_direct_runtime_zip"
+      ],
+      "mandatory_handoff_seed": false,
+      "ds90_minimum_route": "exception_only_with_limitation_notice"
+    },
+    "PW90": {
+      "names": [
+        "PW90",
+        "執筆さん"
+      ],
+      "purpose": "writing_from_writer_ready_story_pack",
+      "flow_mode": "LIGHT_PORTAL_AND_USAGE_GUIDANCE",
+      "ownership_check_required_by_default": false,
+      "ds90_replacement_claim": "forbidden"
+    },
+    "PW90_STORY_PACK_RECEIVER_CHECKER": {
+      "names": [
+        "PW90_STORY_PACK_RECEIVER_CHECKER",
+        "執筆さん受領チェッカー"
+      ],
+      "purpose": "story_pack_receiver_line_acceptance_after_nal_cutout_and_nal_check",
+      "flow_mode": "OWNER_DIRECT_RUNTIME_000C",
+      "dispatch_manifest": "000_C/00_READ_FIRST/RUNTIME_DIRECT_DISPATCH.json",
+      "dispatch_route": "routes.STORY_PACK_RECEIVER_CHECK",
+      "required_predecessor_line": [
+        "NAL_PACK_CUTOUT",
+        "NAL_PACK_CHECK",
+        "PW90_RECEIVER_CHECK"
+      ],
+      "missing_runtime_route": [
+        "stop_missing_direct_runtime_zip"
+      ],
+      "ds90_replacement_claim": "forbidden"
+    },
+    "MT00_BOOTSTRAP_EA": {
+      "names": [
+        "MT00_BOOTSTRAP",
+        "Ea",
+        "エーア"
+      ],
+      "purpose": "first_mount_zip_bootstrap_and_initial_shelf_build",
+      "flow_mode": "OWNER_DIRECT_RUNTIME_000C",
+      "dispatch_manifest": "000_C/00_READ_FIRST/RUNTIME_DIRECT_DISPATCH.json",
+      "dispatch_route": "routes.MOUNT_ZIP_BOOTSTRAP",
+      "distribution_runtime_resolution_source": "EA_RESIDENT_CORE.distribution_runtime_resolution",
+      "ownership_question": null,
+      "missing_runtime_route": [
+        "stop_missing_direct_runtime_zip"
+      ],
+      "ds90_replacement_claim": "forbidden"
+    },
+    "TS90": {
+      "names": [
+        "TS90",
+        "修正刃さま"
+      ],
+      "purpose": "bounded_revision_of_existing_body_text",
+      "flow_mode": "LIGHT_PORTAL_AND_USAGE_GUIDANCE",
+      "ownership_check_required_by_default": false,
+      "ds90_replacement_claim": "forbidden"
+    },
+    "legacy_aliases": {
+      "梱包さん": "legacy_PACK_CUTOUT_packager_alias_not_MT00"
+    }
+  },
+  "pythonized_scope": [
+    "unsafe_path_check",
+    "utf8_check",
+    "sha256",
+    "manifest_verification",
+    "required_root_shape_check",
+    "check_report_generation",
+    "runtime_zip_build"
+  ],
+  "markdown_scope": [
+    "role_boundaries",
+    "design_intention",
+    "heat_source_handling",
+    "stop_conditions",
+    "specialist_routing_policy",
+    "human_operating_guidance"
+  ],
+  "json_scope": [
+    "specialist_flow",
+    "zip_packaging_contract",
+    "check_report_schema",
+    "clean_baseline_machine_policy"
+  ],
+  "forbidden": [
+    "force_mt00_handoff_seed",
+    "force_sp00_handoff_seed",
+    "ask_normal_mt00_sp00_decline_choice",
+    "treat_ds90_minimum_route_as_specialist_complete",
+    "claim_usage_explanation_equals_pw90_body_output",
+    "claim_usage_explanation_equals_ts90_revision_pass",
+    "claim_ds90_replaces_mt00_bootstrap_ea",
+    "treat_000_c_as_project_story_canon",
+    "require_git_codex_dropbox",
+    "claim_exact_remaining_context_capacity"
+  ],
+  "active_patch_chain_files_allowed": false,
+  "active_v020_core_locks_allowed_as_retained_base_invariants": true
+}

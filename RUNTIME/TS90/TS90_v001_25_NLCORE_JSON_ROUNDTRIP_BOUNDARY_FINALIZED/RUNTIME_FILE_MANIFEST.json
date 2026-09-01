@@ -1,0 +1,133 @@
+{
+  "schema": "TS90_RUNTIME_FILE_MANIFEST_v001",
+  "runtime": "ts90-v001.25-nlcore-json-roundtrip-boundary",
+  "package_version": "TS90_v001_25_NLCORE_JSON_ROUNDTRIP_BOUNDARY_FINALIZED",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 17289,
+      "sha256": "dd39d4340cdce65069513c8c3cb646cd8806135df0073608da7347b9cab593fe"
+    },
+    {
+      "path": "START_HERE.js",
+      "bytes": 6808,
+      "sha256": "ebafbb62fbb1bf84fe423ecf58474f4635624af42875fb4b8f008a66aaf2746f"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 22716,
+      "sha256": "c5f3e96f70b0de944564ff3a8e844bf5a38e5f1aa69b5da775f18c896aa4f237"
+    },
+    {
+      "path": "package.json",
+      "bytes": 303,
+      "sha256": "feaf78da2822a8bb9f719dc34b975d25e4d5c65cd60732c53524988036750e45"
+    },
+    {
+      "path": "source/ALL_LINE_END_USER_HEAT_DELIVERY_LOCK_v001.md",
+      "bytes": 2245,
+      "sha256": "b06431771c2dafc00d7af1221426cec1ed39033f6aa807ab2d39135d1d03cd30"
+    },
+    {
+      "path": "source/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md",
+      "bytes": 1924,
+      "sha256": "8efe254e90e1219578577c028557176c4f77c6cca885a697fe99ec13048d2f73"
+    },
+    {
+      "path": "source/GPT_BUILDER_INSTRUCTIONS_TOSHI_SHUSEI_v1_0.txt",
+      "bytes": 6189,
+      "sha256": "12b095ea3d74b8966c6cd3ca7e105ca660ed490d8004af4e52d84faf6baf5222"
+    },
+    {
+      "path": "source/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+      "bytes": 2712,
+      "sha256": "3f4b8f17061e6102f00daba44444ff884ea96b5fb5089ca4a2c6f36cebac30a6"
+    },
+    {
+      "path": "source/README_SET.md",
+      "bytes": 424,
+      "sha256": "66fc7ece2936f6cea697bf936d30a6f9388c0c903b5be965e1ced6de98b942ae"
+    },
+    {
+      "path": "source/TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001.md",
+      "bytes": 14101,
+      "sha256": "30cdcc50b045b8f00b560a9f436ba8197b44eb0727f77adcd84d4504f8ee1caa"
+    },
+    {
+      "path": "source/TS90_A_TO_C_TXTDL_OUTPUT_LOCK_v002.md",
+      "bytes": 3528,
+      "sha256": "45e19aca0747eb02488cceb3a49c58b842991b133ca55ce778b981433ea5342d"
+    },
+    {
+      "path": "source/TS90_FULL_REVISION_READY_LOCK_v001.md",
+      "bytes": 3950,
+      "sha256": "584d4c8d99dd56fb136087ee8179dbf8b6642a3f9aa419896d85588ef086b699"
+    },
+    {
+      "path": "source/TS90_HISTORY_MASTER_REAPPLY_LOCK_v001.md",
+      "bytes": 672,
+      "sha256": "19e33709eac30e82046aa8eb1246df7dda5c1c63fab8c76c4b7c13c551d820ef"
+    },
+    {
+      "path": "source/TS90_PHASE_A_TO_B_SELF_DIRECTED_LOCK_v001.md",
+      "bytes": 2165,
+      "sha256": "9ffd75e2031be03391433057ce2ffc6ed35075f59b3a89a240a7b111ad4a0337"
+    },
+    {
+      "path": "source/TS90_PHASE_C_TITLE_DECISION_LOCK_v001.md",
+      "bytes": 2663,
+      "sha256": "0b7866494c3e716b3c4a0056ee836c5f45c3b164f8802040e73a476f48bd6764"
+    },
+    {
+      "path": "source/TS90_SKILL_RUNTIME_EVIDENCE_BINDING_LOCK_v005.md",
+      "bytes": 7157,
+      "sha256": "8f843331771f2963373acc7902eb9cdcff62a324e829621485e52c4cf3d397eb"
+    },
+    {
+      "path": "source/TS90_TEXT_RECEIVE_LIGHTWEIGHT_LOCK_v001.md",
+      "bytes": 1315,
+      "sha256": "02637977ea818c442dd87ed926bd7ca85998d19bb1a228c412d6da07dcd09fc2"
+    },
+    {
+      "path": "src/json-data.js",
+      "bytes": 4589,
+      "sha256": "11bd64de1c05744839f3d010fbf3c5925e0d21e8858961ceb7419a21f8039d2d"
+    },
+    {
+      "path": "src/program.js",
+      "bytes": 13460,
+      "sha256": "f8f9e2f965a08ddedf35c00d1c2efae64b7bc5a4b5840641f130114433d55204"
+    },
+    {
+      "path": "src/receive-gate.js",
+      "bytes": 74584,
+      "sha256": "6cce7ce33bacea9e330376b1740abc37b9148ac0565af5faead2797cdb1fb20f"
+    },
+    {
+      "path": "src/runtime-engine.js",
+      "bytes": 35640,
+      "sha256": "2cd34b6d56d89206aaa5230ce9670efc6679c0f85bcefcf3c78927a3cc2d8af7"
+    },
+    {
+      "path": "src/verify-package.js",
+      "bytes": 7566,
+      "sha256": "986add1af161f86e8686ebbcfee071207106c1e5833c0a2d5696fbc0f015af4f"
+    },
+    {
+      "path": "src/verify.js",
+      "bytes": 3353,
+      "sha256": "5fc1f6fda95355f1cc3fe420b1b2d21fe45655ee357cb2e512573c502e9d6a54"
+    },
+    {
+      "path": "test/runtime-engine.test.js",
+      "bytes": 36402,
+      "sha256": "8616ab7663896075da9fa87f2ad290da209826154453b904e268332968f1074d"
+    },
+    {
+      "path": "test/runtime.test.js",
+      "bytes": 63956,
+      "sha256": "098bc6ae7b744701db4256d38892406e4666f22408e54589b25c69886276d42c"
+    }
+  ]
+}

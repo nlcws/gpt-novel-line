@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-09-01 / GitHub Runtime bundle replacement
+
+- GitHub側の `RUNTIME/` と `RUNTIME_ZIP/` を現行Runtime束へ差し替え。
+- `DS90 v0405`、`PW90 v004.28`、`TS90 v001.25`、`NW22 v002.5`、`MT00 v002`、`SP00 v002`、`MT00_BOOTSTRAP_EA v001`、`DB_PROJECT_ZERO_START_MOUNT v001`、画像Runtime、堅牢性監査Runtimeを収録。
+- `RUNTIME_ZIP/CHECKSUMS.sha256` を追加。
+- README / INDEX / CURRENT_STATUS / RUNTIME_ZIP READMEを、GitHub側にも現行Runtimeミラーを置く説明へ更新。
+- オンラインのRuntime Public Shelfを優先導線とする方針は維持。
+
 ## 2026-09-01 / Runtime Public Shelf v19導線整理
 
 - GitHub公開棚のREADME / INDEX / CURRENT_STATUS / RUNTIME_ZIP READMEを、現在のオンラインRuntime Public Shelf優先へ整理。

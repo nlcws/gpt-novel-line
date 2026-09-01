@@ -1,0 +1,41 @@
+{
+  "schema_id": "DS90_V0400_SHELF_PKDB_TAG_MACHINE_v001",
+  "version": "v0400",
+  "runtime_base": "v0309_host_adapter_v2_hardened",
+  "shelf_operation_base": "v0301_v008",
+  "project_authority": {
+    "shelf": "SOURCE_AND_CANON",
+    "tag": "LOCATOR_LABEL",
+    "pkdb": "TAG_ALIAS_POINTER_BACKEND",
+    "search": "DS90_QUERY",
+    "index": "DS90_LOCATION_RESOLUTION"
+  },
+  "normal_route": [
+    "DS90_OPERATION",
+    "DS90_INDEX_SEARCH",
+    "PKDB_ACCESS",
+    "CURRENT_SHELF_POINTER",
+    "PROJECT_SHELF_READ",
+    "DS90_DESIGN"
+  ],
+  "pkdb_standard_fields": [
+    "aliases",
+    "search_terms",
+    "payload.shelf_id",
+    "payload.shelf_pointer",
+    "payload.source_pointer"
+  ],
+  "pkdb_full_text_reconstruction_standard": false,
+  "source_materialize_role": "EXPLICIT_FALLBACK_ONLY",
+  "normal_shelves": [
+    "021_G",
+    "022_B",
+    "024_V",
+    "028_H",
+    "OTHER_EXISTING_PROJECT_SHELVES"
+  ],
+  "ds90_pkdb_commit_authority": false,
+  "update_history_in_runtime": false,
+  "status": "RETAINED_BASE_RUNTIME_LOCK",
+  "locator_representation_overridden_by": "DS90_V0401_CURRENT_SOURCE_LOCATOR_MACHINE_v001"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_id": "SP00_WRITER_HANDOFF_CONTRACT_v001",
+  "target_writer_runtime_family": "PW90",
+  "writerAcceptanceBasis": "WRITABLE_ZIP_STORY_PACK_ARTIFACT_NOT_VERSION",
+  "minimumStoryPackDefinition": "zip_pack_with_writable_novel_material",
+  "storyPackSelfContained": true,
+  "rejectByDesignerVersion": false
+}

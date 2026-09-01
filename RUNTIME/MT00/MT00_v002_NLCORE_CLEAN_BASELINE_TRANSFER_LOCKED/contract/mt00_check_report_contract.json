@@ -1,0 +1,23 @@
+{
+  "runtime": "MT00",
+  "version": "v002",
+  "artifact": "CHECK_REPORT.md",
+  "status": "generated_sidecar",
+  "required_sections": [
+    "title",
+    "target",
+    "decision",
+    "summary_counts",
+    "issues",
+    "next_action"
+  ],
+  "decision_values": [
+    "PASS",
+    "STOP"
+  ],
+  "excluded_from_manifest": true,
+  "does_not_certify": [
+    "TRANSFER_CONTAINER.zip"
+  ],
+  "transfer_container_validator": "tools/validate_transfer_container.js"
+}

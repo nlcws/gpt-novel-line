@@ -1,0 +1,52 @@
+{
+  "id": "DS90_DIRECT_RUNTIME_DISPATCH_000C_MACHINE",
+  "status": "ACTIVE_ALWAYS_READ",
+  "version": "v0301",
+  "mode": "owner_current_mount_000c_dispatch",
+  "control_shelf": "current mount 000_C.zip",
+  "dispatch_manifest": "000_C/00_READ_FIRST/RUNTIME_DIRECT_DISPATCH.json",
+  "runtime_resolution_rule": "DS90 resolves concrete runtime path, version, and sha256 only from the current mount 000_C RUNTIME_DIRECT_DISPATCH.json. DS90 does not embed resident runtime filenames or route sha256 values.",
+  "public_skill_wrappers_allowed_for_external_use": true,
+  "owner_operation_prefers_direct_runtime_zip": true,
+  "direct_runtime_routes": {
+    "MOUNT_TRANSFER": {
+      "target": "MT00",
+      "runtime": "MT00 / Nul / ヌル",
+      "dispatch_route": "routes.MOUNT_TRANSFER"
+    },
+    "PACK_CUTOUT": {
+      "target": "SP00",
+      "runtime": "SP00 / Nal / ナル",
+      "dispatch_route": "routes.PACK_CUTOUT"
+    },
+    "STORY_PACK_RECEIVER_CHECK": {
+      "target": "PW90_STORY_PACK_RECEIVER_CHECKER",
+      "runtime": "PW90 story pack receiver checker / 執筆さん受領チェッカー",
+      "dispatch_route": "routes.STORY_PACK_RECEIVER_CHECK",
+      "required_predecessor_line": [
+        "NAL_PACK_CUTOUT",
+        "NAL_PACK_CHECK",
+        "PW90_RECEIVER_CHECK"
+      ]
+    },
+    "MOUNT_ZIP_BOOTSTRAP": {
+      "target": "MT00_BOOTSTRAP_EA",
+      "runtime": "MT00_BOOTSTRAP / Ea / エーア",
+      "dispatch_route": "routes.MOUNT_ZIP_BOOTSTRAP",
+      "resident_core": true,
+      "distribution_runtime_resolution_source": "EA_RESIDENT_CORE.distribution_runtime_resolution"
+    }
+  },
+  "stop_if": [
+    "selected_current_mount_000c_lane_missing",
+    "user_request_is_consultation_only",
+    "selected_runtime_required_materials_absent_after_invocation"
+  ],
+  "ds90_forbidden": [
+    "execute_mt00_work_inside_ds90",
+    "execute_sp00_work_inside_ds90",
+    "execute_pw90_receiver_check_inside_ds90",
+    "execute_mt00_bootstrap_ea_work_inside_ds90",
+    "treat_000_c_as_project_story_canon"
+  ]
+}

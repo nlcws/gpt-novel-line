@@ -1,0 +1,14 @@
+{
+  "runtime": "MT00_v002_MOUNT_TRANSFER_RUNTIME",
+  "base": "MT00_v002",
+  "activation": "MOUNT_TRANSFER_ONLY",
+  "standalone_tests": 30,
+  "stay_on_user_explicit": true,
+  "return_on_runtime_auto": true,
+  "output_format": "ZIP",
+  "nested_zips": "required_for_submission_container",
+  "machine_transfer_container_gate": true,
+  "actual_zip_evidence_validator": "src/validation/zip_evidence.js",
+  "outer_submission_zip_policy": "one outer transfer container ZIP; outer root shelf ZIPs only; control shelf manifest required",
+  "history": "v002 clean baseline aligns MT00 with DS90 v0300 while preserving independent transfer completion gates"
+}

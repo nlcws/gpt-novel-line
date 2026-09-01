@@ -1,0 +1,37 @@
+{
+  "contractId": "MOUNT_TRANSFER_CONTAINER_CONTRACT_V1",
+  "contractMode": "MACHINE_GATE_FIRST",
+  "packageType": "MOUNT_TRANSFER_CONTAINER",
+  "version": "1.0.0",
+  "outerArchive": {
+    "singleSubmissionZip": true,
+    "rootAllowsOnlyShelfZipFiles": true,
+    "rootFoldersForbidden": true,
+    "rootLooseFilesForbidden": true,
+    "requireControlShelfZip": true,
+    "controlShelfZipName": "000_C.zip"
+  },
+  "shelfArchive": {
+    "rootFilesForbidden": true,
+    "rootMustBeFoldersOnly": true,
+    "fileMustBeInsideRootFolder": true,
+    "forbiddenEscapeFolders": ["misc", "MISC", "Misc", "その他", "未分類", "unclassified", "UNCLASSIFIED", "loose", "LOOSE", "tmp", "TMP", "temp", "TEMP"]
+  },
+  "controlManifest": {
+    "path": "00_READ_FIRST/TRANSFER_CONTAINER_MANIFEST.json",
+    "validationReportPath": "01_VALIDATION/VALIDATION_REPORT.json",
+    "requireAllOuterShelfZipsListed": true,
+    "requireAllFilesListed": true,
+    "requireFileSha256": true,
+    "manifestSelfHashExempt": true,
+    "requireRestartHandoff": true,
+    "transferCompleteRequiresNoUnclassified": true
+  },
+  "passRule": {
+    "validatorIsSourceOfTruth": true,
+    "aiSelfReportCannotOverrideValidator": true,
+    "failZipSubmissionWhenValidatorFails": true,
+    "unresolvedStopCountMustBeZero": true,
+    "nextAgentRestartReadyMustBeTrue": true
+  }
+}

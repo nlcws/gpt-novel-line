@@ -1,0 +1,196 @@
+{
+  "package": "SP00_v002_NLCORE_CLEAN_BASELINE_STORY_PACK_LOCKED",
+  "file_count": 38,
+  "files": [
+    {
+      "path": "README.md",
+      "size": 4240,
+      "sha256": "f6a7fffbe481fc961cf2ce4765c3499d72c2da11b064655f617ccceb2ad05a72"
+    },
+    {
+      "path": "START_HERE.js",
+      "size": 55,
+      "sha256": "77b0bdc56fc4e6420171b5de6d4e33ef46262848ff2102a22f1307f50d0117fc"
+    },
+    {
+      "path": "assets/contracts/STOP_AND_PASS_CRITERIA.md",
+      "size": 311,
+      "sha256": "867f69c0920c92838fb13f79b94f0eb6bea3c90207665a3a320e860c412cadac"
+    },
+    {
+      "path": "assets/contracts/STORY_PACK_CUTOUT_PROTOCOL.md",
+      "size": 444,
+      "sha256": "add3dd1a9af4be2ed787f5c30622ebdd03674b816c5becb13f0a6bafb12568b4"
+    },
+    {
+      "path": "assets/contracts/STORY_PACK_OUTPUT_CONTRACT.md",
+      "size": 253,
+      "sha256": "97cf3641766e4c0a622e77b60063be6b6e570f6ac7bad5fd86c05cda6d832524"
+    },
+    {
+      "path": "assets/contracts/WRITER_HANDOFF_CONTRACT.json",
+      "size": 314,
+      "sha256": "aa2df94ac07a347ead4afa9d87db900085ededab5eb5756c08f32ea4d6e01dfa"
+    },
+    {
+      "path": "assets/templates/EPISODE_FOLDER_SHAPE.md",
+      "size": 279,
+      "sha256": "72d41c0a0f71503df86bf83114a973be87b6c042ff2ac58df7c265c2bb5298ed"
+    },
+    {
+      "path": "assets/templates/STORY_PACK_ROOT_SHAPE.md",
+      "size": 341,
+      "sha256": "222297f4b6dffe533cc8273535dd30f5ad226dc2b6fc90020b04e7a16b385006"
+    },
+    {
+      "path": "contract/sp00_check_report_contract.json",
+      "size": 329,
+      "sha256": "cad9a03b1c05df36108736c1ba579fd88ad681edcfb972b12ab0574180019286"
+    },
+    {
+      "path": "contract/sp00_v002_clean_baseline_machine.json",
+      "size": 943,
+      "sha256": "7eaacf0784b1403bcd78d68345eb0547d3f1305c4df05d8900e641e6f6bcba27"
+    },
+    {
+      "path": "docs/SP00_CHECK_REPORT_FORMAT_LOCK.md",
+      "size": 422,
+      "sha256": "77b2307f1eb8c0d5bf825390c1f2bede983ba530ed882ea8b210c7d99f1a94e5"
+    },
+    {
+      "path": "docs/SP00_DS90_V0300_COMPATIBILITY_LOCK.md",
+      "size": 752,
+      "sha256": "c15ce752f6637843f9155b8d5753620bbf3a98a8602695595e63d4c93b3a8ab6"
+    },
+    {
+      "path": "docs/SP00_GPT_PROJECT_INVOCATION_FLOW.md",
+      "size": 953,
+      "sha256": "4e9384810ae823200ae3bdc6db78495dab03bf2a4625cdcf524eee959210bdd9"
+    },
+    {
+      "path": "docs/SP00_ROLE_BOUNDARY_LOCK.md",
+      "size": 1022,
+      "sha256": "ffb4aacfd1a52d3d83038e8e46fe3e70fe813e8a7a2d9d90efb26246733db86b"
+    },
+    {
+      "path": "docs/SP00_SHARED_TOOLING_BOUNDARY_LOCK.md",
+      "size": 1017,
+      "sha256": "77a9f52bc15189d9d5574bcc5c795bdef95b2d01b281b161b31273f30c1df46e"
+    },
+    {
+      "path": "docs/SP00_V002_CLEAN_BASELINE_LOCK.md",
+      "size": 881,
+      "sha256": "5c7fd51fa8c4047ba0a8ea88b8c8cc4b82c849a5dbba6019c0cfb880dc31783d"
+    },
+    {
+      "path": "examples/invocation_template.json",
+      "size": 499,
+      "sha256": "74e4d7bb008cdb8bc59bede96a415c05e06b21ed729def1498f31dafca9d88d2"
+    },
+    {
+      "path": "load_order.md",
+      "size": 1614,
+      "sha256": "3c6624b60542abb359d2fd20a8b5f62c84f9b7aa3d2d81dbc86b06b595ea3481"
+    },
+    {
+      "path": "package.json",
+      "size": 656,
+      "sha256": "4f3ce1dd89b168243a16cab32380d3a60e68ee7b947041fb7b848363bb6823ac"
+    },
+    {
+      "path": "src/cli.js",
+      "size": 184,
+      "sha256": "7641b39cd9ab3bc7817b856b42285465d124907ca63e980d7f2027716a332575"
+    },
+    {
+      "path": "src/dsgn/invocation.js",
+      "size": 981,
+      "sha256": "952f76964507c3f89640b8dc7563d30afd1bc87fba0c501b39f52026f5e92654"
+    },
+    {
+      "path": "src/dsgn/lookup.js",
+      "size": 1452,
+      "sha256": "6ed90b7fa7b906f321d63f7a405d2f7afe099f40ab093e66a4c182670b1a9346"
+    },
+    {
+      "path": "src/dsgn/namespace.js",
+      "size": 1085,
+      "sha256": "ad2f6758bfd1c04ba3f5b635d08c8b6b4090b18a9469bce2b1b07eebeaa124f8"
+    },
+    {
+      "path": "src/engine.js",
+      "size": 3853,
+      "sha256": "750cd6766df51f5687f43c5db4960d04a8784079050a81686009f586f5c29006"
+    },
+    {
+      "path": "src/loading/manifest.js",
+      "size": 2093,
+      "sha256": "bbcdd9e28c7bb082992d135d36a569d2913fb83cfafc6f377b8216494259874e"
+    },
+    {
+      "path": "src/modules/packCutout.js",
+      "size": 56413,
+      "sha256": "6ddaa87ac71b760e4d5705d462469b6b6c8ddf4db74b749332c56fdbd69a8f84"
+    },
+    {
+      "path": "src/router.js",
+      "size": 1887,
+      "sha256": "1e46885e9b4b6333d223108a675e264739c3b12968a665a913cad866958c2461"
+    },
+    {
+      "path": "src/runtime/rule.js",
+      "size": 906,
+      "sha256": "e939ef592d384f4c67691d69e1049476a79b898df42ee1b9d93b9ea28a535dd8"
+    },
+    {
+      "path": "src/runtime/types.js",
+      "size": 473,
+      "sha256": "b57a2e3424050b8cb4de62119ea2194953bb17bb2405bdc4c68004dcda6e7b41"
+    },
+    {
+      "path": "src/v2/activation.js",
+      "size": 4726,
+      "sha256": "2026fcfdf10b8a03552b2fb9b593ba4965331d6a27d9d42515801a407c67e840"
+    },
+    {
+      "path": "src/v2/material-map.js",
+      "size": 11563,
+      "sha256": "37c639cb15c3d52522bf8c3d9027b49a41bdce90c8045b43cd2352e4e6de5ce6"
+    },
+    {
+      "path": "src/validation/convergence.js",
+      "size": 1514,
+      "sha256": "33169570a6c6d533ce0e8e64b6e8f0e830cf994184dbbb74c8d51692c9a2492f"
+    },
+    {
+      "path": "test/pack-cutout.test.js",
+      "size": 15464,
+      "sha256": "fb320a0b7145fe39946ce9a9b20703bf1bb4a5079ae8949316a5f105bbc4f249"
+    },
+    {
+      "path": "tools/sp00_build_zip.py",
+      "size": 1127,
+      "sha256": "df5cc5eec722b741ed7db48e3a12d6afbe420efbbbef625fc2c7bda1913568f8"
+    },
+    {
+      "path": "tools/sp00_check_runtime.py",
+      "size": 8503,
+      "sha256": "5caccdcb99c96b25af3883f0b0f21db9df951d28b65bb8ae82b48f60a3b5fb9d"
+    },
+    {
+      "path": "tools/sp00_make_manifest.py",
+      "size": 1558,
+      "sha256": "4da8c7af677a734264b2e3fb87ecc5901f9cf17e185c04f4c5b4ae14927e0f2d"
+    },
+    {
+      "path": "tools/verify_manifest.js",
+      "size": 1460,
+      "sha256": "269fa032e38e6a02320422bd95777f6e13a35b9da8b99e97cd9eef5990754ce0"
+    },
+    {
+      "path": "tools/verify_package.js",
+      "size": 1608,
+      "sha256": "4558e7c37034597b619dd7c74f03cf208b9a092f73c157a610712fd955845924"
+    }
+  ]
+}

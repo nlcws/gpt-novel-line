@@ -1,0 +1,36 @@
+DS90 v0400 CURRENT RUNTIME MANIFEST CONTRACT
+
+STATUS: CURRENT_RUNTIME_DESCRIPTOR
+VERSION: v0400
+RUNTIME_ROOT: DS90_v0400_NLCORE_SHELF_PKDB_TAG_RUNTIME_LOCKED
+
+FORMULA:
+  v0309 trusted host/runtime hardening
+  + strict v0301 shelf operation restore
+  + 021_G normal shelf restore
+  + DS90 INDEX/SEARCH
+  + PKDB TAG/alias/current-shelf-pointer backend
+
+CURRENT_PROJECT_ROUTE:
+  DS90 INDEX/SEARCH
+  -> K01 PKDB_ACCESS
+  -> locator metadata
+  -> current shelf_pointer
+  -> K04 SHELF_READ
+  -> exact current shelf bytes
+  -> DS90 design
+
+SOURCE_AUTHORITY:
+  current project shelf = source/canon authority
+  PKDB locator record = lookup metadata only
+  K02 SOURCE_MATERIALIZE = explicit fallback only
+
+RELEASE_BOUNDARY:
+  Runtime ZIP contains current execution material only.
+  Update-History is a separate release ZIP and is not required on normal runtime mount.
+
+VALIDATION_AUTHORITY:
+  updated_manifest.json is the per-file hash/size machine manifest.
+  tools/ds90_check_runtime.py performs package-shape/manifest/UTF-8/unsafe-path checks.
+  npm test performs runtime/negative-path regression tests.
+  No unexecuted check may be reported as PASS.

@@ -1,0 +1,124 @@
+{
+  "artifact": "DS90_v020_NLCORE_STABLE_LOCKED_RUNTIME_FLOW_CONVERGED.zip",
+  "root": "DS90_v020_NLCORE_MOUNT_TRANSFER_PACKAGING_THREE_ZERO_CONVERGED_LOCKED",
+  "source": "DS90_v020_NLCORE_STABLE_LOCKED(9).zip",
+  "files_total": 330,
+  "files_excluding_updated_manifest": 329,
+  "json_files": 26,
+  "json_errors": [],
+  "always_read_count": 61,
+  "operations": 11,
+  "active_unique_read_paths": 140,
+  "active_required_missing": [],
+  "duplicate_active_read_routes": [],
+  "active_stale_paths": [],
+  "active_stale_content_files": [],
+  "root_entry": {
+    "path": "START_HERE.js",
+    "read_order_export": "PASS",
+    "execute_export": "PASS"
+  },
+  "external_context_contract": {
+    "canonical_key": "externalContext",
+    "legacy_alias": "project",
+    "alias_conflict": "STOP"
+  },
+  "handoff_schema_digest": {
+    "expected": "29934a8b12ab66e1eec0f2e17912c743f02aafc6d49c591cdcce5030df927975",
+    "actual": "29934a8b12ab66e1eec0f2e17912c743f02aafc6d49c591cdcce5030df927975",
+    "match": true
+  },
+  "backpack_source_manifest_mismatch": [],
+  "test_suites": {
+    "engine": {
+      "tests": 109,
+      "pass": 109,
+      "fail": 0
+    },
+    "mount_transfer_literal": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0
+    },
+    "mount_transfer_librarian": {
+      "tests": 17,
+      "pass": 17,
+      "fail": 0
+    },
+    "aggregate": {
+      "tests": 129,
+      "pass": 129,
+      "fail": 0
+    }
+  },
+  "examples": {
+    "examples/boot.json": "PASS",
+    "examples/card.json": "PASS"
+  },
+  "manifest_registered_files": 329,
+  "manifest_missing": [],
+  "manifest_hash_mismatch": [],
+  "manifest_unlisted": [],
+  "dryruns": [
+    {
+      "run": 1,
+      "error": 0,
+      "intent_mismatch": 0,
+      "route_mismatch": 0,
+      "shelf_mismatch": 0,
+      "reference_missing": 0,
+      "output_shape_mismatch": 0,
+      "user_instruction_violation": 0,
+      "unresolved_stop": 0,
+      "stale_active_path": 0,
+      "duplicate_active_read": 0
+    },
+    {
+      "run": 2,
+      "error": 0,
+      "intent_mismatch": 0,
+      "route_mismatch": 0,
+      "shelf_mismatch": 0,
+      "reference_missing": 0,
+      "output_shape_mismatch": 0,
+      "user_instruction_violation": 0,
+      "unresolved_stop": 0,
+      "stale_active_path": 0,
+      "duplicate_active_read": 0
+    },
+    {
+      "run": 3,
+      "error": 0,
+      "intent_mismatch": 0,
+      "route_mismatch": 0,
+      "shelf_mismatch": 0,
+      "reference_missing": 0,
+      "output_shape_mismatch": 0,
+      "user_instruction_violation": 0,
+      "unresolved_stop": 0,
+      "stale_active_path": 0,
+      "duplicate_active_read": 0
+    }
+  ],
+  "three_zero_converged": true,
+  "validation_runner": "direct Node test files; npm not required",
+  "notes": [
+    "Stable v019 filenames remain where they identify reusable active route schemas; their applicability is V020.",
+    "V015 overlays, old virtual-ZIP maps, NOM compatibility material, history, and source-floor files are retained only behind inactive or optional boundaries.",
+    "Writer delivery uses the fixed nine-file episode folder with explicit writer roles; frozen is not a substitute for prior files.",
+    "Excluded component ZIP names are metadata only and are not searchable current source paths.",
+    "A convergence filename or boolean is not accepted as dry-run evidence."
+  ],
+  "mojibake_filenames_repaired": 28,
+  "mojibake_remaining": 0,
+  "comparison_files": 23,
+  "current_dsgn_manifest_files": 42,
+  "current_dsgn_always_light_files": 14,
+  "operation_mount_manifest_files": 84,
+  "writer_handoff_episode_files": 9,
+  "inactive_reference_classes": {
+    "legacy_v015_overlay": 2,
+    "archive_virtual_zip_maps": 4,
+    "optional_nom_compatibility_gate": 1
+  }
+}

@@ -2,7 +2,7 @@
 
 GPT小説執筆ライン公開棚の現在状況です。
 
-このファイルは、GitHub公開棚の現在の顔を示すためのものです。Runtime本体の正本はGitHub内の古いZIPではなく、オンラインのRuntime Public Shelfを優先します。
+このファイルは、GitHub公開棚の現在の顔を示すためのものです。Runtime本体の正本導線はオンラインのRuntime Public Shelfを優先し、GitHub側には現行Runtime束の公開ミラーを置きます。
 
 ## 現在確認できた公開導線
 
@@ -33,40 +33,50 @@ GitHub README、INDEX、CURRENT_STATUS、RUNTIME_ZIP READMEでは、オンライ
 
 - 外部検索から来た人向けの玄関
 - Portal / Runtime Public Shelf / Public Release Policy / note への導線
-- 過去のGitHub配布ZIP記録
+- GitHub側のRuntime ZIP公開ミラー
 - Runtime関連の参照用資料
 - 公開方針と更新履歴
 
-GitHubをRuntime本体の新しい正本へ昇格しません。GitHub上に残っているZIPは、オンラインRuntime Public Shelfより古い可能性があります。
+GitHubをRuntime本体の最優先正本へは昇格しません。オンラインRuntime Public Shelfを優先導線とし、GitHubは公開ミラー兼参照棚として扱います。
 
-## GitHub上のRuntime ZIP記録
+## GitHub上のRuntime ZIP
 
-`RUNTIME_ZIP/` には、GitHub上で過去に配布したZIPが残っています。これは現在のRuntime Public Shelf v19 / 400番台と同一であるとは確認していません。
+`RUNTIME_ZIP/` は、2026-09-01に現行Runtime束へ差し替え済みです。ZIP CRCはローカル実読でPASSを確認し、SHA-256は `RUNTIME_ZIP/CHECKSUMS.sha256` に記録しています。
 
 | GitHub path | 扱い |
 | --- | --- |
-| `RUNTIME_ZIP/DS90_v0300_CLEAN_BASELINE_FINALIZED_v002.zip` | GitHub旧配布記録 |
-| `RUNTIME_ZIP/PW90_v004_21c_NLCORE_STABLE_LOCKED.zip` | GitHub旧配布記録 |
-| `RUNTIME_ZIP/TS90_v001_15_NLCORE_STABLE_LOCKED.zip` | GitHub旧配布記録 |
-| `RUNTIME_ZIP/NW22_v002_5_NLCORE_STABLE_LOCKED.zip` | GitHub旧配布記録 |
-| `RUNTIME_ZIP/MT00_BOOTSTRAP_EA_v001_GPT_PROJECT_FIRST_TRANSFER_BASELINE_FINALIZED_v001.zip` | GitHub旧配布記録 |
-| `RUNTIME_ZIP/MT00_v002_CLEAN_BASELINE_TRANSFER_FINALIZED_v002.zip` | GitHub旧配布記録 |
-| `RUNTIME_ZIP/SP00_v002_CLEAN_BASELINE_STORY_PACK_FINALIZED_v001.zip` | GitHub旧配布記録 |
+| `RUNTIME_ZIP/DS90_v0405_RUNTIME_FINALIZED_v001.zip` | DS90 / 設計さん |
+| `RUNTIME_ZIP/PW90_v004_28_NLCORE_STORY_LAYER_V28_BOUND_FINALIZED_v004.zip` | PW90 / 執筆さん |
+| `RUNTIME_ZIP/TS90_v001_25_NLCORE_JSON_ROUNDTRIP_BOUNDARY_FINALIZED_v001.zip` | TS90 / 修正刃さま |
+| `RUNTIME_ZIP/NW22_v002_5_NLCORE_STABLE_LOCKED.zip` | NW22 / 野良ちゃん |
+| `RUNTIME_ZIP/MT00_BOOTSTRAP_EA_v001_GPT_PROJECT_FIRST_TRANSFER_BASELINE_FINALIZED_v001.zip` | MT00_BOOTSTRAP_EA / エーア |
+| `RUNTIME_ZIP/MT00_v002_CLEAN_BASELINE_TRANSFER_FINALIZED_v002.zip` | MT00 / ヌル |
+| `RUNTIME_ZIP/SP00_v002_CLEAN_BASELINE_STORY_PACK_FINALIZED_v001.zip` | SP00 / ナル |
+| `RUNTIME_ZIP/DB_PROJECT_ZERO_START_MOUNT_v001.zip` | 初期Project配置用マウント束 |
+| `RUNTIME_ZIP/IMAGE_RUNTIME_MINIMAL_v005.zip` | 画像Runtime最小セット |
+| `RUNTIME_ZIP/IMAGE_RUNTIME_MOUNT_TEMPLATE_v001.zip` | 画像Runtime用マウントテンプレート |
+| `RUNTIME_ZIP/ROBUSTNESS_AUDIT_RUNTIME_v002_MINIMAL.zip` | 堅牢性監査Runtime |
 
 最新版を読む場合は [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) の400番台を確認してください。
 
 ## Runtime関連ディレクトリ
 
-GitHub APIで、以下のRuntime関連ディレクトリが存在することを確認しています。
+GitHub側では、以下のRuntime関連ディレクトリへ展開済みです。
 
 - `RUNTIME/DS90`
 - `RUNTIME/PW90`
 - `RUNTIME/TS90`
 - `RUNTIME/NW22`
+- `RUNTIME/MT00`
+- `RUNTIME/SP00`
+- `RUNTIME/MT00_BOOTSTRAP_EA`
+- `RUNTIME/IMAGE_RUNTIME_MINIMAL`
+- `RUNTIME/IMAGE_RUNTIME_MOUNT_TEMPLATE`
+- `RUNTIME/ROBUSTNESS_AUDIT`
 - `RUNTIME_ZIP/`
 - `RUNTIME_PDF/`
 
-これらはGitHub公開棚の参照資料です。オンラインRuntime Public Shelfの現行正本より優先しません。
+これらはGitHub公開棚の参照資料です。オンラインRuntime Public Shelfの正本導線を優先します。
 
 ## 公開方針
 
@@ -84,6 +94,6 @@ GPT小説執筆ラインはOpenAI公式のプロジェクトではありませ�
 
 ## 未確認事項
 
-- GitHub上の旧ZIPとRuntime Public Shelf v19 / 400番台の全ファイル同一性は、この更新では確認していません。
+- GitHub上のRuntime ZIPとRuntime Public Shelf v19 / 400番台の公開ファイル全体の完全同一性は、この更新では確認していません。
 - Public Release Policy本文の法的保証やライセンス解釈は、このGitHub更新では拡張していません。
 - Sites本体の編集・deployは、このGitHub更新とは別工程です。

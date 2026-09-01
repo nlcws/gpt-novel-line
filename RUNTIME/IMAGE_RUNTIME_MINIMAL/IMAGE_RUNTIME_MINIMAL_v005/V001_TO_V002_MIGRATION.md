@@ -1,0 +1,26 @@
+# V001_TO_V002_MIGRATION
+
+## Removed
+- MAX_THREE_CHARACTERS
+- 主要人物3人以内
+- 4人以上STOP
+- 固定6ルールという構造
+
+## Added
+- WORLD_BEFORE_FRAME
+- PHYSICAL_RELATION_LOCK
+- OBJECT_INTEGRITY_LOCK
+- ACTION_BEFORE_CAMERA
+- CAMERA_DOES_NOT_REWRITE_WORLD
+- CROP_NOT_BREAK
+- POPULATION_NOT_FRAME_QUOTA
+- ACTION_CROP default
+- PROMO_STAGED exception
+
+## Key Change
+旧:
+16:9等の画面内へ人物・道具・背景を収容する。
+
+新:
+画面外まで続く世界・物理・行動を先に成立させ、
+最後に指定画角で切り取る。

@@ -1,0 +1,11 @@
+{
+  "name": "toshi-shusei-v125-json-roundtrip-boundary",
+  "version": "1.25.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/runtime.test.js test/runtime-engine.test.js",
+    "verify": "node src/verify.js",
+    "verify:package": "node src/verify-package.js"
+  }
+}

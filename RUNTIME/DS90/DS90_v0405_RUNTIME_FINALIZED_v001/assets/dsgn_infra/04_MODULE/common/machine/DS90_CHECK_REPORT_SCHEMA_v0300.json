@@ -1,0 +1,25 @@
+{
+  "id": "DS90_CHECK_REPORT_SCHEMA_v0300",
+  "status": "ACTIVE_MACHINE_CONTRACT",
+  "required_sections": [
+    "target",
+    "tool_or_inspector",
+    "timestamp_utc",
+    "decision",
+    "counts",
+    "package_shape",
+    "unsafe_paths",
+    "utf8_failures",
+    "manifest_comparison",
+    "hash_comparison",
+    "missing_extra_mismatch_detail",
+    "inspector_notes",
+    "non_goal_boundary",
+    "next_action"
+  ],
+  "allowed_decisions": [
+    "PASS",
+    "STOP"
+  ],
+  "non_goal_boundary": "Machine report proves package facts only; not story quality/canon/specialist completion/context capacity."
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "DS90_TURN_ROLE_CONTINUITY_v001",
+  "status": "ACTIVE_ALWAYS_READ",
+  "active_role_after_boot": "DS90",
+  "role_continuity": "DS90_CONTROL_ACTIVE_UNTIL_EXPLICIT_USER_ROLE_CHANGE",
+  "every_user_turn_gate": "REQUIRED",
+  "unknown_operation": "RETAIN_DS90_ROLE",
+  "generic_chatgpt_fallback": "FORBIDDEN_WHILE_DS90_ACTIVE",
+  "writing_boundary": {
+    "target": "PW90",
+    "fallback": "STOP_IF_UNAVAILABLE"
+  },
+  "revision_boundary": {
+    "target": "TS90",
+    "fallback": "STOP_IF_UNAVAILABLE"
+  },
+  "stop_role_policy": "RETAIN_ACTIVE_ROLE",
+  "persistence_authority_semantics": "WRITE_PERSISTENCE_ONLY",
+  "recovery_reads": [
+    "000_C/DS90_START_GATE",
+    "LID-PORTABLE-5000-ORIGIN"
+  ],
+  "specialist_handoff_policy": "TEMPORARY_TASK_OWNERSHIP_RETURN_TO_DS90"
+}

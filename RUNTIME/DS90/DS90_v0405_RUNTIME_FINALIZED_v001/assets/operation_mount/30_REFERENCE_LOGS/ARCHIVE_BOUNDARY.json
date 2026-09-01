@@ -1,0 +1,16 @@
+{
+  "status": "RETIRED_REFERENCE_ONLY",
+  "active_route": false,
+  "path_prefix": "assets/operation_mount/30_REFERENCE_LOGS/",
+  "precedence": "DIRECTORY_ARCHIVE_BOUNDARY_OVERRIDES_HISTORICAL_INTERNAL_STATUS",
+  "allowed_uses": [
+    "explicit_audit",
+    "provenance_review",
+    "revision_history"
+  ],
+  "forbidden_uses": [
+    "active_required_read",
+    "current_canon_override",
+    "story_condition_source"
+  ]
+}

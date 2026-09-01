@@ -1,0 +1,21 @@
+{
+  "operation": "PACK_CUTOUT",
+  "command": "話パック切り出し",
+  "runtime": {
+    "mode": "SP00.MODE.pack_cutout",
+    "invocationOrigin": "USER_EXPLICIT"
+  },
+  "externalContext": {
+    "present": true,
+    "gate021": {
+      "path": "project/START.md",
+      "exists": true,
+      "read": true,
+      "readOrderRefs": []
+    }
+  },
+  "boot": {
+    "readLedger": "use requiredReads('PACK_CUTOUT') and mark all exists/read true"
+  },
+  "packCutout": "story pack cutout candidate payload"
+}

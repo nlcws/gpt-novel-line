@@ -1,0 +1,13 @@
+{
+  "name": "mt00-v002-nlcore-clean-baseline-transfer-locked",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node backpacks/MOUNT_TRANSFER_BACKPACK/test/literal.test.js && node backpacks/MOUNT_TRANSFER_BACKPACK/test/librarian.test.js && node backpacks/MOUNT_TRANSFER_BACKPACK/test/container_contract.test.js",
+    "validate:container": "node tools/validate_transfer_container.js",
+    "check:runtime": "python3 tools/mt00_check_runtime.py . --report CHECK_REPORT.md",
+    "manifest:write": "python3 tools/mt00_make_manifest.py . --write",
+    "build:zip": "python3 tools/mt00_build_zip.py . ../MT00_v002_CLEAN_BASELINE_TRANSFER_FINALIZED_v002.zip"
+  }
+}

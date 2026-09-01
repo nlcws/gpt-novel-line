@@ -1,0 +1,37 @@
+{
+  "schema_id": "DS90_V0401_CURRENT_SOURCE_LOCATOR_MACHINE_v001",
+  "version": "v0401",
+  "base_runtime": "v0400_shelf_pkdb_tag",
+  "resident_pkdb_schema": "PKDB_RECORD_SCHEMA_v004",
+  "project_authority": "CURRENT_PROJECT_SHELF",
+  "pkdb_role": "TAG_ALIAS_CURRENT_SOURCE_LOCATOR_BACKEND",
+  "standard_locator_record": {
+    "record_type": "SOURCE",
+    "required_top_level": [
+      "aliases",
+      "search_terms"
+    ],
+    "required_payload": [
+      "source_role",
+      "locator",
+      "sha256"
+    ],
+    "optional_payload": [
+      "media_type",
+      "selection"
+    ],
+    "locator_constraint": "CURRENT_PROJECT_MOUNT_RELATIVE_PATH_ONLY",
+    "sha_binding": "K04_RECOMPUTED_SHELF_SHA256_MUST_EQUAL_SOURCE_PAYLOAD_SHA256"
+  },
+  "normal_route": [
+    "DS90_INDEX_SEARCH",
+    "K01_PKDB_ACCESS",
+    "CURRENT_SOURCE_LOCATOR",
+    "K04_SHELF_READ",
+    "DS90_DESIGN"
+  ],
+  "uri_source_role": "EXPLICIT_K02_FALLBACK_ONLY",
+  "schema_change": false,
+  "ds90_commit_authority": false,
+  "mt00_nul_commit_authority": true
+}

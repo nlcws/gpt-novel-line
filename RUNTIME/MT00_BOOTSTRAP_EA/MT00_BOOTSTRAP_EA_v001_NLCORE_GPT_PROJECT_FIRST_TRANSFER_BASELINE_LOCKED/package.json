@@ -1,0 +1,13 @@
+{
+  "name": "mt00-bootstrap-ea-v001-gpt-project-first-transfer-baseline-locked",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node backpacks/MOUNT_TRANSFER_BACKPACK/test/literal.test.js && node backpacks/MOUNT_TRANSFER_BACKPACK/test/librarian.test.js && node backpacks/MOUNT_TRANSFER_BACKPACK/test/container_contract.test.js",
+    "validate:container": "node tools/validate_transfer_container.js",
+    "check:runtime": "python3 tools/mt00_bootstrap_check_runtime.py . --report CHECK_REPORT.md",
+    "manifest:write": "python3 tools/mt00_bootstrap_make_manifest.py . --write",
+    "build:zip": "python3 tools/mt00_bootstrap_build_zip.py . /mnt/data/MT00_BOOTSTRAP_EA_v001_GPT_PROJECT_FIRST_TRANSFER_BASELINE_FINALIZED_v001.zip"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "DS90_PKDB_HOST_ADAPTER_V2_HARDENED_MACHINE",
+  "version": "v0309",
+  "status": "ACTIVE_ALWAYS_READ",
+  "execution_model": "DEPENDENCY_GRAPH_NO_GLOBAL_SKILL_CHAIN",
+  "pkdb_host_adapter": {
+    "id": "DS90_PKDB_HOST_ADAPTER_v002",
+    "implementation": "src/adapters/pkdbHostAdapter.js",
+    "mode": "BIDIRECTIONAL_RESIDENT_REQUEST_RESPONSE_ADAPTER",
+    "access_packet": "PKDB_DELIVERY_PACKET_v001",
+    "materialize_packet": "PKDB_SOURCE_MATERIALIZE_PACKET_v001",
+    "identity_binding": "PENDING_ACTION_EXECUTION_ID_AND_CONSUMER_ID",
+    "k02_snapshot_binding": "EXACT_K01_SNAPSHOT"
+  },
+  "invariants": {
+    "access_authority_flags": "CONST_FALSE",
+    "materialize_authority_flags": "CONST_FALSE",
+    "delivery_count": "EXACT_ARRAY_LENGTH",
+    "resolved_evidence": "MUST_BE_DELIVERED",
+    "required_delivery": "PACKET_DECISION_CONSISTENT",
+    "source_bytes_transformed": false
+  },
+  "pkdb_commit_authority": "MT00_NUL_ONLY",
+  "session_integrity": "CANONICAL_REPLAY_NON_CRYPTOGRAPHIC_HOST_INTERNAL_ONLY"
+}

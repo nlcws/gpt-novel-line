@@ -1,0 +1,65 @@
+{
+  "runtime": "MT00",
+  "version": "v002",
+  "status": "CLEAN_BASELINE_TRANSFER_LOCKED",
+  "compatible_with": "DS90_v0300_NLCORE_CLEAN_BASELINE_SPECIALIST_PORTAL_LOCKED",
+  "specialist": {
+    "canonical_names": [
+      "MT00",
+      "Nul",
+      "ヌル"
+    ],
+    "owns": [
+      "MOUNT_TRANSFER",
+      "chat crossing",
+      "context-limit transfer",
+      "restart handoff"
+    ],
+    "does_not_own": [
+      "PACK_CUTOUT",
+      "STORY_PACK",
+      "WRITING",
+      "REVISION",
+      "DESIGN"
+    ]
+  },
+  "public_acquisition": {
+    "portal": "https://gpt-novel-line-portal.harmoniets.chatgpt.site/",
+    "mt00_archive_direct_link": "https://runtime-public-archive.harmoniets.chatgpt.site/#file-28c7b48c1498749d"
+  },
+  "handoff_seed_required": false,
+  "completion_requires": [
+    "real_transfer_container_zip",
+    "outer_root_shelf_zips_only",
+    "000_C_zip",
+    "control_manifest",
+    "validation_report",
+    "validator_PASS"
+  ],
+  "external_infrastructure_required": [],
+  "tooling_boundary": {
+    "runtime_body": "Markdown/TXT",
+    "machine_lists": "JSON",
+    "python_scope": [
+      "runtime package check",
+      "manifest generation",
+      "CHECK_REPORT.md generation",
+      "runtime ZIP packaging support"
+    ],
+    "python_non_scope": [
+      "mount transfer judgment",
+      "canon creation",
+      "story pack cutout",
+      "prose writing",
+      "revision",
+      "runtime instruction replacement"
+    ],
+    "ai_next_step_source": "CHECK_REPORT.md plus active Markdown/TXT locks"
+  },
+  "check_report": {
+    "format": "CHECK_REPORT.md",
+    "status": "generated_sidecar",
+    "contract": "contract/mt00_check_report_contract.json",
+    "excluded_from_manifest": true
+  }
+}

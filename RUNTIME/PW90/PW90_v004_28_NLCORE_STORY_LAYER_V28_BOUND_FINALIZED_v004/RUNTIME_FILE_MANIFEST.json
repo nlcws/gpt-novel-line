@@ -1,0 +1,337 @@
+{
+  "runtime": "pw90-v004.28-nlcore-story-layer-v28-bound",
+  "manifest_self_excluded": true,
+  "manifest_scope": "all_runtime_files_except_RUNTIME_FILE_MANIFEST_json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 17035,
+      "sha256": "a0cb9fd215b7bfd65c885dad0eff330eb55971a58315df9f040cba625e9b97ce"
+    },
+    {
+      "path": "RUNTIME_ARCHITECTURE.md",
+      "bytes": 3856,
+      "sha256": "169e6645175ef522768e7eeff5aa75f8ef53f0097761e351373838ba6d6769a8"
+    },
+    {
+      "path": "START_HERE.js",
+      "bytes": 17702,
+      "sha256": "02cc2e3bd093a7d75a41ab3866f7a621de766fa3f42db3893da7329e128824f6"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 20217,
+      "sha256": "43b35bc3270c20312bdbec538a0a1394c89790259383c487f0980b4714808546"
+    },
+    {
+      "path": "package.json",
+      "bytes": 804,
+      "sha256": "8014b342048bd360fc09c4defa54da38fb3db914db2f981ed016232199c088bb"
+    },
+    {
+      "path": "source/GPT_BUILDER_INSTRUCTIONS_PACK_CONVERTER_v1.txt",
+      "bytes": 5354,
+      "sha256": "2155f886f7b0584814384f066d410e13bd31bebf1f8df1d2e777cd2520c88040"
+    },
+    {
+      "path": "source/knowledge/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md",
+      "bytes": 1924,
+      "sha256": "8efe254e90e1219578577c028557176c4f77c6cca885a697fe99ec13048d2f73"
+    },
+    {
+      "path": "source/knowledge/NARRATION_LAYER_MULTI_OPERATION.md",
+      "bytes": 15935,
+      "sha256": "b8e931a5730ac41495abcb3aa4411919bc8da8a440f6a0627f984e0499187307"
+    },
+    {
+      "path": "source/knowledge/NORA_RUNTIME_PATCH_READ_RUN_HEAT_SWEEP_v001.md",
+      "bytes": 1909,
+      "sha256": "c36b24eda46c558480fbe60f4693074241d4836507f3a14600b725674aab1efc"
+    },
+    {
+      "path": "source/knowledge/NORA_SEPARATE_FIRELINE_OUTPUT_LOCK_v001.md",
+      "bytes": 1674,
+      "sha256": "8b3042ca29d779d898c89e04a1c019f1f330c819b571b62b7ca751a7f0d3055f"
+    },
+    {
+      "path": "source/knowledge/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+      "bytes": 2712,
+      "sha256": "3f4b8f17061e6102f00daba44444ff884ea96b5fb5089ca4a2c6f36cebac30a6"
+    },
+    {
+      "path": "source/knowledge/PW90_ARTIFACT_EQUALS_FULL_CONVERGENCE_LOCK_v001.md",
+      "bytes": 2778,
+      "sha256": "051f7a8a8cbf90f915fbe8fbc8e6744a22326f0e0ab41fe91d0bab69b641a61f"
+    },
+    {
+      "path": "source/knowledge/PW90_AUTO_MOUNT_BOOT_HARD_LOCK_v001.md",
+      "bytes": 2845,
+      "sha256": "87a3b9d384150f8b068c48aab0f9f09de154dcfcaf00b9ee928ac3aeabf3d62f"
+    },
+    {
+      "path": "source/knowledge/PW90_CHAT_DISPLAY_COMPRESSION_DENIAL_LOCK_v001.md",
+      "bytes": 2503,
+      "sha256": "d2d4048969737a1247d48aa5020123b04c956ae549aae90299cb2b6c971b7ca6"
+    },
+    {
+      "path": "source/knowledge/PW90_DEFAULT_WRITE_MODE_FULLBURN_LOCK_v001.md",
+      "bytes": 2152,
+      "sha256": "26d0c4b0fcb6440151324e1eb4facc7812ad6c3d8eac419b6a0b00d3c796a503"
+    },
+    {
+      "path": "source/knowledge/PW90_DS90_ARTIFACT_HANDOFF_JOINT_LOCK_v001.md",
+      "bytes": 2106,
+      "sha256": "7cf4133ca2f70d3e27e4946e5d7883b6db4c82d8d6929791f07439f46eb0eb6c"
+    },
+    {
+      "path": "source/knowledge/PW90_EPISODE_15K_FULL_USE_BETA_LOCK_v001.md",
+      "bytes": 3195,
+      "sha256": "9b09fab0a185f6de7a2a14bed5c83d1e35cf8e00a60366b0df9d064c23b4e526"
+    },
+    {
+      "path": "source/knowledge/PW90_EPISODE_TAIL_NEXT_OPENING_BRIDGE_LOCK_v001.md",
+      "bytes": 3686,
+      "sha256": "a80ef6f3bdea992d853bf0b19e5b5e01f6970875c204687d969583cf6ba2ed77"
+    },
+    {
+      "path": "source/knowledge/PW90_FULL_DELIVERY_AND_BODY_FIRST_LOCK_v001.md",
+      "bytes": 2213,
+      "sha256": "01ccf852533e4e12cc74b5e1082238e2bc4013b46ff46ee25979f7e80917368d"
+    },
+    {
+      "path": "source/knowledge/PW90_FULL_POWER_NO_THIN_SUCCESS_LOCK_v001.md",
+      "bytes": 2864,
+      "sha256": "e8a5bcfc3faae713b30ee38f1fc6349b9ab6f7a0044fe4c418d6967c86d81017"
+    },
+    {
+      "path": "source/knowledge/PW90_LAYER_V28_WRITER_ADAPTER_v001.md",
+      "bytes": 3208,
+      "sha256": "c8e58ef5f022d327f7e1b26071a716e3f59dbc28272986f7075007254fe69ef1"
+    },
+    {
+      "path": "source/knowledge/PW90_NEW_EPISODE_FULL_BOOT_ROLLBACK_LOCK_v001.md",
+      "bytes": 3725,
+      "sha256": "df9acf70257b8735cfa228b0cc184f02955b8be0d73087b615c04e247a275ef5"
+    },
+    {
+      "path": "source/knowledge/PW90_NORA_CORE_REGULARIZED_GUARDRAIL_LOCK_v001.md",
+      "bytes": 4103,
+      "sha256": "3206f38be34096322ce59bab533705abd058714a729ac40b94e4a4b120c0d3aa"
+    },
+    {
+      "path": "source/knowledge/PW90_NOVEL_FIRST_SEED_BURN_PHILOSOPHY_v001.md",
+      "bytes": 4838,
+      "sha256": "0d1e4fda10ca4a5414b038a1415a4408a1ca4ee7766b782c10083dae2f74b194"
+    },
+    {
+      "path": "source/knowledge/PW90_NOVEL_FIRST_SEED_BURN_PHILOSOPHY_v002.md",
+      "bytes": 5160,
+      "sha256": "c6592ef4406c1aab98261f8a170463afef9f11501559a2f57f3a83ad692f1a33"
+    },
+    {
+      "path": "source/knowledge/PW90_PROSE_DENSITY_GROUNDING_LOCK_v001.md",
+      "bytes": 4954,
+      "sha256": "c2a8aa570e530d264684cdf8765a6714c3f2a8f42f5f78e3b39ab4d9fa7e78ec"
+    },
+    {
+      "path": "source/knowledge/PW90_SECOND_DRAFT_FULL_BURN_EXPANSION_LOCK_v001.md",
+      "bytes": 5379,
+      "sha256": "fa13d94fbb9a7c2fc7371c8f7babbc9a1c94dcf832229dde3a5ab883e3a8b154"
+    },
+    {
+      "path": "source/knowledge/WRITER_COMMON_NOM_CORE_v2.md",
+      "bytes": 4600,
+      "sha256": "09fd49a906ae47f4667745a8b9f373a08d400fb9bfef109dde6031f19dcb7513"
+    },
+    {
+      "path": "source/knowledge/WRITER_COMMON_NOM_DETAIL_v2.md",
+      "bytes": 3837,
+      "sha256": "02baa9f664afbaaf07e1885d9ac831d0e326c211b821ac8d5efa81e30d532b78"
+    },
+    {
+      "path": "source/knowledge/layer_runtime_v28_ai_native_complete_candidate.md",
+      "bytes": 116102,
+      "sha256": "74632dd5e6c7be3384bc3570d69330e5ebc813e2d4bc2851359b5f641a683c3d"
+    },
+    {
+      "path": "source/knowledge/話レイヤー再定義版_マルチ運用_v21_既存例統合_心理内圧_年齢性別_描写没入快感.md",
+      "bytes": 60896,
+      "sha256": "88074bce3fb0f492e7595338b5dda45a9181636abbad7f65af89a6138f95ec42"
+    },
+    {
+      "path": "src/auto-mount-boot.js",
+      "bytes": 2614,
+      "sha256": "eda10688ff7fe889f643c5f914916cbf08e9a51395f0f4d5f9105613b8e57b67"
+    },
+    {
+      "path": "src/body-char-observer.js",
+      "bytes": 3176,
+      "sha256": "9a069c74acb38086c1b72d9ba1ed328832d1b8b73ecc311d10e243499c4c473f"
+    },
+    {
+      "path": "src/canonical-runtime-route.js",
+      "bytes": 3871,
+      "sha256": "cf032babae4d7159e564e673cb590f65f266c43938041ce9f6ae5ba061d9526b"
+    },
+    {
+      "path": "src/chat-display-compression-lock.js",
+      "bytes": 4400,
+      "sha256": "52597b4542d4e4ce1c5761a25745e8d9b05556f9053ee351fe8cc6052f986beb"
+    },
+    {
+      "path": "src/default-write-mode-lock.js",
+      "bytes": 3513,
+      "sha256": "d211a6bcc6cbbff640ad1b3768cbeda1a60deeb79ee25c94c890104a87789836"
+    },
+    {
+      "path": "src/episode-bridge-draft-lock.js",
+      "bytes": 4767,
+      "sha256": "712bb0b28c3bb90075e1f593112580b00ac67a7b45974e683845af270a75649d"
+    },
+    {
+      "path": "src/full-power-write-lock.js",
+      "bytes": 14473,
+      "sha256": "afd7bbfde19dc6ee0e8e0216aec273c4f1604b1bb03f5dca111ab8d5d8de98bc"
+    },
+    {
+      "path": "src/hard-binding-adapter.js",
+      "bytes": 3750,
+      "sha256": "34ff32cca7bcd332015a86acefbd3e79f01495c2af125e48df5b4976f9a63e77"
+    },
+    {
+      "path": "src/inspect-projectlocked-pack.js",
+      "bytes": 470,
+      "sha256": "8d4813ecc012c266946b54002a9b606c602d43b28cf1bc030fa45d47fe5eb1d7"
+    },
+    {
+      "path": "src/new-episode-full-boot-lock.js",
+      "bytes": 4108,
+      "sha256": "78c239e6f4b3ca4e5c6501596bcd57a793177182540a512dc77cff37411b0561"
+    },
+    {
+      "path": "src/nora-regularization-lock.js",
+      "bytes": 5405,
+      "sha256": "17b100f6102a7849d82c3832480d711b333aac3b4e3d6b026a0d6ba94df4dfa3"
+    },
+    {
+      "path": "src/operation-lock.js",
+      "bytes": 3829,
+      "sha256": "8757bfd508caa28282904f2dd4042296a534150ca904cbaf1cdd2fc587b5caed"
+    },
+    {
+      "path": "src/pickup-ledger-gate.js",
+      "bytes": 20548,
+      "sha256": "bc98039ab78ea36d153be4434522d7c0696fb4681a9a3bc1644aacd07427960e"
+    },
+    {
+      "path": "src/prewrite-common-contract.js",
+      "bytes": 1379,
+      "sha256": "bf5ead76eb37101eb7dc698c31289845c8b8a13ae75a182e9576e24a86138b72"
+    },
+    {
+      "path": "src/program.js",
+      "bytes": 12305,
+      "sha256": "6706cae20b7fba32e0efd33857aa4af65666a3ee681baeaada07fd48bb24540e"
+    },
+    {
+      "path": "src/projectlocked-pack-gate.js",
+      "bytes": 14260,
+      "sha256": "27817470055eb5033fe9385a26305263bd5799d6d7f0c70af091ecacefeb3430"
+    },
+    {
+      "path": "src/runtime-architecture-registry.js",
+      "bytes": 8272,
+      "sha256": "7b56c59c2447a6f1c691ac7be7fb1cc4342c4e3447290bec94d034e1079a8bb2"
+    },
+    {
+      "path": "src/runtime-cli.js",
+      "bytes": 964,
+      "sha256": "2707c626601f29fc0c5ac71382cf1350bc01628d19c524f95232df66fee8af72"
+    },
+    {
+      "path": "src/runtime-engine.js",
+      "bytes": 12726,
+      "sha256": "b981b8ac856a947d5be38c59d24f91625817371d255c482434a6af1bca24f668"
+    },
+    {
+      "path": "src/runtime-execution-plan.js",
+      "bytes": 5499,
+      "sha256": "facd7b9c509642886dcf2500facb78f2615fb076adcbc40aee828b971efc0b2e"
+    },
+    {
+      "path": "src/runtime-package-check.js",
+      "bytes": 1598,
+      "sha256": "fe9a5c67a6c0648fcaec3a9a7d7de7f89db2426b1480ade0a3c82037247528d9"
+    },
+    {
+      "path": "src/runtime-route-contract.js",
+      "bytes": 761,
+      "sha256": "615260159a1a2b5b00b691a0f97a305f813512ac8da42f1e9f73322f7636fd12"
+    },
+    {
+      "path": "src/runtime-skill-chain.js",
+      "bytes": 1606,
+      "sha256": "d22faf206d5edcd9087fb8ff950032cd9b829eb80909ebefe5c2d77bcd271fd3"
+    },
+    {
+      "path": "src/runtime-skill-executors.js",
+      "bytes": 12953,
+      "sha256": "851a469f7efeaaf06712acfaed16d2cb148081f65f92df131ba3b05006390d9d"
+    },
+    {
+      "path": "src/runtime-terminology-audit.js",
+      "bytes": 6175,
+      "sha256": "e628f82b56c3bc569f89e7d01009f6ce314ee80470fb04d2360e4b79fd3ee1a8"
+    },
+    {
+      "path": "src/runtime-vocabulary.js",
+      "bytes": 4019,
+      "sha256": "d04751825ddf1ec0fe5c990891a15ac728e54c07ceb422229919ce13cba370c9"
+    },
+    {
+      "path": "src/second-draft-branch-lock.js",
+      "bytes": 8449,
+      "sha256": "3de8124e1aa66cd519a42f66a70ca538e9d3959fa6cc345a4a8a4d3315043fe8"
+    },
+    {
+      "path": "src/v2-folder-restore-contract.js",
+      "bytes": 13752,
+      "sha256": "65994af02e8af1decdf4cc5541d5a51eeaf941b9546026deb8561ff699902629"
+    },
+    {
+      "path": "src/v2-material-gate.js",
+      "bytes": 8969,
+      "sha256": "e0d33affcbb9d5ffbb91ffa2e2625b3b69257512835721727b00a59974015343"
+    },
+    {
+      "path": "src/verify.js",
+      "bytes": 760,
+      "sha256": "80cbc0a72bc755a1cbbecabe8c1b5d7602300db197d412a7577e23f3c97e82a7"
+    },
+    {
+      "path": "src/writable-story-pack-gate.js",
+      "bytes": 13847,
+      "sha256": "d9524656a35272cdfe363faa8a61fa5b4b6939dc56c9c98133d789f9a903ad09"
+    },
+    {
+      "path": "test/body-char-observer.test.js",
+      "bytes": 6544,
+      "sha256": "6a407103baca40654568ce911ae070e2f2a3ee4e031673229a32e97b6ecb2d2f"
+    },
+    {
+      "path": "test/integrity.test.js",
+      "bytes": 93807,
+      "sha256": "88e2a8161b88cbbc1bccfc1d67217d9eaa7583223cab3d3f8ded0758acd280f7"
+    },
+    {
+      "path": "test/runtime-contract-gaps.test.js",
+      "bytes": 7548,
+      "sha256": "9a9ca0f92d64657dc1cdf69184d4be977efa05c8d3c76c9568573e65495b527e"
+    },
+    {
+      "path": "test/runtime-engine.test.js",
+      "bytes": 11686,
+      "sha256": "20a4e902a4aea0aaeca2d5da34d0cbfaa1ea838b0d7ede9ba27ab1f2027fe9ff"
+    }
+  ]
+}

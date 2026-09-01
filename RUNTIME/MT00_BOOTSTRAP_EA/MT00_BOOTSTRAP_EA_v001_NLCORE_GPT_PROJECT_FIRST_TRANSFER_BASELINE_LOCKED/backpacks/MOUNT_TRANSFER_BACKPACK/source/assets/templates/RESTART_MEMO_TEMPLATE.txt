@@ -1,0 +1,13 @@
+RESTART_MEMO
+
+entrypoint: <path>
+read_order:
+- <path>
+current_location: <path>
+next_work: <specific next action>
+unresolved_stops:
+- <none or STOP id>
+required_inputs:
+- <file / decision>
+
+Do not paste large source bodies here. Reference shelf paths and IDs.

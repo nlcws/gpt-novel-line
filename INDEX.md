@@ -4,7 +4,7 @@ GPT小説執筆ライン公開棚の索引です。
 
 この公開棚は、小説制作を実験場として運用している **AIエージェント / マルチエージェント / AI Runtime Overlay** の公開資料置き場です。
 
-GitHubは公開玄関と過去配布記録を置く棚です。現行Runtime本体の正本導線は、オンラインの [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) を優先してください。
+GitHubは公開玄関とRuntimeミラーを置く棚です。現行Runtime本体の正本導線は、オンラインの [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) を優先してください。
 
 ## 初めて来た方
 
@@ -33,7 +33,7 @@ GitHubは公開玄関と過去配布記録を置く棚です。現行Runtime本�
 
 2026-09-01時点で、Runtime Public Shelfの公開ページ上に `ACTIVE_LAYER_DEFAULT: 400番台` と `RUNTIME_LAYERS: 400番台 / 300番台` が確認できます。
 
-GitHubの `RUNTIME_ZIP/` は、GitHub上に残した過去配布記録です。旧ZIP名や旧版番号を現在のRuntime正本として扱わないでください。
+GitHubの `RUNTIME_ZIP/` と `RUNTIME/` は、2026-09-01時点で現行Runtime束へ差し替え済みの公開ミラーです。旧ZIP名や旧版番号を現在のRuntimeとして扱わないでください。
 
 ## 外部の言葉から来た方へ
 
@@ -77,10 +77,10 @@ GitHubの `RUNTIME_ZIP/` は、GitHub上に残した過去配布記録です。�
   GitHub公開棚の更新履歴。
 
 - [RUNTIME_ZIP/README.md](RUNTIME_ZIP/README.md)  
-  GitHubに残っているRuntime ZIPの説明。現在の正本ではなく過去配布記録として読む。
+  GitHubに置いているRuntime ZIPの説明とchecksum。
 
 - [RUNTIME/](RUNTIME/)  
-  分解済み・参照用のRuntime資料。現行正本の代替として扱わない。
+  分解済み・参照用のRuntime資料。
 
 - [PUBLIC_FRONTDOOR_REDESIGN_v001.md](PUBLIC_FRONTDOOR_REDESIGN_v001.md)  
   ポータル本館の改修仕様。

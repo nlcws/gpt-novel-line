@@ -1,0 +1,52 @@
+{
+  "package": "MT00_BOOTSTRAP_EA_v001_NLCORE_GPT_PROJECT_FIRST_TRANSFER_BASELINE_LOCKED",
+  "base_shelves": [
+    {
+      "filename": "021_G_v000.zip",
+      "source_uploaded_name": "021_G_v000(3).zip",
+      "sha256": "8340615f583160610d90562db25d7bd19845d4826de75280b07f3b129248e2c5",
+      "size": 2306380,
+      "root": "021_G_v000"
+    },
+    {
+      "filename": "022_B_v000.zip",
+      "source_uploaded_name": "022_B_v000(3).zip",
+      "sha256": "ea309768311704113ca8aacb7dbcf1c07ced2c152aeeac273e9e1e99b5712070",
+      "size": 529,
+      "root": "022_B_v000"
+    },
+    {
+      "filename": "024_V_v000.zip",
+      "source_uploaded_name": "024_V_v000(3).zip",
+      "sha256": "9ab879af6d3f556cbf59286b567dd97cdab6c8020050599320f1c3066ce3fa4a",
+      "size": 539,
+      "root": "024_V_v000"
+    },
+    {
+      "filename": "028_H_v000.zip",
+      "source_uploaded_name": "028_H_v000(3).zip",
+      "sha256": "e81cda596550624483d53d56456464d125eed397318e0229f160fa265b320b9b",
+      "size": 530,
+      "root": "028_H_v000"
+    }
+  ],
+  "common_template": {
+    "source_filename": "新規プロジェクト流し込み用_共通運用雛型_v_1.md",
+    "main_range": "sections 7 through 13-2",
+    "sha256": "d3e63cef281ab805c331cbfa5a32882b9eb68f6c5fe3226e70a677dba1a2f04b",
+    "size": 32565
+  },
+  "base_roles": {
+    "021_G": "initial setup gate",
+    "022_B": "fixed bone / immutable source shelf",
+    "024_V": "variable work / chapter-story-operation update shelf",
+    "028_H": "handoff-hold / oral-pending-temporary shelf"
+  },
+  "rules": [
+    "do_not_create_099_initially",
+    "do_not_insert_project_material_before_design_gate",
+    "do_not_summarize_or_compress_022_or_028_preserved_sources",
+    "treat_021_samples_as_setup_reference_not_project_canon",
+    "ordinary_transfer_output_must_remain_MT00_compatible"
+  ]
+}

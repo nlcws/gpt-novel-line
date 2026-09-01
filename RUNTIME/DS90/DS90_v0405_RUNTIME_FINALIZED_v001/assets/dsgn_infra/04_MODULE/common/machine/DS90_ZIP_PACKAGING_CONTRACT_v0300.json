@@ -1,0 +1,31 @@
+{
+  "id": "DS90_ZIP_PACKAGING_CONTRACT_v0300",
+  "status": "ACTIVE_MACHINE_CONTRACT",
+  "package_kind": "DS90_runtime_zip",
+  "single_root_required": true,
+  "root_name": "DS90_v0300_NLCORE_CLEAN_BASELINE_SPECIALIST_PORTAL_LOCKED",
+  "required_root_files": [
+    "README.md",
+    "START_HERE.js",
+    "load_order.md",
+    "package.json",
+    "updated_manifest.json",
+    "unresolved_backlog.md"
+  ],
+  "required_root_dirs": [
+    "assets",
+    "backpacks",
+    "examples",
+    "protocol",
+    "src",
+    "test",
+    "tools"
+  ],
+  "forbidden_paths": [
+    "__pycache__",
+    ".DS_Store",
+    ".git",
+    "node_modules"
+  ],
+  "manifest_file": "updated_manifest.json"
+}

@@ -1,0 +1,20 @@
+{
+  "runtime": "ROBUSTNESS_AUDIT_RUNTIME_v002",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "99f29bdde9556e82ea42016100b15fef9e1894108b7f9ac01c49f4ca31fb2e8c",
+      "bytes": 79
+    },
+    {
+      "path": "runtime/ROBUSTNESS_AUDIT_RUNTIME_v002.md",
+      "sha256": "89d0bf6384084f6b6c7fb932c04001bfe041ba2013484fd54a88b42d58accc95",
+      "bytes": 1444
+    },
+    {
+      "path": "skill/SKILL.md",
+      "sha256": "093a2f881b3f32b75dc1647e45707614c57a7be9bd52fcb966c9fb434d209fb7",
+      "bytes": 207
+    }
+  ]
+}

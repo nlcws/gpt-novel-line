@@ -1,0 +1,437 @@
+{
+  "package": "MT00_BOOTSTRAP_EA_v001_NLCORE_GPT_PROJECT_FIRST_TRANSFER_BASELINE_LOCKED",
+  "file_count": 84,
+  "files": [
+    {
+      "path": "README.md",
+      "size": 2696,
+      "sha256": "0d083918a934e02b4c976a2b155671b092986695a8906f370e5bc123bcb0ddf6"
+    },
+    {
+      "path": "START_HERE.js",
+      "size": 192,
+      "sha256": "7f7fd4755805b2dfc12dafda799440a74eb514d46899d8a52aec05c64f898559"
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/130_TRANSFER_AGENT_ROLES.md",
+      "size": 567,
+      "sha256": "dfc35ef6fe7b3f54c961039ca5c29d83b54c011bf646904f3c974a510cc500f4"
+    },
+    {
+      "path": "assets/operation_mount/10_CANON/140_MOUNT_REQUIREMENTS.md",
+      "size": 516,
+      "sha256": "82a62741ee3fdd44f8e2a7a630e74fd8da6857e5383365c7c115a72ac6c0e8c8"
+    },
+    {
+      "path": "assets/operation_mount/COMMON_TRANSFER_TEMPLATE_V1.md",
+      "size": 464,
+      "sha256": "a72d78443525dce2ff11eba0d7dbd0233cd452e85e19d832058a9485804f1ab8"
+    },
+    {
+      "path": "assets/specs/089_TAG_SEARCH.md",
+      "size": 182,
+      "sha256": "2e50a656a2c3da53c2bd635ecef1aff54757ca1f1ffa6911d7b0764f9f08ece4"
+    },
+    {
+      "path": "assets/specs/091_TRANSFER_CHECK.md",
+      "size": 369,
+      "sha256": "6c706c0e27a0bf4cc047ade2cddf9ca7b78c3848a0a13da38ef69f1e91519976"
+    },
+    {
+      "path": "assets/specs/095_MOUNT_TRANSFER.md",
+      "size": 545,
+      "sha256": "7ab96ad25548fbcd5e6d8c9b256c79c2de3acd6c0ff68b9bb4d9821f3dcf7b4a"
+    },
+    {
+      "path": "assets/specs/098_TRANSFER_INDEX.md",
+      "size": 255,
+      "sha256": "411995e55b22def7b496e6f4b9d31f4366a5dc598a0c5e09b17e2ee92d777fcd"
+    },
+    {
+      "path": "assets/templates/RESTART_MEMO_TEMPLATE.txt",
+      "size": 259,
+      "sha256": "0c86c53491f7e59cc51e8fa19be3b802035541de21fcd26923035b0732ec1102"
+    },
+    {
+      "path": "assets/templates/SHELF_GUIDE_TEMPLATE.md",
+      "size": 228,
+      "sha256": "8ec0931abf7bdc919e8aa03d13023838897c187a6400f39640a80c08a5cf342a"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/README.md",
+      "size": 376,
+      "sha256": "5cfaa16976ae13230b5d15894d717e5d6cdf04937e5b2748e3073b464b23485f"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/START_HERE.js",
+      "size": 371,
+      "sha256": "e61dc4c442a0ba974b27cabbffaca6cbe92673f545048a9116b7a67e6523fc80"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/assets/LIBRARIAN_TRANSFER_CONTRACT.md",
+      "size": 694,
+      "sha256": "58115070cdc442a77d0cf124603ce0688d1f66e1084c7c53611165dc69eacb97"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/manifest.json",
+      "size": 648,
+      "sha256": "848839d1488c329d5d59dc9ce316f807f2280e2983a5eaef2b20b0663e3892a7"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/package.json",
+      "size": 267,
+      "sha256": "57115db52b9b9e7551fdf412b7662f992e3bef762417d5679e44450d4acf7e33"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/operation_mount/10_CANON/130_TRANSFER_AGENT_ROLES.md",
+      "size": 567,
+      "sha256": "dfc35ef6fe7b3f54c961039ca5c29d83b54c011bf646904f3c974a510cc500f4"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/operation_mount/10_CANON/140_MOUNT_REQUIREMENTS.md",
+      "size": 516,
+      "sha256": "82a62741ee3fdd44f8e2a7a630e74fd8da6857e5383365c7c115a72ac6c0e8c8"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/operation_mount/COMMON_TRANSFER_TEMPLATE_V1.md",
+      "size": 464,
+      "sha256": "a72d78443525dce2ff11eba0d7dbd0233cd452e85e19d832058a9485804f1ab8"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/specs/089_TAG_SEARCH.md",
+      "size": 182,
+      "sha256": "2e50a656a2c3da53c2bd635ecef1aff54757ca1f1ffa6911d7b0764f9f08ece4"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/specs/091_TRANSFER_CHECK.md",
+      "size": 369,
+      "sha256": "6c706c0e27a0bf4cc047ade2cddf9ca7b78c3848a0a13da38ef69f1e91519976"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/specs/095_MOUNT_TRANSFER.md",
+      "size": 545,
+      "sha256": "7ab96ad25548fbcd5e6d8c9b256c79c2de3acd6c0ff68b9bb4d9821f3dcf7b4a"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/specs/098_TRANSFER_INDEX.md",
+      "size": 255,
+      "sha256": "411995e55b22def7b496e6f4b9d31f4366a5dc598a0c5e09b17e2ee92d777fcd"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/templates/RESTART_MEMO_TEMPLATE.txt",
+      "size": 259,
+      "sha256": "0c86c53491f7e59cc51e8fa19be3b802035541de21fcd26923035b0732ec1102"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/assets/templates/SHELF_GUIDE_TEMPLATE.md",
+      "size": 228,
+      "sha256": "8ec0931abf7bdc919e8aa03d13023838897c187a6400f39640a80c08a5cf342a"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/contract/transfer_container_contract.json",
+      "size": 1338,
+      "sha256": "ee18e5518e980bd401029243864d3c3f345782013e243b71580cb2464c4b67ef"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/indexing/validator.js",
+      "size": 6320,
+      "sha256": "a5305fa7ec8892353bf47f20b0add1e872fcbb142c92167fe82ba66bb20902f9"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/modules/transfer.js",
+      "size": 4417,
+      "sha256": "0f73ce1ceca50291aac9f9dbb22e0f6395c0e5bd24cdc038c6c418f2bc21b244"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/runtime/rule.js",
+      "size": 906,
+      "sha256": "e939ef592d384f4c67691d69e1049476a79b898df42ee1b9d93b9ea28a535dd8"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/runtime/types.js",
+      "size": 473,
+      "sha256": "b57a2e3424050b8cb4de62119ea2194953bb17bb2405bdc4c68004dcda6e7b41"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/validation/convergence.js",
+      "size": 1514,
+      "sha256": "33169570a6c6d533ce0e8e64b6e8f0e830cf994184dbbb74c8d51692c9a2492f"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/validation/deterministic.js",
+      "size": 5196,
+      "sha256": "6bbbc26264e74c38b66faeec4079d74e5c5e6115f55b00a72088d72aad859af3"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/validation/shelf_packaging.js",
+      "size": 7803,
+      "sha256": "8d01d2ffbb2b386990165649fc383f1b408c9ce2fe648c8de7f3927f4dd299a1"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/source/src/validation/zip_evidence.js",
+      "size": 16985,
+      "sha256": "5d0b9105c7e3a855dc9644dbca2028987a67addb681fa5bfdd02dce0bfd1d86a"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/src/invocation.js",
+      "size": 1087,
+      "sha256": "722d4d8189bfc826f1b44fe62bb5cfe229508c05f4385ade631ad0d556cfb730"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/src/librarian-gate.js",
+      "size": 13075,
+      "sha256": "0cfa4e5b1cfea296fc04f65fac4082dfabf1740f921d7739b4f116f60c239301"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/src/program.js",
+      "size": 3239,
+      "sha256": "cd42e3a251ebb3ddee914a0462e26d66de36997a4001d9a11f475b735d6270a1"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/test/container_contract.test.js",
+      "size": 6387,
+      "sha256": "de5452fbe1c0ac81a4a59dfcd372ad5481e305202d617182900495f48df5ecfd"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/test/librarian.test.js",
+      "size": 14300,
+      "sha256": "cb0545789af03ed19c9d400bdda475eea0e00ac343dd7ea7ac5bb30330c4ac1f"
+    },
+    {
+      "path": "backpacks/MOUNT_TRANSFER_BACKPACK/test/literal.test.js",
+      "size": 2907,
+      "sha256": "c53d3045bd358f84e939a7ef35e60ae7677b656770feb093ea74fc9a2a9a5654"
+    },
+    {
+      "path": "contract/mt00_bootstrap_check_report_contract.json",
+      "size": 305,
+      "sha256": "9c95b7c3a9030036369858dc30d1a64c4c40175e10f21cd3915ea80e9745ecb9"
+    },
+    {
+      "path": "contract/mt00_bootstrap_output_contract.json",
+      "size": 758,
+      "sha256": "2d191f09197e9e2bca0c340456ff1c98827baa4d42cd96e51ae9d43c49b02ef3"
+    },
+    {
+      "path": "contract/mt00_bootstrap_source_base_manifest.json",
+      "size": 1839,
+      "sha256": "99f8e1e767cc8cafda4dd47862c307f00c5cccdc270202588145279f009ba310"
+    },
+    {
+      "path": "contract/mt00_bootstrap_v001_machine.json",
+      "size": 882,
+      "sha256": "e05252907eafa247f0655491cf6e4fab0399a455a4c2b7863c681e431229e05e"
+    },
+    {
+      "path": "contract/transfer_container_contract.json",
+      "size": 1338,
+      "sha256": "ee18e5518e980bd401029243864d3c3f345782013e243b71580cb2464c4b67ef"
+    },
+    {
+      "path": "docs/AI_HANDOFF_PROMPT.md",
+      "size": 1229,
+      "sha256": "32faafdaffaebd23aa98dea9e8fa52a3a5a84ebcae44069e01540880eca1089f"
+    },
+    {
+      "path": "docs/MACHINE_TRANSFER_CONTAINER_GATE.md",
+      "size": 1068,
+      "sha256": "f02e4d643ae40c3fc33770b8a9d0143621b8d90df983c18ef042b7e5867ea185"
+    },
+    {
+      "path": "docs/MT00_BOOTSTRAP_021_022_024_028_SHELF_RULES.md",
+      "size": 1326,
+      "sha256": "fc5dc4cc060edfab49b8d1f98437876493f55caa34063899a093d3642fd13f65"
+    },
+    {
+      "path": "docs/MT00_BOOTSTRAP_COMMON_TEMPLATE_07_13_2_LOCK.md",
+      "size": 1735,
+      "sha256": "52df609a2df0f12ca73e57682585d2b712dfc0e3b544d54c2dbb2f193a8612aa"
+    },
+    {
+      "path": "docs/MT00_BOOTSTRAP_EA_NAME_LOCK.md",
+      "size": 979,
+      "sha256": "40657171e1ffa3d26507ed5537c43a02156dbba753c46b50ce28b8d5d95294d2"
+    },
+    {
+      "path": "docs/MT00_BOOTSTRAP_GPT_PROJECT_FIRST_FLOW.md",
+      "size": 1099,
+      "sha256": "55d22fe780e268ec7e96f5610fdf50090c8c95f6b11dca70e13c6bd598e31361"
+    },
+    {
+      "path": "docs/MT00_BOOTSTRAP_OUTPUT_CONTRACT.md",
+      "size": 1034,
+      "sha256": "373de570cb7672e78e4440e58916bf114835e35e8dff70275278c80afbecf199"
+    },
+    {
+      "path": "docs/MT00_BOOTSTRAP_SOURCE_BASE_LOCK.md",
+      "size": 946,
+      "sha256": "2dea1dccf1899cc419b09687fef289fbaecc6e29ab0f8da61dc33a90da3c8949"
+    },
+    {
+      "path": "docs/MT00_BOOTSTRAP_V001_FIRST_TRANSFER_BASELINE_LOCK.md",
+      "size": 1063,
+      "sha256": "39722023dd39638d5f93fffcbc7fba56740a25f14f5994fe4e86131906a14a55"
+    },
+    {
+      "path": "docs/MT00_CHECK_REPORT_FORMAT_LOCK.md",
+      "size": 973,
+      "sha256": "060224d4918cb7d79794be1a21923402f75afbd1e81dc4843b3add0961cf26c9"
+    },
+    {
+      "path": "docs/MT00_ROLE_BOUNDARY_LOCK.md",
+      "size": 1146,
+      "sha256": "7fd5dc053abe2730beae7cdf120bb883d90c6aa5a0c51596e617906818f5a0cc"
+    },
+    {
+      "path": "docs/MT00_SHARED_TOOLING_BOUNDARY_LOCK.md",
+      "size": 1423,
+      "sha256": "e3809be16b7d018bde25d7017ff319bd22683d3045079614045cb6bde4649eaf"
+    },
+    {
+      "path": "docs/SHELF_ZIP_PACKAGING_HARD_LOCK.md",
+      "size": 439,
+      "sha256": "da1017fe49efe02dd53702194559cbb7e8158dcf195a77196daeaad4b9f37e08"
+    },
+    {
+      "path": "docs/STOP_AND_PASS_CRITERIA.md",
+      "size": 907,
+      "sha256": "f2786271e46f4782b7e6994d591ec78bbc17babc8356ecb50814ff6cca51cd80"
+    },
+    {
+      "path": "docs/TRANSFER_EXECUTION_PROTOCOL.md",
+      "size": 1985,
+      "sha256": "1c34289a320f0dfeda2ad3a66e4bc2f746bde4a6e3db7faa0bf30504e10178fb"
+    },
+    {
+      "path": "docs/TRANSFER_OUTPUT_CONTRACT.md",
+      "size": 838,
+      "sha256": "474d40518a732aab9b67781890b81c796ca72e5d0a97d954d0060187b71a4988"
+    },
+    {
+      "path": "docs/knowledge/COMMON_OPERATION_TEMPLATE_EXTRACT_07_TO_13_2.md",
+      "size": 6118,
+      "sha256": "24630a5638fd7ea4b26573d275e16a978f93bd00b0dcc4097159468a7951a052"
+    },
+    {
+      "path": "examples/bootstrap_first_project_invocation_template.json",
+      "size": 429,
+      "sha256": "8861d3f2c99fd56dec25fa3a9af5d0982b3ae37901048449145204bf12d24be6"
+    },
+    {
+      "path": "examples/explicit_invocation_template.json",
+      "size": 313,
+      "sha256": "2483803cb38c57954a50abaf5363111d0162a3ef39a811dcdcccffe847b03c23"
+    },
+    {
+      "path": "examples/nested_shelf_submission_template.json",
+      "size": 1598,
+      "sha256": "d064493465629fabc5756cd09ae7a2f37a859c0266e824226aedac826ee282ce"
+    },
+    {
+      "path": "load_order.md",
+      "size": 1522,
+      "sha256": "04e133c7c91575270456949abf40cb0ebf49681d50b2592e381aef6aaf9e0817"
+    },
+    {
+      "path": "package.json",
+      "size": 777,
+      "sha256": "d76748ce08b70d9d17c93f543ecf710a03fcc1980e0e812bba4adeb81fa8d172"
+    },
+    {
+      "path": "resources/README.md",
+      "size": 367,
+      "sha256": "aa112c557008c4e38954f7f7fb07101e4efe0020ef6b3a59cfc4c92d59ba91ae"
+    },
+    {
+      "path": "resources/base_project_shelves/021_G_v000.zip",
+      "size": 2306380,
+      "sha256": "8340615f583160610d90562db25d7bd19845d4826de75280b07f3b129248e2c5"
+    },
+    {
+      "path": "resources/base_project_shelves/022_B_v000.zip",
+      "size": 529,
+      "sha256": "ea309768311704113ca8aacb7dbcf1c07ced2c152aeeac273e9e1e99b5712070"
+    },
+    {
+      "path": "resources/base_project_shelves/024_V_v000.zip",
+      "size": 539,
+      "sha256": "9ab879af6d3f556cbf59286b567dd97cdab6c8020050599320f1c3066ce3fa4a"
+    },
+    {
+      "path": "resources/base_project_shelves/028_H_v000.zip",
+      "size": 530,
+      "sha256": "e81cda596550624483d53d56456464d125eed397318e0229f160fa265b320b9b"
+    },
+    {
+      "path": "src/indexing/validator.js",
+      "size": 6320,
+      "sha256": "a5305fa7ec8892353bf47f20b0add1e872fcbb142c92167fe82ba66bb20902f9"
+    },
+    {
+      "path": "src/modules/transfer.js",
+      "size": 4417,
+      "sha256": "0f73ce1ceca50291aac9f9dbb22e0f6395c0e5bd24cdc038c6c418f2bc21b244"
+    },
+    {
+      "path": "src/runtime/rule.js",
+      "size": 906,
+      "sha256": "e939ef592d384f4c67691d69e1049476a79b898df42ee1b9d93b9ea28a535dd8"
+    },
+    {
+      "path": "src/runtime/types.js",
+      "size": 473,
+      "sha256": "b57a2e3424050b8cb4de62119ea2194953bb17bb2405bdc4c68004dcda6e7b41"
+    },
+    {
+      "path": "src/validation/convergence.js",
+      "size": 1514,
+      "sha256": "33169570a6c6d533ce0e8e64b6e8f0e830cf994184dbbb74c8d51692c9a2492f"
+    },
+    {
+      "path": "src/validation/deterministic.js",
+      "size": 5196,
+      "sha256": "6bbbc26264e74c38b66faeec4079d74e5c5e6115f55b00a72088d72aad859af3"
+    },
+    {
+      "path": "src/validation/shelf_packaging.js",
+      "size": 7803,
+      "sha256": "8d01d2ffbb2b386990165649fc383f1b408c9ce2fe648c8de7f3927f4dd299a1"
+    },
+    {
+      "path": "src/validation/zip_evidence.js",
+      "size": 16985,
+      "sha256": "5d0b9105c7e3a855dc9644dbca2028987a67addb681fa5bfdd02dce0bfd1d86a"
+    },
+    {
+      "path": "tools/mt00_bootstrap_build_zip.py",
+      "size": 1094,
+      "sha256": "003d7d73d8b7e2a801fe4efcb507d2cdd79f47e69aa01cbf4728801342c1701e"
+    },
+    {
+      "path": "tools/mt00_bootstrap_check_runtime.py",
+      "size": 7424,
+      "sha256": "1c47b0a9a0db64b825d82358e7b95a30c8b5427551def35bf680eaa9acb8c868"
+    },
+    {
+      "path": "tools/mt00_bootstrap_make_manifest.py",
+      "size": 1963,
+      "sha256": "cb94a0c0d136a871b02d5d0d08755e79aa432b4ef9d29a3d33ae1e7118d5f77c"
+    },
+    {
+      "path": "tools/validate_transfer_container.js",
+      "size": 416,
+      "sha256": "d5a9608713f6a68289a6962fc506fdede3e76faa0a598546ad2728b7a4b1b1a2"
+    }
+  ],
+  "metadata": {
+    "runtime": "MT00_BOOTSTRAP_EA_v001",
+    "derived_from": "MT00_v002_NLCORE_CLEAN_BASELINE_TRANSFER_LOCKED",
+    "base_shelves": [
+      "021_G_v000.zip",
+      "022_B_v000.zip",
+      "024_V_v000.zip",
+      "028_H_v000.zip"
+    ],
+    "primary_knowledge": "新規プロジェクト流し込み用_共通運用雛型_v_1.md sections 7-13-2"
+  }
+}

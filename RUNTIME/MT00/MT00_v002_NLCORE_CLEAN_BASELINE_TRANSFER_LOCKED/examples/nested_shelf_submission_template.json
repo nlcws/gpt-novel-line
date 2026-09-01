@@ -1,0 +1,68 @@
+{
+  "transfer": {
+    "librarian": {
+      "submissionArchive": {
+        "format": "ZIP",
+        "singleSubmissionZip": true,
+        "directEntryCount": 2,
+        "directEntries": [
+          {
+            "path": "000_C.zip",
+            "type": "FILE",
+            "kind": "SHELF_ZIP"
+          },
+          {
+            "path": "022_B.zip",
+            "type": "FILE",
+            "kind": "SHELF_ZIP"
+          }
+        ],
+        "shelfZips": [
+          {
+            "name": "000_C.zip",
+            "shelfId": "000_C",
+            "nestedRootEntries": [
+              {
+                "path": "00_READ_FIRST",
+                "type": "DIR"
+              },
+              {
+                "path": "01_VALIDATION",
+                "type": "DIR"
+              }
+            ],
+            "fileEntries": [
+              {
+                "path": "00_READ_FIRST/README.md",
+                "type": "FILE"
+              },
+              {
+                "path": "01_VALIDATION/REPORT.md",
+                "type": "FILE"
+              }
+            ]
+          },
+          {
+            "name": "022_B.zip",
+            "shelfId": "022",
+            "nestedRootEntries": [
+              {
+                "path": "022_FIXED_BONES",
+                "type": "DIR"
+              }
+            ],
+            "fileEntries": [
+              {
+                "path": "022_B/CORE.md",
+                "type": "FILE"
+              }
+            ]
+          }
+        ],
+        "unclassifiedItems": [],
+        "newShelfProposals": [],
+        "claimsTransferComplete": true
+      }
+    }
+  }
+}

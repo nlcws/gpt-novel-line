@@ -1,0 +1,18 @@
+{
+  "schema_id": "SP00_CHECK_REPORT_CONTRACT_v1",
+  "report_filename": "CHECK_REPORT.md",
+  "generated_sidecar": true,
+  "manifest_included": false,
+  "required_sections": [
+    "target",
+    "checked_at_utc",
+    "decision",
+    "summary",
+    "issues",
+    "manifest"
+  ],
+  "allowed_decisions": [
+    "PASS",
+    "STOP"
+  ]
+}

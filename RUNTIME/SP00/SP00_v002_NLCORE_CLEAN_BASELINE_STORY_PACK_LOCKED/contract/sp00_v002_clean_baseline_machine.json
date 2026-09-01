@@ -1,0 +1,43 @@
+{
+  "runtime": "SP00",
+  "version": "v002",
+  "package": "SP00_v002_NLCORE_CLEAN_BASELINE_STORY_PACK_LOCKED",
+  "compatible_with": [
+    "DS90_v0300_NLCORE_CLEAN_BASELINE_SPECIALIST_PORTAL_LOCKED"
+  ],
+  "primary_operation": [
+    "PACK_CUTOUT",
+    "STORY_PACK_CUTOUT"
+  ],
+  "specialist_role": "story_pack_cutout",
+  "does_not": [
+    "mount_transfer",
+    "manuscript_writing",
+    "manuscript_revision",
+    "design_canon_rewrite"
+  ],
+  "tooling_boundary": {
+    "markdown_txt": [
+      "identity",
+      "role_boundary",
+      "stop_policy",
+      "invocation_guidance"
+    ],
+    "json": [
+      "manifest",
+      "contracts",
+      "machine_expectations"
+    ],
+    "python": [
+      "runtime_package_check",
+      "manifest_generation",
+      "runtime_zip_build",
+      "check_report_generation"
+    ]
+  },
+  "generated_sidecars": [
+    "CHECK_REPORT.md"
+  ],
+  "handoff_seed_required": false,
+  "git_codex_dropbox_required": false
+}

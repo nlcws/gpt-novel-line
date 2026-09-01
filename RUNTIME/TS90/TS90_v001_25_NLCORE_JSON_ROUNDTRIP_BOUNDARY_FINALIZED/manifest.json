@@ -1,0 +1,585 @@
+{
+  "runtime": "ts90-v001.25-nlcore-json-roundtrip-boundary",
+  "package_version": "TS90_v001_25_NLCORE_JSON_ROUNDTRIP_BOUNDARY_FINALIZED",
+  "base": "toshi_shusei_required_set_v1_0",
+  "source_unchanged": true,
+  "phase_a": "diagnosis",
+  "phase_b": "scoped_repair",
+  "receive_text_input": true,
+  "receive_pw90_text_handoff": true,
+  "receive_only_writer_success": false,
+  "writer_success_object_supported": true,
+  "chat_mount_boot": {
+    "mode": "AUTO_BOOT_ON_CHAT_MOUNT",
+    "auto_start": true,
+    "auto_repair": false,
+    "wait_state": "WAIT_FOR_RECEIVABLE_TEXT"
+  },
+  "read_order": {
+    "source_read_order": "original-source-only",
+    "all_line_lock_read_order": [
+      "source/ALL_LINE_END_USER_HEAT_DELIVERY_LOCK_v001.md",
+      "source/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md"
+    ],
+    "novel_line_core_read_order": [
+      "source/NOVEL_LINE_FINAL_CORE_LOCK_v001.md"
+    ],
+    "text_receive_lock_read_order": [
+      "source/TS90_TEXT_RECEIVE_LIGHTWEIGHT_LOCK_v001.md"
+    ],
+    "boot_read_order": "runtime-entry-plus-json-data-boundary-plus-receive-gate-plus-original-source-plus-terminal-locks-plus-text-receive-lock-plus-self-directed-lock-plus-history-lock-plus-full-revision-lock-plus-adaptive-editor-lock-plus-title-decision-lock-plus-a-to-c-txtdl-lock-plus-skill-runtime-evidence-lock",
+    "adaptive_editor_lock_read_order": [
+      "source/TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001.md"
+    ],
+    "title_decision_lock_read_order": [
+      "source/TS90_PHASE_C_TITLE_DECISION_LOCK_v001.md"
+    ],
+    "a_to_c_txtdl_lock_read_order": [
+      "source/TS90_A_TO_C_TXTDL_OUTPUT_LOCK_v002.md"
+    ],
+    "skill_runtime_evidence_lock_read_order": [
+      "source/TS90_SKILL_RUNTIME_EVIDENCE_BINDING_LOCK_v005.md"
+    ]
+  },
+  "boot_read_order": [
+    "START_HERE.js",
+    "src/program.js",
+    "src/json-data.js",
+    "src/receive-gate.js",
+    "src/verify.js",
+    "src/verify-package.js",
+    "source/GPT_BUILDER_INSTRUCTIONS_TOSHI_SHUSEI_v1_0.txt",
+    "source/README_SET.md",
+    "source/ALL_LINE_END_USER_HEAT_DELIVERY_LOCK_v001.md",
+    "source/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md",
+    "source/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+    "source/TS90_TEXT_RECEIVE_LIGHTWEIGHT_LOCK_v001.md",
+    "source/TS90_PHASE_A_TO_B_SELF_DIRECTED_LOCK_v001.md",
+    "source/TS90_HISTORY_MASTER_REAPPLY_LOCK_v001.md",
+    "source/TS90_FULL_REVISION_READY_LOCK_v001.md",
+    "source/TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001.md",
+    "source/TS90_PHASE_C_TITLE_DECISION_LOCK_v001.md",
+    "source/TS90_A_TO_C_TXTDL_OUTPUT_LOCK_v002.md",
+    "source/TS90_SKILL_RUNTIME_EVIDENCE_BINDING_LOCK_v005.md"
+  ],
+  "source_manifest": [
+    {
+      "path": "source/GPT_BUILDER_INSTRUCTIONS_TOSHI_SHUSEI_v1_0.txt",
+      "bytes": 6189,
+      "sha256": "12B095EA3D74B8966C6CD3CA7E105CA660ED490D8004AF4E52D84FAF6BAF5222"
+    },
+    {
+      "path": "source/README_SET.md",
+      "bytes": 424,
+      "sha256": "66FC7ECE2936F6CEA697BF936D30A6F9388C0C903B5BE965E1CED6DE98B942AE"
+    }
+  ],
+  "all_line_locks": [
+    {
+      "path": "source/ALL_LINE_END_USER_HEAT_DELIVERY_LOCK_v001.md",
+      "bytes": 2245,
+      "sha256": "B06431771C2DAFC00D7AF1221426CEC1ED39033F6AA807AB2D39135D1D03CD30"
+    },
+    {
+      "path": "source/ALL_LINE_FULL_CONVERGENCE_SWEEP_LOCK_v001.md",
+      "bytes": 1924,
+      "sha256": "8EFE254E90E1219578577C028557176C4F77C6CCA885A697FE99EC13048D2F73"
+    }
+  ],
+  "novel_line_core_locks": [
+    {
+      "path": "source/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+      "bytes": 2712,
+      "sha256": "3F4B8F17061E6102F00DABA44444FF884EA96B5FB5089CA4A2C6F36CEBAC30A6"
+    }
+  ],
+  "text_receive_locks": [
+    {
+      "path": "source/TS90_TEXT_RECEIVE_LIGHTWEIGHT_LOCK_v001.md",
+      "bytes": 1315,
+      "sha256": "02637977EA818C442DD87ED926BD7CA85998D19BB1A228C412D6DA07DCD09FC2"
+    }
+  ],
+  "self_guard_added": [
+    "BOOT_READ_ORDER",
+    "strongAllowed gate",
+    "text-only internal log enforcement",
+    "Phase A section completeness check",
+    "writer negative flags rejection for full writer SUCCESS object",
+    "targetRange / storyCount consistency check",
+    "package structure verifier",
+    "natural-language full revision authorization",
+    "explicit full revision denial precedence",
+    "full revision branch-only base protection",
+    "author-unknown direction-not-guarantee lock",
+    "adaptive editor director natural-language routing",
+    "automatic INPUT_SNAPSHOT baseline protection",
+    "diagnosis-first A_TO_B one-line route",
+    "blade strength 0-4 plan validation",
+    "strength 4 design-return stop",
+    "over-edit stop-signal enforcement",
+    "baseline comparison rollback enforcement",
+    "adaptive report traceability and no-overwrite gate",
+    "execution-intent consultation exclusion gate",
+    "baseline name-id-hash evidence binding",
+    "diagnosis-to-plan exact regeneration check",
+    "independent strong-rewrite diagnosis",
+    "active/resolved stop-signal history split",
+    "strict plan-stage execution identity",
+    "concrete non-empty diff evidence for applied edits",
+    "bidirectional rollback-log binding",
+    "actual original/revised character count verification",
+    "inputMode-bound baseline source selection",
+    "edit-contract SHA-256 binding",
+    "body-extraction boundary binding",
+    "actual revised-body SHA-256 verification",
+    "canonical line-diff evidence binding",
+    "actual diff hunk to retained-change coverage",
+    "all-rollback final-body equality gate",
+    "retained clear-improvement promotion gate",
+    "exact short-command and hypothetical-quote separation",
+    "phase C title decision after body completion",
+    "final title selected from final body and fixed conditions",
+    "Phase C denies body revision and new story facts",
+    "unprovided series-wide title rules cannot be claimed as checked",
+    "A-to-C continuous delivery unless STOP",
+    "TXTDL output separates final body, final title, and work report",
+    "STOP packet denies forced final title before Phase C completion",
+    "TXTDL output separates final body and work report",
+    "selected story title inserted into final body title block",
+    "work title and part label are used only when provided",
+    "separate final-title TXT denied",
+    "A-to-C success files return only final body and work report",
+    "STOP TXTDL rejects final body and work report payloads",
+    "resumable A-to-C Skill runtime session",
+    "Phase A -> Phase B -> Phase C evidence binding",
+    "deterministic TXTDL artifact build from validated evidence",
+    "terminal SUCCESS requires final body/artifact hash audit",
+    "serialized session evidence revalidation and pending-action recomputation",
+    "low-level title fixed-condition authority binding",
+    "structured STOP TXTDL evidence binding",
+    "work report evidence binding to validated Phase A/B/C results",
+    "terminal evidence implies SUCCESS state and denies state downgrade",
+    "serialized validation exceptions fail closed as SESSION_INVALID",
+    "stable serialization circular reference guard",
+    "artifact rebuild requires Phase B and Phase C dependencies",
+    "WAIT route is re-derived from original request before WAIT acceptance",
+    "Phase C continuous-route evidence requires deterministic artifact evidence",
+    "pending action envelope binds schema runtime version and session id",
+    "create runtime entry fails closed on serialization exceptions",
+    "resume runtime entry fails closed on host-result processing exceptions",
+    "shared strict JSON data boundary before authority-bearing hashes",
+    "callable toJSON and non-plain JSON-surrogate objects denied",
+    "non-finite numbers undefined bigint function symbol and sparse arrays denied",
+    "SESSION_VALID implies JSON stringify and parse round-trip validity",
+    "public low-level receive/editor APIs fail closed on JSON-boundary errors",
+    "canonical data depth node-count and byte budgets enforced"
+  ],
+  "strict_convergence_added": [
+    "non-empty string enforcement for required text fields",
+    "revisionStrength enum validation",
+    "instruction conflict and ambiguous scope stops",
+    "storyOrder duplicate/empty detection",
+    "quarantine text rejection for writer SUCCESS object",
+    "visible terminal gate required",
+    "preserved user vision text required",
+    "nextAction text required",
+    "classified WARN enforcement",
+    "manifest source/lock/boot/package verification",
+    "full revision lock manifest verification",
+    "history master lock manifest verification",
+    "current package version and boot order synchronization",
+    "adaptive editor lock manifest verification",
+    "adaptive stage execution completeness",
+    "effect-unknown and degradation rollback requirement",
+    "preference-difference promotion block",
+    "minimum body character constraint check when declared",
+    "branch name must differ from baseline",
+    "change location and reason required",
+    "resolved stop action required",
+    "fictional or surplus execution stages rejected",
+    "stage status must match blade strength",
+    "minimum body characters sourced only from receive contract",
+    "baseline-derived fixed-condition quote evidence",
+    "all final diff hunks must be classified",
+    "rolled-back changes cannot claim final diff hunks",
+    "promotion requires changed body and retained clear improvement",
+    "Phase C requires completed body-side work before title decision",
+    "title candidates require reasons and selected title must come from candidates",
+    "rejected title candidates require reasons",
+    "A-to-C TXTDL lock manifest verification",
+    "work report cannot be mixed into final body TXT",
+    "per-stage next requirement denied for normal A-to-C route",
+    "STOP TXTDL requires stopped stage and reason",
+    "title block order verification",
+    "episode label required in final body title block",
+    "selected story title must match Phase C adopted title",
+    "separate final-title TXT rejected",
+    "success files return contract excludes TS90_FINAL_TITLE.txt",
+    "STOP packet rejects TS90_FINAL_BODY.txt and TS90_WORK_REPORT.txt",
+    "TXTDL file keys are checked by presence, not only non-empty text",
+    "SUCCESS TXTDL rejects files outside success/optional allow-list",
+    "STOP TXTDL rejects every file except TS90_STOP_REPORT.txt",
+    "runtime session request hash revalidation",
+    "stored Phase A/B/C evidence is revalidated on resume",
+    "pending host action is deterministically recomputed from route and evidence",
+    "artifact is deterministically rebuilt before accepting stored evidence",
+    "SUCCESS requires Phase B, Phase C, artifact, and terminal evidence",
+    "WAIT state cannot shadow a non-WAIT original request",
+    "public create/resume entries return STOP instead of propagating internal processing exceptions",
+    "common canonical serializer used by runtime engine and receive gate",
+    "JSON data-model violations are rejected before request/evidence identity hashing",
+    "all runtime states are regression-tested for JSON round-trip validity"
+  ],
+  "terminal_locks_added": [
+    "end-user heat delivery lock",
+    "full convergence residue sweep lock",
+    "terminal gate required for Phase A / Phase B success",
+    "STOP report requires reason/impact/repair/boundary/preserved heat"
+  ],
+  "quarantine_auto_receive": false,
+  "nested_zips": 0,
+  "novel_line_final_core_lock": true,
+  "text_receive_lightweight_lock": true,
+  "four_runtime_equal_respect": true,
+  "history_in_runtime_zip": true,
+  "current_only_runtime_zip": true,
+  "runtime_zip_policy": "current_route_only; no changelog, repair log, migration notes, or past-version bodies",
+  "package": "TS90_v001_25_NLCORE_JSON_ROUNDTRIP_BOUNDARY_FINALIZED",
+  "source_file_count": 13,
+  "history_master_reapply": true,
+  "history_master": "TS90_v001_9_NLCORE_LOCKED",
+  "reapplied_patches": [
+    "TS90_PHASE_A_TO_B_SELF_DIRECTED_LOCK_v001",
+    "TS90_FULL_REVISION_READY_LOCK_v001",
+    "TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001"
+  ],
+  "phase_self_directed_locks": [
+    {
+      "path": "source/TS90_PHASE_A_TO_B_SELF_DIRECTED_LOCK_v001.md",
+      "bytes": 2165,
+      "sha256": "9FFD75E2031BE03391433057CE2FFC6ED35075F59B3A89A240A7B111AD4A0337"
+    }
+  ],
+  "history_master_reapply_locks": [
+    {
+      "path": "source/TS90_HISTORY_MASTER_REAPPLY_LOCK_v001.md",
+      "bytes": 672,
+      "sha256": "19E33709EAC30E82046AA8EB1246DF7DDA5C1C63FAB8C76C4B7C13C551D820EF"
+    }
+  ],
+  "full_revision_locks": [
+    {
+      "path": "source/TS90_FULL_REVISION_READY_LOCK_v001.md",
+      "bytes": 3950,
+      "sha256": "584D4C8D99DD56FB136087EE8179DBF8B6642A3F9AA419896D85588EF086B699"
+    }
+  ],
+  "full_revision_ready": {
+    "always_ready": true,
+    "auto_execute": false,
+    "explicit_user_activation_required": true,
+    "natural_language_strong_permission": true,
+    "branch_only": true,
+    "overwrite_base": false,
+    "stage_order": [
+      "編成校正",
+      "強改稿",
+      "冷却",
+      "校正",
+      "音読調整",
+      "固定条件照合"
+    ],
+    "author_unknown": "direction_not_guarantee",
+    "default_profile": "ADAPTIVE_DIRECTOR",
+    "fixed_full_stack_requires_explicit_request": true,
+    "adaptive_stage_order": [
+      "設計照合",
+      "構成編集",
+      "シーン編集",
+      "情報開示編集",
+      "視点編集",
+      "キャラクター編集",
+      "感情線編集",
+      "台詞編集",
+      "ペーシング編集",
+      "描写編集",
+      "強改稿",
+      "ラインエディット",
+      "冷却",
+      "連続性・整合性チェック",
+      "世界観・設定校正",
+      "コピーエディット",
+      "音読校正",
+      "固定条件照合"
+    ],
+    "phase_c_title_decision": true,
+    "a_to_c_txtdl_delivery": true,
+    "title_block_in_final_body": true
+  },
+  "adaptive_editor_locks": [
+    {
+      "path": "source/TS90_ADAPTIVE_EDITOR_DIRECTOR_LOCK_v001.md",
+      "bytes": 14101,
+      "sha256": "30CDCC50B045B8F00B560A9F436BA8197B44EB0727F77ADCD84D4504F8EE1CAA"
+    }
+  ],
+  "adaptive_editor_director": {
+    "always_ready": true,
+    "auto_execute": false,
+    "explicit_user_activation_required": true,
+    "one_line_trigger_supported": true,
+    "one_line_trigger_example": "修正刃さまパックで通して",
+    "baseline_policy": "named baseline or INPUT_SNAPSHOT; never overwrite; branch only",
+    "diagnosis_layers": [
+      "設計",
+      "構成",
+      "シーン",
+      "視点",
+      "人物",
+      "感情線",
+      "台詞",
+      "ペース",
+      "情報開示",
+      "描写",
+      "文体",
+      "冷却",
+      "整合性",
+      "校正",
+      "音読"
+    ],
+    "blade_strength_scale": {
+      "0": "使用しない",
+      "1": "局所確認",
+      "2": "標準修正",
+      "3": "強修正",
+      "4": "全面再設計候補"
+    },
+    "stage_order": [
+      "設計照合",
+      "構成編集",
+      "シーン編集",
+      "情報開示編集",
+      "視点編集",
+      "キャラクター編集",
+      "感情線編集",
+      "台詞編集",
+      "ペーシング編集",
+      "描写編集",
+      "強改稿",
+      "ラインエディット",
+      "冷却",
+      "連続性・整合性チェック",
+      "世界観・設定校正",
+      "コピーエディット",
+      "音読校正",
+      "固定条件照合"
+    ],
+    "finalization_order": [
+      "母艦との差分評価",
+      "劣化箇所のロールバック",
+      "最終冷却",
+      "納品本文と作業報告の分離"
+    ],
+    "change_classifications": [
+      "明確に改善",
+      "好みの差",
+      "効果不明",
+      "劣化",
+      "固定条件上必要"
+    ],
+    "rollback_required": [
+      "効果不明",
+      "劣化"
+    ],
+    "preference_never_auto_promotes_baseline": true,
+    "author_unknown": "direction_not_guarantee",
+    "external_beta_read": "not_claimed_without_real_external_reader",
+    "execution_intent_required": true,
+    "consultation_does_not_execute": true,
+    "baseline_evidence": "name + id + body sha256 + actual chars",
+    "diagnosis_plan_binding": "runtime-regenerated exact plan required",
+    "strong_rewrite_diagnosis": "independent from structure/scene/description/style",
+    "stop_signal_history": "active stops; resolved retained with action",
+    "stage_execution_binding": "same count/order/name and strength-status compatibility",
+    "diff_evidence": "applied edits require non-empty changes with id/location/classification/reason",
+    "rollback_binding": "comparison and rollbackLog bidirectional",
+    "character_count_verification": "computed from received and revised text",
+    "baseline_source_policy": "bound by inputMode; writer handoff ignores stale top-level text",
+    "edit_contract": "target/scope/touch/deny/core/fixed/minimum/body-boundary SHA-256 bound",
+    "body_extraction_modes": [
+      "FULL_TEXT",
+      "MARKERS",
+      "EXPLICIT_BODY"
+    ],
+    "revised_body_hash_verified": true,
+    "canonical_diff_evidence": "runtime-generated line hunks must match report exactly",
+    "rollback_final_body_binding": true,
+    "promotion_requires_retained_clear_improvement": true,
+    "short_exact_commands_execute": true,
+    "quoted_hypothetical_commands_do_not_execute": true,
+    "adaptive_finalization_order": [
+      "母艦との差分評価",
+      "劣化箇所のロールバック",
+      "最終冷却",
+      "固定条件照合",
+      "納品本文と作業報告の分離",
+      "Cモードタイトル決定",
+      "TXTDL納品"
+    ]
+  },
+  "title_decision_locks": [
+    {
+      "path": "source/TS90_PHASE_C_TITLE_DECISION_LOCK_v001.md",
+      "bytes": 2663,
+      "sha256": "0B7866494C3E716B3C4A0056EE836C5F45C3B164F8802040E73A476F48BD6764"
+    }
+  ],
+  "phase_c_title_decision": {
+    "mode": "PHASE_C_TITLE_DECISION",
+    "auto_execute": false,
+    "after_body_completion_only": true,
+    "body_revision_denied": true,
+    "new_story_fact_denied": true,
+    "story_pack_not_required_when_final_body_present": true,
+    "required_fields": [
+      "対象範囲",
+      "本文状態",
+      "固定条件",
+      "タイトル候補",
+      "採用タイトル",
+      "採用理由",
+      "却下候補と理由",
+      "未確認 / 保留",
+      "次工程"
+    ]
+  },
+  "package_json_version": "1.25.0",
+  "a_to_c_txtdl_locks": [
+    {
+      "path": "source/TS90_A_TO_C_TXTDL_OUTPUT_LOCK_v002.md",
+      "bytes": 3528,
+      "sha256": "45E19ACA0747EB02488CCEB3A49C58B842991B133CA55CE778B981433EA5342D"
+    }
+  ],
+  "a_to_c_txtdl": {
+    "normal_route": "Phase A diagnosis -> Phase B revision -> adaptive finalization -> final cooling -> fixed-condition check -> body/report separation -> Phase C story-title decision -> title block insertion -> TXTDL delivery",
+    "per_stage_next_required": false,
+    "stop_at_first_stop_condition": true,
+    "success_files": [
+      "TS90_FINAL_BODY.txt",
+      "TS90_WORK_REPORT.txt"
+    ],
+    "optional_files": [
+      "TS90_TITLE_CANDIDATES.txt"
+    ],
+    "success_allowed_files": [
+      "TS90_FINAL_BODY.txt",
+      "TS90_WORK_REPORT.txt",
+      "TS90_TITLE_CANDIDATES.txt"
+    ],
+    "stop_files": [
+      "TS90_STOP_REPORT.txt"
+    ],
+    "file_presence_validation": {
+      "enabled": true,
+      "basis": "TXTDL .txt key presence",
+      "success_rejects_unlisted_txt_keys": true,
+      "stop_rejects_every_txt_key_except_stop_report": true,
+      "empty_disallowed_files_still_fail": true
+    },
+    "policy": {
+      "mode": "A_TO_C_CONTINUOUS_TXTDL_OUTPUT",
+      "defaultRun": "PHASE_A_TO_C_UNLESS_STOP",
+      "perStageUserNextRequired": false,
+      "stopAtFirstStopCondition": true,
+      "outputMode": "TXTDL",
+      "mountBootIsNotExecution": true,
+      "executionIntentRequired": true,
+      "finalBodyTxtRequired": true,
+      "workReportTxtRequired": true,
+      "stopReportTxtRequiredWhenStopped": true,
+      "bodyReportSeparatedBeforeTitle": true,
+      "phaseCAfterFinalBodyOnly": true,
+      "titleBlockInsertedAtBodyTop": true,
+      "titleBlockOrder": [
+        "作品タイトル?",
+        "部・編等?",
+        "話数",
+        "話タイトル"
+      ],
+      "selectedTitleMustBeInTitleBlock": true,
+      "episodeLabelRequiredInTitleBlock": true,
+      "separateFinalTitleTxtDenied": true,
+      "titleCandidatesRemainInWorkReport": true
+    },
+    "stage_order": [
+      "Phase A診断",
+      "Phase B修正",
+      "適応型最終化",
+      "最終冷却",
+      "固定条件照合",
+      "本文と作業報告を分離",
+      "Cモードタイトル決定",
+      "採用タイトルを本文先頭へ挿入",
+      "TXTDL納品"
+    ],
+    "final_body_title_block": [
+      "作品タイトル if provided",
+      "部・編等 if provided",
+      "話数 / target label",
+      "話タイトル selected by Phase C"
+    ],
+    "separate_final_title_txt": false,
+    "story_title_candidates_location": "TS90_WORK_REPORT.txt / phaseCTitleDecision",
+    "stop_payload_only": [
+      "TS90_STOP_REPORT.txt"
+    ]
+  },
+  "skill_runtime_evidence_locks": [
+    {
+      "path": "source/TS90_SKILL_RUNTIME_EVIDENCE_BINDING_LOCK_v005.md",
+      "bytes": 7157,
+      "sha256": "8F843331771F2963373ACC7902EB9CDCFF62A324E829621485E52C4CF3D397EB"
+    }
+  ],
+  "skill_runtime": {
+    "schema": "TS90_RUNTIME_SESSION_v004",
+    "action_schema": "TS90_RUNTIME_HOST_ACTION_v001",
+    "runtime_version": "ts90-v001.25-nlcore-json-roundtrip-boundary",
+    "skills": [
+      "T00_RECEIVE",
+      "T01_PHASE_A_DIAGNOSIS",
+      "T02_PHASE_B_REVISION",
+      "T03_PHASE_C_TITLE",
+      "T04_TXTDL_BUILD",
+      "T05_TERMINAL_AUDIT"
+    ],
+    "continuous_route": [
+      "Phase A diagnosis",
+      "Phase B revision",
+      "Phase C title decision",
+      "deterministic TXTDL build",
+      "final terminal audit"
+    ],
+    "host_actions_one_at_a_time": true,
+    "resume_requires_session_revalidation": true,
+    "success_authority": "T05_TERMINAL_AUDIT_AFTER_LOW_LEVEL_CONTRACT_VALIDATION",
+    "session_security_boundary": "HOST_INTERNAL_NON_CRYPTOGRAPHIC",
+    "serialized_success_revalidation": "JSON_ROUNDTRIP_CANONICAL_DATA_FAIL_CLOSED_BOUND",
+    "json_data_boundary": {
+      "policy": "STRICT_JSON_DATA_MODEL_REJECT_NONROUNDTRIPPABLE",
+      "max_depth": 512,
+      "max_nodes": 200000,
+      "max_canonical_bytes": 16777216,
+      "valid_session_invariant": "SESSION_VALID_IMPLIES_JSON_STRINGIFY_AND_ROUNDTRIP_SESSION_VALID",
+      "hidden_non_enumerable_metadata_authority": false
+    }
+  },
+  "runtime_file_manifest": {
+    "path": "RUNTIME_FILE_MANIFEST.json",
+    "schema": "TS90_RUNTIME_FILE_MANIFEST_v001",
+    "self_excluded": true,
+    "all_other_package_files_sha256_bound": true
+  }
+}

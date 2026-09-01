@@ -1,0 +1,11 @@
+{
+  "name": "ds90-v0405-nlcore-shelf-pkdb-origin-turn-runtime",
+  "version": "40.5.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/engine.test.js && node test/skill-runtime.test.js && node test/pkdb-and-regression.test.js && node test/turn-gate.test.js && node test/pkdb-failclosed-regression.test.js && node test/portable-origin-boot.test.js && node backpacks/MOUNT_TRANSFER_BACKPACK/test/literal.test.js && node backpacks/MOUNT_TRANSFER_BACKPACK/test/librarian.test.js",
+    "run": "node src/cli.js"
+  },
+  "description": "DS90 v0405: v003 PKDB search, true required-clause AND, broad candidate delivery, portable-origin bootstrap, and current shelf authority."
+}

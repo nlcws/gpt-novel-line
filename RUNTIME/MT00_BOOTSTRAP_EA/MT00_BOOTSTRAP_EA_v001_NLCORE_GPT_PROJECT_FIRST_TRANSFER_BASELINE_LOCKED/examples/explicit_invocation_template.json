@@ -1,0 +1,10 @@
+{
+  "mountTransferInvocation": {
+    "mode": "MOUNT_TRANSFER_RUNTIME",
+    "operation": "MOUNT_TRANSFER",
+    "origin": "USER_EXPLICIT",
+    "reason": "chat boundary / project handoff / mount transfer"
+  },
+  "required": "provide current mount ZIP and transfer materials",
+  "forbidden": "summary-only handoff"
+}

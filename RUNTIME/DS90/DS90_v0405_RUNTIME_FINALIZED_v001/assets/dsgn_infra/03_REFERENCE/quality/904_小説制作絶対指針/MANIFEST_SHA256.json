@@ -1,0 +1,67 @@
+{
+  "package": "904_小説制作【絶対指針】_CURRENT_V28_20260818",
+  "generated": "2026-08-18",
+  "file_count_excluding_manifest": 12,
+  "files": [
+    {
+      "path": "029_w_001_050_v0033_20260402_redeliver.zip",
+      "bytes": 157088,
+      "sha256": "211d7e6e4a648bf0b1c823bd93c7e19b8e6b31c38b934438b6e0405f8a2785ec"
+    },
+    {
+      "path": "030_w_cat_pack_v0052_20260419_JS.zip",
+      "bytes": 384897,
+      "sha256": "7aab0373abb2c74e8fc874f62fb78645925edfcd74be23b44542c4fca2c8324e"
+    },
+    {
+      "path": "CURRENT_CARD_PACK_MODEL_20260818.md",
+      "bytes": 4495,
+      "sha256": "016c369b4aaf59e034a6dc2cfae34073b5e74ee8ddf76013d0d86278583fd880"
+    },
+    {
+      "path": "CURRENT_READ_FIRST.md",
+      "bytes": 2316,
+      "sha256": "9409fc5cd7aa25ce52106127eb0cf1d7208c45440e8ca09ce95ac1e9d2fe5d80"
+    },
+    {
+      "path": "LEGACY_REFERENCE_INDEX.md",
+      "bytes": 682,
+      "sha256": "47a0ce54a977f4395211216ab67140e66cb5ae196b808d538018d2608ab8addb"
+    },
+    {
+      "path": "ONEECHAN_WRITERPACK_081_130_v0001_20260419.zip",
+      "bytes": 206698,
+      "sha256": "42a032b5ec0686ec38caf512bdc92726588d7a5c5c1d5f6d01066c43942ab027"
+    },
+    {
+      "path": "【絶対指針】.txt",
+      "bytes": 2873,
+      "sha256": "c0584613bc1368e4bf77aad0add08d51e4275a220fa1db6f988aa2d0f6a01655"
+    },
+    {
+      "path": "【絶対指針】LOG.txt",
+      "bytes": 30923,
+      "sha256": "a38c1e19355a3f3ce6d0aac9c3acf18589bf38cb492aa60f3cd49458172efa1b"
+    },
+    {
+      "path": "現行運用接続_20260817.md",
+      "bytes": 205,
+      "sha256": "3025cfaeac74b0feffead42fa0512b35f000c161ba2858031f86adc201568052"
+    },
+    {
+      "path": "現行運用接続_20260818.md",
+      "bytes": 2143,
+      "sha256": "fefe73a1e8c6fd27aff05948fd5dbcff03f59f464726ce88eb34d5e842c5e0b9"
+    },
+    {
+      "path": "設計さんへの必要条件書_熱量明文化版.md",
+      "bytes": 10107,
+      "sha256": "54a9f3e88cf1fb102bb10f03d7d6cb1f746c61d26d636af66644d15961c95092"
+    },
+    {
+      "path": "設計さんへの要望書_カードテンプレ統一案.md",
+      "bytes": 14224,
+      "sha256": "9ad9ebe16e2227782bfd2b2ac70bd4f59592cd0024a5564deb54421f59e1e2cc"
+    }
+  ]
+}

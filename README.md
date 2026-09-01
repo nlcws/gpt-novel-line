@@ -30,16 +30,16 @@ GPT小説執筆ラインは、小説制作から生まれた公開プロジェ�
 
 公開方針上、改変・再配布・商用利用・再構成・再公開・派生物の公開を妨げません。利用・保守・法令順守・公開判断・サポートは利用者自身の責任で行ってください。
 
-## 現在の正本導線
+## 現在のRuntime導線
 
-Runtime本体の現在の正本導線は、GitHub内の古い配布ZIPではなく、オンラインの [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) です。
+Runtime本体の現在の正本導線は、オンラインの [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) を優先します。GitHub側にも現行Runtime束をミラーとして置き、内容を参照できるようにしています。
 
 2026-09-01時点でオンライン棚では、`ACTIVE_LAYER_DEFAULT: 400番台`、`RUNTIME_LAYERS: 400番台 / 300番台` が確認できます。
 
 - **400番台**: 現行のコピー更新層。新しく読む場合はこちらを優先します。
 - **300番台**: 既存ランタイム置き場の保存層。過去状態の比較や旧導線確認に使います。
 
-GitHub内の `RUNTIME_ZIP/` は、過去の公開配布記録として残しています。GitHub上のZIP名や版番号を、そのまま現在のRuntime正本とは扱わないでください。
+GitHub内では、ZIP本体を [`RUNTIME_ZIP/`](RUNTIME_ZIP/) に、展開済み資料を [`RUNTIME/`](RUNTIME/) に置いています。古いGitHub ZIP名や過去の版番号を現在版として扱わないでください。
 
 ## 何を解決したくて作ったか
 
@@ -108,7 +108,7 @@ GPT小説執筆ラインは小説制作を主な実験場にしていますが�
 
 **Runtimeを使いたい人・AI**は Runtime Public Shelf の `START_HERE_ONLINE_RUNTIME.txt` を優先してください。
 
-**過去の公開状態・GitHub配布記録**を確認する場合は以下を参照してください。
+**GitHub上の公開ミラー・更新記録**を確認する場合は以下を参照してください。
 
 - [INDEX.md](INDEX.md)
 - [CURRENT_STATUS.md](CURRENT_STATUS.md)

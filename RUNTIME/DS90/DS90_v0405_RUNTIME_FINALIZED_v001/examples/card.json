@@ -1,0 +1,727 @@
+{
+  "command": "話カード",
+  "core": {
+    "loaded": true
+  },
+  "designerDiscipline": {
+    "originals_read": true,
+    "no_inference_completion": true,
+    "no_condition_compression": true,
+    "no_source_condition_drop": true,
+    "summary_not_source": true
+  },
+  "designerChangeSet": {
+    "creates_new_items": true,
+    "registrations": [
+      {
+        "item_id": "CARD-E1-v1",
+        "item_type": "STORY_CARD",
+        "created_at": "2026-06-24",
+        "added_reason": "CARD operation output",
+        "source_or_origin": "024/CANON#episode",
+        "dependency": [
+          "fixed-1",
+          "heat-1",
+          "connection-1"
+        ],
+        "related_items": [
+          "E1"
+        ],
+        "canonical_state": "NON_CONDITION",
+        "registration_target": "CARD_INDEX",
+        "index_update_required": true,
+        "navigation_references": {
+          "START_HERE": false,
+          "READ_ME": false,
+          "CURRENT_STATUS": false
+        }
+      }
+    ]
+  },
+  "boot": {
+    "readLedger": [
+      {
+        "path": "START_HERE.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/mental-runtime.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/types.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/rule.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/operation-plan.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/session.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/runner.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/terminal-authority.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/report-policy.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/skills/registry.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/skills/pkdbRead.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/skills/shelfRead.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/indexing/searchEngine.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/indexing/validator.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/skills/pkdbInput.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/skills/specialistDispatch.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/validation/designerGates.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/validation/convergence.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/assets.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/profiles/narrationBase.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/modules/core.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/specs/090_DS_CORE.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/knowledgeBootstrap.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_PKDB_HOST_ADAPTER_V2_HARDENED_LOCK_v0309.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_PKDB_HOST_ADAPTER_V2_HARDENED_MACHINE_v0309.json",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_V0401_CURRENT_SOURCE_LOCATOR_LOCK.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_V0401_CURRENT_SOURCE_LOCATOR_MACHINE.json",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_V0400_SHELF_PKDB_TAG_LOCK.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_V0402_000C_SHRINE_MAINTENANCE_LOCK.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_V0402_000C_SHRINE_MAINTENANCE_MACHINE.json",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/specs/DESIGNER_COMMON_GATES_v0402.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_V020_ACTIVE_ROUTE_CANONICALIZATION_LOCK.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_RUNTIME_NEUTRALITY_AND_EXTERNAL_CONTEXT_BOUNDARY_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DESIGNER_RUNTIME_ACTIVE_ROUTE_NO_RESIDUE_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/EXTERNAL_CONTEXT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/HANDOFF_IS_ARTIFACT_BASED_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/THOUGHT_INVARIANT_IMPLEMENTATION_VARIABLE_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/NOVEL_LINE_FINAL_CORE_LOCK_v001.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_PW90_ARTIFACT_HANDOFF_JOINT_LOCK_v001.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/ARTIFACT_EQUALS_FULL_CONVERGENCE_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_CODEX_FIXTURE_ACTIVE_ROUTE_BOUNDARY_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_USER_EXPLICIT_GATE_LOCK_v0402.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_HANDOFF_NO_AMBIGUITY_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_TRANSFER_CURRENT_COST_ACCEPTANCE_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_SHELF_NATIVE_USE_GATE_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_SINGLE_DOWNLOAD_MOUNT_BASE_DELIVERY_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_BASE_DISTRIBUTION_MUST_CONTAIN_MOUNTABLE_ZIPS_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_MOUNT_TRANSFER_AND_PACKAGING_ROOT_ROUTE_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_THREE_ZERO_DRYRUN_CONVERGENCE_GATE_LOCK_v020.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_V0300_CLEAN_BASELINE_LOCK.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/machine/DS90_V0300_CLEAN_BASELINE_MACHINE.json",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/DS90_DIRECT_RUNTIME_DISPATCH_000C_LOCK_v0301.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/machine/DS90_DIRECT_RUNTIME_DISPATCH_000C_MACHINE_v0301.json",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/machine/DS90_CHECK_REPORT_SCHEMA_v0300.json",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/04_MODULE/common/machine/DS90_ZIP_PACKAGING_CONTRACT_v0300.json",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/00_GATE/080_WRITING_SIDE_ACCEPTANCE_V1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/00_GATE/081_DESIGN_SIDE_ACCEPTANCE_V1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/00_GATE/082_JOINT_FINAL_ACCEPTANCE_V1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/10_CANON/100_SHARED_ABSOLUTE_GUIDELINE.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/10_CANON/105_USER_DECLARATION.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/10_CANON/110_JOINT_DECLARATION.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/10_CANON/120_SHARED_PROCESS_CONTRACT.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/10_CANON/125_WRITING_SIDE_VERIFICATION_LANE.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/10_CANON/150_STANDARD_CARD_SPEC.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_MANIFEST_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_TAG_MAP_v1.json",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_LOAD_ORDER_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/00_MANIFEST/current/DSGN_CURRENT_PACKAGE_CONVERGED_GUARD_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/namespace/DSGN_INTERNAL_NAMING_NAMESPACE_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/index/DSGN_INTERNAL_ALL_ITEM_INDEX_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/index/DSGN_ROLE_INDEX_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/index/designer_canonical_tag_registry_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/index/designer_reverse_lookup_index_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/protocol/designer_lookup_protocol_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/runtime/DSGN_RUNTIME_OPERATION_CONDITIONS_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/runtime/DSGN_RUNTIME_ACTIVATION_MATRIX_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/runtime/DSGN_OPERATION_CONVERGED_GUARD_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_FIXATION_MATRIX_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_DESIGN_LAYER_ANCHOR_SCHEMA_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_BACKLOG_FLOW_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_LAYER_EMBED_PLACEMENT_POLICY_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/dsgn_infra/01_ALWAYS_LIGHT/embed/DSGN_PURE_DESIGN_VS_LAYER_BOUNDARY_v1.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/10_CANON/151_STANDARD_CARD_TEMPLATE.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/20_ROLE_APPENDICES/220_DESIGN_DECLARATION.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/20_ROLE_APPENDICES/230_DESIGN_NECESSARY_CONDITIONS.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/20_ROLE_APPENDICES/240_CARD_TEMPLATE_UNIFICATION_REQUEST.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/operation_mount/20_ROLE_APPENDICES/250_LAYER_REDEFINITION_REFERENCE.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/modules/card.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/validation/deterministic.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/specs/092_DS_CARD.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/templates/WORK_UNIT_CARD_TEMPLATE.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/templates/LAYER_PROFILE_TEMPLATE.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "src/runtime/turn-gate.js",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_V0405_TURN_ROLE_CONTINUITY_LOCK.md",
+        "exists": true,
+        "read": true
+      },
+      {
+        "path": "assets/runtime_control/DS90_V0405_TURN_ROLE_CONTINUITY_MACHINE.json",
+        "exists": true,
+        "read": true
+      }
+    ],
+    "useMetadataOverGate": false,
+    "useRestartMemoAsEntry": false,
+    "useEndLogAsCanonical": false,
+    "readAllToolsAtStartup": false,
+    "treatMissingExternalContextAsStop": false
+  },
+  "sources": [
+    {
+      "type": "PROJECT_CANON",
+      "read": true,
+      "required": true,
+      "canonical": true
+    }
+  ],
+  "card": {
+    "episodeId": "E1",
+    "version": "v1",
+    "band": "B1",
+    "canonicalAnchor": "024/CANON#episode",
+    "returnAnchor": "024/CANON#episode",
+    "sourceRead": true,
+    "goalCondition": "goal-1",
+    "nextAnchorCondition": "anchor-2",
+    "styleLayer": "profile-1",
+    "concreteObject": "object-1",
+    "localStop": "do not change core",
+    "completionBoundary": "not manuscript",
+    "foreground": "object-1",
+    "backgroundDirection": "present-low",
+    "returnDestination": "024/CANON#episode",
+    "sourceTrace": "024/CANON#episode",
+    "narrationConnection": "objective",
+    "speechTagPolicy": "minimal",
+    "movementLayer": "sensory",
+    "metaphorLimit": "character-bound",
+    "explanationAmount": "low",
+    "fuelCheck": "expandable",
+    "projectSpecificDevice": "friction-place-body-relation",
+    "minimumNaturalExpansion": 10000,
+    "conditionsCompleteInMountedPack": true,
+    "inputSources": [
+      "024/CANON"
+    ],
+    "strongReferences": [
+      "022/CORE"
+    ],
+    "weakReferences": [
+      "094/LOG"
+    ],
+    "stopElements": [
+      "STOP-1"
+    ],
+    "fixedConditions": [
+      "fixed-1"
+    ],
+    "heatConditions": [
+      "heat-1"
+    ],
+    "connectionConditions": [
+      "connection-1"
+    ],
+    "prohibitionLines": [
+      "ban-1"
+    ],
+    "fragilePoints": [
+      "core"
+    ],
+    "freedomAreas": [
+      "dialogue rhythm"
+    ],
+    "requiredCharacters": [
+      "main"
+    ],
+    "requiredPlaces": [
+      "place"
+    ],
+    "requiredEvents": [
+      "event"
+    ],
+    "requiredObjects": [
+      "object-1"
+    ],
+    "requiredOrder": [
+      "event",
+      "return"
+    ],
+    "requiredScenes": [
+      "scene-1"
+    ],
+    "doNotStrengthen": [
+      "mystery"
+    ],
+    "allowedSeeds": [
+      "future-line"
+    ],
+    "fixedProcessCoverage": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "pointLane": [
+      {
+        "id": "P1",
+        "enterState": "S0",
+        "exitState": "S1"
+      },
+      {
+        "id": "P2",
+        "enterState": "S1",
+        "exitState": "S2"
+      }
+    ],
+    "writerRequestFields": {
+      "lane": "P1>P2",
+      "lengthPolicy": "9000",
+      "disclosureSpeed": "slow",
+      "pausePoint": "P1",
+      "fragilePoints": [
+        "core"
+      ]
+    }
+  },
+  "externalContext": {
+    "present": true,
+    "id": "external-project",
+    "gate021": {
+      "path": "021/START.md",
+      "exists": true,
+      "read": true,
+      "readOrderRefs": [
+        {
+          "path": "assets/dsgn_infra/04_MODULE/common/DS90_V0300_CLEAN_BASELINE_LOCK.md",
+          "exists": true,
+          "read": true
+        },
+        {
+          "path": "assets/dsgn_infra/04_MODULE/common/machine/DS90_V0300_CLEAN_BASELINE_MACHINE.json",
+          "exists": true,
+          "read": true
+        }
+      ]
+    }
+  },
+  "knowledgeContext": {
+    "startGate": {
+      "path": "000_C/00_READ_FIRST/DS90_START_GATE.json",
+      "exists": true,
+      "read": true,
+      "version": "DS90_START_GATE_v001"
+    },
+    "dispatch": {
+      "path": "000_C/00_READ_FIRST/RUNTIME_DIRECT_DISPATCH.json",
+      "exists": true,
+      "read": true,
+      "verified": true,
+      "dependencies": {
+        "PKDB_ACCESS_SKILL": {
+          "resolved": true,
+          "sha256Verified": true
+        },
+        "PKDB_SOURCE_MATERIALIZE_SKILL": {
+          "resolved": true,
+          "sha256Verified": true
+        }
+      }
+    },
+    "pkdb": {
+      "mounted": true,
+      "validated": true,
+      "semanticRecordCount": 0,
+      "sourceRecordCount": 341,
+      "sourceOnlyBridge": true
+    },
+    "portableOrigin": {
+      "logicalId": "LID-PORTABLE-5000-ORIGIN",
+      "lookupDelivered": true,
+      "materialized": true,
+      "read": true,
+      "sha256Verified": true
+    }
+  },
+  "knowledgeRequest": {
+    "intents": [
+      {
+        "kind": "SEARCH_TERM",
+        "value": "#TEST:CARD",
+        "required": true
+      }
+    ],
+    "deliveryLimit": 64,
+    "allowSourceMaterializeFallback": false
+  }
+}

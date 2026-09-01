@@ -1,0 +1,45 @@
+DS90 v0405 CURRENT RUNTIME MANIFEST CONTRACT
+
+STATUS: CURRENT_RUNTIME_DESCRIPTOR
+VERSION: v0405
+RUNTIME_ROOT: DS90_v0405_NLCORE_SHELF_PKDB_ORIGIN_TURN_RUNTIME_LOCKED
+
+FORMULA:
+  v0401 schema-legal current SOURCE locator integration
+  + USER_EXPLICIT-only MOUNT_TRANSFER authority
+  + 000_C shrine-style USE_ONLY / user-gated maintenance boundary
+  + unchanged v0309 trusted host/runtime hardening
+
+CURRENT_PROJECT_ROUTE:
+  DS90 INDEX/SEARCH
+  -> K01 PKDB_ACCESS
+  -> SOURCE record with current-mount relative payload.locator
+  -> K04 SHELF_READ
+  -> exact current shelf bytes
+  -> DS90 design
+
+CONTROL_SHELF_BOUNDARY:
+  normal 000_C state = USE_ONLY
+  MOUNT_TRANSFER activation = USER_EXPLICIT only
+  maintenance activation = direct user request or explicit approval after presented target/reason/scope
+  rebuild must validate and re-seal 000_C to USE_ONLY
+
+RELEASE_BOUNDARY:
+  Runtime ZIP contains current execution material only.
+  Update-History is a separate release ZIP and is not required on normal runtime mount.
+
+V0404_RUNTIME_DELTA:
+- PKDB query generation is v003.
+- Required multi-clause PKDB lookup is true AND intersection in the DS90 host adapter.
+- Default PKDB delivery limit is 5000 and remains caller-bounded by schema.
+- Portable origin record LID-PORTABLE-5000-ORIGIN is a fixed bootstrap/recovery principle source.
+
+V0403_REFERENCE_SYNC:
+- COMMON_OPERATION_TEMPLATE_V2.md is current optional setup template; V1 active path retired.
+- 904 novel-quality bundle is designer lookup reference under 03_REFERENCE/quality; legacy packs are not auto-loaded.
+- v0402 shelf/PKDB/000_C authority behavior is unchanged.
+
+V0405 TURN CONTINUITY:
+- every user turn applies TURN_GATE before generic response behavior.
+- UNKNOWN_OPERATION retains DS90 role.
+- persistenceAuthority means write persistence only; roleContinuity is separate.

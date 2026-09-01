@@ -1,0 +1,62 @@
+[
+  {
+    "path": "00_RULES/CHANGELOG.md",
+    "sha256": "67651a60a7cba64b989423b74995e76f4634f7421d485b76af85a9a83178a129",
+    "bytes": 738
+  },
+  {
+    "path": "00_RULES/CHARACTER_PRIORITY.md",
+    "sha256": "9afef09e8b76deb55357c54a6b4ec7a197b9f6c893db3e4ca44c8bb8e563486f",
+    "bytes": 1236
+  },
+  {
+    "path": "00_RULES/IMAGE_RUNTIME_RULES.md",
+    "sha256": "686b7f4fc4ce81dde6cb6ff69acdb5fcca3284d7a9dcea94c756d2e10df6750b",
+    "bytes": 3363
+  },
+  {
+    "path": "00_RULES/NAMING_RULES.md",
+    "sha256": "4229433594fa119ee80bc812d01d9e8957aad9cf09a8273fbc75d325626b0541",
+    "bytes": 2164
+  },
+  {
+    "path": "00_RULES/PROJECT_IMAGE_RULES.md",
+    "sha256": "fe8cb91fe7a3e7a169f106114c85e8ba9a5db53b6ee52d5700c550be8c9d558f",
+    "bytes": 1782
+  },
+  {
+    "path": "00_RULES/STORAGE_RULES.md",
+    "sha256": "0d6ea0b8cac4a072a84fce31302989f4919361483227a03fef882dc57b0872d5",
+    "bytes": 2536
+  },
+  {
+    "path": "01_CHARACTER_BASE/README.md",
+    "sha256": "9de45cb440355fb4c5dea3dbb3aef1c616751cadd3fe89024041f1807a2b8c1c",
+    "bytes": 122
+  },
+  {
+    "path": "02_COSTUME_BASE/README.md",
+    "sha256": "d6f754bba2d1b6d2f960bfdbf46167be132add6e0fe431bf8d2173592543ee21",
+    "bytes": 108
+  },
+  {
+    "path": "03_EVENT_VARIANTS/README.md",
+    "sha256": "41046bb4efc51a0d734257cf32c7ec9d5cc1817478124210f0c5ae07accb277a",
+    "bytes": 102
+  },
+  {
+    "path": "04_GROUP_REFERENCE/README.md",
+    "sha256": "60c9e1551e9879f978d600692f1d56142f91012b23f55ec1d4cd963073ac5c57",
+    "bytes": 120
+  },
+  {
+    "path": "05_ARCHIVE/README.md",
+    "sha256": "6b720751ec2804d68144ff35c014be7e75304c8f8009873883391fc6bd63e467",
+    "bytes": 96
+  },
+  {
+    "path": "README.md",
+    "sha256": "5d7e19dc9c8f1552d8a3b51f80e2b0d55db86a58f6deb361762625b559166655",
+    "bytes": 3350
+  }
+]

@@ -1,0 +1,99 @@
+# 050_MANIFEST｜現行DS90同梱 operation mount 全ファイル一覧
+状態：CURRENT / CANON GATE
+更新日：2026-07-20
+現行版：NOVEL_OPERATION_MOUNT_V1_20260424
+
+このmanifestは、DS90 V020 runtime ZIP内の `assets/operation_mount/` に実在する全ファイル名を固定する。
+旧standalone配布の `90_ARCHIVES/` バイナリは同梱しない。旧版名と当時のsize/hashは
+旧filelist/changelogに履歴として残すが、現行読了・起動・検査条件にしない。
+
+サイズとsha256は `00_GATE/999_FILELIST_V1.tsv` を参照する。同filelist自身は自己参照を避けるため `SELF` とする。
+
+ファイル数：84
+
+## ファイル一覧
+
+- `00_GATE/000_START_HERE.md`
+- `00_GATE/010_REQUIRED_READING.md`
+- `00_GATE/020_REFERENCE_PRIORITY.md`
+- `00_GATE/030_VERSION_STATUS.md`
+- `00_GATE/040_FILE_MAP.md`
+- `00_GATE/050_MANIFEST.md`
+- `00_GATE/060_REVISION_POLICY.md`
+- `00_GATE/070_CHANGELOG_V1.md`
+- `00_GATE/070_CHANGELOG_v0002.md`
+- `00_GATE/070_CHANGELOG_v0003.md`
+- `00_GATE/070_CHANGELOG_v0004.md`
+- `00_GATE/070_CHANGELOG_v0005.md`
+- `00_GATE/080_WRITING_SIDE_ACCEPTANCE_V1.md`
+- `00_GATE/081_DESIGN_SIDE_ACCEPTANCE_V1.md`
+- `00_GATE/082_JOINT_FINAL_ACCEPTANCE_V1.md`
+- `00_GATE/999_FILELIST_V1.tsv`
+- `00_GATE/999_FILELIST_v0003.tsv`
+- `00_GATE/999_FILELIST_v0004.tsv`
+- `00_GATE/999_FILELIST_v0005.tsv`
+- `10_CANON/100_SHARED_ABSOLUTE_GUIDELINE.md`
+- `10_CANON/105_USER_DECLARATION.md`
+- `10_CANON/110_JOINT_DECLARATION.md`
+- `10_CANON/120_SHARED_PROCESS_CONTRACT.md`
+- `10_CANON/125_WRITING_SIDE_VERIFICATION_LANE.md`
+- `10_CANON/130_DESIGN_AND_WRITING_ROLES.md`
+- `10_CANON/140_MOUNT_REQUIREMENTS.md`
+- `10_CANON/150_STANDARD_CARD_SPEC.md`
+- `10_CANON/151_STANDARD_CARD_TEMPLATE.md`
+- `20_ROLE_APPENDICES/210_WRITER_DECLARATION.md`
+- `20_ROLE_APPENDICES/220_DESIGN_DECLARATION.md`
+- `20_ROLE_APPENDICES/230_DESIGN_NECESSARY_CONDITIONS.md`
+- `20_ROLE_APPENDICES/240_CARD_TEMPLATE_UNIFICATION_REQUEST.md`
+- `20_ROLE_APPENDICES/250_LAYER_REDEFINITION_REFERENCE.md`
+- `30_REFERENCE_LOGS/300_README.md`
+- `30_REFERENCE_LOGS/310_【絶対指針】原文.txt`
+- `30_REFERENCE_LOGS/311_【絶対指針】成立LOG.txt`
+- `30_REFERENCE_LOGS/320_ちょっと_業務外だよ_付き合ってね.txt`
+- `30_REFERENCE_LOGS/321_パック専用・執筆さん_条文化案です.txt`
+- `30_REFERENCE_LOGS/322_執筆様_起動_固定.txt`
+- `30_REFERENCE_LOGS/ARCHIVE_BOUNDARY.json`
+- `30_REFERENCE_LOGS/v01916a_active_route_boundary_repair/ORIGINAL_DESIGNER_RUNTIME_NO_RESIDUE_LOCK_v01914.md`
+- `30_REFERENCE_LOGS/v01916a_active_route_boundary_repair/ORIGINAL_PROJECT_HISTORY_SHELF_POLICY_v01915.md`
+- `30_REFERENCE_LOGS/v01916e_runtime_neutrality_repair/ORIGINAL_DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v01916d.md`
+- `30_REFERENCE_LOGS/v01916e_runtime_neutrality_repair/ORIGINAL_PROJECT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v01916a.md`
+- `30_REFERENCE_LOGS/v01916g_shelf_native_repair/ORIGINAL_DS90_MOUNT_TRANSFER_OUTPUT_ZIP_SELF_CONTAINMENT_LOCK_v01916f.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16/LOCAL_VERIFICATION_NO_NPM_v019_16.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16/REAPPLY_FROM_13B_AUDIT_v019_16.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16a/HISTORY_RETAINED_ACTIVE_ROUTE_REPAIR_v01916a.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16a/LOCAL_VERIFICATION_NO_NPM_v01916a.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16b/CONVERGENCE_REPORT_v01916b.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16c/MOUNT_TRANSFER_SOURCE_FLOOR_REPAIR_v01916c.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16d/THREE_GATE_HARDENING_AND_CONVERGENCE_REPORT_v01916d.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16e/CONVERGENCE_REPORT_v01916e.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16f/MOUNT_TRANSFER_OUTPUT_ZIP_CONVERGENCE_REPORT_v01916f.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16g/MOUNT_SHELF_NATIVE_GATE_CONVERGENCE_REPORT_v01916g.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16h/CONVERGENCE_REPORT_v01916h.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16i/CONVERGENCE_REPORT_v01916i.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16j/CONVERGENCE_REPORT_v01916j.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/legacy_v019_audit_reports/root_reports_v019_16k/VERIFICATION_REPAIR_REPORT_v01916k.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/ARTIFACT_EQUALS_FULL_CONVERGENCE_LOCK_v01915.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DESIGNER_RUNTIME_ACTIVE_ROUTE_NO_RESIDUE_LOCK_v01916a.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DESIGNER_RUNTIME_NO_RESIDUE_LOCK_v01914.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_CODEX_FIXTURE_ACTIVE_ROUTE_BOUNDARY_LOCK_v01915.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_HANDOFF_NO_AMBIGUITY_LOCK_v01915.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_BASE_DISTRIBUTION_MUST_CONTAIN_MOUNTABLE_ZIPS_LOCK_v01916j.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_AND_PACKAGING_ROOT_ROUTE_LOCK_v01916i.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_AND_PACKAGING_ROOT_ROUTE_LOCK_v01916j.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_AUTO_DISPATCH_LOCK_v01915.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_OUTPUT_ZIP_SELF_CONTAINMENT_LOCK_v01916f.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_MOUNT_TRANSFER_SHELF_NATIVE_USE_GATE_LOCK_v01916g.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_RUNTIME_NEUTRALITY_AND_EXTERNAL_CONTEXT_BOUNDARY_LOCK_v01916e.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_SINGLE_DOWNLOAD_MOUNT_BASE_DELIVERY_LOCK_v01916h.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_SINGLE_DOWNLOAD_MOUNT_BASE_DELIVERY_LOCK_v01916j.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_THREE_ZERO_DRYRUN_CONVERGENCE_GATE_LOCK_v01916l.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_TRANSFER_CURRENT_COST_ACCEPTANCE_LOCK_v01915.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v01916d.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/DS90_TRANSFER_PACK_PREP_ZERO_THINK_AND_CONVERGENCE_LOCK_v01916e.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/EXTERNAL_CONTEXT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v01916e.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/HANDOFF_IS_ARTIFACT_BASED_LOCK_v01914.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/PROJECT_HISTORY_RETAINED_ACTIVE_BOUNDARY_POLICY_v01916a.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/PROJECT_HISTORY_SHELF_POLICY_v01915.md`
+- `30_REFERENCE_LOGS/v020_active_route_cutover/retired_common_locks/THOUGHT_INVARIANT_IMPLEMENTATION_VARIABLE_LOCK_v01914.md`
+- `99_README.md`
+- `COMMON_OPERATION_TEMPLATE_V1.md`

@@ -1,0 +1,15 @@
+{
+  "contract": "mt00_bootstrap_check_report_contract",
+  "version": "1.0.0",
+  "output_file": "CHECK_REPORT.md",
+  "required_sections": [
+    "Summary",
+    "Package",
+    "Manifest",
+    "Required shape",
+    "Base shelves",
+    "Result"
+  ],
+  "generated_sidecar": true,
+  "manifest_included": false
+}

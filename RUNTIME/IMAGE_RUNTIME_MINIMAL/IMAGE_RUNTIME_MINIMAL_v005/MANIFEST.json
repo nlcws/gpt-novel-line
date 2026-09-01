@@ -1,0 +1,61 @@
+{
+  "runtime_id": "IMAGE_RUNTIME_MINIMAL",
+  "version": "v005",
+  "composition_model": "WORLD_FIRST_ACTION_CROP_REFLECTION_LOCK_PREGEN_REVIEW",
+  "manifest_self_excluded": true,
+  "manifest_scope": "all package files except MANIFEST.json",
+  "listed_file_count": 10,
+  "package_entry_count": 11,
+  "files": [
+    {
+      "path": "COMPOSITION_MODEL.md",
+      "bytes": 8552,
+      "sha256": "b5f2c57cb95048f38b5af0bfaeb64b1c8f892b322f54dd6dbc8e2d2fee8269c6"
+    },
+    {
+      "path": "MOUNT_INTERFACE.md",
+      "bytes": 1182,
+      "sha256": "e131f235dec546143fbb1b18968b389dd9360df4cb8ee1467762203ad34a6acc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3171,
+      "sha256": "8fc80c958bf4c274d74bcc36313fd52d34b0131e812770c92075912849b4406e"
+    },
+    {
+      "path": "RUNTIME_CONTRACT.md",
+      "bytes": 6033,
+      "sha256": "53dab5eb1738dae05f1ad3a5dbe3955584f2f1ab739b9a2880b2ae89df018b01"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 3072,
+      "sha256": "746cfbb259a6b1f5fc9295ef16dae8699a3c0a17152bd46708de04a28a9bb937"
+    },
+    {
+      "path": "V001_TO_V002_MIGRATION.md",
+      "bytes": 565,
+      "sha256": "9048514c7328024c2d643f78cd54782621bdfc64d00dd0420334b665a3da32de"
+    },
+    {
+      "path": "V002_TO_V003_MIGRATION.md",
+      "bytes": 338,
+      "sha256": "0334cec0fad6e32273ef4a3d076b53c9cb223a9df26b5b6cbbf3b5b929fafd1d"
+    },
+    {
+      "path": "V003_TO_V004_MIGRATION.md",
+      "bytes": 648,
+      "sha256": "b05b069a48766b1f90cbe611ed108a6c57c0bb250a475575fe0ad03aa08fcfc1"
+    },
+    {
+      "path": "V004_TO_V005_MIGRATION.md",
+      "bytes": 643,
+      "sha256": "8ff3aa4736a403d8143765b29d282b49958400414250c8784e52d0a0281a5b1e"
+    },
+    {
+      "path": "VALIDATION_CHECKLIST.md",
+      "bytes": 3340,
+      "sha256": "26a3008255b931705401c46a2c1538cda8b0cd4aa8c59f5511c122678dda875c"
+    }
+  ]
+}

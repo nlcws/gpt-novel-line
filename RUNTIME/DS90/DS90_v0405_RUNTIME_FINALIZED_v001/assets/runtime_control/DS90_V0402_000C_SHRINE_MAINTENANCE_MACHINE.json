@@ -1,0 +1,46 @@
+{
+  "schema_version": "DS90_000C_MAINTENANCE_POLICY_v001",
+  "status": "ACTIVE",
+  "normal_state": "USE_ONLY",
+  "normal_direct_mutation_allowed": false,
+  "activation_authority": "USER_EXPLICIT_ONLY",
+  "activation_modes": [
+    "USER_EXPLICIT_MOUNT_TRANSFER",
+    "USER_APPROVED_000C_MAINTENANCE"
+  ],
+  "assistant_proposed_maintenance": {
+    "presentation_required": true,
+    "required_fields": [
+      "target",
+      "reason",
+      "change_scope"
+    ],
+    "explicit_user_approval_required": true,
+    "implicit_approval_allowed": false
+  },
+  "transfer": {
+    "auto_activation_allowed": false,
+    "allowed_origin": [
+      "USER_EXPLICIT"
+    ]
+  },
+  "allowed_maintenance_actions": [
+    "REBUILD_000_C",
+    "REPLACE_RESIDENT_RUNTIME",
+    "UPDATE_RUNTIME_DISPATCH",
+    "UPDATE_CONTROL_STATE",
+    "UPDATE_HANDOFF",
+    "UPDATE_AUDIT",
+    "UPDATE_TRANSFER_MANIFESTS"
+  ],
+  "re_seal_checks": [
+    "ROOT_DIRECT_SHAPE",
+    "DISPATCH_TARGET_EXISTS",
+    "DISPATCH_SHA256_MATCH",
+    "REQUIRED_RESIDENT_LANES",
+    "CONTROL_GATE_PRESENT",
+    "MAINTENANCE_GATE_PRESENT",
+    "EVENT_HANDOFF_AUDIT_EVIDENCE"
+  ],
+  "final_state": "USE_ONLY"
+}
