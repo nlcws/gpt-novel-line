@@ -1,24 +1,103 @@
 # GPT小説執筆ライン
 
-GPT小説執筆ラインの公開棚です。
+**AIエージェント運用 / マルチエージェント / AI Runtime Overlay の公開実装・運用記録です。**
 
-このリポジトリでは、チャットAIマウント型ランタイムの公開可能資料、公開棚の入口、現行状態、更新履歴を扱います。
+小説制作から始まった仕組みですが、やっていることは「一つのAIへ全部を任せる」ことではありません。
 
-## 現在のランタイム配布状態
+- 役割を分ける
+- 読む資料と正本を分ける
+- 担当外へ勝手に越境させない
+- STOP / PASS 条件を持たせる
+- 次の担当へ handoff する
+- 検査・監査の証跡を残す
+- 更新、移管、再開を前提にする
 
-2026-08-07時点で、`RUNTIME_ZIP/` の現行配布ZIPをDS90 v0300基準へ更新しています。
+つまり、**AIを一人の万能社員として扱うのではなく、仕事が続く組織・工程として運用する**ための公開ラインです。
 
-| ZIP | 扱い | sha256 |
-| --- | --- | --- |
-| `DS90_v0300_CLEAN_BASELINE_FINALIZED_v002.zip` | 設計さん / 現行DS90正本 | `b0aba518496e3d3f20f599cfab3cbd4e8ce432493e82fa743ede290f30c19281` |
-| `PW90_v004_21c_NLCORE_STABLE_LOCKED.zip` | 執筆さん / 既存配布継続 | `c75da89a98870edbea9c843db039c2f8ffa94488c9f92448fbe9dbe4734f4e7c` |
-| `TS90_v001_15_NLCORE_STABLE_LOCKED.zip` | 修正刃さま / 実読済みZIPへ差し替え | `272f8265320ed1c1406a78e47b6267d8d7208453ee75841b25a59ae31172ca63` |
-| `NW22_v002_5_NLCORE_STABLE_LOCKED.zip` | 野良ちゃん / 既存配布継続 | `8a0845840aa6bfcb60107fc9ca415c30005c542b9ef4a7568895c66527dd2996` |
-| `MT00_BOOTSTRAP_EA_v001_GPT_PROJECT_FIRST_TRANSFER_BASELINE_FINALIZED_v001.zip` | ヌル / GPTプロジェクト初回移管 | `f45e41113f27b65e5a24465b351f0a79370f2aea593c8da6e393808889a5e537` |
-| `MT00_v002_CLEAN_BASELINE_TRANSFER_FINALIZED_v002.zip` | ヌル / 通常マウント移管 | `05f35e613f0e0451c649a3a5ed7984f6a0dd6bf7901ec7b4b40b1efa8f273d80` |
-| `SP00_v002_CLEAN_BASELINE_STORY_PACK_FINALIZED_v001.zip` | ナル / 話パック専用 | `95081b42cf95a48e679d7e7648d74b83a2b2e8d5c539753e6336f68c8462eecf` |
+モデルの性能比較をする場所ではありません。汎用チャットAIの上に、役割・資料・手順・判断境界・検査条件を重ねて運用する **AI Runtime Overlay / チャットAIマウント型ランタイム** を実際に使いながら更新しています。
 
-## 主要リンク
+## まずここ
+
+| 目的 | 入口 |
+| --- | --- |
+| 全体を人間向けに見る | [GPT小説執筆ライン ポータル](https://gpt-novel-line-portal.harmoniets.chatgpt.site/) |
+| Runtime本体を読む・使う | [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) |
+| 自由利用・改変・再配布の方針を見る | [Public Release Policy](https://gpt-novel-line-portal.harmoniets.chatgpt.site/public-release-policy) |
+| 運用メモや記事を読む | [note](https://note.com/gpt_novel_line) |
+| GitHub上の公開資料を見る | このリポジトリ |
+
+**Free Runtime. Free Use. No Attribution Required. Use at Your Own Responsibility.**
+
+公開方針上、改変・再配布・商用利用・再構成・再公開・派生物の公開を妨げません。利用・保守・法令順守・公開判断・サポートは利用者自身の責任で行ってください。
+
+## 何を解決したくて作ったか
+
+長くAIを使うと、モデルの賢さだけでは解決しない問題が出ます。
+
+### 一つのAIが何でもやり始める
+
+設計中の仮案を本文へ持ち込み、本文担当が設定を確定し、修正担当が作品そのものを作り替える。能力が高くても、担当境界が曖昧なら仕事は混ざります。
+
+→ **役割と権限を分離します。**
+
+### チャットが変わると前提が薄れる
+
+長期作業では「前に決めたはず」が事故源になります。
+
+→ **正本、読む順番、CURRENT、HOLD、handoff、移管を明示します。**
+
+### AI同士をつないでも、誰が何をしたか分からない
+
+接続できるだけでは運用になりません。
+
+→ **入力・出力・STOP / PASS・監査・検査を工程へ持たせます。**
+
+### 更新すると全部壊れる
+
+一つの巨大な人格やプロンプトへ全部を詰めると、一部変更が全体へ波及します。
+
+→ **Runtimeを役割ごとに分け、交換・更新・移管できるようにします。**
+
+## Runtimeの役割
+
+現在の公開Runtime群は、役割ごとに分離されています。正本と現行版は [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) を優先してください。
+
+| Runtime | 役割 |
+| --- | --- |
+| DS90 / 設計さん | 設計・条件整理・境界・受け渡し |
+| PW90 / 執筆さん | 確定済み条件から本文へ変換 |
+| TS90 / 修正刃さま | 修正・検査・本文の整合 |
+| NW22 / 野良ちゃん | 外部入力・自由度の高い作業 |
+| MT00 / ヌル | マウント移管・状態の引き継ぎ |
+| SP00 / ナル | 話パックの切り出し・梱包 |
+| MT00_BOOTSTRAP_EA / エーア | 新規Projectの初期配置 |
+
+これはキャラクター設定を分けるためではなく、**責務を分けるため**です。
+
+## AIエージェント運用として見る場合
+
+GPT小説執筆ラインは小説制作を主な実験場にしていますが、構造として扱っているのは次のような一般的な問題です。
+
+- AIエージェントの役割分担
+- マルチエージェントのhandoff
+- AIワークフローの境界管理
+- 正本 / source of truth 管理
+- 権限分離と越境防止
+- STOP / PASS / validation
+- 監査可能な実行記録
+- Runtimeの更新・退役・移管
+- 長期コンテキストの再現
+- 人間による最終採用と公開責任
+
+AIエージェント、agentic workflow、multi-agent system、AI governance、runtime lifecycle など別の名前で探している場合でも、同じ種類の問題をかなり扱っています。
+
+## 読み方
+
+**初見の人間**はポータルから入るのが最短です。
+
+**Runtimeを使いたい人・AI**は Runtime Public Shelf の `START_HERE_ONLINE_RUNTIME.txt` を優先してください。
+
+**過去の公開状態・GitHub配布記録**を確認する場合は以下を参照してください。
 
 - [INDEX.md](INDEX.md)
 - [CURRENT_STATUS.md](CURRENT_STATUS.md)
@@ -26,49 +105,15 @@ GPT小説執筆ラインの公開棚です。
 - [RUNTIME_ZIP/](RUNTIME_ZIP/)
 - [RUNTIME/](RUNTIME/)
 
-## 公開サイト状態
+## 公開サイト
 
-`024_V_v003` の記録では、公開サイトは以下の状態です。
+- Portal: https://gpt-novel-line-portal.harmoniets.chatgpt.site/
+- Runtime Public Shelf: https://runtime-public-archive.harmoniets.chatgpt.site/
+- Public Release Policy: https://gpt-novel-line-portal.harmoniets.chatgpt.site/public-release-policy
+- note: https://note.com/gpt_novel_line
 
-- title: `GPT小説執筆ライン ポータル`
-- public URL: `https://gpt-novel-line-portal.harmoniets.chatgpt.site`
-- Sites project_id: `appgprj_6a594acab6ec81918f9f48171e813997`
-- latest version: `44`
-- status: `active / public`
+## 非公式プロジェクト
 
-## 公開棚補足
+GPT小説執筆ラインはOpenAI公式のプロジェクトではありません。OpenAI、ChatGPT、GPT各モデルの提供元による承認、監修、保証を受けたものではありません。
 
-以下の5本は、公開棚 / サイト状態の確認用として実読済みです。ランタイム本体の代替ではありません。
-
-| 棚 | ZIP | 扱い | sha256 |
-| --- | --- | --- | --- |
-| `000_C` | `000_C.zip` | 制御棚 | `925a8f2c5509188966f1c9827729caf7298b1e7571aa6e21cf2df62bd9121713` |
-| `021_G` | `021_G_v002.zip` | 入口・タグ索引 | `a3b66140ecdc009aebb1dcee2202c5d95da4c1010b9f5a9156b523cd2fa1fca1` |
-| `022_B` | `022_B_v002.zip` | 固定骨 | `0719cd3f750fdd1c2d6abe4d2603a7a4a1415c50ee788b378bbe945a60dd7f15` |
-| `024_V` | `024_V_v003.zip` | 可変運用・サイト状態 | `efa895a6982f23b74ddec4446c327bb0ea9b872b4510f404dab4a2cdb6113980` |
-| `028_H` | `028_H_v002.zip` | 保留・却下済み | `40615e571d4723905e6145d87e6fc600c0184e06bcb7e5cf80d89f72821b1e4e` |
-
-`000_C` の検査結果は `PASS`、`unresolvedStopCount` は `0`、`nextAgentRestartReady` は `true` です。
-
-## 公開棚の読む順番
-
-公開棚確認時は `000_C/02_RESTART/RESTART_HANDOFF.md` のREAD_ORDERを優先します。
-
-1. `021_G_v002/00_START/00_疑似GPTs設計さんへ_最初に読む.md`
-2. `021_G_v002/TAG_INDEX.txt`
-3. `022_B_v002/10_BONE/GPT_NOVEL_LINE_PUBLIC_SHELF_BONE.md`
-4. `024_V_v003/10_VARIABLE/CURRENT_OPERATION.md`
-5. `024_V_v003/10_VARIABLE/SITE_PUBLICATION_STATUS_v003.md`
-6. `024_V_v003/20_TRANSFER_REPORT/MOUNT_TRANSFER_COMPLETION_REPORT.md`
-7. `024_V_v003/31_WORK_TEXTS/WORKS_STATUS_INDEX.md`
-8. `024_V_v003/31_WORK_TEXTS/WORK_TEXTS_INVENTORY.tsv`
-9. `024_V_v003/32_VERIFICATION_MATERIALS/VERIFICATION_MATERIALS_INVENTORY.tsv`
-10. `024_V_v003/33_LINK_AUDIT/LINK_PLACEMENT_AUDIT.md`
-11. `024_V_v003/34_ENCODING_AUDIT/UTF8_TEXT_AUDIT.md`
-12. `028_H_v002/10_HOLD/REJECTED_AND_PENDING_DECISIONS.md`
-
-## 注意
-
-ランタイム本体は `RUNTIME_ZIP/` の7本を正とします。公開棚5本は公開サイト状態と再起動順の補足です。
-
-非公開資料、制作途中資料、未整理の作業母艦は含めません。
+確認していないものを確認済みとして扱いません。正本Runtimeと解説、作品本文、運用メモ、過去の公開記録は分離して扱います。
