@@ -1,6 +1,6 @@
 # GPT小説執筆ライン
 
-**AIエージェント運用 / マルチエージェント / AI Runtime Overlay の公開実装・運用記録です。**
+**AIエージェント運用 / マルチエージェント / AI Runtime の公開実装・運用記録です。**
 
 GPT小説執筆ラインは、小説制作から生まれた公開プロジェクトです。ただし目的は「小説をAIへ丸投げする」ことではありません。
 
@@ -22,6 +22,7 @@ GPT小説執筆ラインは、小説制作から生まれた公開プロジェ�
 | --- | --- |
 | 全体を人間向けに見る | [GPT小説執筆ライン ポータル](https://gpt-novel-line-portal.harmoniets.chatgpt.site/) |
 | Runtime本体を読む・使う | [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) |
+| 用途別Runtimeを見る | [Runtime Family Catalog](RUNTIME_FAMILY_CATALOG.md) |
 | 自由利用・改変・再配布の方針を見る | [Public Release Policy](https://gpt-novel-line-portal.harmoniets.chatgpt.site/public-release-policy) |
 | 運用メモや記事を読む | [note](https://note.com/gpt_novel_line) |
 | GitHub上の公開資料を見る | このリポジトリ |
@@ -39,7 +40,18 @@ Runtime本体の現在の正本導線は、オンラインの [Runtime Public Sh
 - **400番台**: 現行のコピー更新層。新しく読む場合はこちらを優先します。
 - **300番台**: 既存ランタイム置き場の保存層。過去状態の比較や旧導線確認に使います。
 
-GitHub内では、ZIP本体を [`RUNTIME_ZIP/`](RUNTIME_ZIP/) に、展開済み資料を [`RUNTIME/`](RUNTIME/) に置いています。古いGitHub ZIP名や過去の版番号を現在版として扱わないでください。
+GitHub内では、ZIP本体を [`RUNTIME_ZIP/`](RUNTIME_ZIP/) に、展開済み資料を [`RUNTIME/`](RUNTIME/) に置いています。絵師さん / IM80、司書さん / BL90、Vault Runtime / 豆金庫の現行配布もGitHubミラーと公開ポータルの両方から参照できます。古いGitHub ZIP名や過去の版番号を現在版として扱わないでください。
+
+## 用途別Runtime
+
+| Family | Portal / Download |
+| --- | --- |
+| GPT小説執筆ライン | https://gpt-novel-line-portal.harmoniets.chatgpt.site/ |
+| 絵師さん / IM80 | https://ai-image-runtime.harmoniets.chatgpt.site/ |
+| 司書さん / BL90 | https://business-librarian-runtime.harmoniets.chatgpt.site/ |
+| Vault Runtime / 豆金庫 | https://business-librarian-runtime.harmoniets.chatgpt.site/downloads/VAULT_RUNTIME_v002.zip |
+
+一覧とchecksumは [RUNTIME_FAMILY_CATALOG.md](RUNTIME_FAMILY_CATALOG.md) にまとめています。Runtime Public Shelf側の機械可読一覧は `runtime-family-catalog.json` / `runtime-family-catalog.txt` を参照してください。
 
 ## 何を解決したくて作ったか
 
@@ -113,12 +125,16 @@ GPT小説執筆ラインは小説制作を主な実験場にしていますが�
 - [INDEX.md](INDEX.md)
 - [CURRENT_STATUS.md](CURRENT_STATUS.md)
 - [CHANGELOG.md](CHANGELOG.md)
+- [RUNTIME_FAMILY_CATALOG.md](RUNTIME_FAMILY_CATALOG.md)
 - [RUNTIME_ZIP/](RUNTIME_ZIP/)
 - [RUNTIME/](RUNTIME/)
 
 ## 公開サイト
 
 - Portal: https://gpt-novel-line-portal.harmoniets.chatgpt.site/
+- AI Agent Operations: https://ai-agent-operations.harmoniets.chatgpt.site/
+- AI Image Runtime: https://ai-image-runtime.harmoniets.chatgpt.site/
+- Business Librarian Runtime: https://business-librarian-runtime.harmoniets.chatgpt.site/
 - Runtime Public Shelf: https://runtime-public-archive.harmoniets.chatgpt.site/
 - Public Release Policy: https://gpt-novel-line-portal.harmoniets.chatgpt.site/public-release-policy
 - note: https://note.com/gpt_novel_line

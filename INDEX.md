@@ -2,7 +2,7 @@
 
 GPT小説執筆ライン公開棚の索引です。
 
-この公開棚は、小説制作を実験場として運用している **AIエージェント / マルチエージェント / AI Runtime Overlay** の公開資料置き場です。
+この公開棚は、小説制作を実験場として運用している **AIエージェント / マルチエージェント / AI Runtime** の公開資料置き場です。
 
 GitHubは公開玄関とRuntimeミラーを置く棚です。現行Runtime本体の正本導線は、オンラインの [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) を優先してください。
 
@@ -16,6 +16,9 @@ GitHubは公開玄関とRuntimeミラーを置く棚です。現行Runtime本体
 
 - [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/)  
   現行Runtimeを使うための公開棚。`START_HERE_ONLINE_RUNTIME.txt` から開始します。
+
+- [Runtime Family Catalog](RUNTIME_FAMILY_CATALOG.md)  
+  GPT小説執筆ライン、絵師さん / IM80、司書さん / BL90、Vault Runtime / 豆金庫の用途別索引。
 
 - [Public Release Policy](https://gpt-novel-line-portal.harmoniets.chatgpt.site/public-release-policy)  
   利用・改変・再配布・商用利用・作者表記などの公開方針。
@@ -34,6 +37,8 @@ GitHubは公開玄関とRuntimeミラーを置く棚です。現行Runtime本体
 2026-09-01時点で、Runtime Public Shelfの公開ページ上に `ACTIVE_LAYER_DEFAULT: 400番台` と `RUNTIME_LAYERS: 400番台 / 300番台` が確認できます。
 
 GitHubの `RUNTIME_ZIP/` と `RUNTIME/` は、2026-09-01時点で現行Runtime束へ差し替え済みの公開ミラーです。旧ZIP名や旧版番号を現在のRuntimeとして扱わないでください。
+
+絵師さん / IM80、司書さん / BL90、Vault Runtime / 豆金庫の現行配布もGitHubミラーと公開ポータルの両方から参照できます。GitHub側では [RUNTIME_FAMILY_CATALOG.md](RUNTIME_FAMILY_CATALOG.md) から現行ダウンロードURLとchecksumを案内します。
 
 ## 外部の言葉から来た方へ
 
@@ -68,6 +73,17 @@ GitHubの `RUNTIME_ZIP/` と `RUNTIME/` は、2026-09-01時点で現行Runtime�
 
 現行正本は [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) を優先してください。
 
+## 用途別公開Runtime
+
+| 用途 | Runtime | 現行導線 |
+| --- | --- | --- |
+| 小説制作 | GPT小説執筆ライン | https://gpt-novel-line-portal.harmoniets.chatgpt.site/ |
+| 画像生成・画像編集 | 絵師さん / IM80 | https://ai-image-runtime.harmoniets.chatgpt.site/ |
+| 非創作・業務整理 | 司書さん / BL90 | https://business-librarian-runtime.harmoniets.chatgpt.site/ |
+| 保護・整合性・復旧 | Vault Runtime / 豆金庫 | https://business-librarian-runtime.harmoniets.chatgpt.site/downloads/VAULT_RUNTIME_v002.zip |
+
+詳細は [RUNTIME_FAMILY_CATALOG.md](RUNTIME_FAMILY_CATALOG.md) を参照してください。
+
 ## GitHub上の記録
 
 - [CURRENT_STATUS.md](CURRENT_STATUS.md)  
@@ -78,6 +94,9 @@ GitHubの `RUNTIME_ZIP/` と `RUNTIME/` は、2026-09-01時点で現行Runtime�
 
 - [RUNTIME_ZIP/README.md](RUNTIME_ZIP/README.md)  
   GitHubに置いているRuntime ZIPの説明とchecksum。
+
+- [RUNTIME_FAMILY_CATALOG.md](RUNTIME_FAMILY_CATALOG.md)  
+  用途別Runtimeと公開ポータル配布物の一覧。
 
 - [RUNTIME/](RUNTIME/)  
   分解済み・参照用のRuntime資料。

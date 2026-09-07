@@ -1,0 +1,63 @@
+{
+  "schema": "PROJECT_MAINTENANCE_AUTHORITY_PROFILE_v003",
+  "ordinary_persisted_write": {
+    "required_authority": "USER_EXPLICIT_DELEGATION",
+    "delegation_scope_required": true,
+    "delegation_default_duration": "CURRENT_TASK_ONLY",
+    "automatic_or_inferred_delegation": "FORBIDDEN"
+  },
+  "standing_maintenance_keys": {
+    "enabled": true,
+    "meaning": "Persistent eligibility to open the maintenance gate without a fresh delegation grant when the current task is explicitly maintenance, transfer, recovery, rebind, or reseal work.",
+    "fresh_user_delegation_grant_required": false,
+    "self_initiated_ordinary_write": "FORBIDDEN",
+    "target_scope": "PROFILE_PARENT_RECURSIVE",
+    "allowed_purposes": [
+      "MAINTENANCE",
+      "TRANSFER",
+      "RECOVERY",
+      "REBIND",
+      "RESEAL"
+    ],
+    "vault_operations": [
+      "SEAL",
+      "STAGE",
+      "COMMIT",
+      "RESTORE",
+      "PACK"
+    ],
+    "holders": [
+      {
+        "runtime_id": "MT00",
+        "display_name": "ヌル",
+        "purpose": "NORMAL_TRANSFER_OR_MAINTENANCE"
+      },
+      {
+        "runtime_id": "BL90",
+        "display_name": "司書さん",
+        "purpose": "EMERGENCY_MAINTENANCE_OR_TRANSFER_SUPPORT"
+      }
+    ],
+    "limits": {
+      "may_change_business_or_canon_semantics_without_user_instruction": false,
+      "may_expand_own_authority": false,
+      "may_delegate_or_copy_key": false,
+      "may_use_key_for_convenience_only": false,
+      "must_preserve_user_intent_and_confirmed_data": true
+    },
+    "audit_required": true,
+    "audit_fields": [
+      "actor",
+      "target",
+      "purpose",
+      "operation",
+      "authority_source",
+      "before_root_sha256",
+      "after_root_sha256"
+    ],
+    "design_note": "DS90/設計さん is intentionally not a standing maintenance-key holder here; creative workshop projects are expected to preserve their own control/shelf/DB continuity. Add DS90 only in a Project-specific profile when explicitly required."
+  },
+  "on_missing_ambiguous_or_out_of_scope_authority": "STOP",
+  "key_persistence": "KEY_HOLDER_ELIGIBILITY_PERSISTS_ACROSS_ENVIRONMENT_OR_SESSION_CHANGE",
+  "ordinary_delegation_revocation": "ON_TASK_CLOSE_UNLESS_USER_EXPLICITLY_EXTENDS"
+}

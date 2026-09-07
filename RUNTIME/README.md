@@ -2,7 +2,7 @@
 
 GPT小説執筆ラインのRuntime展開置き場です。
 
-このディレクトリは、2026-09-01時点でGitHub側へ差し替えたRuntime束の参照用展開です。
+このディレクトリは、2026-09-01時点でGitHub側へ差し替えた小説制作ライン中心のRuntime束の参照用展開です。
 
 現行のオンライン正本導線は [Runtime Public Shelf](https://runtime-public-archive.harmoniets.chatgpt.site/) を優先してください。GitHub側は公開ミラー兼参照棚です。
 
@@ -22,3 +22,5 @@ GPT小説執筆ラインのRuntime展開置き場です。
 | `ROBUSTNESS_AUDIT/ROBUSTNESS_AUDIT_RUNTIME_v002_MINIMAL/` | 堅牢性監査Runtime |
 
 ZIP本体は [`RUNTIME_ZIP/`](../RUNTIME_ZIP/) に置いています。
+
+現行の用途別配布は [RUNTIME_FAMILY_CATALOG.md](../RUNTIME_FAMILY_CATALOG.md) を参照してください。絵師さん / IM80、司書さん / BL90、Vault Runtime / 豆金庫は、GitHubミラーとそれぞれの公開ポータルから参照できます。

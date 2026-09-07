@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-09-07 / Runtime family catalog and PDF removal
+
+- GitHub公開棚に [RUNTIME_FAMILY_CATALOG.md](RUNTIME_FAMILY_CATALOG.md) を追加。
+- 絵師さん / IM80、司書さん / BL90、Vault Runtime / 豆金庫の現行ZIPミラー、ポータル配布URL、checksumを追加。
+- README / INDEX / CURRENT_STATUS / RUNTIME_ZIP README / RUNTIME READMEを、5サイト構成と用途別Runtime導線へ更新。
+- `RUNTIME_PDF/` のPDF配布を終了。現行案内はポータル、ZIP、展開済みテキスト、機械可読索引を優先。
+- 非小説系Runtimeも `RUNTIME_ZIP/` から参照できるようにしつつ、ポータル側の現行案内も併記。
+
 ## 2026-09-01 / GitHub Runtime bundle replacement
 
 - GitHub側の `RUNTIME/` と `RUNTIME_ZIP/` を現行Runtime束へ差し替え。
