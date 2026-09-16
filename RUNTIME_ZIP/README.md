@@ -23,6 +23,7 @@ GPT小説執筆ラインのRuntime ZIP置き場です。
 | `IM80_v007_IMAGE_RUNTIME.zip` | 絵師さん / IM80 v007 |
 | `000_IC.zip` | 画像Runtime用制御マウント |
 | `IMT00_IMAGE_TRANSFER_RUNTIME_v003.zip` | 画像状態移管Runtime |
+| `IM80_MINI_TOYGOODS_RUNTIME_v003.zip` | おもちゃ用途向け小型Runtime。PLUSH / PACKAGEの2枝のみ。IM80本体の置換ではない |
 | `BL90_ZERO_START_MOUNT_v004_CANDIDATE.zip` | 司書さん / BL90 Zero Start v004 |
 | `BL90_v004_BUSINESS_LIBRARIAN_RUNTIME_CANDIDATE.zip` | 司書さん / BL90 v004 |
 | `BL90_REFERENCE_DEMO_COMPLETE_MOUNT_v002_CANDIDATE.zip` | BL90 Reference Demo v002 |
