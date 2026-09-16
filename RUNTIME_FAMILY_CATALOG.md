@@ -13,6 +13,12 @@ GitHubは公開資料とRuntime ZIPミラーを置く場所です。絵師さん
 | Business operations | 司書さん / BL90 | 業務向けに、既存情報を探し、正式な参照元を確認し、状態を分け、目的に合う形へ整理する非創作Runtime | https://business-librarian-runtime.harmoniets.chatgpt.site/ |
 | Shared protection | Vault Runtime / 豆金庫 | 重要な一部を保護し、整合性確認と復旧に使う独立Runtime | https://business-librarian-runtime.harmoniets.chatgpt.site/downloads/VAULT_RUNTIME_v002.zip |
 
+## Auxiliary / Toy Runtime
+
+| Runtime | Purpose | Distribution | SHA-256 |
+| --- | --- | --- | --- |
+| IM80 MINI TOYGOODS v003 | 写真からぬいぐるみ化 / 玩具パッケージ化を行う小型おもちゃRuntime。`PLUSH` / `PACKAGE` の2枝のみ。IM80本体の置換ではない | `RUNTIME_ZIP/IM80_MINI_TOYGOODS_RUNTIME_v003.zip` | `c70de3aebcbc02bbed858215ad441d4e93961bfb4072d4ab3c7e211b39ed6f70` |
+
 ## Portal Downloads
 
 | Artifact | URL | SHA-256 |
