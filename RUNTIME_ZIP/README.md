@@ -20,9 +20,11 @@ GPT小説執筆ラインのRuntime ZIP置き場です。
 | `DB_PROJECT_ZERO_START_MOUNT_v001.zip` | 初期Project配置用マウント束 |
 | `IMAGE_RUNTIME_MINIMAL_v005.zip` | 旧画像Runtime最小セット。現行IM80配布はAI Image Runtime portalを優先 |
 | `IMAGE_RUNTIME_MOUNT_TEMPLATE_v001.zip` | 旧画像Runtime用マウントテンプレート。現行000_IC配布はAI Image Runtime portalを優先 |
-| `IM80_v007_IMAGE_RUNTIME.zip` | 絵師さん / IM80 v007 |
-| `000_IC.zip` | 画像Runtime用制御マウント |
-| `IMT00_IMAGE_TRANSFER_RUNTIME_v003.zip` | 画像状態移管Runtime |
+| `TMP_IM80_ZERO_START_SET_v001.zip` | 絵師さん / IM80 v013 ZERO START一式 |
+| `TMP_IM80_v013_IMAGE_RUNTIME_CANDIDATE_v005.zip` | 絵師さん / IM80 v013 CANDIDATE v005 |
+| `000_IC.zip` | IM80画像制御・resident棚 |
+| `011_G_v000.zip` | IM80画像ローカルゲート |
+| `012_CA_v000.zip` | IM80採用済み画像正本棚。ZERO STARTでは空で正常 |
 | `IM80_MINI_TOYGOODS_RUNTIME_v003.zip` | おもちゃ用途向け小型Runtime。PLUSH / PACKAGEの2枝のみ。IM80本体の置換ではない |
 | `BL90_ZERO_START_MOUNT_v004_CANDIDATE.zip` | 司書さん / BL90 Zero Start v004 |
 | `BL90_v004_BUSINESS_LIBRARIAN_RUNTIME_CANDIDATE.zip` | 司書さん / BL90 v004 |
@@ -37,9 +39,11 @@ GPT小説執筆ラインのRuntime ZIP置き場です。
 
 | Runtime | Download |
 | --- | --- |
-| 絵師さん / IM80 v007 | https://ai-image-runtime.harmoniets.chatgpt.site/downloads/IM80_v007_IMAGE_RUNTIME.zip |
+| 絵師さん / IM80 ZERO START SET v001 | https://ai-image-runtime.harmoniets.chatgpt.site/downloads/TMP_IM80_ZERO_START_SET_v001.zip |
+| 絵師さん / IM80 v013 CANDIDATE v005 | https://ai-image-runtime.harmoniets.chatgpt.site/downloads/TMP_IM80_v013_IMAGE_RUNTIME_CANDIDATE_v005.zip |
 | 000_IC | https://ai-image-runtime.harmoniets.chatgpt.site/downloads/000_IC.zip |
-| IMT00 v003 | https://ai-image-runtime.harmoniets.chatgpt.site/downloads/IMT00_IMAGE_TRANSFER_RUNTIME_v003.zip |
+| 011_G v000 | https://ai-image-runtime.harmoniets.chatgpt.site/downloads/011_G_v000.zip |
+| 012_CA v000 | https://ai-image-runtime.harmoniets.chatgpt.site/downloads/012_CA_v000.zip |
 | 司書さん / BL90 v004 | https://business-librarian-runtime.harmoniets.chatgpt.site/downloads/BL90_v004_BUSINESS_LIBRARIAN_RUNTIME_CANDIDATE.zip |
 | BL90 Zero Start v004 | https://business-librarian-runtime.harmoniets.chatgpt.site/downloads/BL90_ZERO_START_MOUNT_v004_CANDIDATE.zip |
 | 000_BC | https://business-librarian-runtime.harmoniets.chatgpt.site/downloads/000_BC.zip |
